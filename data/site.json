@@ -470,12 +470,22 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "modes",
       "title": "All Meccha Chameleon Modes Explained",
-      "metaTitle": "All Meccha Chameleon Modes: Basic, Infection, Double & Reverse Chicken Race (2026)",
+      "metaTitle": "Meccha Chameleon Modes: All 4 Explained (2026)",
       "metaDescription": "Every Meccha Chameleon game mode explained - Basic, Infection, Double and Reverse Chicken Race - plus the best strategy for each one.",
       "intro": "Meccha Chameleon ships with several modes that completely change how you play. Here is what each one does and how to win it.",
       "sections": [
@@ -519,6 +529,29 @@
             "Tune round time for faster games",
             "Set a password for private sessions",
             "Pick which mode the room uses"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Mode FAQ",
+          "body": "",
+          "items": [
+            [
+              "Which mode should beginners start with?",
+              "Basic (Normal) mode is the simplest — classic hider vs hunter hide-and-seek with no extra rules. Try a few rounds before Infection or Double."
+            ],
+            [
+              "Can the host change the game mode and round time?",
+              "Yes — when creating a server, the host picks the mode and sets the round time before the lobby opens."
+            ],
+            [
+              "Is there a solo or single-player mode?",
+              "No — Meccha Chameleon is an online multiplayer game only, on PC via Steam."
+            ],
+            [
+              "Do all modes support the same player counts?",
+              "All four modes support the game's player range; the recommended range is 2-12 (Steam's store description says 2-10)."
+            ]
           ]
         }
       ],
@@ -570,6 +603,29 @@
                 "设置密码进行私人游戏",
                 "选择房间使用的模式"
               ]
+            },
+            {
+              "type": "faq",
+              "heading": "模式常见问题",
+              "body": "",
+              "items": [
+                [
+                  "新手该先玩哪个模式？",
+                  "基础（普通）模式最友好——经典的躲藏者 vs 猎人捉迷藏，没有额外规则。建议先玩几局基础模式，再尝试感染或双重模式。"
+                ],
+                [
+                  "房主可以改模式和回合时长吗？",
+                  "可以——创建服务器时，房主在开局前选择模式并设置回合时长。"
+                ],
+                [
+                  "有单人模式吗？",
+                  "没有——《超级变色龙》是纯在线多人游戏，仅 PC（Steam）平台。"
+                ],
+                [
+                  "所有模式支持的人数范围一样吗？",
+                  "四个模式都支持游戏的全部人数范围；推荐 2-12 人（Steam 商店页文案为 2-10 人）。"
+                ]
+              ]
             }
           ]
         },
@@ -620,15 +676,48 @@
                 "パスワードでプライベートに",
                 "ルームで使うモードを選択"
               ]
+            },
+            {
+              "type": "faq",
+              "heading": "モードFAQ",
+              "body": "",
+              "items": [
+                [
+                  "初心者はどのモードがおすすめ？",
+                  "ベーシック（ノーマル）モードが最もシンプル——クラシックな鬼ごっこ形式で追加ルールなし。感染やダブルを試す前に数ラウンドプレイしましょう。"
+                ],
+                [
+                  "ホストはモードやラウンド時間を変更できますか？",
+                  "はい——サーバー作成時にモードを選び、ラウンド時間を設定できます。"
+                ],
+                [
+                  "ソロモードはありますか？",
+                  "いいえ——メチャカメレオンはオンラインマルチプレイ専用です（Steam PC 版のみ）。"
+                ],
+                [
+                  "全モードで人数範囲は同じですか？",
+                  "4モードすべて同じ人数範囲に対応。推奨は2-12人（Steam ストアの説明では2-10人）。"
+                ]
+              ]
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "maps",
       "title": "All Meccha Chameleon Maps",
-      "metaTitle": "All Meccha Chameleon Maps: Base Maps & Workshop Maps (2026)",
+      "metaTitle": "Meccha Chameleon Maps: Base & Workshop (2026)",
       "metaDescription": "Every base map in Meccha Chameleon, plus how Steam Workshop maps work and where to find the best community maps.",
       "intro": "Meccha Chameleon's maps are the stage for every round of hide-and-seek. Here are the base maps and how the Workshop extends the game.",
       "sections": [
@@ -679,6 +768,29 @@
             "Install custom maps from the Steam Workshop and load them in Custom Rooms",
             "Popular community maps include Minecraft-style, FNAF Security Breach and CS2 Mirage remakes",
             "New official maps are also added in updates (for example the HIKAKIN Museum map)"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Map FAQ",
+          "body": "",
+          "items": [
+            [
+              "How many maps are there?",
+              "7 base maps (Hide-and-Seek Mansion, Indoor Country, Sewer, Backrooms, Penguin Hotel, Sugarland and Osaka) plus many Steam Workshop maps. New official maps keep being added — 2026 updates added Death Burger, Greece and the Garten of Banban and Exit 8 collab maps."
+            ],
+            [
+              "Are workshop maps free?",
+              "Yes — Steam Workshop maps are community mods you subscribe to for free, then they appear in the game."
+            ],
+            [
+              "Do official maps cost money?",
+              "No — all official maps are included with the game on Steam. There are no paid maps."
+            ],
+            [
+              "Will more maps be added?",
+              "Very likely — the developer has added official maps regularly since launch (Sugarland, Osaka, Death Burger, Greece, plus collab maps)."
+            ]
           ]
         }
       ],
@@ -737,6 +849,29 @@
                 "热门社区地图包括 Minecraft 风、FNAF 保安室、CS2 荒漠迷城等复刻",
                 "更新也会加入新官方地图（例如 HIKAKIN 博物馆）"
               ]
+            },
+            {
+              "type": "faq",
+              "heading": "地图常见问题",
+              "body": "",
+              "items": [
+                [
+                  "游戏有多少张地图？",
+                  "7 张基础地图（躲猫猫豪宅、乡村室内、下水道、后室、企鹅酒店、糖果乐园和大阪）加大量 Steam 创意工坊地图。官方还在持续新增——2026 年的更新加入了死亡汉堡、希腊以及《班班幼儿园》《8番出口》合作地图。"
+                ],
+                [
+                  "创意工坊地图免费吗？",
+                  "免费——创意工坊地图是社区模组，订阅即可免费使用，之后会在游戏内出现。"
+                ],
+                [
+                  "官方地图要花钱吗？",
+                  "不用——所有官方地图都包含在 Steam 游戏本体中，没有付费地图。"
+                ],
+                [
+                  "以后还会加地图吗？",
+                  "很可能——开发商自上线以来一直在定期加入官方地图（糖果乐园、大阪、死亡汉堡、希腊，以及合作地图）。"
+                ]
+              ]
             }
           ]
         },
@@ -794,15 +929,48 @@
                 "人気は Minecraft 風・FNAF・CS2 ミラージュの再現など",
                 "アップデートで新公式マップも追加（例：HIKAKIN ミュージアム）"
               ]
+            },
+            {
+              "type": "faq",
+              "heading": "マップFAQ",
+              "body": "",
+              "items": [
+                [
+                  "マップは何枚ありますか？",
+                  "標準7枚（かくれんぼマンション、屋内カントリー、下水道、バックルームズ、ペンギンホテル、シュガーランド、大阪）＋多数のワークショップマップ。公式マップも追加され続けており、2026年のアップデートでデスバーガー、ギリシャ、『Garten of Banban』『8番出口』コラボマップが登場しました。"
+                ],
+                [
+                  "ワークショップマップは無料ですか？",
+                  "はい——ワークショップマップはコミュニティ製のMODで、無料で購読するとゲーム内に表示されます。"
+                ],
+                [
+                  "公式マップは有料ですか？",
+                  "いいえ——公式マップはすべて Steam 版ゲームに含まれています。有料マップはありません。"
+                ],
+                [
+                  "今後もマップは増えますか？",
+                  "おそらく増えます——発売以来、開発者は公式マップを継続的に追加しています（シュガーランド、大阪、デスバーガー、ギリシャ、コラボマップなど）。"
+                ]
+              ]
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "tips-and-tricks",
       "title": "Meccha Chameleon Tips & Tricks: How to Win More",
-      "metaTitle": "Meccha Chameleon Tips & Tricks: Painting, Clones & Hunter Play (2026)",
+      "metaTitle": "Meccha Chameleon Tips & Tricks (2026)",
       "metaDescription": "Pro tips to win more Meccha Chameleon rounds - color sampling, light direction, clones, poses and Hunter strategies that actually work.",
       "intro": "These are the specific techniques that separate good players from great ones in Meccha Chameleon.",
       "sections": [
@@ -959,7 +1127,17 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "achievements",
@@ -1073,14 +1251,32 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        },
+        {
+          "label": "isThereAnyDeal — MECCHA CHAMELEON",
+          "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/"
+        },
+        {
+          "label": "SlashSkill — cheats & hacks explained",
+          "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/"
+        }
+      ]
     },
     {
       "slug": "update-log",
       "title": "Meccha Chameleon Update Log & Patch Notes",
       "metaTitle": "Meccha Chameleon Update Log: All Patch Notes (2026)",
-      "metaDescription": "The full Meccha Chameleon update history: versions 1.8 to 2.2, including the Cube character, clones, map reworks and more.",
-      "intro": "Meccha Chameleon updates fast. This log tracks every major version we can verify from official and reliable sources.",
+      "metaDescription": "The full Meccha Chameleon update history: versions 1.6 to 3.5, including new maps, collab maps, the Cube character and clones.",
+      "intro": "The full Meccha Chameleon update history: versions 1.6 to 3.5, including the Cube character, clones, new maps, collab maps and more.",
       "sections": [
         {
           "type": "table",
@@ -1093,29 +1289,64 @@
           ],
           "rows": [
             [
+              "3.5.3",
+              "Aug 4, 2026",
+              "Camera options added; color palette and color-setting bugs fixed"
+            ],
+            [
+              "3.5.0",
+              "Aug 2, 2026",
+              "Official 'Exit 8' collab map added, plus quality-of-life improvements"
+            ],
+            [
+              "3.3.0",
+              "Jul 27, 2026",
+              "'Plump' body type added"
+            ],
+            [
+              "3.1.0",
+              "Jul 25, 2026",
+              "'Garten of Banban' collab map; non-UI controller support; workshop security patch"
+            ],
+            [
+              "3.0.0",
+              "Jul 20, 2026",
+              "New official map 'Greece'"
+            ],
+            [
+              "2.9.0",
+              "Jul 19, 2026",
+              "Glow-in-the-dark paint added; paint performance improved"
+            ],
+            [
+              "2.8.0",
+              "Jul 17, 2026",
+              "New official map 'Death Burger'; chat & nameplate language filtering"
+            ],
+            [
               "2.2.0",
-              "July 20, 2026",
-              "New patch released - see the official patch notes for details (IGN maintains a dedicated page)"
+              "Jun 28, 2026",
+              "Hide-and-Seek Mansion randomization; new Cube size options; stability fixes"
             ],
             [
               "2.1.0",
-              "June 27, 2026",
-              "Total discoveries count now displayed; official map 'The Backrooms' reworked"
+              "Jun 27, 2026",
+              "Total discoveries counter; 'The Backrooms' reworked"
             ],
             [
               "2.0.0",
-              "June 26, 2026",
-              "Clones added - Hiders can now create decoy copies of their painted character"
+              "Jun 26, 2026",
+              "Clones added — Hiders can create decoy copies of their painted character"
             ],
             [
               "1.9.0",
-              "June 24-25, 2026",
-              "New 'Cube' character added; hunter shotgun timing adjusted"
+              "Jun 24, 2026",
+              "'Cube' character added; hunter shotgun timing adjusted"
             ],
             [
-              "1.8.0",
-              "June 24, 2026",
-              "Update released (per version history trackers)"
+              "1.6.0–1.8.1",
+              "Jun 21–23, 2026",
+              "'Osaka' map + report feature; hider size options; 11 emotes and map fixes (1.8.0 rolled back, re-released as 1.8.1)"
             ]
           ]
         },
@@ -1124,12 +1355,11 @@
           "heading": "Other Recent Changes",
           "body": "Additional changes reported in Steam Community news posts.",
           "items": [
-            "Glow-in-the-dark paint added",
-            "Improved paint performance",
-            "New official map 'HIKAKIN Museum' added",
+            "New official map 'HIKAKIN Museum' added (per Steam Community news)",
             "Fixed an issue where players could get stuck too deeply into walls",
             "Fixed a translation error on the Korean server-creation screen",
-            "Reduced lag when many players paint at the same time"
+            "Reduced lag when many players paint at the same time",
+            "July 2026 security note: a malicious Workshop map scare led to a security patch in 3.1.0 — only subscribe to well-reviewed maps"
           ]
         },
         {
@@ -1147,8 +1377,8 @@
         "zh": {
           "title": "超级变色龙更新日志与补丁说明",
           "metaTitle": "超级变色龙更新日志：全部补丁说明（2026）",
-          "metaDescription": "超级变色龙完整更新历史：1.8 到 2.2 版本，包括方块人角色、分身、地图重制等。",
-          "intro": "超级变色龙更新很快。这个日志记录了我们能从可靠来源核实的每个主要版本。",
+          "metaDescription": "《超级变色龙》完整更新历史：1.6 到 3.5 版本，包含新地图、合作地图、方块人与分身等。",
+          "intro": "《超级变色龙》完整更新历史：从 1.6 到 3.5 版本，包含方块人、分身、新地图、合作地图等内容。",
           "sections": [
             {
               "type": "table",
@@ -1161,29 +1391,64 @@
               ],
               "rows": [
                 [
-                  "2.2.0",
+                  "3.5.3",
+                  "2026-08-04",
+                  "新增相机选项；修复调色板与颜色设置问题"
+                ],
+                [
+                  "3.5.0",
+                  "2026-08-02",
+                  "加入《8番出口》官方合作地图及多项体验优化"
+                ],
+                [
+                  "3.3.0",
+                  "2026-07-27",
+                  "加入「胖胖」体型"
+                ],
+                [
+                  "3.1.0",
+                  "2026-07-25",
+                  "加入《班班幼儿园》合作地图；非 UI 手柄操作；创意工坊安全补丁"
+                ],
+                [
+                  "3.0.0",
                   "2026-07-20",
-                  "发布新补丁——详见官方补丁说明（IGN 有专门页面）"
+                  "新官方地图「希腊」"
+                ],
+                [
+                  "2.9.0",
+                  "2026-07-19",
+                  "加入夜光漆；优化涂装性能"
+                ],
+                [
+                  "2.8.0",
+                  "2026-07-17",
+                  "新官方地图「死亡汉堡」；聊天与名牌语言过滤"
+                ],
+                [
+                  "2.2.0",
+                  "2026-06-28",
+                  "躲猫猫豪宅随机化；方块人新体型尺寸；稳定性修复"
                 ],
                 [
                   "2.1.0",
                   "2026-06-27",
-                  "现在显示发现总数；官方地图「后室」重制"
+                  "显示发现总数；「后室」地图重制"
                 ],
                 [
                   "2.0.0",
                   "2026-06-26",
-                  "加入分身——躲藏者现在可以创建伪装分身"
+                  "加入分身——躲藏者可创建伪装分身"
                 ],
                 [
                   "1.9.0",
-                  "2026-06-24~25",
-                  "加入新角色「方块人」；调整猎人霰弹枪时机"
+                  "2026-06-24",
+                  "新角色「方块人」；调整猎人霰弹枪时机"
                 ],
                 [
-                  "1.8.0",
-                  "2026-06-24",
-                  "发布更新（据版本历史追踪站）"
+                  "1.6.0–1.8.1",
+                  "2026-06-21~23",
+                  "「大阪」地图与举报功能；体型选项；11 个表情与地图修复（1.8.0 回滚后以 1.8.1 重发）"
                 ]
               ]
             },
@@ -1192,12 +1457,11 @@
               "heading": "其他近期改动",
               "body": "Steam 社区新闻中报告的额外改动。",
               "items": [
-                "加入夜光漆",
-                "改善涂色性能",
-                "加入新官方地图「HIKAKIN 博物馆」",
+                "加入新官方地图「HIKAKIN 博物馆」（据 Steam 社区新闻）",
                 "修复玩家可能卡入墙壁过深的问题",
                 "修复韩语服务器创建界面翻译错误",
-                "减少大量玩家同时涂色时的卡顿"
+                "减少大量玩家同时涂色时的卡顿",
+                "2026 年 7 月安全提醒：恶意创意工坊地图事件后，3.1.0 加入安全补丁——请只订阅好评地图"
               ]
             },
             {
@@ -1215,8 +1479,8 @@
         "ja": {
           "title": "メチャカメレオンアップデート履歴",
           "metaTitle": "メチャカメレオンアップデート履歴：全パッチノート（2026）",
-          "metaDescription": "メチャカメレオンの更新履歴：1.8〜2.2。キューブキャラ、分身、マップリワークなどを収録。",
-          "intro": "メチャカメレオンは更新が速い。信頼できるソースで確認できた主要バージョンを記録しています。",
+          "metaDescription": "メチャカメレオンの完全なアップデート履歴：1.6 から 3.5 まで、新マップ、コラボマップ、キューブ、分身など。",
+          "intro": "メチャカメレオンの完全なアップデート履歴：1.6 から 3.5 まで、キューブ、分身、新マップ、コラボマップなどを網羅。",
           "sections": [
             {
               "type": "table",
@@ -1229,14 +1493,49 @@
               ],
               "rows": [
                 [
-                  "2.2.0",
+                  "3.5.3",
+                  "2026-08-04",
+                  "カメラオプション追加。カラーパレットと色設定の不具合を修正"
+                ],
+                [
+                  "3.5.0",
+                  "2026-08-02",
+                  "『8番出口』公式コラボマップ追加。QoL 改善"
+                ],
+                [
+                  "3.3.0",
+                  "2026-07-27",
+                  "「ふっくら」体型を追加"
+                ],
+                [
+                  "3.1.0",
+                  "2026-07-25",
+                  "『Garten of Banban』コラボマップ追加。UI 外のコントローラー操作対応。ワークショップ安全パッチ"
+                ],
+                [
+                  "3.0.0",
                   "2026-07-20",
-                  "新パッチを公開——公式ノート参照（IGN に専用ページあり）"
+                  "新公式マップ「ギリシャ」追加"
+                ],
+                [
+                  "2.9.0",
+                  "2026-07-19",
+                  "光るペイント追加。ペイント性能を最適化"
+                ],
+                [
+                  "2.8.0",
+                  "2026-07-17",
+                  "新公式マップ「デスバーガー」。チャット・ネームプレートの言語フィルター"
+                ],
+                [
+                  "2.2.0",
+                  "2026-06-28",
+                  "かくれんぼマンションのランダム化。キューブの新サイズ。安定性の修正"
                 ],
                 [
                   "2.1.0",
                   "2026-06-27",
-                  "発見数の表示を追加。公式マップ「バックルームズ」をリワーク"
+                  "発見数カウンター。バックルームズのリワーク"
                 ],
                 [
                   "2.0.0",
@@ -1245,13 +1544,13 @@
                 ],
                 [
                   "1.9.0",
-                  "2026-06-24〜25",
+                  "2026-06-24",
                   "新キャラ「キューブ」追加。狩り役のショットガン発動タイミングを調整"
                 ],
                 [
-                  "1.8.0",
-                  "2026-06-24",
-                  "更新を公開（バージョン履歴トラッカーより）"
+                  "1.6.0–1.8.1",
+                  "2026-06-21〜23",
+                  "「大阪」マップ＋通報機能。体型オプション。11種の絵文字とマップ修正（1.8.0はロールバック後1.8.1として再公開）"
                 ]
               ]
             },
@@ -1260,12 +1559,11 @@
               "heading": "その他の最近の変更",
               "body": "Steam コミュニティニュースで報告された追加変更。",
               "items": [
-                "蓄光塗料を追加",
-                "塗装パフォーマンスを改善",
-                "新公式マップ「HIKAKIN ミュージアム」を追加",
+                "新公式マップ「HIKAKIN ミュージアム」を追加（Steam コミュニティニュースより）",
                 "壁に深くはまり込む問題を修正",
                 "韓国語サーバー作成画面の翻訳ミスを修正",
-                "多数のプレイヤーが同時に塗るときのラグを軽減"
+                "多数のプレイヤーが同時に塗るときのラグを軽減",
+                "2026年7月のセキュリティ情報：悪質なワークショップマップ騒動を受け 3.1.0 で安全パッチを適用——評価の高いマップのみ購読しましょう"
               ]
             },
             {
@@ -1280,7 +1578,25 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        },
+        {
+          "label": "IGN wiki — Patch Notes July 20, 2026",
+          "url": "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_20,_2026"
+        },
+        {
+          "label": "Changelog.gg — MECCHA CHAMELEON",
+          "url": "https://changelog.gg/games/meccha-chameleon-4704690"
+        }
+      ]
     },
     {
       "slug": "system-requirements",
@@ -1320,6 +1636,29 @@
             "Steam Deck: officially rated 'Playable' - the game runs, but keyboard-style controls (paint, pose) work best with the trackpad or an attached mouse",
             "Mac: no native macOS version - play through GeForce NOW cloud streaming (available since June 27, 2026)",
             "The game is PC-only on Steam; there are no native PS5, Xbox or Switch versions"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "System Requirements FAQ",
+          "body": "",
+          "items": [
+            [
+              "Does Meccha Chameleon need a good PC?",
+              "No — the minimum is modest: Windows 10 64-bit, an Intel Core i5 processor and a DirectX 11 or 12 compatible graphics card. It is a lightweight party game."
+            ],
+            [
+              "Does it work on Mac?",
+              "There is no native Mac version, but Mac players can stream it through GeForce NOW."
+            ],
+            [
+              "Do I need an internet connection?",
+              "Yes — Meccha Chameleon is an online multiplayer game, so a stable connection is required to play."
+            ],
+            [
+              "Is it Steam Deck compatible?",
+              "Valve lists it as Playable; see our Steam Deck guide for settings and control layouts."
+            ]
           ]
         }
       ],
@@ -1362,6 +1701,29 @@
                 "Mac：无原生 macOS 版——通过 GeForce NOW 云串流游玩（2026-06-27 起可用）",
                 "游戏仅 PC（Steam）版；无原生 PS5、Xbox 或 Switch 版"
               ]
+            },
+            {
+              "type": "faq",
+              "heading": "配置常见问题",
+              "body": "",
+              "items": [
+                [
+                  "配置要求高吗？",
+                  "不高——最低配置很亲民：Windows 10 64位、Intel Core i5、兼容 DirectX 11/12 的显卡。这是一款轻量派对游戏。"
+                ],
+                [
+                  "Mac 能玩吗？",
+                  "没有原生 Mac 版，但可以通过 GeForce NOW 云串流游玩。"
+                ],
+                [
+                  "需要联网吗？",
+                  "需要——《超级变色龙》是在线多人游戏，必须有稳定网络。"
+                ],
+                [
+                  "支持 Steam Deck 吗？",
+                  "Valve 将其评为「可玩」，设置与操作布局见我们的 Steam Deck 专页。"
+                ]
+              ]
             }
           ]
         },
@@ -1403,10 +1765,43 @@
                 "Mac：ネイティブ版なし——GeForce NOW クラウド経由でプレイ可能（2026-06-27〜）",
                 "PC（Steam）専用。PS5・Xbox・Switch のネイティブ版はなし"
               ]
+            },
+            {
+              "type": "faq",
+              "heading": "必要スペックFAQ",
+              "body": "",
+              "items": [
+                [
+                  "高スペックは必要ですか？",
+                  "いいえ——最低構成は控えめです：Windows 10 64-bit、Intel Core i5、DirectX 11/12 対応GPU。軽量なパーティゲームです。"
+                ],
+                [
+                  "Mac で遊べますか？",
+                  "ネイティブの Mac 版はありませんが、GeForce NOW 経由でストリーミングプレイできます。"
+                ],
+                [
+                  "インターネット接続は必要ですか？",
+                  "はい——オンラインマルチプレイゲームのため、安定した接続が必要です。"
+                ],
+                [
+                  "Steam Deck に対応していますか？",
+                  "Valve の評価は「Playable」です。設定や操作レイアウトは Steam Deck ページをご覧ください。"
+                ]
+              ]
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "codes",
@@ -1529,14 +1924,32 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        },
+        {
+          "label": "SlashSkill — cheats & hacks explained",
+          "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/"
+        },
+        {
+          "label": "isThereAnyDeal — MECCHA CHAMELEON",
+          "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/"
+        }
+      ]
     },
     {
       "slug": "steam-deck",
       "title": "Meccha Chameleon on Steam Deck: Settings & Controls",
-      "metaTitle": "Meccha Chameleon Steam Deck: Settings, Controls & Best Layout (2026)",
+      "metaTitle": "Meccha Chameleon Steam Deck Guide (2026)",
       "metaDescription": "How Meccha Chameleon runs on Steam Deck — official compatibility, best settings, controls and controller layouts for painting and posing.",
-      "intro": "Meccha Chameleon is officially rated Playable on Steam Deck. Here is how to set it up for the best experience.",
+      "intro": "Meccha Chameleon is listed as Playable (not Verified) on Steam Deck. It runs well, but keyboard-style controls need setup — here is how to set it up for the best experience.",
       "sections": [
         {
           "type": "table",
@@ -1549,7 +1962,7 @@
           "rows": [
             [
               "Official rating",
-              "Playable — the game runs, but keyboard-style controls need setup"
+              "Playable (not Verified) — runs well, but keyboard-style controls need setup"
             ],
             [
               "Best painting input",
@@ -1597,7 +2010,7 @@
           "title": "超级变色龙 Steam Deck：设置与操作",
           "metaTitle": "超级变色龙 Steam Deck：设置、操作与最佳键位（2026）",
           "metaDescription": "超级变色龙在 Steam Deck 上怎么玩——官方兼容性、最佳设置、涂色与姿势的操作布局。",
-          "intro": "超级变色龙在 Steam Deck 上官方评级为「可玩」。下面教你如何设置以获得最佳体验。",
+          "intro": "《超级变色龙》在 Steam Deck 上的官方评级为「可玩」（未获 Verified 认证）。游戏可以流畅运行，但键盘式操作需要设置——下面教你如何配置以获得最佳体验。",
           "sections": [
             {
               "type": "table",
@@ -1610,7 +2023,7 @@
               "rows": [
                 [
                   "官方评级",
-                  "可玩——可以运行，但键盘式操作需要设置"
+                  "可玩（非 Verified）——可以流畅运行，但键盘式操作需要设置"
                 ],
                 [
                   "最佳涂色输入",
@@ -1658,7 +2071,7 @@
           "title": "メチャカメレオン Steam Deck：設定と操作",
           "metaTitle": "メチャカメレオン Steam Deck：設定・操作・最適レイアウト（2026）",
           "metaDescription": "メチャカメレオンは Steam Deck で遊べる？公式互換性、最適設定、塗りとポーズのコントローラー設定。",
-          "intro": "メチャカメレオンは Steam Deck で「Playable」評価です。最適な環境に設定しましょう。",
+          "intro": "メチャカメレオンは Steam Deck で「Playable」評価（Verified ではありません）。動作は良好ですが、キーボード寄りの操作設定が必要です。最適な環境に設定しましょう。",
           "sections": [
             {
               "type": "table",
@@ -1671,7 +2084,7 @@
               "rows": [
                 [
                   "公式評価",
-                  "Playable——動作しますが、キーボード寄りの操作設定が必要"
+                  "Playable（Verified ではない）——動作は良好だが、キーボード寄りの操作設定が必要"
                 ],
                 [
                   "塗りに最適な入力",
@@ -1715,7 +2128,21 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        },
+        {
+          "label": "GamingOnSteam — Steam Deck review & settings",
+          "url": "https://gamingonsteam.com/2026/06/22/can-you-play-mecha-chameleon-on-the-steam-deck-review-best-settings/"
+        }
+      ]
     },
     {
       "slug": "crossplay",
@@ -1744,6 +2171,14 @@
             [
               "Can I play on mobile?",
               "Not officially — no iOS or Android version exists. Only via cloud streaming on compatible devices."
+            ],
+            [
+              "Will Meccha Chameleon come to consoles?",
+              "As of August 2026, no console version has been announced."
+            ],
+            [
+              "Can GeForce NOW players play with Steam players?",
+              "Yes — GeForce NOW streams the same PC version, so everyone plays on the same Steam servers."
             ]
           ]
         },
@@ -1785,6 +2220,14 @@
                 [
                   "能在手机上玩吗？",
                   "没有官方 iOS 或 Android 版。仅可通过云串流在兼容设备上玩。"
+                ],
+                [
+                  "《超级变色龙》会登陆主机吗？",
+                  "截至 2026 年 8 月，官方尚未公布任何主机版本。"
+                ],
+                [
+                  "GeForce NOW 玩家能和 Steam 玩家一起玩吗？",
+                  "可以——GeForce NOW 串流的就是同一个 PC 版，大家都在同一批 Steam 服务器上游戏。"
                 ]
               ]
             },
@@ -1826,6 +2269,14 @@
                 [
                   "モバイルでは？",
                   "公式の iOS/Android 版はありません。対応デバイスではクラウド経由のみ可能です。"
+                ],
+                [
+                  "コンソール版は出ますか？",
+                  "2026年8月時点で、コンソール版の発表はありません。"
+                ],
+                [
+                  "GeForce NOW ユーザーは Steam ユーザーと一緒に遊べますか？",
+                  "はい——GeForce NOW は同じ PC 版をストリーミングするため、全員が同じ Steam サーバーでプレイします。"
                 ]
               ]
             },
@@ -1841,7 +2292,17 @@
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "controls",
@@ -1870,6 +2331,10 @@
             [
               "Jump / wall climb",
               "Space"
+            ],
+            [
+              "Climb down (wall)",
+              "Ctrl"
             ],
             [
               "Enter paint mode",
@@ -1949,6 +2414,10 @@
                   "Space"
                 ],
                 [
+                  "爬墙下移",
+                  "Ctrl"
+                ],
+                [
                   "进入涂色模式",
                   "F"
                 ],
@@ -2026,6 +2495,10 @@
                   "Space"
                 ],
                 [
+                  "壁を降りる",
+                  "Ctrl"
+                ],
+                [
                   "ペイントモード",
                   "F"
                 ],
@@ -2076,12 +2549,26 @@
           ]
         }
       },
-      "image": "/images/controls.jpg"
+      "image": "/images/controls.jpg",
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        },
+        {
+          "label": "wikiHow — Meccha Chameleon Controls",
+          "url": "https://www.wikihow.com/Meccha-Chameleon-Controls"
+        }
+      ]
     },
     {
       "slug": "multiplayer",
       "title": "Meccha Chameleon Multiplayer: Host, Join & Play With Friends",
-      "metaTitle": "Meccha Chameleon Multiplayer: How to Host/Join & Play With Friends (2026)",
+      "metaTitle": "Meccha Chameleon Multiplayer Guide (2026)",
       "metaDescription": "How multiplayer works in Meccha Chameleon — host a room, join public servers, play with friends, player counts and server stability.",
       "intro": "Meccha Chameleon is an online multiplayer game. Here is how to host, join and play with friends.",
       "sections": [
@@ -2104,7 +2591,7 @@
             "Pick Quick Match from the main menu for an instant game",
             "Use the server browser to find a room by name",
             "Up to 24 players per server; developers recommend 2-12 for stability",
-            "Some guides suggest keeping rooms under 14 players"
+            "Steam's store description suggests 2-10 players; Wikipedia lists 2-12 as the recommended range"
           ]
         },
         {
@@ -2153,7 +2640,7 @@
                 "主菜单选择快速匹配立即开局",
                 "用服务器浏览器按名称找房间",
                 "每服务器最多 24 人；开发者推荐 2-12 人更稳",
-                "部分攻略建议控制在 14 人以内"
+                "Steam 商店页文案建议 2-10 人，维基百科标注推荐 2-12 人"
               ]
             },
             {
@@ -2202,7 +2689,7 @@
                 "メインメニューの「クイックマッチ」で即プレイ",
                 "サーバーブラウザで名前からルームを探す",
                 "1サーバー最大24人。開発者推奨は2-12人",
-                "一部ガイドでは14人未満を推奨"
+                "Steam ストアの説明では2-10人、Wikipedia では2-12人が推奨とされています"
               ]
             },
             {
@@ -2227,12 +2714,22 @@
           ]
         }
       },
-      "image": "/images/multiplayer.jpg"
+      "image": "/images/multiplayer.jpg",
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     },
     {
       "slug": "faq",
       "title": "Meccha Chameleon FAQ",
-      "metaTitle": "Meccha Chameleon FAQ: Platforms, Players, Price & More (2026)",
+      "metaTitle": "Meccha Chameleon FAQ (2026)",
       "metaDescription": "Is Meccha Chameleon cross-platform? How many players? Does it have codes or achievements? Quick answers to the most common questions.",
       "intro": "Quick answers to the questions players search for most.",
       "sections": [
@@ -2247,7 +2744,7 @@
             ],
             [
               "How many players can play?",
-              "A server supports up to 24 players. The developers recommend 2-12 players for the best experience (some guides suggest staying below 14 for stability)."
+              "A server supports up to 24 players. The developers recommend 2-12 players for the best experience, while Steam's store description suggests 2-10."
             ],
             [
               "Are there Meccha Chameleon codes?",
@@ -2267,7 +2764,7 @@
             ],
             [
               "When was Meccha Chameleon released?",
-              "June 10, 2026 on Steam, after being announced on May 15, 2026."
+              "June 10, 2026 on Steam (June 9 in US time zones), after being announced on May 15, 2026."
             ],
             [
               "How many maps does Meccha Chameleon have?",
@@ -2288,6 +2785,14 @@
             [
               "What is the age rating?",
               "The game is a casual multiplayer party game without blood or gore. It is suited to most ages, though online play means interacting with strangers."
+            ],
+            [
+              "Is there a Meccha Chameleon mobile or VR version?",
+              "No official mobile or VR versions exist. In July 2026 an unofficial 'Meccha Chameleon VR' appeared on the Meta Quest store; the developer confirmed it is not licensed and warned players not to buy it."
+            ],
+            [
+              "What is the current version of Meccha Chameleon?",
+              "As of August 4, 2026 the latest version is 3.5.3, which added camera options and fixed color palette bugs. The 3.5.0 update (August 2) added an official Exit 8 collab map. See our update log for the full history."
             ]
           ]
         }
@@ -2310,7 +2815,7 @@
                 ],
                 [
                   "最多多少人一起玩？",
-                  "一个服务器最多 24 人。开发者建议 2-12 人体验最佳（部分攻略建议 14 人以下更稳）。"
+                  "一个服务器最多 24 人。开发者建议 2-12 人体验最佳，Steam 商店页文案则建议 2-10 人。"
                 ],
                 [
                   "超级变色龙有兑换码吗？",
@@ -2330,7 +2835,7 @@
                 ],
                 [
                   "超级变色龙什么时候发售？",
-                  "2026-06-10 在 Steam 发售，2026-05-15 公布。"
+                  "2026-06-10 在 Steam 发售（美区时间为 6 月 9 日），2026-05-15 公布。"
                 ],
                 [
                   "有多少张地图？",
@@ -2351,6 +2856,14 @@
                 [
                   "游戏年龄评级如何？",
                   "这是休闲多人派对游戏，没有血腥内容，适合大多数年龄。不过在线联机意味着会与陌生人互动。"
+                ],
+                [
+                  "有手机版或 VR 版吗？",
+                  "没有官方手机版或 VR 版。2026 年 7 月 Meta Quest 商店出现了一款未经授权的《Meccha Chameleon VR》，开发者已澄清从未授权并提醒玩家不要购买。"
+                ],
+                [
+                  "目前游戏是什么版本？",
+                  "截至 2026 年 8 月 4 日，最新版本为 3.5.3（新增相机选项并修复调色板问题）。8 月 2 日的 3.5.0 更新加入了《8番出口》官方合作地图。完整历史见我们的更新日志。"
                 ]
               ]
             }
@@ -2373,7 +2886,7 @@
                 ],
                 [
                   "最大人数は？",
-                  "1サーバー最大24人。開発者推奨は2-12人（一部ガイドでは14人未満が安定とされています）。"
+                  "1サーバー最大24人。開発者推奨は2-12人、Steam ストアの説明では2-10人とされています。"
                 ],
                 [
                   "コードはありますか？",
@@ -2393,7 +2906,7 @@
                 ],
                 [
                   "発売日は？",
-                  "2026-06-10 に Steam で発売（2026-05-15 発表）。"
+                  "2026年6月10日に Steam で発売（米国時間では6月9日）。2026年5月15日発表。"
                 ],
                 [
                   "マップは何枚？",
@@ -2414,12 +2927,30 @@
                 [
                   "年齢レーティングは？",
                   "血表現のないカジュアルなパーティゲームで、多くの年齢層に向きます。ただしオンライン対戦では見知らぬ人と交流します。"
+                ],
+                [
+                  "モバイル版や VR 版はありますか？",
+                  "公式のモバイル版・VR 版はありません。2026年7月に Meta Quest ストアで非公式の『Meccha Chameleon VR』が登場しましたが、開発者はライセンスを許可しておらず購入しないよう注意を呼びかけています。"
+                ],
+                [
+                  "現在のバージョンは？",
+                  "2026年8月4日時点で最新は 3.5.3（カメラオプション追加・カラーパレット修正）。8月2日の 3.5.0 で『8番出口』コラボマップが追加されました。詳細は更新履歴ページをご覧ください。"
                 ]
               ]
             }
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "label": "Meccha Chameleon — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+        },
+        {
+          "label": "Official Steam store page",
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+        }
+      ]
     }
   ]
 }

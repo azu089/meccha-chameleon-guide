@@ -218,7 +218,7 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .dd summary::-webkit-details-marker, .lang-dd summary::-webkit-details-marker{display:none}
 .dd summary:hover, .lang-dd summary:hover, .dd[open] summary, .lang-dd[open] summary{color:var(--text);background:rgba(255,255,255,.06)}
 .caret{font-size:.7rem;opacity:.7}
-.dd-menu{position:absolute;top:calc(100% + 10px);left:0;min-width:230px;background:var(--surface-2);border:1px solid var(--border-strong);border-radius:14px;padding:8px;box-shadow:0 24px 60px -16px rgba(0,0,0,.8);display:grid;gap:2px;z-index:120;max-height:60vh;overflow:auto}
+.dd-menu{position:absolute;top:calc(100% + 10px);left:auto;right:0;min-width:230px;max-width:calc(100vw - 32px);background:var(--surface-2);border:1px solid var(--border-strong);border-radius:14px;padding:8px;box-shadow:0 24px 60px -16px rgba(0,0,0,.8);display:grid;gap:2px;z-index:120;max-height:60vh;overflow:auto}
 .dd-menu a{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.9rem;font-weight:500;padding:8px 11px;border-radius:9px;white-space:nowrap}
 .dd-menu a:hover{color:var(--text);background:rgba(255,255,255,.06)}
 .dd-menu a.active{color:var(--text);background:rgba(61,220,132,.12)}
@@ -231,7 +231,10 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .nav{display:flex;align-items:center;gap:4px;margin-left:auto}
 @media (max-width:760px){
   .nav{order:2;width:100%;overflow:visible;flex-wrap:nowrap}
-  .lang-dd{order:3;margin-left:0}
+  .lang-dd{order:1;margin-left:auto}
+  .dd{flex:1 1 auto;min-width:0;position:static}
+  .dd .dd-menu{position:static;width:100%;min-width:0;max-width:none;margin-top:6px}
+  .dd .dd-menu a{white-space:normal}
 }
 
 /* dropdown open animation */
@@ -242,7 +245,7 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 
 /* TOC */
 .toc{display:grid;gap:6px;margin-top:10px}
-.toc a{color:var(--muted);font-size:.86rem;padding:5px 8px;border-radius:8px;border-left:2px solid var(--border)}
+.toc a{color:var(--muted);font-size:.86rem;padding:8px 10px;min-height:36px;display:flex;align-items:center;border-radius:8px;border-left:2px solid var(--border)}
 .toc a:hover{color:var(--green);border-left-color:var(--green);background:rgba(255,255,255,.03)}
 .related-list{display:grid;gap:7px;margin-top:10px}
 .related-list a{display:flex;align-items:center;gap:9px;padding:8px 11px;border:1px solid var(--border);border-radius:10px;color:var(--muted);font-size:.86rem;line-height:1.35;transition:.18s}
