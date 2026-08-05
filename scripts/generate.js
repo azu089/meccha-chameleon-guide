@@ -100,7 +100,10 @@ function head(title, desc, extraLd, slug, lang){
 <link rel="canonical" href="${urlOf(slug,lang)}" />
 ${hreflang(slug)}
 <meta name="theme-color" content="#0a0e14" />
-<link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="%230a0e14"/><path d="M9 23c-2.5-1-4-3.5-4-6 0-3.5 2.5-7 7-7 2.8 0 5 1.5 5.5 3.5l3.5-1.5c.8-.4 1.7.4 1.2 1.2L20 15.5c.2.8.3 1.7.3 2.5 0 3-2.5 5-5.3 5H9z" fill="%233ddc84"/><circle cx="14" cy="14.5" r="1.6" fill="%230a0e14"/></svg>')}" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 ${gsc}
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="${esc(siteI18n(lang).name)}" />
@@ -185,6 +188,20 @@ document.addEventListener('DOMContentLoaded', function(){
     es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
   }, {threshold:.08});
   document.querySelectorAll('.section').forEach(function(el){ obs.observe(el); });
+  // TOC active section highlight
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  if (tocLinks.length) {
+    var tocTargets = tocLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+    var tocObs = new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if (en.isIntersecting) {
+          var id = '#' + en.target.id;
+          tocLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === id); });
+        }
+      });
+    }, {rootMargin:'-15% 0px -70% 0px', threshold:0});
+    tocTargets.forEach(function(s){ if (s) tocObs.observe(s); });
+  }
 });
 document.addEventListener('keydown', function(e){
   if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.removeAttribute('open'); });
@@ -340,6 +357,8 @@ for (const lang of LANGS) if (lang !== DEF) fs.mkdirSync(path.join(OUT, lang), {
 fs.writeFileSync(path.join(OUT,"css","style.css"), fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8"));
 const SRC_IMG = path.join(ROOT,"assets","images");
 if (fs.existsSync(SRC_IMG)) for (const img of fs.readdirSync(SRC_IMG)) fs.copyFileSync(path.join(SRC_IMG,img), path.join(OUT,"images",img));
+const SRC_FAV = path.join(ROOT,"assets","favicon");
+if (fs.existsSync(SRC_FAV)) for (const f of fs.readdirSync(SRC_FAV)) fs.copyFileSync(path.join(SRC_FAV,f), path.join(OUT,f));
 
 for (const lang of LANGS) {
   const dir = lang === DEF ? OUT : path.join(OUT, lang);
