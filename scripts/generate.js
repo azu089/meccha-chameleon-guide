@@ -1,25 +1,28 @@
 #!/usr/bin/env node
 /**
- * MecchaGuide Static Site Generator (Premium "Paint-to-Hide" theme)
- * 数据驱动：改 data/site.json → node scripts/generate.js → public/
+ * MecchaGuide Static Site Generator (Premium "Paint-to-Hide" theme, i18n)
+ * 数据驱动 + 多语言：data/site.json → node scripts/generate.js → public/
+ * 输出：en（默认，根路径）+ /zh/ + /ja/，hreflang + 语言切换器
  */
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
 const OUT = path.join(ROOT, "public");
 const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-const CSS_V = require("crypto").createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
-const clean = slug => slug.replace(/\.html$/,"");
-const urlOf = slug => `https://${DATA.site.domain}/${clean(slug) === "index" ? "" : clean(slug)}`;
+const clean = slug => String(slug).replace(/\.html$/,"");
+const LANGS = DATA.site.languages || ["en"];
+const DEF = DATA.site.defaultLanguage || "en";
+const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
+const urlOf = (slug, lang) => {
+  const base = `https://${DATA.site.domain}`;
+  const p = clean(slug);
+  const pathPart = lang === DEF ? (p === "index" ? "/" : `/${p}`) : (p === "index" ? `/${lang}/` : `/${lang}/${p}`);
+  return base + pathPart;
+};
 
-/* ---------- JSON-LD ---------- */
-const siteLd = () => JSON.stringify({"@context":"https://schema.org","@type":"WebSite",name:DATA.site.name,url:`https://${DATA.site.domain}/`,description:DATA.site.description});
-const articleLd = p => JSON.stringify({"@context":"https://schema.org","@type":"Article",headline:p.title,description:p.metaDescription,mainEntityOfPage:urlOf(p.slug),datePublished:"2026-08-05",dateModified:new Date().toISOString().slice(0,10),publisher:{"@type":"Organization",name:DATA.site.name}});
-const faqLd = items => JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:items.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}}))});
-const breadcrumbLd = p => JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:`https://${DATA.site.domain}/`},{"@type":"ListItem",position:2,name:p.title,item:urlOf(p.slug)}]});
-
-/* ---------- SVG icons (Heroicons outline style) per slug ---------- */
+/* ---------- SVG icons ---------- */
 const SVG = {
   logo: '<svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ddc84"/><stop offset=".5" stop-color="#4cc9f0"/><stop offset="1" stop-color="#b48cff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 23c-2.5-1-4-3.5-4-6 0-3.5 2.5-7 7-7 2.8 0 5 1.5 5.5 3.5l3.5-1.5c.8-.4 1.7.4 1.2 1.2L20 15.5c.2.8.3 1.7.3 2.5 0 3-2.5 5-5.3 5H9z" fill="#0a0e14" opacity=".92"/><circle cx="14" cy="14.5" r="1.6" fill="#3ddc84"/><circle cx="23" cy="9" r="2.2" fill="#ffd166"/><circle cx="26.5" cy="15" r="1.6" fill="#ff6b6b"/></svg>',
   "how-to-play": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"/></svg>',
@@ -34,39 +37,72 @@ const SVG = {
   "up": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>'
 };
 const CARD_META = {
-  "how-to-play":        { icon: "how-to-play",        ic: "ic-green" },
-  "modes":              { icon: "modes",              ic: "ic-blue" },
-  "maps":               { icon: "maps",               ic: "ic-yellow" },
-  "tips-and-tricks":    { icon: "tips-and-tricks",    ic: "ic-coral" },
-  "achievements":       { icon: "achievements",       ic: "ic-purple" },
-  "update-log":         { icon: "update-log",         ic: "ic-blue" },
-  "system-requirements":{ icon: "system-requirements",ic: "ic-green" },
-  "codes":              { icon: "codes",              ic: "ic-yellow" },
-  "faq":                { icon: "faq",                ic: "ic-coral" },
+  "how-to-play": { icon: "how-to-play", ic: "ic-green" }, "modes": { icon: "modes", ic: "ic-blue" },
+  "maps": { icon: "maps", ic: "ic-yellow" }, "tips-and-tricks": { icon: "tips-and-tricks", ic: "ic-coral" },
+  "achievements": { icon: "achievements", ic: "ic-purple" }, "update-log": { icon: "update-log", ic: "ic-blue" },
+  "system-requirements": { icon: "system-requirements", ic: "ic-green" }, "codes": { icon: "codes", ic: "ic-yellow" },
+  "faq": { icon: "faq", ic: "ic-coral" }
 };
-const metaOf = slug => CARD_META[slug] || { icon:"codes", ic:"ic-green" };
+const metaOf = slug => CARD_META[slug] || { icon: "codes", ic: "ic-green" };
 
-/* ---------- Layout fragments ---------- */
-function head(title, desc, extraLd, slug){
-  const ld = [siteLd(), extraLd].filter(Boolean).join("\n");
+/* ---------- i18n helpers ---------- */
+const siteI18n = lang => {
+  const i = DATA.site.i18n || {};
+  const s = i[lang] || {};
+  return {
+    name: s.name || DATA.site.name,
+    tagline: s.tagline || DATA.site.tagline,
+    description: s.description || DATA.site.description,
+    navHome: s.navHome || "Home", navAbout: s.navAbout || "About", navPrivacy: s.navPrivacy || "Privacy", navContact: s.navContact || "Contact",
+    aboutTitle: s.aboutTitle || "About", privacyTitle: s.privacyTitle || "Privacy Policy", contactTitle: s.contactTitle || "Contact",
+    footerNote: s.footerNote || "Unofficial fan site — game and related assets belong to their respective owners.",
+    footerSource: s.footerSource || "Information checked against Wikipedia, the official Steam store page, IGN and Steam Community sources.",
+    quickAnswers: s.quickAnswers || "Most-asked questions", guides: s.guides || "All Guides", aboutGame: s.aboutGame || "About the game",
+    startPlaying: s.startPlaying || "Start Playing →", getOnSteam: s.getOnSteam || "Get it on Steam ↗", moreGuides: s.moreGuides || "More Guides",
+    sources: s.sources || "Sources & fact-checking", langLabel: s.langLabel || "Language"
+  };
+};
+const pageOf = (page, lang) => {
+  if (lang === DEF || !page.i18n || !page.i18n[lang]) {
+    return { title: page.title, metaTitle: page.metaTitle, metaDescription: page.metaDescription, intro: page.intro, sections: page.sections };
+  }
+  const t = page.i18n[lang];
+  return { title: t.title || page.title, metaTitle: t.metaTitle || page.metaTitle, metaDescription: t.metaDescription || page.metaDescription, intro: t.intro || page.intro, sections: t.sections || page.sections };
+};
+
+/* ---------- JSON-LD ---------- */
+const siteLd = lang => JSON.stringify({"@context":"https://schema.org","@type":"WebSite",name:siteI18n(lang).name,url:urlOf("index",lang),description:siteI18n(lang).description});
+const articleLd = (p, lang) => JSON.stringify({"@context":"https://schema.org","@type":"Article",headline:p.title,description:p.metaDescription,mainEntityOfPage:urlOf(p.slug,lang),datePublished:"2026-08-05",dateModified:new Date().toISOString().slice(0,10),inLanguage:lang,publisher:{"@type":"Organization",name:siteI18n(lang).name}});
+const faqLd = items => JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:items.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}}))});
+const breadcrumbLd = (p, lang) => JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:siteI18n(lang).navHome,item:`https://${DATA.site.domain}/${lang===DEF?"":lang+"/"}`},{"@type":"ListItem",position:2,name:p.title,item:urlOf(p.slug,lang)}]});
+
+/* ---------- head / header / footer ---------- */
+function hreflang(slug){
+  return LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${urlOf(slug,l)}" />`).join("\n") +
+    `<link rel="alternate" hreflang="x-default" href="${urlOf(slug,DEF)}" />`;
+}
+function head(title, desc, extraLd, slug, lang){
+  const ld = [siteLd(lang), extraLd].filter(Boolean).join("\n");
   const gsc = DATA.site.gscVerification ? `<meta name="google-site-verification" content="${esc(DATA.site.gscVerification)}" />` : "";
   const og = DATA.site.ogImage || "/images/hero.jpg";
+  const prefix = lang === DEF ? "" : `/${lang}`;
   return `<!DOCTYPE html>
-<html lang="${DATA.site.language}">
+<html lang="${lang}">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}" />
-<link rel="canonical" href="${slug==="index" ? `https://${DATA.site.domain}/` : urlOf(slug)}" />
+<link rel="canonical" href="${urlOf(slug,lang)}" />
+${hreflang(slug)}
 <meta name="theme-color" content="#0a0e14" />
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="%230a0e14"/><path d="M9 23c-2.5-1-4-3.5-4-6 0-3.5 2.5-7 7-7 2.8 0 5 1.5 5.5 3.5l3.5-1.5c.8-.4 1.7.4 1.2 1.2L20 15.5c.2.8.3 1.7.3 2.5 0 3-2.5 5-5.3 5H9z" fill="%233ddc84"/><circle cx="14" cy="14.5" r="1.6" fill="%230a0e14"/></svg>')}" />
 ${gsc}
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="${esc(DATA.site.name)}" />
+<meta property="og:site_name" content="${esc(siteI18n(lang).name)}" />
 <meta property="og:title" content="${esc(title)}" />
 <meta property="og:description" content="${esc(desc)}" />
-<meta property="og:url" content="${slug==="index" ? `https://${DATA.site.domain}/` : urlOf(slug)}" />
+<meta property="og:url" content="${urlOf(slug,lang)}" />
 <meta property="og:image" content="https://${DATA.site.domain}${og}" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,53 +111,61 @@ ${gsc}
 <link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
 <link rel="preload" as="image" href="/images/hero.jpg" imagesrcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" imagesizes="(max-width: 900px) 92vw, 55vw" fetchpriority="high" />
 <script type="application/ld+json">${ld}</script>
-${DATA.site.gaId ? `<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
+${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
 </head>
 <body>`;
 }
-
-function header(active){
+function langSwitcher(lang){
+  return `<div class="lang-switch" role="navigation" aria-label="${siteI18n(lang).langLabel}">
+    ${LANGS.map(l => `<a href="${urlOf("index",l)}" class="${l===lang?"active":""}" hreflang="${l}">${l==="en"?"EN":l==="zh"?"中文":"日本語"}</a>`).join("")}
+  </div>`;
+}
+function header(lang, active){
+  const s = siteI18n(lang);
+  const prefix = lang === DEF ? "" : `/${lang}`;
   const links = DATA.pages.map(p => {
     const m = metaOf(p.slug);
-    return `<a href="/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(p.title.replace(" Meccha Chameleon","").replace(" (None - Explained)",""))}</a>`;
+    const t = pageOf(p, lang).title.replace(" Meccha Chameleon","").replace("（无成就）","").replace("（无兑换码）","");
+    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(t)}</a>`;
   }).join("");
   return `<header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="/"><span class="mark">${SVG.logo}</span>${esc(DATA.site.name)}</a>
+    <a class="logo" href="${prefix}/"><span class="mark">${SVG.logo}</span>${esc(s.name)}</a>
     <nav class="nav" aria-label="Main">${links}</nav>
+    ${langSwitcher(lang)}
   </div>
 </header>`;
 }
-
-function footer(){
+function footer(lang){
+  const s = siteI18n(lang);
+  const prefix = lang === DEF ? "" : `/${lang}`;
   return `<footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-top">
-      <div class="footer-brand"><span class="mark">${SVG.logo}</span>${esc(DATA.site.name)}</div>
+      <div class="footer-brand"><span class="mark">${SVG.logo}</span>${esc(s.name)}</div>
       <div class="footer-links">
-        <a href="/about">About</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a>
+        <a href="${prefix}/about">${esc(s.navAbout)}</a><a href="${prefix}/privacy">${esc(s.navPrivacy)}</a><a href="${prefix}/contact">${esc(s.navContact)}</a>
         <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
       </div>
     </div>
     <div class="footer-meta">
-      <p>${esc(DATA.site.tagline)}</p>
-      <p>Unofficial fan site — ${esc(DATA.game.name)} and related assets belong to their respective owners.</p>
-      <p>Information checked against Wikipedia, the official Steam store page, IGN and Steam Community sources. Last updated ${new Date().toISOString().slice(0,10)}.</p>
+      <p>${esc(s.tagline)}</p>
+      <p>${esc(s.footerNote)}</p>
+      <p>${esc(s.footerSource)} · ${new Date().toISOString().slice(0,10)}</p>
     </div>
     ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
   </div>
 </footer>
-<a class="back-top" href="#" aria-label="Back to top">${SVG.up}</a>
+<a class="back-top" href="#" aria-label="Top">${SVG.up}</a>
 </body></html>`;
 }
 
-/* ---------- Section renderers ---------- */
+/* ---------- sections ---------- */
 function renderSection(s){
   switch(s.type){
     case "steps": {
-      const items = (s.items||[]).map((it,i)=>`<li><strong>${esc(it)}</strong></li>`).join("");
+      const items = (s.items||[]).map(it=>`<li><strong>${esc(it)}</strong></li>`).join("");
       return `<section class="card"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ol class="steps">${items}</ol></section>`;
     }
     case "list": {
@@ -141,140 +185,127 @@ function renderSection(s){
   }
 }
 
-/* ---------- Home ---------- */
-function renderHome(){
+/* ---------- home ---------- */
+function renderHome(lang){
+  const s = siteI18n(lang);
+  const prefix = lang === DEF ? "" : `/${lang}`;
   const cards = DATA.pages.map(p => {
     const m = metaOf(p.slug);
-    return `<a class="guide-card" href="/${p.slug}">
-      <span class="icon ${m.ic}">${SVG[m.icon]}</span>
-      <span class="arrow">→</span>
-      <h3>${esc(p.title)}</h3>
-      <p>${esc(p.metaDescription)}</p>
+    const t = pageOf(p, lang);
+    return `<a class="guide-card" href="${prefix}/${p.slug}">
+      <span class="icon ${m.ic}">${SVG[m.icon]}</span><span class="arrow">→</span>
+      <h3>${esc(t.title)}</h3><p>${esc(t.metaDescription)}</p>
     </a>`;
   }).join("");
-  const stats = (DATA.game.stats||[]).map(s=>`<div class="stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
-  const faqItems = DATA.pages.find(p=>p.slug==="faq")?.sections[0]?.items || [];
+  const stats = (DATA.game.stats||[]).map(st=>`<div class="stat"><b>${esc(st.value)}</b><span>${esc(st.label)}</span></div>`).join("");
+  const faqItems = (pageOf(DATA.pages.find(p=>p.slug==="faq"), lang).sections[0]?.items) || [];
   const faqHtml = faqItems.map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
   const keyFacts = DATA.game.keyFacts.map(f=>`<li>${esc(f)}</li>`).join("");
+  const gname = (DATA.game.nameI18n && DATA.game.nameI18n[lang]) || DATA.game.name;
   const body = `
   <main class="container">
     <section class="hero">
       <div class="hero-copy">
-        <span class="badge"><span class="dot"></span> 2026's viral hide-and-seek hit · Guides updated regularly</span>
-        <h1>${esc(DATA.game.name)} <span class="grad">Guides</span>, Modes, Maps &amp; Answers</h1>
-        <p class="lead">${esc(DATA.site.tagline)}. Everything players actually search for — how to play, every mode and map, achievements &amp; codes clarification, and the full update log. One clean hub.</p>
+        <span class="badge"><span class="dot"></span> 2026's viral hide-and-seek hit · ${esc(s.guides)}</span>
+        <h1>${esc(gname)} <span class="grad">${lang==="zh"?"攻略":lang==="ja"?"ガイド":"Guides"}</span>, Modes, Maps &amp; Answers</h1>
+        <p class="lead">${esc(s.tagline)}. ${lang==="zh"?"每页回答一个真实搜索问题，来源可查，持续更新。":lang==="ja"?"各ページが実際の検索に答えます。信頼できる情報源、定期的に更新。":s.description}</p>
         <div class="stats">${stats}</div>
         <div class="cta-row">
-          <a class="btn btn-primary" href="/how-to-play">Start Playing →</a>
-          <a class="btn btn-ghost" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Get it on Steam ↗</a>
+          <a class="btn btn-primary" href="${prefix}/how-to-play">${esc(s.startPlaying)}</a>
+          <a class="btn btn-ghost" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.getOnSteam)}</a>
         </div>
       </div>
       <div class="hero-media floating">
         <span class="blob g"></span><span class="blob b"></span>
-        <div class="hero-img"><img src="/images/hero.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" sizes="(max-width: 900px) 92vw, 55vw" width="3136" height="1344" alt="${esc(DATA.game.name)} key art — a chameleon painting itself to blend into a colorful wall" loading="eager" /></div>
+        <div class="hero-img"><img src="/images/hero.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" sizes="(max-width: 900px) 92vw, 55vw" width="3136" height="1344" alt="${esc(gname)} key art" loading="eager" /></div>
       </div>
     </section>
-
     <section class="section">
-      <div class="section-head">
-        <div><div class="kicker">Guides</div><h2>All ${esc(DATA.game.name)} Guides</h2></div>
-        <p>Every page answers a real search — built from verified sources, not guesswork.</p>
-      </div>
+      <div class="section-head"><div><div class="kicker">Guides</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
       <div class="guide-grid">${cards}</div>
     </section>
-
-    ${faqHtml ? `<section class="section">
-      <div class="section-head"><div><div class="kicker">Quick Answers</div><h2>Most-asked questions</h2></div><p>Tap a question to expand.</p></div>
-      ${faqHtml}
-    </section>` : ""}
-
+    ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">FAQ</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
     <section class="section">
-      <div class="section-head"><div><div class="kicker">About</div><h2>The game behind the guides</h2></div></div>
-      <div class="card">
-        <p>${esc(DATA.game.intro)}</p>
-        <ul class="checks" style="margin-top:14px">${keyFacts}</ul>
-        <p style="margin-top:14px"><strong>Release:</strong> ${esc(DATA.game.releaseDate)} · <strong>Platforms:</strong> ${esc(DATA.game.platforms.join(", "))} · <strong>Price:</strong> ${esc(DATA.game.price)}</p>
-      </div>
+      <div class="section-head"><div><div class="kicker">About</div><h2>${esc(s.aboutGame)}</h2></div></div>
+      <div class="card"><p>${esc(DATA.game.intro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
   </main>`;
-  return head(`${DATA.game.name} Guides & Wiki`, DATA.site.description, null, "index") + header("") + body + footer();
+  return head(`${esc(gname)} ${lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, null, "index", lang) + header(lang, "") + body + footer(lang);
 }
 
-/* ---------- Inner page ---------- */
-function renderPage(p){
+/* ---------- page ---------- */
+function renderPage(p, lang){
+  const t = pageOf(p, lang);
   const m = metaOf(p.slug);
-  const sections = p.sections.map(renderSection).join("");
-  const faq = p.sections.find(s=>s.type==="faq");
-  const ld = [articleLd(p), breadcrumbLd(p), faq?faqLd(faq.items):""].join("\n");
+  const s = siteI18n(lang);
+  const prefix = lang === DEF ? "" : `/${lang}`;
+  const sections = t.sections.map(renderSection).join("");
+  const faq = t.sections.find(x=>x.type==="faq");
+  const ld = [articleLd(t, lang), breadcrumbLd(t, lang), faq?faqLd(faq.items):""].join("\n");
   const related = DATA.pages.filter(x=>x.slug!==p.slug).slice(0,6).map(x=>{
     const mm = metaOf(x.slug);
-    return `<a href="/${x.slug}">${mm.icon} ${esc(x.title)}</a>`;
+    return `<a href="${prefix}/${x.slug}">${SVG[mm.icon]} ${esc(pageOf(x,lang).title)}</a>`;
   }).join("");
-  const hasSources = p.sections.some(s=>s.heading==="Sources");
   const body = `
   <main class="container">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>›</span> <span>${esc(p.title)}</span></nav>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="${prefix}/">${esc(s.navHome)}</a> <span>›</span> <span>${esc(t.title)}</span></nav>
     <div class="article-grid">
       <article>
         <div class="page-hero">
           <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:10px">
             <span class="icon ${m.ic}" style="width:48px;height:48px;border-radius:13px;display:grid;place-items:center">${SVG[m.icon]}</span>
-            <div>
-              <h1>${esc(p.title)}</h1>
-              <p class="lead">${esc(p.metaDescription)}</p>
-            </div>
+            <div><h1>${esc(t.title)}</h1><p class="lead">${esc(t.metaDescription)}</p></div>
           </div>
-          <p class="intro">${esc(p.intro)}</p>
+          <p class="intro">${esc(t.intro)}</p>
         </div>
         ${sections}
-        <div class="sources">
-          <b>Sources & fact-checking</b>
-          <ul>
-            <li>Meccha Chameleon — Wikipedia (gameplay, modes, maps, sales)</li>
-            <li>Official Steam store page (system requirements, price, platform)</li>
-            ${p.slug==="update-log" ? "<li>IGN wiki patch notes · changelog.gg · Steam Community news</li>" : ""}
-            ${p.slug==="achievements" || p.slug==="codes" ? "<li>isThereAnyDeal · SlashSkill (cheats/codes reality check)</li>" : ""}
-          </ul>
-        </div>
+        <div class="sources"><b>${esc(s.sources)}</b><ul><li>Meccha Chameleon — Wikipedia</li><li>Official Steam store page</li>${p.slug==="update-log"?"<li>IGN wiki · changelog.gg · Steam Community</li>":""}${p.slug==="achievements"||p.slug==="codes"?"<li>isThereAnyDeal · SlashSkill</li>":""}</ul></div>
       </article>
-      <aside class="related">
-        <div class="card">
-          <h2>More Guides</h2>
-          <div style="display:grid;gap:8px;margin-top:10px">${related}</div>
-        </div>
-      </aside>
+      <aside class="related"><div class="card"><h2>${esc(s.moreGuides)}</h2><div style="display:grid;gap:8px;margin-top:10px">${related}</div></div></aside>
     </div>
   </main>`;
-  return head(p.metaTitle, p.metaDescription, ld, p.slug) + header(p.slug) + body + footer();
+  return head(t.metaTitle, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang);
 }
 
-/* ---------- Static pages ---------- */
-function renderStatic(title, contentHtml, slug){
-  const body = `<main class="container"><nav class="crumbs"><a href="/">Home</a> <span>›</span> <span>${esc(title)}</span></nav><article style="max-width:820px"><div class="page-hero"><h1>${esc(title)}</h1></div><div class="card">${contentHtml}</div></article></main>`;
-  return head(`${title} — ${DATA.site.name}`, `${title} — ${DATA.site.name}`, articleLd({title,metaDescription:`${title} — ${DATA.site.name}`,slug}), slug) + header(slug) + body + footer();
+/* ---------- static ---------- */
+function renderStatic(title, contentHtml, slug, lang){
+  const s = siteI18n(lang);
+  const prefix = lang === DEF ? "" : `/${lang}`;
+  const body = `<main class="container"><nav class="crumbs"><a href="${prefix}/">${esc(s.navHome)}</a> <span>›</span> <span>${esc(title)}</span></nav><article style="max-width:820px"><div class="page-hero"><h1>${esc(title)}</h1></div><div class="card">${contentHtml}</div></article></main>`;
+  return head(`${title} — ${s.name}`, `${title} — ${s.name}`, articleLd({title, metaDescription:`${title} — ${s.name}`, slug}, lang), slug, lang) + header(lang, slug) + body + footer(lang);
 }
 
-/* ---------- Build ---------- */
+/* ---------- build ---------- */
 fs.mkdirSync(path.join(OUT,"css"),{recursive:true});
 fs.mkdirSync(path.join(OUT,"images"),{recursive:true});
-for(const f of fs.readdirSync(OUT)){
-  const fp=path.join(OUT,f);
-  if(fs.statSync(fp).isFile() && !f.startsWith(".") && !["css","images"].includes(f)) fs.unlinkSync(fp);
+for (const f of fs.readdirSync(OUT)) {
+  const fp = path.join(OUT, f);
+  if (fs.statSync(fp).isFile() && !f.startsWith(".") && !["css","images"].includes(f)) fs.unlinkSync(fp);
 }
+for (const lang of LANGS) if (lang !== DEF) fs.mkdirSync(path.join(OUT, lang), { recursive: true });
 fs.writeFileSync(path.join(OUT,"css","style.css"), fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8"));
-// copy images
-for(const img of fs.readdirSync(path.join(ROOT,"assets","images"))){
-  fs.copyFileSync(path.join(ROOT,"assets","images",img), path.join(OUT,"images",img));
+const SRC_IMG = path.join(ROOT,"assets","images");
+if (fs.existsSync(SRC_IMG)) for (const img of fs.readdirSync(SRC_IMG)) fs.copyFileSync(path.join(SRC_IMG,img), path.join(OUT,"images",img));
+
+for (const lang of LANGS) {
+  const dir = lang === DEF ? OUT : path.join(OUT, lang);
+  fs.writeFileSync(path.join(dir,"index.html"), renderHome(lang));
+  for (const p of DATA.pages) fs.writeFileSync(path.join(dir, `${p.slug}.html`), renderPage(p, lang));
+  fs.writeFileSync(path.join(dir,"about.html"), renderStatic(siteI18n(lang).aboutTitle, `<p>${esc(siteI18n(lang).name)} — ${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}</p>`, "about", lang));
+  fs.writeFileSync(path.join(dir,"privacy.html"), renderStatic(siteI18n(lang).privacyTitle, `<p>${lang==="zh"?"我们使用 Google Analytics 分析匿名流量，不出售个人数据。":lang==="ja"?"Google Analytics で匿名トラフィックを分析します。個人データは販売しません。":"We use Google Analytics to understand anonymous traffic. We do not sell personal data."}</p>`, "privacy", lang));
+  fs.writeFileSync(path.join(dir,"contact.html"), renderStatic(siteI18n(lang).contactTitle, `<p>${lang==="zh"?"联系我们：":lang==="ja"?"お問い合わせ：":"Reach us at:"} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`, "contact", lang));
 }
-fs.writeFileSync(path.join(OUT,"index.html"), renderHome());
-for(const p of DATA.pages) fs.writeFileSync(path.join(OUT,`${p.slug}.html`), renderPage(p));
-fs.writeFileSync(path.join(OUT,"about.html"), renderStatic("About", `<p>${esc(DATA.site.name)} is an unofficial fan guide for ${esc(DATA.game.name)}.</p><p style="margin-top:10px">We research each question with 1-2 reliable sources (Wikipedia, the official Steam page, IGN, Steam Community) so you get accurate answers fast.</p>`, "about"));
-fs.writeFileSync(path.join(OUT,"privacy.html"), renderStatic("Privacy Policy", `<p>We use Google Analytics to understand anonymous traffic. We do not sell personal data and do not require any account to browse the site.</p>`, "privacy"));
-fs.writeFileSync(path.join(OUT,"contact.html"), renderStatic("Contact", `<p>Questions or corrections? Reach us at <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>.</p>`, "contact"));
-fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${DATA.site.language}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 — ${esc(DATA.site.name)}</title><link rel="stylesheet" href="/css/style.css"></head><body>${header("")}<main class="container" style="padding-top:80px;text-align:center"><section class="card" style="max-width:520px;margin:0 auto"><h1>404 — Page not found</h1><p style="margin-top:10px">The page you're looking for doesn't exist. Try the guides above.</p></section></main></body></html>`);
-const today=new Date().toISOString().slice(0,10);
-const urls=[`https://${DATA.site.domain}/`, ...DATA.pages.map(p=>urlOf(p.slug))];
+// 404 (default lang)
+fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${DEF}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404</title><link rel="stylesheet" href="/css/style.css"></head><body>${header(DEF,"")}<main class="container" style="padding-top:80px;text-align:center"><section class="card" style="max-width:520px;margin:0 auto"><h1>404</h1><p><a href="/">Home</a></p></section></main></body></html>`);
+
+// sitemap
+const today = new Date().toISOString().slice(0,10);
+const urls = [];
+for (const lang of LANGS) {
+  urls.push(urlOf("index",lang));
+  for (const p of DATA.pages) urls.push(urlOf(p.slug,lang));
+}
 fs.writeFileSync(path.join(OUT,"sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`  <url><loc>${u}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.endsWith("/")?"1.0":"0.8"}</priority></url>`).join("\n")}\n</urlset>\n`);
 fs.writeFileSync(path.join(OUT,"robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
 fs.writeFileSync(path.join(OUT,"ads.txt"), `# AdSense - replace with your publisher ID, e.g.\n# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n`);
-console.log(`✓ Generated ${1+DATA.pages.length+3} pages + sitemap/robots/ads + images into public/`);
+console.log(`✓ Generated ${LANGS.length} locales x ${1+DATA.pages.length+3} pages + sitemap`);
