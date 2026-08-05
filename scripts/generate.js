@@ -184,6 +184,21 @@ document.addEventListener('click', function(e){
   });
 });
 document.addEventListener('DOMContentLoaded', function(){
+  // TOC scroll highlight
+  var tocLinks = document.querySelectorAll('.toc a');
+  var secs = document.querySelectorAll('article .card[id^="sec-"]');
+  if (tocLinks.length && secs.length) {
+    var spy = new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if (en.isIntersecting) {
+          var id = '#' + en.target.id;
+          tocLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === id); });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    secs.forEach(function(se){ spy.observe(se); });
+  }
+
   var obs = new IntersectionObserver(function(es){
     es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
   }, {threshold:.08});
@@ -379,9 +394,7 @@ for (const lang of LANGS) {
   fs.writeFileSync(path.join(dir,"contact.html"), renderStatic(siteI18n(lang).contactTitle, `<p>${lang==="zh"?"联系我们：":lang==="ja"?"お問い合わせ：":"Reach us at:"} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">${lang==="zh"?"我们通常会在 2-3 个工作日内回复。":lang==="ja"?"通常 2〜3 営業日以内に返信します。":"We usually reply within 2-3 business days."}</p>`, "contact", lang));
 }
 // 404 (default lang)
-const s404 = siteI18n(DEF);
-const pop404 = DATA.pages.filter(p=>["how-to-play","modes","codes","faq"].includes(p.slug)).map(p=>`<a href="/${p.slug}" style="display:inline-block;margin:6px;padding:9px 16px;border:1px solid var(--border);border-radius:10px;color:var(--muted);text-decoration:none">${esc(p.title)}</a>`).join("");
-fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${DEF}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 - ${esc(s404.name)}</title><meta name="robots" content="noindex" /><link rel="stylesheet" href="/css/style.css"></head><body>${header(DEF,"")}<main class="container" style="padding-top:70px;text-align:center"><section class="card" style="max-width:560px;margin:0 auto"><h1 style="font-size:3rem">404</h1><p>This page doesn't exist. Try one of these guides instead:</p><div style="margin:18px 0">${pop404}</div><p><a class="btn btn-primary" href="/">← Back to Home</a></p></section></main>${footer(DEF)}</body></html>`);
+fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${DEF}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 — Not Found</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/css/style.css"></head><body>${header(DEF,"")}<main class="container" style="padding-top:70px;text-align:center"><section class="card" style="max-width:540px;margin:0 auto"><h1>404 — Page not found</h1><p style="margin:10px 0 18px">The page you are looking for does not exist. Try one of these guides:</p><div class="related-list" style="text-align:left">${DATA.pages.slice(0,6).map(p=>`<a href="/${p.slug}">${pageOf(p,DEF).title}</a>`).join("")}</div></section></main>${footer(DEF)}</body></html>`);
 
 // sitemap
 const today = new Date().toISOString().slice(0,10);
