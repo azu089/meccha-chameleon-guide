@@ -206,8 +206,8 @@ function renderHome(lang){
   <main class="container">
     <section class="hero">
       <div class="hero-copy">
-        <span class="badge"><span class="dot"></span> 2026's viral hide-and-seek hit · ${esc(s.guides)}</span>
-        <h1>${esc(gname)} <span class="grad">${lang==="zh"?"攻略":lang==="ja"?"ガイド":"Guides"}</span>, Modes, Maps &amp; Answers</h1>
+        <span class="badge"><span class="dot"></span> ${lang==="zh"?"2026 年现象级捉迷藏派对游戏 · 持续更新":lang==="ja"?"2026年話題のかくれんぼパーティゲーム · 定期更新":"2026's viral hide-and-seek hit · Guides updated regularly"}</span>
+        <h1>${esc(gname)} <span class="grad">${lang==="zh"?"攻略":lang==="ja"?"ガイド":"Guides"}</span>${lang==="zh"?"：模式、地图与答案":lang==="ja"?"：モード・マップ・Q&A":" &amp; Answers"}</h1>
         <p class="lead">${esc(s.tagline)}. ${lang==="zh"?"每页回答一个真实搜索问题，来源可查，持续更新。":lang==="ja"?"各ページが実際の検索に答えます。信頼できる情報源、定期的に更新。":s.description}</p>
         <div class="stats">${stats}</div>
         <div class="cta-row">
