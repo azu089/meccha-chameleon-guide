@@ -7,7 +7,8 @@
     "language": "en",
     "gaId": "",
     "gscVerification": "",
-    "adsenseId": ""
+    "adsenseId": "",
+    "ogImage": "/images/hero.jpg"
   },
   "game": {
     "name": "Meccha Chameleon",
@@ -29,6 +30,32 @@
       "7 base maps plus Steam Workshop maps",
       "Up to 24 players per server (2-12 recommended)",
       "PC only on Steam for $5.99"
+    ],
+    "stats": [
+      {
+        "value": "15M+",
+        "label": "Copies sold"
+      },
+      {
+        "value": "340K",
+        "label": "Peak players"
+      },
+      {
+        "value": "4",
+        "label": "Game modes"
+      },
+      {
+        "value": "7+",
+        "label": "Base maps"
+      },
+      {
+        "value": "24",
+        "label": "Max players"
+      },
+      {
+        "value": "$5.99",
+        "label": "On Steam"
+      }
     ]
   },
   "pages": [
