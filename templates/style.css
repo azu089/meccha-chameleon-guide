@@ -234,11 +234,6 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
   .lang-dd{order:3;margin-left:0}
 }
 
-/* Language banner (auto-detect zh/ja browser) */
-.lang-banner{position:fixed;top:0;left:0;right:0;z-index:200;background:linear-gradient(120deg,rgba(61,220,132,.18),rgba(76,201,240,.18));border-bottom:1px solid var(--border-strong);backdrop-filter:blur(10px);text-align:center}
-.lang-banner a{display:inline-block;color:var(--text);font-weight:700;font-size:.9rem;padding:9px 18px}
-.lang-banner a:hover{color:var(--green)}
-.lang-banner + .site-header{top:38px}
 /* dropdown open animation */
 .dd[open] .dd-menu, .lang-dd[open] .dd-menu{animation:ddIn .18s ease-out}
 @keyframes ddIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}

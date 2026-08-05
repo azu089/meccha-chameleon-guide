@@ -179,19 +179,6 @@ document.addEventListener('click', function(e){
 document.addEventListener('keydown', function(e){
   if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.removeAttribute('open'); });
 });
-// Language banner: browser in zh/ja but viewing default/en page -> suggest localized version
-(function(){
-  var lang = (navigator.language || 'en').toLowerCase();
-  var path = location.pathname;
-  var want = lang.indexOf('zh') === 0 ? 'zh' : lang.indexOf('ja') === 0 ? 'ja' : null;
-  if (want && path.indexOf('/' + want + '/') !== 0) {
-    var b = document.createElement('div');
-    b.className = 'lang-banner';
-    var href = '/' + want + (path === '/' || path === '' ? '/' : path);
-    b.innerHTML = '<a href="' + href + '">' + (want === 'zh' ? '🌐 查看中文版 →' : '🌐 日本語版を見る →') + '</a>';
-    document.body.prepend(b);
-  }
-})();
 </script>
 </footer>
 <a class="back-top" href="#" aria-label="Top">${SVG.up}</a>
