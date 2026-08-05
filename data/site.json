@@ -197,7 +197,7 @@
       "slug": "how-to-play",
       "title": "How to Play Meccha Chameleon",
       "metaTitle": "How to Play Meccha Chameleon: Full Beginner's Guide (2026)",
-      "metaDescription": "New to Meccha Chameleon? Learn the paint-to-hide mechanic, Hider vs Hunter roles, controls and the fastest way to win in this complete beginner's guide.",
+      "metaDescription": "New to Meccha Chameleon? Master the paint-to-hide mechanic, the painting system, clones and poses, Hider vs Hunter roles, round flow and beginner quickstart.",
       "intro": "Meccha Chameleon is simple to learn but surprisingly deep. Here is everything you need to know before your first round.",
       "sections": [
         {
@@ -206,64 +206,82 @@
           "body": "Every player starts as a plain white figure. Hiders survive by painting their body to match the map, while Hunters chase them down with a rifle. If at least one Hider is still hidden when the timer ends, the Hider team wins the round.",
           "items": [
             "Hold the paint button to cover your body in the map's colors and textures",
-            "Use the eyedropper to sample an exact color - never guess it",
+            "Use the eyedropper to sample an exact color — never guess it",
             "Match the light direction, not just the color, or you will shine",
             "Adjust metallic and roughness so your surface does not reflect light"
           ]
         },
         {
-          "type": "list",
-          "heading": "Hider vs Hunter Roles",
-          "body": "Your win condition changes completely depending on which side you draw.",
-          "items": [
-            "Hider: survive until the timer ends; use clones and poses to confuse Hunters",
-            "Hunter: tag every Hider before the timer runs out",
-            "Hunters win by tagging everyone; Hiders win if at least one survives"
-          ]
-        },
-        {
-          "type": "list",
-          "heading": "Servers & Player Count",
-          "body": "You can play on public servers or host a private room for friends.",
-          "items": [
-            "A server supports up to 24 players; the developers recommend 2-12 for the best experience",
-            "Hosts can set custom rules, round time and a password in Custom Rooms",
-            "The game is PC-only on Steam; it streams to macOS through GeForce NOW"
-          ]
-        },
-        {
           "type": "table",
-          "heading": "Controls",
-          "body": "Keyboard controls (per wikiHow's Meccha Chameleon controls guide and the Steam page).",
+          "heading": "Hider vs Hunter: Roles Deep Dive",
+          "body": "Which side you draw completely changes how you win. Hiders are called Chameleons and Hunters are called Seekers in the game.",
           "columns": [
-            "Action",
-            "Key"
+            "Role",
+            "Goal",
+            "Key Tools",
+            "Win Condition"
           ],
           "rows": [
             [
-              "Move",
-              "WASD"
+              "Hider (Chameleon)",
+              "Survive until the timer ends",
+              "Paint, clones, poses, size (blobby/cube)",
+              "At least one Hider hidden at time-up"
             ],
             [
-              "Sprint",
-              "Shift"
-            ],
-            [
-              "Jump / wall climb",
-              "Space"
-            ],
-            [
-              "Enter paint mode",
-              "F"
-            ],
-            [
-              "Sample color (eyedropper)",
-              "E"
-            ],
-            [
-              "Create a clone",
-              "Q"
+              "Hunter (Seeker)",
+              "Find and tag every Hider",
+              "Rifle, free camera, taunt whistle",
+              "Tag all Hiders before time expires"
             ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "The Painting System",
+          "body": "The disguise system is the heart of the game. Get it right and you vanish; get it wrong and you shine.",
+          "items": [
+            "Color picker + eyedropper (E): sample the exact surface color instead of matching by eye",
+            "HSV / metallic / roughness sliders fine-tune the finish so your paint matches the material",
+            "Match light direction — a perfect color in the wrong light still reflects",
+            "After painting, the 'answer check' tells you how close your color is; 'Missed Spot Ranking' shows the worst spots",
+            "Paint your whole visible body — an unpainted hand or foot gives you away"
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Clones, Poses & Sizes",
+          "body": "Extra tools to sell the disguise (clones were added in update 2.0.0).",
+          "items": [
+            "Clones: press Q after painting and posing to drop a decoy copy — up to two active clones",
+            "If a clone is destroyed, your main body is revealed — clones are not extra lives",
+            "Poses: crouch, sit, curl, lie — use them to match odd shapes (number keys / pose menu)",
+            "Size: choose blobby or the Cube character (added in 1.9.0) to fit different hiding spots",
+            "Taunt: hiders can whistle to bait Hunters; the host can force taunts after a set time"
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Round Flow: What Actually Happens",
+          "body": "A full round step by step.",
+          "items": [
+            "Countdown — everyone spawns as a white figure on the map",
+            "Painting phase — Hiders sample colors and paint themselves; Hunters may already be moving",
+            "Hunt time — Seekers search while Chameleons stay frozen in disguise",
+            "Tag & elimination — a tagged Hider is out (or joins the Hunters in Infection mode)",
+            "Timer end — if any Hider remains hidden, the Hider team wins"
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "First Steps: Quickstart for Beginners",
+          "body": "Do these five things and you will instantly play better than most new players.",
+          "items": [
+            "Learn to paint fast: enter paint mode (F), drag to cover your body, sample with E",
+            "Always use the eyedropper — never guess a color",
+            "Match the light: paint faces the same direction as the wall you mimic",
+            "Stay still after painting — movement creates a visible trail",
+            "Play both roles: understanding Hunters makes you a better Hider, and vice versa"
           ]
         }
       ],
@@ -271,73 +289,91 @@
         "zh": {
           "title": "超级变色龙怎么玩",
           "metaTitle": "超级变色龙怎么玩：新手完整指南（2026）",
-          "metaDescription": "第一次玩超级变色龙？了解涂色伪装机制、躲藏者与猎人角色、操作以及最快获胜的方法。",
+          "metaDescription": "第一次玩超级变色龙？掌握涂色伪装机制、涂色系统、分身与姿势、躲藏者与猎人角色、回合流程与新手快速上手。",
           "intro": "超级变色龙上手简单，但深度超乎想象。这是你在开始第一局之前需要知道的一切。",
           "sections": [
             {
               "type": "steps",
               "heading": "核心循环：涂色伪装",
-              "body": "每名玩家开始时都是一个白色小人。躲藏者通过把身体涂成与地图一致来存活，猎人则用枪追捕。时间结束时若至少一名躲藏者未被找到，躲藏方获胜。",
+              "body": "每名玩家开始时都是白色小人。躲藏者通过把身体涂成与地图一致来存活，猎人则用枪追捕。时间结束时若至少一名躲藏者未被找到，躲藏方获胜。",
               "items": [
                 "按住涂色按钮，用地图的颜色和纹理覆盖身体",
-                "用吸管取色器精确取色——不要凭感觉猜",
+                "用吸管取色器（E）精确取色——不要凭感觉猜",
                 "不仅要匹配颜色，还要匹配光线方向，否则会反光",
                 "调整金属度和粗糙度，让表面不反光"
               ]
             },
             {
-              "type": "list",
-              "heading": "躲藏者 vs 猎人",
-              "body": "你抽到哪一方，获胜条件就完全不同。",
-              "items": [
-                "躲藏者：活到时间结束；用分身和姿势迷惑猎人",
-                "猎人：在时间结束前抓住所有躲藏者",
-                "猎人全抓即胜；躲藏者至少一人存活即胜"
-              ]
-            },
-            {
-              "type": "list",
-              "heading": "服务器与人数",
-              "body": "可以加入公开服务器，或为好友开私人房间。",
-              "items": [
-                "一个服务器最多 24 人；开发者建议 2-12 人体验最佳",
-                "房主可在自定义房间设置规则、回合时长和密码",
-                "游戏仅 PC（Steam）版；可通过 GeForce NOW 串流到 Mac"
-              ]
-            },
-            {
               "type": "table",
-              "heading": "操作键位",
-              "body": "键盘操作（据 wikiHow 的超级变色龙操作指南与 Steam 页面）。",
+              "heading": "躲藏者 vs 猎人：角色深度解析",
+              "body": "你抽到哪一方，获胜方式完全不同。游戏中躲藏者叫「变色龙」，猎人叫「搜寻者」。",
               "columns": [
-                "动作",
-                "按键"
+                "角色",
+                "目标",
+                "关键工具",
+                "获胜条件"
               ],
               "rows": [
                 [
-                  "移动",
-                  "WASD"
+                  "躲藏者（变色龙）",
+                  "活到时间结束",
+                  "涂色、分身、姿势、体型（球/方块）",
+                  "时间结束时至少一名躲藏者存活"
                 ],
                 [
-                  "加速跑",
-                  "Shift"
-                ],
-                [
-                  "跳跃/爬墙",
-                  "Space"
-                ],
-                [
-                  "进入涂色模式",
-                  "F"
-                ],
-                [
-                  "取色（吸管）",
-                  "E"
-                ],
-                [
-                  "创建分身",
-                  "Q"
+                  "猎人（搜寻者）",
+                  "找到并抓住所有躲藏者",
+                  "步枪、自由视角、口哨嘲讽",
+                  "在时间结束前抓住全部躲藏者"
                 ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "涂色系统",
+              "body": "伪装系统是游戏的核心。涂对了你就消失，涂错了你就会反光。",
+              "items": [
+                "调色盘 + 吸管（E）：吸取表面精确颜色，而非肉眼比对",
+                "HSV/金属度/粗糙度滑块微调质感，让涂料贴合材质",
+                "匹配光线方向——颜色对了但光线不对仍会反射",
+                "涂完后「答案检查」告诉你颜色接近程度；「漏涂排名」显示最差部位",
+                "涂满整个可见身体——露出的手或脚会出卖你"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "分身、姿势与体型",
+              "body": "额外伪装工具（分身在 2.0.0 加入）。",
+              "items": [
+                "分身：涂好并摆好姿势后按 Q 放下替身——同时最多两个",
+                "分身被毁时本体也会暴露——分身不是额外生命",
+                "姿势：下蹲、坐、蜷缩、躺——用来匹配奇怪形状（数字键/姿势菜单）",
+                "体型：选择球体或方块人（1.9.0 加入）以适配不同藏身点",
+                "嘲讽：躲藏者可用口哨引诱猎人；房主可设定定时强制嘲讽"
+              ]
+            },
+            {
+              "type": "steps",
+              "heading": "回合流程：一局实际发生了什么",
+              "body": "完整回合逐步说明。",
+              "items": [
+                "倒计时——所有人以白色小人出生在地图上",
+                "涂色阶段——躲藏者取色涂装；猎人可能已经开始移动",
+                "追捕阶段——搜寻者搜索，变色龙保持伪装静止",
+                "命中与淘汰——被抓住的躲藏者出局（感染模式下加入猎人阵营）",
+                "时间结束——若仍有躲藏者未被找到，躲藏方获胜"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "新手快速上手：五个要点",
+              "body": "做到这五点，你会立刻比大多数新玩家玩得好。",
+              "items": [
+                "快速涂色：按 F 进入涂色模式，拖动覆盖身体，用 E 取色",
+                "永远用吸管——绝不猜颜色",
+                "匹配光线：让涂色朝向与所模仿墙面一致",
+                "涂完后保持静止——移动会产生可见残影",
+                "两种角色都玩：懂猎人才能当好躲藏者，反之亦然"
               ]
             }
           ]
@@ -345,7 +381,7 @@
         "ja": {
           "title": "メチャカメレオンの遊び方",
           "metaTitle": "メチャカメレオンの遊び方：初心者完全ガイド（2026）",
-          "metaDescription": "メチャカメレオンを始めたばかり？塗り隠れの仕組み、隠れ役・狩り役、操作、最短で勝つ方法を解説。",
+          "metaDescription": "メチャカメレオン初心者向け完全ガイド。塗り隠れの仕組み、塗りシステム、分身とポーズ、役割、ラウンドの流れを徹底解説。",
           "intro": "メチャカメレオンは覚えやすく、しかし奥が深い。最初の1ラウンド前に知っておくべきことをすべてまとめました。",
           "sections": [
             {
@@ -354,64 +390,82 @@
               "body": "全員が白いフィギュアとしてスタート。隠れ役は体をマップに溶け込むように塗って生き残り、狩り役は銃で追い詰めます。時間切れまでに隠れ役が1人でも残っていれば隠れ側の勝利です。",
               "items": [
                 "塗りボタンを押して、マップの色やテクスチャで体を覆う",
-                "スポイトで正確な色を取る——勘で塗らない",
+                "スポイト（E）で正確な色を取る——勘で塗らない",
                 "色だけでなく光の方向も合わせる。でないと光ってしまう",
                 "メタリックとラフネスを調整し、表面が反射しないように"
               ]
             },
             {
-              "type": "list",
-              "heading": "隠れ役 vs 狩り役",
-              "body": "どちらの陣営になるかで勝ち条件が変わります。",
-              "items": [
-                "隠れ役：時間切れまで生き残る。分身やポーズで狩り役を攪乱",
-                "狩り役：時間内に全員を捕まえる",
-                "狩り役が全員捕まえれば勝ち。隠れ役は1人でも生き残れば勝ち"
-              ]
-            },
-            {
-              "type": "list",
-              "heading": "サーバーと人数",
-              "body": "公開サーバーか、フレンド用のプライベートルームで遊べます。",
-              "items": [
-                "1サーバー最大24人。開発者推奨は2-12人",
-                "ホストはカスタムルームでルール・時間・パスワードを設定可能",
-                "PC（Steam）専用。GeForce NOW で Mac にもストリーミング可"
-              ]
-            },
-            {
               "type": "table",
-              "heading": "操作キー",
-              "body": "キーボード操作（wikiHow の操作ガイドと Steam ページより）。",
+              "heading": "隠れ役 vs 狩り役：役割の詳細",
+              "body": "どちらの陣営になるかで勝ち方が変わります。隠れ役は「カメレオン」、狩り役は「シーカー」と呼ばれます。",
               "columns": [
-                "操作",
-                "キー"
+                "役割",
+                "目的",
+                "主なツール",
+                "勝ち条件"
               ],
               "rows": [
                 [
-                  "移動",
-                  "WASD"
+                  "隠れ役（カメレオン）",
+                  "時間切れまで生き残る",
+                  "塗り、分身、ポーズ、体型（ブロブ/キューブ）",
+                  "時間切れまでに1人でも隠れていれば勝ち"
                 ],
                 [
-                  "ダッシュ",
-                  "Shift"
-                ],
-                [
-                  "ジャンプ/壁登り",
-                  "Space"
-                ],
-                [
-                  "ペイントモード",
-                  "F"
-                ],
-                [
-                  "スポイトで色を取る",
-                  "E"
-                ],
-                [
-                  "分身を作る",
-                  "Q"
+                  "狩り役（シーカー）",
+                  "全員を見つけて捕まえる",
+                  "ライフル、フリーカメラ、口笛",
+                  "時間内に全員を捕まえる"
                 ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "塗りシステム",
+              "body": "偽装システムがこのゲームの核心。塗りが完璧なら消え、失敗すると光って見つかります。",
+              "items": [
+                "カラーピッカー＋スポイト（E）：目視ではなく表面の正確な色を取る",
+                "HSV／メタリック／ラフネスのスライダーで質感を微調整",
+                "光の方向を合わせる——色が合っていても光が違うと反射する",
+                "塗装後の「答え合わせ」で近さを確認。「塗り残しランキング」で弱点も分かる",
+                "体全体を塗る——手や足が白いとバレる"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "分身・ポーズ・体型",
+              "body": "偽装を強化する追加ツール（分身は2.0.0で追加）。",
+              "items": [
+                "分身：塗ってポーズを決めてから Q で分身を配置——同時に最大2体",
+                "分身が壊れると本体も露見——分身は追加の命ではない",
+                "ポーズ：しゃがむ・座る・丸まる・寝る——変な形に合わせる（数字キー/ポーズメニュー）",
+                "体型：ブロブかキューブ（1.9.0追加）を選び、隠れ場所に合わせる",
+                "口笛：隠れ役は狩り役をおびき出せる。ホストは時間経過で強制タウントも設定可"
+              ]
+            },
+            {
+              "type": "steps",
+              "heading": "ラウンドの流れ：実際の進行",
+              "body": "1ラウンドをステップで解説。",
+              "items": [
+                "カウントダウン——全員が白いフィギュアでマップに出現",
+                "塗りフェーズ——隠れ役が色を取って塗装。狩り役はすでに動き始めている",
+                "狩りフェーズ——シーカーが探索し、カメレオンは偽装したまま静止",
+                "タグと脱落——捕まった隠れ役は脱落（感染モードでは狩り側に加わる）",
+                "時間切れ——1人でも隠れていれば隠れ側の勝ち"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "初心者向けクイックスタート",
+              "body": "この5つを意識するだけで、多くの新規プレイヤーより上手く立ち回れます。",
+              "items": [
+                "素早く塗る：F でペイントモード、ドラッグで体を覆い、E で取色",
+                "必ずスポイトを使う——色は勘で決めない",
+                "光を合わせる：真似する壁と同じ向きに塗る",
+                "塗ったら動かない——動きが残像でバレる",
+                "両方の役割をやる：狩り役を理解すると隠れ役も上手くなる"
               ]
             }
           ]

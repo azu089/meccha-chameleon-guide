@@ -176,6 +176,12 @@ document.addEventListener('click', function(e){
     if (!d.contains(e.target)) d.removeAttribute('open');
   });
 });
+document.addEventListener('DOMContentLoaded', function(){
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
+  }, {threshold:.08});
+  document.querySelectorAll('.section').forEach(function(el){ obs.observe(el); });
+});
 document.addEventListener('keydown', function(e){
   if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.removeAttribute('open'); });
 });
