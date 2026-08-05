@@ -199,24 +199,30 @@ document.addEventListener('keydown', function(e){
 }
 
 /* ---------- sections ---------- */
+let SEC_IDX = 0;
+function secId(heading){
+  SEC_IDX += 1;
+  return "sec-" + SEC_IDX;
+}
 function renderSection(s){
+  const id = secId(s.heading);
   switch(s.type){
     case "steps": {
       const items = (s.items||[]).map(it=>`<li><strong>${esc(it)}</strong></li>`).join("");
-      return `<section class="card"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ol class="steps">${items}</ol></section>`;
+      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ol class="steps">${items}</ol></section>`;
     }
     case "list": {
       const items = (s.items||[]).map(it=>`<li>${esc(it)}</li>`).join("");
-      return `<section class="card"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ul class="checks">${items}</ul></section>`;
+      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ul class="checks">${items}</ul></section>`;
     }
     case "table": {
       const headRow = (s.columns||[]).map(c=>`<th>${esc(c)}</th>`).join("");
       const rows = (s.rows||[]).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("");
-      return `<section class="card"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<div class="tbl-wrap"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
+      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<div class="tbl-wrap"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
     }
     case "faq": {
       const items = (s.items||[]).map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
-      return `<section class="card"><h2>${esc(s.heading)}</h2>${items}</section>`;
+      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${items}</section>`;
     }
     default: return "";
   }
@@ -275,16 +281,18 @@ function renderHome(lang){
 
 /* ---------- page ---------- */
 function renderPage(p, lang){
+  SEC_IDX = 0;
   const t = pageOf(p, lang);
   const m = metaOf(p.slug);
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
   const sections = t.sections.map(renderSection).join("");
+  const toc = t.sections.filter(x=>x.type!=="faq").map((x,i)=>`<a href="#sec-${i+1}">${esc(x.heading)}</a>`).join("");
   const faq = t.sections.find(x=>x.type==="faq");
   const ld = [articleLd(t, lang), breadcrumbLd(t, lang), faq?faqLd(faq.items):""].join("\n");
   const related = DATA.pages.filter(x=>x.slug!==p.slug).slice(0,6).map(x=>{
     const mm = metaOf(x.slug);
-    return `<a href="${prefix}/${x.slug}">${SVG[mm.icon]} ${esc(pageOf(x,lang).title)}</a>`;
+    return `<a href="${prefix}/${x.slug}"><span class="ri">${SVG[mm.icon]}</span>${esc(pageOf(x,lang).title)}</a>`;
   }).join("");
   const body = `
   <main class="container">
@@ -302,7 +310,10 @@ function renderPage(p, lang){
         ${sections}
         <div class="sources"><b>${esc(s.sources)}</b><ul><li>Meccha Chameleon — Wikipedia</li><li>Official Steam store page</li>${p.slug==="update-log"?"<li>IGN wiki · changelog.gg · Steam Community</li>":""}${p.slug==="achievements"||p.slug==="codes"?"<li>isThereAnyDeal · SlashSkill</li>":""}</ul></div>
       </article>
-      <aside class="related"><div class="card"><h2>${esc(s.moreGuides)}</h2><div style="display:grid;gap:8px;margin-top:10px">${related}</div></div></aside>
+      <aside class="related">
+        <div class="card"><h2>${lang==="zh"?"本页目录":lang==="ja"?"目次":"On this page"}</h2><div class="toc">${toc||"<span>"+(lang==="zh"?"无":"")+"</span>"}</div></div>
+        <div class="card"><h2>${esc(s.moreGuides)}</h2><div class="related-list">${related}</div></div>
+      </aside>
     </div>
   </main>`;
   return head(t.metaTitle, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang);
