@@ -27,7 +27,7 @@ function articleLd(page) {
   return JSON.stringify({
     "@context": "https://schema.org", "@type": "Article",
     "headline": page.title, "description": page.metaDescription,
-    "mainEntityOfPage": `https://${DATA.site.domain}/${page.slug}.html`,
+    "mainEntityOfPage": `https://${DATA.site.domain}/${page.slug}`,
     "datePublished": "2026-08-05", "dateModified": "2026-08-05",
     "publisher": { "@type": "Organization", "name": DATA.site.name }
   });
@@ -52,12 +52,12 @@ function head(title, desc, extraLd, canonical) {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}" />
-<link rel="canonical" href="${canonical === "index.html" ? `https://${DATA.site.domain}/` : `https://${DATA.site.domain}/${canonical}`}" />
+<link rel="canonical" href="${canonical === "index.html" ? `https://${DATA.site.domain}/` : `https://${DATA.site.domain}/${canonical.replace(".html", "")}`}" />
 ${gsc}
 <meta property="og:type" content="website" />
 <meta property="og:title" content="${esc(title)}" />
 <meta property="og:description" content="${esc(desc)}" />
-<meta property="og:url" content="${canonical === "index.html" ? `https://${DATA.site.domain}/` : `https://${DATA.site.domain}/${canonical}`}" />
+<meta property="og:url" content="${canonical === "index.html" ? `https://${DATA.site.domain}/` : `https://${DATA.site.domain}/${canonical.replace(".html", "")}`}" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="stylesheet" href="/css/style.css" />
 <script type="application/ld+json">${ld}</script>
@@ -76,7 +76,7 @@ gtag('config', '${esc(DATA.site.gaId)}');
     <a class="logo" href="/">${esc(DATA.site.name)}</a>
     <nav class="nav" aria-label="Main">
       <a href="/">Home</a>
-      ${DATA.pages.map(p => `<a href="/${p.slug}.html">${esc(p.title)}</a>`).join("")}
+      ${DATA.pages.map(p => `<a href="/${p.slug}">${esc(p.title)}</a>`).join("")}
     </nav>
   </div>
 </header>
@@ -88,7 +88,7 @@ function footer() {
 <footer class="site-footer">
   <div class="container">
     <p>${esc(DATA.site.name)} — ${esc(DATA.site.tagline)}</p>
-    <p class="foot-links"><a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a></p>
+    <p class="foot-links"><a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/contact">Contact</a></p>
     <p class="disclaimer">This is an unofficial fan site. ${esc(DATA.game.name)} and related assets are the property of their respective owners.</p>
     ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : `<!-- TODO: 填入 AdSense ID (data/site.json -> site.adsenseId) -->`}
   </div>
@@ -125,7 +125,7 @@ function renderSection(s) {
 // ---------- Page renderers ----------
 function renderHome() {
   const cards = DATA.pages.map(p => `
-    <a class="guide-card" href="/${p.slug}.html">
+    <a class="guide-card" href="/${p.slug}">
       <h3>${esc(p.title)}</h3>
       <p>${esc(p.metaDescription)}</p>
     </a>`).join("");
@@ -160,12 +160,12 @@ function renderPage(p) {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://${DATA.site.domain}/` },
-      { "@type": "ListItem", "position": 2, "name": p.title, "item": `https://${DATA.site.domain}/${p.slug}.html` }
+      { "@type": "ListItem", "position": 2, "name": p.title, "item": `https://${DATA.site.domain}/${p.slug}` }
     ]
   });
   const faq = p.sections.find(s => s.type === "faq");
   const ld = [articleLd(p), breadcrumbLd, faq ? faqLd(faq.items) : ""].join("\n");
-  const related = DATA.pages.filter(x => x.slug !== p.slug).map(x => `<li><a href="/${x.slug}.html">${esc(x.title)}</a></li>`).join("");
+  const related = DATA.pages.filter(x => x.slug !== p.slug).map(x => `<li><a href="/${x.slug}">${esc(x.title)}</a></li>`).join("");
   const body = `
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span>${esc(p.title)}</span></nav>
   <article>
@@ -178,12 +178,12 @@ function renderPage(p) {
     <h2>More Guides</h2>
     <ul>${related}</ul>
   </aside>`;
-  return head(p.metaTitle, p.metaDescription, ld, `${p.slug}.html`) + body + footer();
+  return head(p.metaTitle, p.metaDescription, ld, `${p.slug}`) + body + footer();
 }
 
 function renderStaticPage(title, contentHtml, slug) {
   const body = `<section class="card"><h1>${esc(title)}</h1>${contentHtml}</section>`;
-  return head(`${title} — ${DATA.site.name}`, `${title} — ${DATA.site.name}`, articleLd({ title, metaDescription: `${title} — ${DATA.site.name}`, slug }), `${slug}.html`) + body + footer();
+  return head(`${title} — ${DATA.site.name}`, `${title} — ${DATA.site.name}`, articleLd({ title, metaDescription: `${title} — ${DATA.site.name}`, slug }), `${slug}`) + body + footer();
 }
 
 // ---------- Build ----------
@@ -219,7 +219,7 @@ fs.writeFileSync(path.join(OUT, "404.html"), `<!DOCTYPE html><html lang="${DATA.
 
 // sitemap.xml
 const today = new Date().toISOString().slice(0, 10);
-const urls = [`https://${DATA.site.domain}/`, ...DATA.pages.map(p => `https://${DATA.site.domain}/${p.slug}.html`)];
+const urls = [`https://${DATA.site.domain}/`, ...DATA.pages.map(p => `https://${DATA.site.domain}/${p.slug}`)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${u}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.endsWith("/") ? "1.0" : "0.8"}</priority></url>`).join("\n")}
