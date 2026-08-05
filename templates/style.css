@@ -56,9 +56,12 @@ img{max-width:100%;display:block}
 .header-inner{height:var(--nav-h);display:flex;align-items:center;gap:20px}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:1.06rem;color:var(--text);letter-spacing:.2px}
 .logo:hover{color:var(--text)}
-.logo .mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--grad);color:#0a0e14;font-size:17px;box-shadow:0 6px 18px -6px rgba(76,201,240,.6)}
+.logo .mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#0a0e14;box-shadow:0 6px 18px -6px rgba(76,201,240,.6)}
+.logo .mark svg{width:30px;height:30px;display:block}
 .nav{display:flex;align-items:center;gap:4px;margin-left:auto;flex-wrap:wrap}
-.nav a{color:var(--muted);font-size:.92rem;font-weight:500;padding:8px 11px;border-radius:10px;transition:.18s}
+.nav a{color:var(--muted);font-size:.92rem;font-weight:500;padding:8px 11px;border-radius:10px;transition:.18s;display:inline-flex;align-items:center;gap:6px}
+.nav-ic{width:15px;height:15px;display:inline-flex}
+.nav-ic svg{width:15px;height:15px}
 .nav a:hover{color:var(--text);background:rgba(255,255,255,.06)}
 .nav a.active{color:var(--text);background:rgba(255,255,255,.08)}
 .nav a.cta{background:var(--grad);color:#0a0e14;font-weight:700}
@@ -119,7 +122,8 @@ img{max-width:100%;display:block}
 .guide-card::before{content:"";position:absolute;inset:0;background:var(--grad-soft);opacity:0;transition:.22s}
 .guide-card:hover{transform:translateY(-4px);border-color:var(--border-strong);box-shadow:0 24px 50px -24px rgba(0,0,0,.8);color:var(--text)}
 .guide-card:hover::before{opacity:1}
-.guide-card .icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;color:#0a0e14;font-weight:700}
+.guide-card .icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#0a0e14}
+.guide-card .icon svg{width:22px;height:22px}
 .guide-card h3{font-family:var(--font-display);font-size:1.05rem;position:relative}
 .guide-card p{font-size:.9rem;color:var(--muted);position:relative}
 .guide-card .arrow{position:absolute;right:18px;top:20px;color:var(--muted-2);transition:.22s}
@@ -186,7 +190,8 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .footer-inner{padding:38px 0 30px;display:grid;gap:22px}
 .footer-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 .footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700}
-.footer-brand .mark{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--grad);color:#0a0e14;font-size:14px}
+.footer-brand .mark{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#0a0e14}
+.footer-brand .mark svg{width:26px;height:26px}
 .footer-links{display:flex;gap:16px;flex-wrap:wrap}
 .footer-links a{color:var(--muted);font-size:.9rem}
 .footer-links a:hover{color:var(--green)}
@@ -194,7 +199,13 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .disclaimer{color:var(--muted-2);font-size:.78rem;border-top:1px solid var(--border);padding-top:16px}
 
 /* Misc */
-.back-top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:13px;background:var(--surface-2);border:1px solid var(--border-strong);color:var(--text);display:grid;place-items:center;font-size:18px;z-index:40;opacity:.9;transition:.2s}
+.back-top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:13px;background:var(--surface-2);border:1px solid var(--border-strong);color:var(--text);display:grid;place-items:center;z-index:40;opacity:.9;transition:.2s}
+.back-top svg{width:20px;height:20px}
 .back-top:hover{background:var(--grad);color:#0a0e14}
 .article-grid{display:grid;grid-template-columns:1fr;gap:18px}
 @media (min-width:1000px){.article-grid{grid-template-columns:1fr 300px;align-items:start}.related{position:sticky;top:calc(var(--nav-h) + 16px)}}
+
+.page-hero .icon svg{width:26px;height:26px}
+
+:where(a, button, summary, [role="button"]):focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+.guide-card, .btn, .back-top, .nav a, details.faq summary, .footer-links a, .crumbs a, .related a{cursor:pointer}

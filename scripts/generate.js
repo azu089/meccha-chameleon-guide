@@ -19,19 +19,32 @@ const articleLd = p => JSON.stringify({"@context":"https://schema.org","@type":"
 const faqLd = items => JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:items.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}}))});
 const breadcrumbLd = p => JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:`https://${DATA.site.domain}/`},{"@type":"ListItem",position:2,name:p.title,item:urlOf(p.slug)}]});
 
-/* ---------- Card icon + accent per slug ---------- */
-const CARD_META = {
-  "how-to-play":        { icon:"🎨", ic:"ic-green" },
-  "modes":              { icon:"🎮", ic:"ic-blue" },
-  "maps":               { icon:"🗺️", ic:"ic-yellow" },
-  "tips-and-tricks":    { icon:"💡", ic:"ic-coral" },
-  "achievements":       { icon:"🏆", ic:"ic-purple" },
-  "update-log":         { icon:"📜", ic:"ic-blue" },
-  "system-requirements":{ icon:"🖥️", ic:"ic-green" },
-  "codes":              { icon:"🔑", ic:"ic-yellow" },
-  "faq":                { icon:"❓", ic:"ic-coral" },
+/* ---------- SVG icons (Heroicons outline style) per slug ---------- */
+const SVG = {
+  logo: '<svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ddc84"/><stop offset=".5" stop-color="#4cc9f0"/><stop offset="1" stop-color="#b48cff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 23c-2.5-1-4-3.5-4-6 0-3.5 2.5-7 7-7 2.8 0 5 1.5 5.5 3.5l3.5-1.5c.8-.4 1.7.4 1.2 1.2L20 15.5c.2.8.3 1.7.3 2.5 0 3-2.5 5-5.3 5H9z" fill="#0a0e14" opacity=".92"/><circle cx="14" cy="14.5" r="1.6" fill="#3ddc84"/><circle cx="23" cy="9" r="2.2" fill="#ffd166"/><circle cx="26.5" cy="15" r="1.6" fill="#ff6b6b"/></svg>',
+  "how-to-play": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"/></svg>',
+  "modes": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>',
+  "maps": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>',
+  "tips-and-tricks": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>',
+  "achievements": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"/></svg>',
+  "update-log": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>',
+  "system-requirements": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>',
+  "codes": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>',
+  "faq": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>',
+  "up": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>'
 };
-const metaOf = slug => CARD_META[slug] || { icon:"🎯", ic:"ic-green" };
+const CARD_META = {
+  "how-to-play":        { icon: "how-to-play",        ic: "ic-green" },
+  "modes":              { icon: "modes",              ic: "ic-blue" },
+  "maps":               { icon: "maps",               ic: "ic-yellow" },
+  "tips-and-tricks":    { icon: "tips-and-tricks",    ic: "ic-coral" },
+  "achievements":       { icon: "achievements",       ic: "ic-purple" },
+  "update-log":         { icon: "update-log",         ic: "ic-blue" },
+  "system-requirements":{ icon: "system-requirements",ic: "ic-green" },
+  "codes":              { icon: "codes",              ic: "ic-yellow" },
+  "faq":                { icon: "faq",                ic: "ic-coral" },
+};
+const metaOf = slug => CARD_META[slug] || { icon:"codes", ic:"ic-green" };
 
 /* ---------- Layout fragments ---------- */
 function head(title, desc, extraLd, slug){
@@ -47,7 +60,7 @@ function head(title, desc, extraLd, slug){
 <meta name="description" content="${esc(desc)}" />
 <link rel="canonical" href="${slug==="index" ? `https://${DATA.site.domain}/` : urlOf(slug)}" />
 <meta name="theme-color" content="#0a0e14" />
-<link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="24" fill="%230a0e14"/><text x="50" y="68" font-size="52" text-anchor="middle">🦎</text></svg>')}" />
+<link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="%230a0e14"/><path d="M9 23c-2.5-1-4-3.5-4-6 0-3.5 2.5-7 7-7 2.8 0 5 1.5 5.5 3.5l3.5-1.5c.8-.4 1.7.4 1.2 1.2L20 15.5c.2.8.3 1.7.3 2.5 0 3-2.5 5-5.3 5H9z" fill="%233ddc84"/><circle cx="14" cy="14.5" r="1.6" fill="%230a0e14"/></svg>')}" />
 ${gsc}
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="${esc(DATA.site.name)}" />
@@ -60,6 +73,7 @@ ${gsc}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
+<link rel="preload" as="image" href="/images/hero.jpg" imagesrcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" imagesizes="(max-width: 900px) 92vw, 55vw" fetchpriority="high" />
 <script type="application/ld+json">${ld}</script>
 ${DATA.site.gaId ? `<!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
@@ -71,11 +85,11 @@ ${DATA.site.gaId ? `<!-- Google Analytics 4 -->
 function header(active){
   const links = DATA.pages.map(p => {
     const m = metaOf(p.slug);
-    return `<a href="/${p.slug}" class="${p.slug===active?"active":""}">${m.icon} ${esc(p.title.replace(" Meccha Chameleon","").replace(" (None - Explained)",""))}</a>`;
+    return `<a href="/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(p.title.replace(" Meccha Chameleon","").replace(" (None - Explained)",""))}</a>`;
   }).join("");
   return `<header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="/"><span class="mark">🦎</span>${esc(DATA.site.name)}</a>
+    <a class="logo" href="/"><span class="mark">${SVG.logo}</span>${esc(DATA.site.name)}</a>
     <nav class="nav" aria-label="Main">${links}</nav>
   </div>
 </header>`;
@@ -85,7 +99,7 @@ function footer(){
   return `<footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-top">
-      <div class="footer-brand"><span class="mark">🦎</span>${esc(DATA.site.name)}</div>
+      <div class="footer-brand"><span class="mark">${SVG.logo}</span>${esc(DATA.site.name)}</div>
       <div class="footer-links">
         <a href="/about">About</a><a href="/privacy">Privacy</a><a href="/contact">Contact</a>
         <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
@@ -99,7 +113,7 @@ function footer(){
     ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
   </div>
 </footer>
-<a class="back-top" href="#" aria-label="Back to top">↑</a>
+<a class="back-top" href="#" aria-label="Back to top">${SVG.up}</a>
 </body></html>`;
 }
 
@@ -132,7 +146,7 @@ function renderHome(){
   const cards = DATA.pages.map(p => {
     const m = metaOf(p.slug);
     return `<a class="guide-card" href="/${p.slug}">
-      <span class="icon ${m.ic}">${m.icon}</span>
+      <span class="icon ${m.ic}">${SVG[m.icon]}</span>
       <span class="arrow">→</span>
       <h3>${esc(p.title)}</h3>
       <p>${esc(p.metaDescription)}</p>
@@ -204,7 +218,7 @@ function renderPage(p){
       <article>
         <div class="page-hero">
           <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:10px">
-            <span class="icon ${m.ic}" style="width:48px;height:48px;border-radius:13px;display:grid;place-items:center;font-size:24px">${m.icon}</span>
+            <span class="icon ${m.ic}" style="width:48px;height:48px;border-radius:13px;display:grid;place-items:center">${SVG[m.icon]}</span>
             <div>
               <h1>${esc(p.title)}</h1>
               <p class="lead">${esc(p.metaDescription)}</p>
