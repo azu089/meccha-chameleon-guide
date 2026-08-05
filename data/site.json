@@ -33,10 +33,11 @@
         "quickAnswers": "常见问题速答",
         "guides": "全部攻略",
         "aboutGame": "关于这款游戏",
-        "startPlaying": "开始游玩 →",
+        "startPlaying": "开始游戏 →",
         "getOnSteam": "在 Steam 获取 ↗",
         "moreGuides": "更多攻略",
-        "sources": "来源与事实核对"
+        "sources": "来源与事实核对",
+        "readGuide": "新手攻略 →"
       },
       "ja": {
         "name": "メチャカメレオン攻略ガイド",
@@ -55,10 +56,11 @@
         "quickAnswers": "よくある質問",
         "guides": "攻略一覧",
         "aboutGame": "このゲームについて",
-        "startPlaying": "プレイ開始 →",
+        "startPlaying": "ゲームをプレイ →",
         "getOnSteam": "Steam で入手 ↗",
         "moreGuides": "その他の攻略",
-        "sources": "出典とファクトチェック"
+        "sources": "出典とファクトチェック",
+        "readGuide": "遊び方 →"
       }
     }
   },

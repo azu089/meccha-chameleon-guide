@@ -58,7 +58,7 @@ const siteI18n = lang => {
     footerNote: s.footerNote || "Unofficial fan site — game and related assets belong to their respective owners.",
     footerSource: s.footerSource || "Information checked against Wikipedia, the official Steam store page, IGN and Steam Community sources.",
     quickAnswers: s.quickAnswers || "Most-asked questions", guides: s.guides || "All Guides", aboutGame: s.aboutGame || "About the game",
-    startPlaying: s.startPlaying || "Start Playing →", getOnSteam: s.getOnSteam || "Get it on Steam ↗", moreGuides: s.moreGuides || "More Guides",
+    startPlaying: s.startPlaying || "Start Playing →", getOnSteam: s.getOnSteam || "Get it on Steam ↗", readGuide: s.readGuide || "How to Play →", moreGuides: s.moreGuides || "More Guides",
     sources: s.sources || "Sources & fact-checking", langLabel: s.langLabel || "Language"
   };
 };
@@ -244,8 +244,8 @@ function renderHome(lang){
         <p class="lead">${esc(s.tagline)}. ${lang==="zh"?"每页回答一个真实搜索问题，来源可查，持续更新。":lang==="ja"?"各ページが実際の検索に答えます。信頼できる情報源、定期的に更新。":s.description}</p>
         <div class="stats">${stats}</div>
         <div class="cta-row">
-          <a class="btn btn-primary" href="${prefix}/how-to-play">${esc(s.startPlaying)}</a>
-          <a class="btn btn-ghost" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.getOnSteam)}</a>
+          <a class="btn btn-primary" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.startPlaying)}</a>
+          <a class="btn btn-ghost" href="${prefix}/how-to-play">${esc(s.readGuide || "How to Play →")}</a>
         </div>
       </div>
       <div class="hero-media floating">
