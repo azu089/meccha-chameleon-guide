@@ -237,12 +237,12 @@ function renderHome(lang){
       </div>
     </section>
     <section class="section">
-      <div class="section-head"><div><div class="kicker">Guides</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
+      <div class="section-head"><div><div class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"Guides"}</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
       <div class="guide-grid">${cards}</div>
     </section>
-    ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">FAQ</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
+    ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">${lang==="zh"?"问答":lang==="ja"?"Q&A":"FAQ"}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
     <section class="section">
-      <div class="section-head"><div><div class="kicker">About</div><h2>${esc(s.aboutGame)}</h2></div></div>
+      <div class="section-head"><div><div class="kicker">${lang==="zh"?"关于":lang==="ja"?"概要":"About"}</div><h2>${esc(s.aboutGame)}</h2></div></div>
       <div class="card"><p>${esc(gintro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
   </main>`;
