@@ -57,7 +57,7 @@ img{max-width:100%;display:block}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:1.06rem;color:var(--text);letter-spacing:.2px}
 .logo:hover{color:var(--text)}
 .logo .mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#0a0e14;box-shadow:0 6px 18px -6px rgba(76,201,240,.6)}
-.logo .mark svg{width:30px;height:30px;display:block}
+.logo .mark{font-size:17px}
 .nav{display:flex;align-items:center;gap:4px;margin-left:auto;flex-wrap:wrap}
 .nav a{color:var(--muted);font-size:.92rem;font-weight:500;padding:8px 11px;border-radius:10px;transition:.18s;display:inline-flex;align-items:center;gap:6px}
 .nav-ic{width:15px;height:15px;display:inline-flex}
@@ -182,7 +182,8 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .page-hero{border:1px solid var(--border);border-radius:var(--radius);padding:26px;margin-bottom:22px;background:linear-gradient(120deg,rgba(61,220,132,.08),rgba(76,201,240,.08))}
 .related{grid-column:1/-1}
 .related ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
-.related a{display:block;padding:10px 14px;border:1px solid var(--border);border-radius:10px;color:var(--muted);font-size:.9rem;transition:.18s}
+.related a{display:flex;align-items:center;gap:9px;padding:9px 12px;border:1px solid var(--border);border-radius:10px;color:var(--muted);font-size:.88rem;transition:.18s}
+.related a svg{width:16px;height:16px;flex:0 0 auto}
 .related a:hover{color:var(--text);border-color:var(--border-strong);background:rgba(255,255,255,.04)}
 
 /* Footer */
@@ -191,7 +192,7 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .footer-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 .footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700}
 .footer-brand .mark{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#0a0e14}
-.footer-brand .mark svg{width:26px;height:26px}
+.footer-brand .mark{font-size:15px}
 .footer-links{display:flex;gap:16px;flex-wrap:wrap}
 .footer-links a{color:var(--muted);font-size:.9rem}
 .footer-links a:hover{color:var(--green)}

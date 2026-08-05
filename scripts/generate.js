@@ -138,7 +138,7 @@ function header(lang, active){
   const homeLabel = s.navHome;
   return `<header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="${prefix}/"><span class="mark">${SVG.logo}</span>${esc(s.name)}</a>
+    <a class="logo" href="${prefix}/"><span class="mark">🦎</span>${esc(s.name)}</a>
     <nav class="nav" aria-label="Main">
       <a href="${prefix}/" class="${active===""?"active":""}">${esc(homeLabel)}</a>
       <details class="dd">
@@ -156,7 +156,7 @@ function footer(lang){
   return `<footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-top">
-      <div class="footer-brand"><span class="mark">${SVG.logo}</span>${esc(s.name)}</div>
+      <div class="footer-brand"><span class="mark">🦎</span>${esc(s.name)}</div>
       <div class="footer-links">
         <a href="${prefix}/about">${esc(s.navAbout)}</a><a href="${prefix}/privacy">${esc(s.navPrivacy)}</a><a href="${prefix}/contact">${esc(s.navContact)}</a>
         <a href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">Steam ↗</a>
