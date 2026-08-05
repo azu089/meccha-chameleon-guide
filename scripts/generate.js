@@ -9,6 +9,7 @@ const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
 const OUT = path.join(ROOT, "public");
 const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const CSS_V = require("crypto").createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
 const clean = slug => slug.replace(/\.html$/,"");
 const urlOf = slug => `https://${DATA.site.domain}/${clean(slug) === "index" ? "" : clean(slug)}`;
 
@@ -58,7 +59,7 @@ ${gsc}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
 <script type="application/ld+json">${ld}</script>
 ${DATA.site.gaId ? `<!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
@@ -156,7 +157,7 @@ function renderHome(){
       </div>
       <div class="hero-media floating">
         <span class="blob g"></span><span class="blob b"></span>
-        <div class="hero-img"><img src="/images/hero.jpg" alt="${esc(DATA.game.name)} key art — a chameleon painting itself to blend into a colorful wall" width="3136" height="1344" loading="eager" /></div>
+        <div class="hero-img"><img src="/images/hero.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" sizes="(max-width: 900px) 92vw, 55vw" width="3136" height="1344" alt="${esc(DATA.game.name)} key art — a chameleon painting itself to blend into a colorful wall" loading="eager" /></div>
       </div>
     </section>
 
