@@ -288,7 +288,7 @@ function renderPage(p, lang){
   const faq = t.sections.find(x=>x.type==="faq");
   const ld = [articleLd(t, lang), breadcrumbLd(t, lang), faq?faqLd(faq.items):null].filter(Boolean);
   const sources = (p.sources && p.sources.length ? p.sources : [
-    { label: "Meccha Chameleon — Wikipedia", url: "https://en.wikipedia.org/wiki/Meccha_Chameleon" },
+    { label: `${DATA.game.name} — Wikipedia`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
     { label: "Official Steam store page", url: DATA.game.steamUrl }
   ]);
   const sourceHtml = sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join("");
