@@ -116,24 +116,37 @@ ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?
 </head>
 <body>`;
 }
-function langSwitcher(lang){
-  return `<div class="lang-switch" role="navigation" aria-label="${siteI18n(lang).langLabel}">
-    ${LANGS.map(l => `<a href="${urlOf("index",l)}" class="${l===lang?"active":""}" hreflang="${l}">${l==="en"?"EN":l==="zh"?"中文":"日本語"}</a>`).join("")}
-  </div>`;
+function langSwitcher(lang, slug){
+  const flags = { en: "🇬🇧", zh: "🇨🇳", ja: "🇯🇵" };
+  const names = { en: "English", zh: "中文", ja: "日本語" };
+  const items = LANGS.map(l =>
+    `<a href="${urlOf(slug,l)}" class="${l===lang?"active":""}"><span class="flag">${flags[l]||""}</span>${names[l]}</a>`
+  ).join("");
+  return `<details class="lang-dd" ${slug!=="index"?"":""}>
+    <summary><span class="flag">${flags[lang]||"🌐"}</span>${names[lang]||lang}<span class="caret">▾</span></summary>
+    <div class="dd-menu">${items}</div>
+  </details>`;
 }
 function header(lang, active){
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
-  const links = DATA.pages.map(p => {
+  const guideItems = DATA.pages.map(p => {
     const m = metaOf(p.slug);
-    const t = pageOf(p, lang).title.replace(" Meccha Chameleon","").replace("（无成就）","").replace("（无兑换码）","");
-    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(t)}</a>`;
+    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(pageOf(p,lang).title)}</a>`;
   }).join("");
+  const guidesLabel = { en: "Guides", zh: "攻略", ja: "攻略" }[lang] || "Guides";
+  const homeLabel = s.navHome;
   return `<header class="site-header">
   <div class="container header-inner">
     <a class="logo" href="${prefix}/"><span class="mark">${SVG.logo}</span>${esc(s.name)}</a>
-    <nav class="nav" aria-label="Main">${links}</nav>
-    ${langSwitcher(lang)}
+    <nav class="nav" aria-label="Main">
+      <a href="${prefix}/" class="${active===""?"active":""}">${esc(homeLabel)}</a>
+      <details class="dd">
+        <summary>${esc(guidesLabel)} <span class="caret">▾</span></summary>
+        <div class="dd-menu">${guideItems}</div>
+      </details>
+    </nav>
+    ${langSwitcher(lang, active || "index")}
   </div>
 </header>`;
 }
@@ -197,10 +210,13 @@ function renderHome(lang){
       <h3>${esc(t.title)}</h3><p>${esc(t.metaDescription)}</p>
     </a>`;
   }).join("");
-  const stats = (DATA.game.stats||[]).map(st=>`<div class="stat"><b>${esc(st.value)}</b><span>${esc(st.label)}</span></div>`).join("");
+  const statsArr = (DATA.game.statsI18n && DATA.game.statsI18n[lang]) || DATA.game.stats || [];
+  const stats = statsArr.map(st=>`<div class="stat"><b>${esc(st.value)}</b><span>${esc(st.label)}</span></div>`).join("");
   const faqItems = (pageOf(DATA.pages.find(p=>p.slug==="faq"), lang).sections[0]?.items) || [];
   const faqHtml = faqItems.map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
-  const keyFacts = DATA.game.keyFacts.map(f=>`<li>${esc(f)}</li>`).join("");
+  const keyFactsArr = (DATA.game.keyFactsI18n && DATA.game.keyFactsI18n[lang]) || DATA.game.keyFacts || [];
+  const keyFacts = keyFactsArr.map(f=>`<li>${esc(f)}</li>`).join("");
+  const gintro = (DATA.game.introI18n && DATA.game.introI18n[lang]) || DATA.game.intro;
   const gname = (DATA.game.nameI18n && DATA.game.nameI18n[lang]) || DATA.game.name;
   const body = `
   <main class="container">
@@ -227,7 +243,7 @@ function renderHome(lang){
     ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">FAQ</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
     <section class="section">
       <div class="section-head"><div><div class="kicker">About</div><h2>${esc(s.aboutGame)}</h2></div></div>
-      <div class="card"><p>${esc(DATA.game.intro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
+      <div class="card"><p>${esc(gintro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
   </main>`;
   return head(`${esc(gname)} ${lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, null, "index", lang) + header(lang, "") + body + footer(lang);
