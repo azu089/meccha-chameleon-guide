@@ -1295,6 +1295,318 @@
       }
     },
     {
+      "slug": "steam-deck",
+      "title": "Meccha Chameleon on Steam Deck: Settings & Controls",
+      "metaTitle": "Meccha Chameleon Steam Deck: Settings, Controls & Best Layout (2026)",
+      "metaDescription": "How Meccha Chameleon runs on Steam Deck — official compatibility, best settings, controls and controller layouts for painting and posing.",
+      "intro": "Meccha Chameleon is officially rated Playable on Steam Deck. Here is how to set it up for the best experience.",
+      "sections": [
+        {
+          "type": "table",
+          "heading": "Steam Deck Compatibility",
+          "body": "Official rating and what it means (per the Steam store page and gamingonsteam).",
+          "columns": [
+            "Item",
+            "Detail"
+          ],
+          "rows": [
+            [
+              "Official rating",
+              "Playable — the game runs, but keyboard-style controls need setup"
+            ],
+            [
+              "Best painting input",
+              "Trackpad or an attached mouse — thumbstick painting is hard to aim"
+            ],
+            [
+              "Recommended settings",
+              "60 FPS cap, VSync off, Shadow Quality High (from gamingonsteam's Deck review)"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Controls & Layout Tips",
+          "body": "The game's paint/pose actions are keyboard-oriented, so set up Steam Input.",
+          "items": [
+            "Map paint (F), pose and the eyedropper to easy-to-reach buttons",
+            "Use the right trackpad as a mouse for precise color sampling",
+            "Save a community Steam Input layout from SteamInputDB for this game",
+            "Start from a 'gamepad with mouse' template and adjust"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Steam Deck FAQ",
+          "body": "",
+          "items": [
+            [
+              "Can you play Meccha Chameleon on Steam Deck?",
+              "Yes — it is rated Playable. Install it from Steam and launch normally."
+            ],
+            [
+              "Do I need a mouse?",
+              "Not required, but the trackpad or a mouse makes painting much easier to control."
+            ],
+            [
+              "Does it run on Windows-only?",
+              "The game is Windows on Steam; the Deck's Proton/SteamOS runs it at Playable level."
+            ]
+          ]
+        }
+      ],
+      "i18n": {
+        "zh": {
+          "title": "超级变色龙 Steam Deck：设置与操作",
+          "metaTitle": "超级变色龙 Steam Deck：设置、操作与最佳键位（2026）",
+          "metaDescription": "超级变色龙在 Steam Deck 上怎么玩——官方兼容性、最佳设置、涂色与姿势的操作布局。",
+          "intro": "超级变色龙在 Steam Deck 上官方评级为「可玩」。下面教你如何设置以获得最佳体验。",
+          "sections": [
+            {
+              "type": "table",
+              "heading": "Steam Deck 兼容性",
+              "body": "官方评级与含义（据 Steam 商店页与 gamingonsteam）。",
+              "columns": [
+                "项目",
+                "详情"
+              ],
+              "rows": [
+                [
+                  "官方评级",
+                  "可玩——可以运行，但键盘式操作需要设置"
+                ],
+                [
+                  "最佳涂色输入",
+                  "触控板或外接鼠标——摇杆涂色很难瞄准"
+                ],
+                [
+                  "推荐设置",
+                  "60 FPS 上限、关闭垂直同步、阴影质量高（据 gamingonsteam 的 Deck 评测）"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "操作与布局建议",
+              "body": "游戏的涂色/姿势操作偏键盘，请配置 Steam Input。",
+              "items": [
+                "把涂色（F）、姿势和吸管映射到方便按到的按键",
+                "用右触控板当鼠标进行精确取色",
+                "从 SteamInputDB 保存本游戏的社区键位",
+                "以「手柄+鼠标」模板起步再微调"
+              ]
+            },
+            {
+              "type": "faq",
+              "heading": "Steam Deck 常见问题",
+              "body": "",
+              "items": [
+                [
+                  "超级变色龙能在 Steam Deck 上玩吗？",
+                  "可以——评级为「可玩」。从 Steam 安装并正常启动即可。"
+                ],
+                [
+                  "需要鼠标吗？",
+                  "不强制，但触控板或鼠标能让涂色更好控制。"
+                ],
+                [
+                  "只能在 Windows 玩吗？",
+                  "游戏本体是 Windows 版；Deck 的 Proton/SteamOS 以「可玩」级别运行。"
+                ]
+              ]
+            }
+          ]
+        },
+        "ja": {
+          "title": "メチャカメレオン Steam Deck：設定と操作",
+          "metaTitle": "メチャカメレオン Steam Deck：設定・操作・最適レイアウト（2026）",
+          "metaDescription": "メチャカメレオンは Steam Deck で遊べる？公式互換性、最適設定、塗りとポーズのコントローラー設定。",
+          "intro": "メチャカメレオンは Steam Deck で「Playable」評価です。最適な環境に設定しましょう。",
+          "sections": [
+            {
+              "type": "table",
+              "heading": "Steam Deck 互換性",
+              "body": "公式評価と意味（Steam ストアと gamingonsteam より）。",
+              "columns": [
+                "項目",
+                "詳細"
+              ],
+              "rows": [
+                [
+                  "公式評価",
+                  "Playable——動作しますが、キーボード寄りの操作設定が必要"
+                ],
+                [
+                  "塗りに最適な入力",
+                  "トラックパッドか外付けマウス——スティック塗りは狙いにくい"
+                ],
+                [
+                  "推奨設定",
+                  "60FPS上限、VSyncオフ、シャドウ品質 高（gamingonsteam の Deck レビューより）"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "操作とレイアウトのコツ",
+              "body": "塗り・ポーズはキーボード寄りなので Steam Input を設定しましょう。",
+              "items": [
+                "塗り（F）・ポーズ・スポイトを押しやすいボタンに割り当て",
+                "右トラックパッドをマウスにして正確に取色",
+                "SteamInputDB のコミュニティレイアウトを保存",
+                "「ゲームパッド＋マウス」テンプレートから調整"
+              ]
+            },
+            {
+              "type": "faq",
+              "heading": "Steam Deck FAQ",
+              "body": "",
+              "items": [
+                [
+                  "Steam Deck で遊べますか？",
+                  "はい——「Playable」評価です。Steam からインストールして起動するだけ。"
+                ],
+                [
+                  "マウスは必要？",
+                  "必須ではありませんが、トラックパッドかマウスがあると塗りが格段に楽です。"
+                ],
+                [
+                  "Windows 専用？",
+                  "ゲーム本体は Windows 版ですが、Deck の Proton/SteamOS で Playable レベルで動作します。"
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "crossplay",
+      "title": "Meccha Chameleon Crossplay & Platforms (PC, Mac, Console)",
+      "metaTitle": "Is Meccha Chameleon Crossplay? Platforms Explained (2026)",
+      "metaDescription": "Is Meccha Chameleon cross-platform? It is PC-only on Steam. Play on Mac via GeForce NOW. No PS5, Xbox or Switch version — explained.",
+      "intro": "The straight answer on Meccha Chameleon platforms and crossplay, from the game's official page and Wikipedia.",
+      "sections": [
+        {
+          "type": "faq",
+          "heading": "Platforms FAQ",
+          "body": "",
+          "items": [
+            [
+              "Is Meccha Chameleon crossplay?",
+              "No — there is no crossplay because the game is PC-only on Steam. There are no console or mobile versions to crossplay with."
+            ],
+            [
+              "Can I play on Mac?",
+              "Yes, indirectly: the game streams to macOS through GeForce NOW (available since June 27, 2026). There is no native macOS version."
+            ],
+            [
+              "Is it on PS5, Xbox or Switch?",
+              "No. The developer has not announced any console ports. Wikipedia lists Windows as the only platform."
+            ],
+            [
+              "Can I play on mobile?",
+              "Not officially — no iOS or Android version exists. Only via cloud streaming on compatible devices."
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "How Players Play Together",
+          "body": "Multiplayer details for PC.",
+          "items": [
+            "Steam PC players play together via public servers or private rooms (up to 24 players, 2-12 recommended)",
+            "GeForce NOW lets Mac players join the same Steam servers",
+            "There is no separate crossplay toggle — the whole game lives on Steam"
+          ]
+        }
+      ],
+      "i18n": {
+        "zh": {
+          "title": "超级变色龙跨平台与平台（PC、Mac、主机）",
+          "metaTitle": "超级变色龙支持跨平台吗？平台详解（2026）",
+          "metaDescription": "超级变色龙支持跨平台吗？游戏仅 Steam PC 版。可通过 GeForce NOW 在 Mac 上玩。没有 PS5、Xbox 或 Switch 版——详解。",
+          "intro": "关于超级变色龙平台与跨平台的直接答案，依据官方页面与 Wikipedia。",
+          "sections": [
+            {
+              "type": "faq",
+              "heading": "平台常见问题",
+              "body": "",
+              "items": [
+                [
+                  "超级变色龙支持跨平台吗？",
+                  "不支持——游戏仅 Steam PC 版，没有主机或手机版可以跨平台联机。"
+                ],
+                [
+                  "能在 Mac 上玩吗？",
+                  "可以间接玩：通过 GeForce NOW 云串流到 macOS（2026-06-27 起可用）。没有原生 macOS 版。"
+                ],
+                [
+                  "有 PS5、Xbox 或 Switch 版吗？",
+                  "没有。开发者尚未公布任何主机移植计划。Wikipedia 列出的唯一平台是 Windows。"
+                ],
+                [
+                  "能在手机上玩吗？",
+                  "没有官方 iOS 或 Android 版。仅可通过云串流在兼容设备上玩。"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "玩家如何一起玩",
+              "body": "PC 联机细节。",
+              "items": [
+                "Steam PC 玩家通过公开服务器或私人房间联机（最多 24 人，推荐 2-12 人）",
+                "GeForce NOW 让 Mac 玩家加入同一 Steam 服务器",
+                "没有单独的跨平台开关——整个游戏都在 Steam 上"
+              ]
+            }
+          ]
+        },
+        "ja": {
+          "title": "メチャカメレオンのクロスプレイと対応プラットフォーム",
+          "metaTitle": "メチャカメレオンはクロスプレイ対応？対応プラットフォーム解説（2026）",
+          "metaDescription": "メチャカメレオンはクロスプレイ対応？Steam の PC 版のみ。GeForce NOW で Mac でも。PS5・Xbox・Switch 版はなし——解説。",
+          "intro": "メチャカメレオンの対応プラットフォームとクロスプレイについて、公式ページと Wikipedia に基づく率直な回答です。",
+          "sections": [
+            {
+              "type": "faq",
+              "heading": "プラットフォーム FAQ",
+              "body": "",
+              "items": [
+                [
+                  "クロスプレイ対応ですか？",
+                  "いいえ——ゲームは Steam の PC 版のみで、クロスプレイ相手となるコンソール版やモバイル版がありません。"
+                ],
+                [
+                  "Mac で遊べますか？",
+                  "間接的に可能です：GeForce NOW で macOS にストリーミングできます（2026-06-27〜）。ネイティブ macOS 版はありません。"
+                ],
+                [
+                  "PS5・Xbox・Switch 版は？",
+                  "ありません。開発者はコンソール移植を発表していません。Wikipedia も唯一の対応は Windows としています。"
+                ],
+                [
+                  "モバイルでは？",
+                  "公式の iOS/Android 版はありません。対応デバイスではクラウド経由のみ可能です。"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "一緒に遊ぶ方法",
+              "body": "PC のマルチプレイ詳細。",
+              "items": [
+                "Steam PC プレイヤー同士は公開サーバーかプライベートルームで（最大24人、推奨2-12人）",
+                "GeForce NOW なら Mac プレイヤーも同じ Steam サーバーに参加可",
+                "クロスプレイ用の切り替えはありません——ゲーム全体が Steam 上にあります"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "slug": "faq",
       "title": "Meccha Chameleon FAQ",
       "metaTitle": "Meccha Chameleon FAQ: Platforms, Players, Price & More (2026)",
