@@ -228,6 +228,41 @@
             "Hosts can set custom rules, round time and a password in Custom Rooms",
             "The game is PC-only on Steam; it streams to macOS through GeForce NOW"
           ]
+        },
+        {
+          "type": "table",
+          "heading": "Controls",
+          "body": "Keyboard controls (per wikiHow's Meccha Chameleon controls guide and the Steam page).",
+          "columns": [
+            "Action",
+            "Key"
+          ],
+          "rows": [
+            [
+              "Move",
+              "WASD"
+            ],
+            [
+              "Sprint",
+              "Shift"
+            ],
+            [
+              "Jump / wall climb",
+              "Space"
+            ],
+            [
+              "Enter paint mode",
+              "F"
+            ],
+            [
+              "Sample color (eyedropper)",
+              "E"
+            ],
+            [
+              "Create a clone",
+              "Q"
+            ]
+          ]
         }
       ],
       "i18n": {
@@ -267,6 +302,41 @@
                 "房主可在自定义房间设置规则、回合时长和密码",
                 "游戏仅 PC（Steam）版；可通过 GeForce NOW 串流到 Mac"
               ]
+            },
+            {
+              "type": "table",
+              "heading": "操作键位",
+              "body": "键盘操作（据 wikiHow 的超级变色龙操作指南与 Steam 页面）。",
+              "columns": [
+                "动作",
+                "按键"
+              ],
+              "rows": [
+                [
+                  "移动",
+                  "WASD"
+                ],
+                [
+                  "加速跑",
+                  "Shift"
+                ],
+                [
+                  "跳跃/爬墙",
+                  "Space"
+                ],
+                [
+                  "进入涂色模式",
+                  "F"
+                ],
+                [
+                  "取色（吸管）",
+                  "E"
+                ],
+                [
+                  "创建分身",
+                  "Q"
+                ]
+              ]
             }
           ]
         },
@@ -305,6 +375,41 @@
                 "1サーバー最大24人。開発者推奨は2-12人",
                 "ホストはカスタムルームでルール・時間・パスワードを設定可能",
                 "PC（Steam）専用。GeForce NOW で Mac にもストリーミング可"
+              ]
+            },
+            {
+              "type": "table",
+              "heading": "操作キー",
+              "body": "キーボード操作（wikiHow の操作ガイドと Steam ページより）。",
+              "columns": [
+                "操作",
+                "キー"
+              ],
+              "rows": [
+                [
+                  "移動",
+                  "WASD"
+                ],
+                [
+                  "ダッシュ",
+                  "Shift"
+                ],
+                [
+                  "ジャンプ/壁登り",
+                  "Space"
+                ],
+                [
+                  "ペイントモード",
+                  "F"
+                ],
+                [
+                  "スポイトで色を取る",
+                  "E"
+                ],
+                [
+                  "分身を作る",
+                  "Q"
+                ]
               ]
             }
           ]
@@ -1683,6 +1788,392 @@
       }
     },
     {
+      "slug": "controls",
+      "title": "Meccha Chameleon Controls (Full Key List)",
+      "metaTitle": "Meccha Chameleon Controls: All Keys Explained (2026)",
+      "metaDescription": "Every Meccha Chameleon control: movement, sprint, jump/wall climb, paint mode, eyedropper, clones, poses and camera.",
+      "intro": "The complete Meccha Chameleon keyboard controls, based on the wikiHow controls guide and the official Steam page.",
+      "sections": [
+        {
+          "type": "table",
+          "heading": "Keyboard Controls",
+          "body": "",
+          "columns": [
+            "Action",
+            "Key"
+          ],
+          "rows": [
+            [
+              "Move",
+              "WASD"
+            ],
+            [
+              "Sprint",
+              "Shift"
+            ],
+            [
+              "Jump / wall climb",
+              "Space"
+            ],
+            [
+              "Enter paint mode",
+              "F"
+            ],
+            [
+              "Eyedropper (sample color)",
+              "E"
+            ],
+            [
+              "Create / clear clones",
+              "Q"
+            ],
+            [
+              "Poses (crouch, sit, curl, lie)",
+              "Number keys / pose menu"
+            ],
+            [
+              "Camera / free cam",
+              "Mouse look + Right mouse / C"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Painting Essentials",
+          "body": "",
+          "items": [
+            "Press F to enter paint mode, then drag over your body",
+            "Use E to sample the exact color of a surface instead of guessing",
+            "Adjust metallic and roughness so your paint matches the surface finish",
+            "Paint matches light direction — a perfect color in wrong light still shines"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Control FAQ",
+          "body": "",
+          "items": [
+            [
+              "How do I create a clone?",
+              "Paint and pose yourself first, then press Q to drop a clone of your exact look."
+            ],
+            [
+              "Can I rebind keys?",
+              "Keyboard rebinding is limited; on Steam Deck use Steam Input to remap."
+            ]
+          ]
+        }
+      ],
+      "i18n": {
+        "zh": {
+          "title": "超级变色龙操作（完整键位表）",
+          "metaTitle": "超级变色龙操作：全部按键详解（2026）",
+          "metaDescription": "超级变色龙全部操作：移动、加速、跳跃/爬墙、涂色、吸管、分身、姿势与镜头。",
+          "intro": "完整的超级变色龙键盘操作，依据 wikiHow 操作指南与 Steam 官方页面。",
+          "sections": [
+            {
+              "type": "table",
+              "heading": "键盘操作",
+              "body": "",
+              "columns": [
+                "动作",
+                "按键"
+              ],
+              "rows": [
+                [
+                  "移动",
+                  "WASD"
+                ],
+                [
+                  "加速跑",
+                  "Shift"
+                ],
+                [
+                  "跳跃/爬墙",
+                  "Space"
+                ],
+                [
+                  "进入涂色模式",
+                  "F"
+                ],
+                [
+                  "吸管（取色）",
+                  "E"
+                ],
+                [
+                  "创建/清除分身",
+                  "Q"
+                ],
+                [
+                  "姿势（蹲/坐/蜷缩/躺）",
+                  "数字键/姿势菜单"
+                ],
+                [
+                  "镜头/自由视角",
+                  "鼠标视角 + 右键/C"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "涂色要点",
+              "body": "",
+              "items": [
+                "按 F 进入涂色模式，然后在身体上拖动",
+                "用 E 吸取表面颜色，不要凭感觉猜",
+                "调整金属度与粗糙度，让涂料贴合表面质感",
+                "涂料要匹配光线方向——颜色对了但光线不对仍会反光"
+              ]
+            },
+            {
+              "type": "faq",
+              "heading": "操作常见问题",
+              "body": "",
+              "items": [
+                [
+                  "怎么创建分身？",
+                  "先涂好并摆好姿势，然后按 Q 放下与你一模一样的分身。"
+                ],
+                [
+                  "能改键吗？",
+                  "键盘改键有限；Steam Deck 上可用 Steam Input 重映射。"
+                ]
+              ]
+            }
+          ]
+        },
+        "ja": {
+          "title": "メチャカメレオン操作（全キー一覧）",
+          "metaTitle": "メチャカメレオン操作：全キー解説（2026）",
+          "metaDescription": "メチャカメレオンの全操作：移動、ダッシュ、ジャンプ/壁登り、塗り、スポイト、分身、ポーズ、カメラ。",
+          "intro": "wikiHow の操作ガイドと Steam 公式ページに基づく、メチャカメレオンの完全キー操作。",
+          "sections": [
+            {
+              "type": "table",
+              "heading": "キーボード操作",
+              "body": "",
+              "columns": [
+                "操作",
+                "キー"
+              ],
+              "rows": [
+                [
+                  "移動",
+                  "WASD"
+                ],
+                [
+                  "ダッシュ",
+                  "Shift"
+                ],
+                [
+                  "ジャンプ/壁登り",
+                  "Space"
+                ],
+                [
+                  "ペイントモード",
+                  "F"
+                ],
+                [
+                  "スポイト（色を取る）",
+                  "E"
+                ],
+                [
+                  "分身を作成/解除",
+                  "Q"
+                ],
+                [
+                  "ポーズ（しゃがむ・座る・丸まる・寝る）",
+                  "数字キー/ポーズメニュー"
+                ],
+                [
+                  "カメラ/フリーカム",
+                  "マウスルック＋右クリック/C"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "塗りの基本",
+              "body": "",
+              "items": [
+                "F でペイントモードに入り、体をドラッグして塗る",
+                "E で表面の色を正確に取る——勘で塗らない",
+                "メタリックとラフネスを調整して質感を合わせる",
+                "光の方向も合わせる——色が完璧でも光が違うと光ってしまう"
+              ]
+            },
+            {
+              "type": "faq",
+              "heading": "操作 FAQ",
+              "body": "",
+              "items": [
+                [
+                  "分身はどう作る？",
+                  "先に塗ってポーズを決め、Q で分身を配置します。"
+                ],
+                [
+                  "キーは変更できますか？",
+                  "キーボードのリマップは限定的。Steam Deck なら Steam Input で変更可能。"
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "image": "/images/controls.jpg"
+    },
+    {
+      "slug": "multiplayer",
+      "title": "Meccha Chameleon Multiplayer: Host, Join & Play With Friends",
+      "metaTitle": "Meccha Chameleon Multiplayer: How to Host/Join & Play With Friends (2026)",
+      "metaDescription": "How multiplayer works in Meccha Chameleon — host a room, join public servers, play with friends, player counts and server stability.",
+      "intro": "Meccha Chameleon is an online multiplayer game. Here is how to host, join and play with friends.",
+      "sections": [
+        {
+          "type": "steps",
+          "heading": "Host a Private Room",
+          "body": "",
+          "items": [
+            "From the main menu choose Create Server",
+            "Pick a server name and set a password for friends",
+            "Choose the game mode and set the round time",
+            "Share the server name/password with your group"
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Join Public Servers",
+          "body": "",
+          "items": [
+            "Pick Quick Match from the main menu for an instant game",
+            "Use the server browser to find a room by name",
+            "Up to 24 players per server; developers recommend 2-12 for stability",
+            "Some guides suggest keeping rooms under 14 players"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Multiplayer FAQ",
+          "body": "",
+          "items": [
+            [
+              "How many players can play together?",
+              "Up to 24 per server. The recommended range is 2-12 players."
+            ],
+            [
+              "Is it crossplay?",
+              "No — PC only on Steam. Mac players can join via GeForce NOW cloud streaming."
+            ],
+            [
+              "Can I play with friends on Steam?",
+              "Yes — host a private room and share the name/password, or use the Steam friends list."
+            ]
+          ]
+        }
+      ],
+      "i18n": {
+        "zh": {
+          "title": "超级变色龙联机：建房、加入与好友同玩",
+          "metaTitle": "超级变色龙联机：如何建房/加入与好友同玩（2026）",
+          "metaDescription": "超级变色龙联机详解——建房、加入公开服务器、与好友同玩、人数与服务器稳定性。",
+          "intro": "超级变色龙是在线多人游戏。下面说明如何建房、加入并与好友一起玩。",
+          "sections": [
+            {
+              "type": "steps",
+              "heading": "创建私人房间",
+              "body": "",
+              "items": [
+                "在主菜单选择创建服务器",
+                "填写服务器名称并为好友设置密码",
+                "选择游戏模式并设置回合时长",
+                "把服务器名称/密码分享给你的队伍"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "加入公开服务器",
+              "body": "",
+              "items": [
+                "主菜单选择快速匹配立即开局",
+                "用服务器浏览器按名称找房间",
+                "每服务器最多 24 人；开发者推荐 2-12 人更稳",
+                "部分攻略建议控制在 14 人以内"
+              ]
+            },
+            {
+              "type": "faq",
+              "heading": "联机常见问题",
+              "body": "",
+              "items": [
+                [
+                  "多少人一起玩？",
+                  "每服务器最多 24 人，推荐 2-12 人。"
+                ],
+                [
+                  "支持跨平台吗？",
+                  "不支持——仅 Steam PC 版。Mac 玩家可通过 GeForce NOW 云串流加入。"
+                ],
+                [
+                  "能和 Steam 好友一起玩吗？",
+                  "可以——开私人房间分享名称/密码，或使用 Steam 好友列表。"
+                ]
+              ]
+            }
+          ]
+        },
+        "ja": {
+          "title": "メチャカメレオン マルチプレイ：ホスト・参加・フレンドと遊ぶ",
+          "metaTitle": "メチャカメレオン マルチプレイ：ルーム作成・参加方法（2026）",
+          "metaDescription": "メチャカメレオンのマルチプレイ解説——ルーム作成、公開サーバー参加、フレンドと遊ぶ、人数と安定性。",
+          "intro": "メチャカメレオンはオンラインマルチプレイゲームです。ホスト・参加・フレンドとの遊び方を解説します。",
+          "sections": [
+            {
+              "type": "steps",
+              "heading": "プライベートルームを作る",
+              "body": "",
+              "items": [
+                "メインメニューで「サーバー作成」を選択",
+                "サーバー名を決め、フレンド用にパスワードを設定",
+                "モードとラウンド時間を設定",
+                "名前とパスワードをグループに共有"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "公開サーバーに参加",
+              "body": "",
+              "items": [
+                "メインメニューの「クイックマッチ」で即プレイ",
+                "サーバーブラウザで名前からルームを探す",
+                "1サーバー最大24人。開発者推奨は2-12人",
+                "一部ガイドでは14人未満を推奨"
+              ]
+            },
+            {
+              "type": "faq",
+              "heading": "マルチプレイ FAQ",
+              "body": "",
+              "items": [
+                [
+                  "何人で遊べますか？",
+                  "1サーバー最大24人。推奨は2-12人。"
+                ],
+                [
+                  "クロスプレイ対応？",
+                  "いいえ——Steam の PC 版のみ。Mac は GeForce NOW 経由で参加できます。"
+                ],
+                [
+                  "Steam フレンドと遊べますか？",
+                  "はい——プライベートルームを作って名前/パスワードを共有するか、Steam フレンドリストを使います。"
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "image": "/images/multiplayer.jpg"
+    },
+    {
       "slug": "faq",
       "title": "Meccha Chameleon FAQ",
       "metaTitle": "Meccha Chameleon FAQ: Platforms, Players, Price & More (2026)",
@@ -1725,6 +2216,22 @@
             [
               "How many maps does Meccha Chameleon have?",
               "7 base maps plus many Steam Workshop maps, with new official maps added in updates."
+            ],
+            [
+              "Does Meccha Chameleon support controllers?",
+              "Not officially. The game is keyboard-oriented on Steam (paint with F, pose, eyedropper with E). On Steam Deck you can set up Steam Input with a gamepad-plus-mouse template."
+            ],
+            [
+              "Is there voice chat in Meccha Chameleon?",
+              "There is no built-in voice chat. Players usually use Steam friends or third-party voice apps. In-game, Hiders can taunt with a whistle to bait Hunters."
+            ],
+            [
+              "Are workshop maps safe?",
+              "Most are safe, but be careful — one July 2026 workshop scare involved a suspicious map. Only subscribe to well-reviewed maps and keep the game updated."
+            ],
+            [
+              "What is the age rating?",
+              "The game is a casual multiplayer party game without blood or gore. It is suited to most ages, though online play means interacting with strangers."
             ]
           ]
         }
@@ -1772,6 +2279,22 @@
                 [
                   "有多少张地图？",
                   "7 张基础地图 + 大量 Steam 创意工坊地图，更新还会加入新官方地图。"
+                ],
+                [
+                  "超级变色龙支持手柄吗？",
+                  "没有官方手柄支持。游戏以键盘为主（F 涂色、E 取色）。在 Steam Deck 上可以用 Steam Input 配置「手柄+鼠标」模板。"
+                ],
+                [
+                  "有内置语音吗？",
+                  "没有内置语音。玩家一般用 Steam 好友或第三方语音。游戏中躲藏者可以用口哨嘲讽来引诱猎人。"
+                ],
+                [
+                  "创意工坊地图安全吗？",
+                  "大多数安全，但要小心——2026 年 7 月出现过一次可疑地图事件。只订阅好评地图并保持游戏更新。"
+                ],
+                [
+                  "游戏年龄评级如何？",
+                  "这是休闲多人派对游戏，没有血腥内容，适合大多数年龄。不过在线联机意味着会与陌生人互动。"
                 ]
               ]
             }
@@ -1819,6 +2342,22 @@
                 [
                   "マップは何枚？",
                   "標準7枚＋Steam ワークショップに多数。アップデートで新公式マップも追加されます。"
+                ],
+                [
+                  "コントローラー対応？",
+                  "公式には未対応です。ゲームはキーボード中心（F で塗り、E でスポイト）。Steam Deck では Steam Input で「ゲームパッド＋マウス」テンプレートを設定できます。"
+                ],
+                [
+                  "ボイスチャットはありますか？",
+                  "内蔵ボイスチャットはありません。通常は Steam フレンドや外部ボイスアプリを使用。ゲーム内では隠れ役が口笛で狩り役をおびき出せます。"
+                ],
+                [
+                  "ワークショップのマップは安全？",
+                  "ほとんどは安全ですが注意が必要です——2026年7月に不審なマップの騒動がありました。評価の高いマップだけを購読し、ゲームは常に更新しましょう。"
+                ],
+                [
+                  "年齢レーティングは？",
+                  "血表現のないカジュアルなパーティゲームで、多くの年齢層に向きます。ただしオンライン対戦では見知らぬ人と交流します。"
                 ]
               ]
             }

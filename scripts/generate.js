@@ -169,6 +169,30 @@ function footer(lang){
     </div>
     ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
   </div>
+<script>
+// Close dropdowns on outside click / Escape
+document.addEventListener('click', function(e){
+  document.querySelectorAll('details.dd[open], details.lang-dd[open]').forEach(function(d){
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.removeAttribute('open'); });
+});
+// Language banner: browser in zh/ja but viewing default/en page -> suggest localized version
+(function(){
+  var lang = (navigator.language || 'en').toLowerCase();
+  var path = location.pathname;
+  var want = lang.indexOf('zh') === 0 ? 'zh' : lang.indexOf('ja') === 0 ? 'ja' : null;
+  if (want && path.indexOf('/' + want + '/') !== 0) {
+    var b = document.createElement('div');
+    b.className = 'lang-banner';
+    var href = '/' + want + (path === '/' || path === '' ? '/' : path);
+    b.innerHTML = '<a href="' + href + '">' + (want === 'zh' ? '🌐 查看中文版 →' : '🌐 日本語版を見る →') + '</a>';
+    document.body.prepend(b);
+  }
+})();
+</script>
 </footer>
 <a class="back-top" href="#" aria-label="Top">${SVG.up}</a>
 </body></html>`;
@@ -268,6 +292,7 @@ function renderPage(p, lang){
     <div class="article-grid">
       <article>
         <div class="page-hero">
+          ${p.image ? `<img class="page-img" src="${esc(p.image)}" srcset="${esc(p.image.replace('.jpg','-640.jpg'))} 640w, ${esc(p.image.replace('.jpg','-1280.jpg'))} 1280w, ${esc(p.image)} 3136w" sizes="(max-width: 640px) 92vw, 720px" width="3136" height="1344" alt="${esc(t.title)}" loading="lazy" />` : ""}
           <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:10px">
             <span class="icon ${m.ic}" style="width:48px;height:48px;border-radius:13px;display:grid;place-items:center">${SVG[m.icon]}</span>
             <div><h1>${esc(t.title)}</h1><p class="lead">${esc(t.metaDescription)}</p></div>
