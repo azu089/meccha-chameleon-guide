@@ -42,7 +42,7 @@
         {
           "type": "steps",
           "heading": "The Core Loop: Paint to Hide",
-          "body": "Every player starts as a plain white figure. Hiders survive by painting their body to match the map, while Hunters chase them down with a rifle. The last Hider standing when the timer ends wins the round for their team.",
+          "body": "Every player starts as a plain white figure. Hiders survive by painting their body to match the map, while Hunters chase them down with a rifle. If at least one Hider is still hidden when the timer ends, the Hider team wins the round.",
           "items": [
             "Hold the paint button to cover your body in the map's colors and textures",
             "Use the eyedropper to sample an exact color - never guess it",
@@ -56,7 +56,7 @@
           "body": "Your win condition changes completely depending on which side you draw.",
           "items": [
             "Hider: survive until the timer ends; use clones and poses to confuse Hunters",
-            "Hunter: tag every Hider; tag easy targets first to snowball the round",
+            "Hunter: tag every Hider before the timer runs out",
             "Hunters win by tagging everyone; Hiders win if at least one survives"
           ]
         },
