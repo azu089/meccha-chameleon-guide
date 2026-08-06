@@ -252,26 +252,33 @@ function renderSection(s){
   const id = secId(s.heading);
   switch(s.type){
     case "steps": {
-      const items = (s.items||[]).map(it=>`<li><strong>${esc(it)}</strong></li>`).join("");
-      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ol class="steps">${items}</ol></section>`;
+      // 关卡步骤：像素编号块
+      const items = (s.items||[]).map((it,i)=>{
+        const t = Array.isArray(it)?it[0]:it;
+        const d = Array.isArray(it)?(it[1]||""):"";
+        return `<li class="level-step"><span class="level-no">${String(i+1).padStart(2,"0")}</span><div><strong>${esc(t)}</strong>${d?`<p>${esc(d)}</p>`:""}</div></li>`;
+      }).join("");
+      return `<section class="arcade-card reveal" id="${id}"><div class="arcade-head"><span class="arcade-tag">${esc(s.tag||"LEVEL")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="arcade-lead">${esc(s.body)}</p>`:""}<ol class="level-steps">${items}</ol></section>`;
     }
     case "list": {
-      const items = (s.items||[]).map(it=>`<li>${esc(it)}</li>`).join("");
-      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<ul class="checks">${items}</ul></section>`;
+      // 道具清单：像素方块勾选
+      const items = (s.items||[]).map(it=>`<li class="item-chip"><span class="chip-box" aria-hidden="true"></span><p>${esc(Array.isArray(it)?it[0]:it)}</p></li>`).join("");
+      return `<section class="arcade-card reveal" id="${id}"><div class="arcade-head"><span class="arcade-tag">${esc(s.tag||"ITEMS")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="arcade-lead">${esc(s.body)}</p>`:""}<ul class="item-list">${items}</ul></section>`;
     }
     case "table": {
+      // 数据面板：霓虹表头
       const headRow = (s.columns||[]).map(c=>`<th>${esc(c)}</th>`).join("");
       const rows = (s.rows||[]).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("");
-      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${s.body?`<p>${esc(s.body)}</p>`:""}<div class="tbl-wrap"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
+      return `<section class="arcade-card reveal" id="${id}"><div class="arcade-head"><span class="arcade-tag">${esc(s.tag||"DATA")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="arcade-lead">${esc(s.body)}</p>`:""}<div class="data-panel"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
     }
     case "faq": {
-      const items = (s.items||[]).map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
-      return `<section class="card" id="${id}"><h2>${esc(s.heading)}</h2>${items}</section>`;
+      // 问答窗口：对话框式
+      const items = (s.items||[]).map(([q,a])=>`<details class="chat-faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="chat-a">${esc(a)}</div></details>`).join("");
+      return `<section class="arcade-card reveal" id="${id}"><div class="arcade-head"><span class="arcade-tag">${esc(s.tag||"QA")}</span><h2>${esc(s.heading)}</h2></div>${items}</section>`;
     }
     default: return "";
   }
 }
-
 /* ---------- home ---------- */
 function renderHome(lang){
   const s = siteI18n(lang);
