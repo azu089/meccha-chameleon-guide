@@ -276,6 +276,25 @@ function renderSection(s){
 function renderHome(lang){
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
+  const gname = (DATA.game.nameI18n && DATA.game.nameI18n[lang]) || DATA.game.name;
+  const gintro = (DATA.game.introI18n && DATA.game.introI18n[lang]) || DATA.game.intro;
+  const statsArr = (DATA.game.statsI18n && DATA.game.statsI18n[lang]) || DATA.game.stats || [];
+  const stats = statsArr.map(st=>`<div class="stat"><b>${esc(st.value)}</b><span>${esc(st.label)}</span></div>`).join("");
+  const faqItems = (pageOf(DATA.pages.find(p=>p.slug==="faq"), lang).sections[0]?.items) || [];
+  const faqHtml = faqItems.map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
+  const keyFactsArr = (DATA.game.keyFactsI18n && DATA.game.keyFactsI18n[lang]) || DATA.game.keyFacts || [];
+  const keyFacts = keyFactsArr.map(f=>`<li>${esc(f)}</li>`).join("");
+  const modePages = ["how-to-play","modes","maps","tips-and-tricks"];
+  const modeTabs = modePages.map((slug)=>{
+    const p=DATA.pages.find(x=>x.slug===slug); if(!p) return "";
+    const t=pageOf(p,lang); const m=metaOf(slug);
+    return `<a class="mode-tab" href="${prefix}/${slug}">
+      <span class="mode-ic">${SVG[m.icon]}</span>
+      <b>${esc(t.title)}</b>
+      <p>${esc(t.metaDescription)}</p>
+      <span class="mode-go">${esc(s.readGuide||"Play →")}</span>
+    </a>`;
+  }).join("");
   const cards = DATA.pages.map(p => {
     const m = metaOf(p.slug);
     const t = pageOf(p, lang);
@@ -284,45 +303,40 @@ function renderHome(lang){
       <h3>${esc(t.title)}</h3><p>${esc(t.metaDescription)}</p>
     </a>`;
   }).join("");
-  const statsArr = (DATA.game.statsI18n && DATA.game.statsI18n[lang]) || DATA.game.stats || [];
-  const stats = statsArr.map(st=>`<div class="stat"><b>${esc(st.value)}</b><span>${esc(st.label)}</span></div>`).join("");
-  const faqItems = (pageOf(DATA.pages.find(p=>p.slug==="faq"), lang).sections[0]?.items) || [];
-  const faqHtml = faqItems.map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
-  const keyFactsArr = (DATA.game.keyFactsI18n && DATA.game.keyFactsI18n[lang]) || DATA.game.keyFacts || [];
-  const keyFacts = keyFactsArr.map(f=>`<li>${esc(f)}</li>`).join("");
-  const gintro = (DATA.game.introI18n && DATA.game.introI18n[lang]) || DATA.game.intro;
-  const gname = (DATA.game.nameI18n && DATA.game.nameI18n[lang]) || DATA.game.name;
+  const badgeTxt = lang==="zh"?"2026 年现象级捉迷藏派对游戏 · 持续更新":lang==="ja"?"2026年話題のかくれんぼパーティゲーム · 定期更新":"2026's viral hide-and-seek hit · Guides updated regularly";
+  const h1Tail = lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"GUIDES";
   const body = `
-  <main class="container">
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="badge"><span class="dot"></span> ${T4(lang,"2026 年现象级捉迷藏派对游戏 · 持续更新","2026 年現象級捉迷藏派對遊戲 · 持續更新","2026年話題のかくれんぼパーティゲーム · 定期更新","2026년 화제의 숨바꼭질 파티 게임 · 정기 업데이트","El éxito viral de escondite de 2026 · Guías actualizadas con regularidad","2026's viral hide-and-seek hit · Guides updated regularly")}</span>
-        <h1>${esc(gname)} <span class="grad">${T4(lang,"攻略","攻略","ガイド","공략","Guía","Guides")}</span>${T4(lang,"：模式、地图与答案","：模式、地圖與答案","：モード・マップ・Q&A","：모드・맵・Q&A",": modos, mapas y respuestas"," &amp; Answers")}</h1>
-        <p class="lead">${esc(s.tagline)}. ${T4(lang,"每页回答一个真实搜索问题，来源可查，持续更新。","每頁回答一個真實搜尋問題，來源可查，持續更新。","各ページが実際の検索に答えます。信頼できる情報源、定期的に更新。","각 페이지는 실제 검색 질문에 답하며, 신뢰할 수 있는 출처와 함께 정기적으로 업데이트됩니다.","Cada página responde a una búsqueda real, con fuentes verificables y actualización constante.",s.description)}</p>
-        <div class="stats">${stats}</div>
+  <main>
+    <section class="arcade-hero">
+      <div class="arcade-bg"><img src="/images/hero.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" sizes="100vw" alt="${esc(gname)} key art" loading="eager" width="3136" height="1344" fetchpriority="high" /></div>
+      <div class="arcade-overlay"></div>
+      <div class="container arcade-copy">
+        <span class="badge"><span class="dot"></span> ${esc(badgeTxt)}</span>
+        <h1>${esc(gname)} <span class="arcade-hl">${esc(h1Tail)}</span></h1>
+        <p class="lead">${esc(s.tagline)}.</p>
+        <div class="stats arcade-stats">${stats}</div>
         <div class="cta-row">
           <a class="btn btn-primary" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.startPlaying)}</a>
           <a class="btn btn-ghost" href="${prefix}/how-to-play">${esc(s.readGuide || "How to Play →")}</a>
         </div>
       </div>
-      <div class="hero-media floating">
-        <span class="blob g"></span><span class="blob b"></span>
-        <div class="hero-img"><img src="/images/hero.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" sizes="(max-width: 900px) 92vw, 55vw" width="3136" height="1344" alt="${esc(gname)} key art" loading="eager" /></div>
-      </div>
     </section>
-    <section class="section">
-      <div class="section-head"><div><div class="kicker">${T4(lang,"攻略","攻略","攻略","공략","Guías","Guides")}</div><h2>${esc(s.guides)}</h2></div><p>${T4(lang,"每一页都来自真实搜索需求，基于可靠来源。","每一頁都來自真實搜尋需求，基於可靠來源。","各ページは実際の検索ニーズに基づいています。","각 페이지는 실제 검색 니즈를 바탕으로 합니다.","Cada página nace de una necesidad de búsqueda real, basada en fuentes fiables.","")}</p></div>
+    <section class="container section">
+      <div class="section-head"><div><div class="kicker">${lang==="zh"?"选择模式":lang==="ja"?"モード選択":"PICK A MODE"}</div><h2>${lang==="zh"?"模式大厅":lang==="ja"?"モードホール":"Mode Lobby"}</h2></div><p>${lang==="zh"?"每个模式一条直达攻略。":lang==="ja"?"各モードへのショートカット。":"One shortcut per mode."}</p></div>
+      <div class="mode-row">${modeTabs}</div>
+    </section>
+    <section class="container section">
+      <div class="section-head"><div><div class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"Guides"}</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
       <div class="guide-grid">${cards}</div>
     </section>
-    ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">${T4(lang,"问答","問答","Q&A","Q&A","FAQ","FAQ")}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
-    <section class="section">
-      <div class="section-head"><div><div class="kicker">${T4(lang,"关于","關於","概要","소개","Acerca de","About")}</div><h2>${esc(s.aboutGame)}</h2></div></div>
+    ${faqHtml ? `<section class="container section"><div class="section-head"><div><div class="kicker">${lang==="zh"?"问答":lang==="ja"?"Q&A":"FAQ"}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
+    <section class="container section">
+      <div class="section-head"><div><div class="kicker">${lang==="zh"?"关于":lang==="ja"?"概要":"About"}</div><h2>${esc(s.aboutGame)}</h2></div></div>
       <div class="card"><p>${esc(gintro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
   </main>`;
-  return head(`${esc(gname)} ${T4(lang,"攻略站","攻略站","攻略ガイド","공략 사이트","Guías y Wiki","Guides & Wiki")}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
+  return head(`${esc(gname)} ${lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
 }
-
 /* ---------- page ---------- */
 function renderPage(p, lang){
   SEC_IDX = 0;
@@ -334,42 +348,40 @@ function renderPage(p, lang){
   const toc = t.sections.filter(x=>x.type!=="faq").map((x,i)=>`<a href="#sec-${i+1}">${esc(x.heading)}</a>`).join("");
   const faq = t.sections.find(x=>x.type==="faq");
   const ld = [articleLd(t, lang), breadcrumbLd(t, lang), faq?faqLd(faq.items):null].filter(Boolean);
-  const _wikiLabel = lang==="zh-CN"?"维基百科":lang==="zh-TW"?"維基百科":lang==="ja"?"ウィキペディア":lang==="en"?"Wikipedia":"Wikipedia";
-  const _steamLabel = lang==="zh-CN"?"Steam 官方商店页":lang==="zh-TW"?"Steam 官方商店頁":lang==="ja"?"Steam 公式ストア":"Official Steam store page";
   const sources = (p.sources && p.sources.length ? p.sources : [
-    { label: `${DATA.game.name} — ${_wikiLabel}`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
-    { label: _steamLabel, url: DATA.game.steamUrl }
+    { label: `${DATA.game.name} — Wikipedia`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
+    { label: "Official Steam store page", url: DATA.game.steamUrl }
   ]);
-  const sourceHtml = sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc((s.labels && s.labels[lang]) || s.label)}</a></li>`).join("");
+  const sourceHtml = sources.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a></li>`).join("");
   const related = DATA.pages.filter(x=>x.slug!==p.slug).slice(0,6).map(x=>{
     const mm = metaOf(x.slug);
-    return `<a href="${prefix}/${x.slug}"><span class="ri">${SVG[mm.icon]}</span>${esc(pageOf(x,lang).title)}</a>`;
+    return `<a href="${prefix}/${x.slug}"><span class="ri">${SVG[mm.icon]}</span><span>${esc(pageOf(x,lang).title)}</span></a>`;
   }).join("");
   const body = `
   <main class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="${prefix}/">${esc(s.navHome)}</a> <span>›</span> <span>${esc(t.title)}</span></nav>
-    <div class="article-grid">
-      <article>
-        <div class="page-hero">
-          ${p.image ? `<img class="page-img" src="${esc(p.image)}" srcset="${esc(p.image.replace('.jpg','-640.jpg'))} 640w, ${esc(p.image.replace('.jpg','-1280.jpg'))} 1280w, ${esc(p.image)} 3136w" sizes="(max-width: 640px) 92vw, 720px" width="3136" height="1344" alt="${esc(t.title)}" loading="lazy" />` : ""}
-          <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:10px">
-            <span class="icon ${m.ic}" style="width:48px;height:48px;border-radius:13px;display:grid;place-items:center">${SVG[m.icon]}</span>
-            <div><h1>${esc(t.title)}</h1><p class="lead">${esc(t.metaDescription)}</p></div>
-          </div>
-          <p class="intro">${esc(t.intro)}</p>
+    <div class="lobby-hero">
+      ${p.image ? `<img class="page-img" src="${esc(p.image)}" srcset="${esc(p.image.replace('.jpg','-640.jpg'))} 640w, ${esc(p.image.replace('.jpg','-1280.jpg'))} 1280w, ${esc(p.image)} 3136w" sizes="(max-width: 640px) 92vw, 820px" width="3136" height="1344" alt="${esc(t.title)}" loading="lazy" />` : ""}
+      <div class="lobby-title">
+        <span class="icon ${m.ic}" style="width:52px;height:52px;border-radius:14px;display:grid;place-items:center">${SVG[m.icon]}</span>
+        <div>
+          <span class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"GUIDE"}</span>
+          <h1>${esc(t.title)}</h1>
+          <p class="lead">${esc(t.metaDescription)}</p>
         </div>
-        ${sections}
-        <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul></div>
-      </article>
-      <aside class="related">
-        <div class="card"><h2>${T4(lang,"本页目录","本頁目錄","目次","목차","En esta página","On this page")}</h2><div class="toc">${toc||"<span>"+(T4(lang,"无","無","","없음","",""))+"</span>"}</div></div>
-        <div class="card"><h2>${esc(s.moreGuides)}</h2><div class="related-list">${related}</div></div>
-      </aside>
+      </div>
+      <p class="intro">${esc(t.intro)}</p>
+      ${toc ? `<div class="lobby-toc"><b>${lang==="zh"?"本页目录":lang==="ja"?"目次":"On this page"}</b><div>${toc}</div></div>` : ""}
+    </div>
+    ${sections}
+    <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul></div>
+    <div class="lobby-related">
+      <div class="section-head"><div><div class="kicker">${esc(s.moreGuides)}</div><h2>${lang==="zh"?"继续探索":lang==="ja"?"続けて探索":"Keep exploring"}</h2></div></div>
+      <div class="related-list related-row">${related}</div>
     </div>
   </main>`;
   return head(t.metaTitle, t.metaDescription, ld, p.slug, lang) + header(lang, p.slug) + body + footer(lang);
 }
-
 /* ---------- static ---------- */
 function renderStatic(title, contentHtml, slug, lang){
   const s = siteI18n(lang);

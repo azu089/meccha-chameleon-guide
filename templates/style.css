@@ -336,3 +336,57 @@ details.faq:hover summary .pm{box-shadow:0 0 14px rgba(61,220,132,.55)}
 .site-search input:focus{border-color:rgba(76,201,240,.6);background:rgba(76,201,240,.06)}
 .search-ic{position:absolute;left:9px;top:50%;transform:translateY(-50%);font-size:.8rem;opacity:.6;pointer-events:none}
 @media (max-width:760px){.site-search{order:4;flex:1 1 100%;margin-left:0}.header-inner{padding-top:8px;padding-bottom:8px}}
+
+/* ============================================================
+   Meccha — "Arcade Lobby" layout layer (v2, 2026-08-07)
+   街机骨架：灯牌 hero / 模式 tab / 无侧栏内页 / 底部继续探索
+   与 KTS(卷宗) / Doloc(田园) 骨架完全独立
+   ============================================================ */
+.arcade-hero{position:relative;min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#0a0e14}
+.arcade-bg{position:absolute;inset:0;z-index:0}
+.arcade-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.8) saturate(1.1)}
+.arcade-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,14,20,.3) 0%,rgba(10,14,20,.55) 55%,rgba(10,14,20,.92) 100%)}
+.arcade-copy{position:relative;z-index:2;padding:70px 22px 60px;max-width:900px}
+.arcade-copy h1{font-family:var(--display);font-size:clamp(2.5rem,7vw,4.8rem);line-height:1;letter-spacing:-.02em;margin:18px 0 14px;color:#fff;text-shadow:0 0 40px rgba(61,220,132,.4),0 4px 30px rgba(0,0,0,.5)}
+.arcade-hl{background:linear-gradient(90deg,#3ddc84,#4cc9f0,#b48cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.arcade-copy .lead{color:rgba(232,230,225,.92);font-size:1.12rem;max-width:52ch;margin:0 auto 24px;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+.arcade-stats{max-width:620px;margin:0 auto}
+.arcade-stats .stat{background:rgba(10,14,20,.55);backdrop-filter:blur(6px);border-color:rgba(76,201,240,.3)}
+.arcade-copy .cta-row{justify-content:center}
+.mode-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mode-tab{position:relative;display:flex;flex-direction:column;gap:8px;background:linear-gradient(165deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:20px 18px;color:var(--text);transition:.18s;overflow:hidden}
+.mode-tab::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#3ddc84,#4cc9f0,#b48cff);opacity:0;transition:.2s}
+.mode-tab:hover{transform:translateY(-4px);border-color:rgba(76,201,240,.5);box-shadow:0 20px 44px -22px rgba(0,0,0,.85)}
+.mode-tab:hover::before{opacity:1}
+.mode-ic{width:34px;height:34px;color:#4cc9f0;margin-bottom:4px}
+.mode-ic svg{width:34px;height:34px}
+.mode-tab b{font-family:var(--display);font-size:1.02rem;line-height:1.25}
+.mode-tab p{color:var(--muted);font-size:.82rem;line-height:1.45;flex:1}
+.mode-go{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#3ddc84;opacity:0;transform:translateY(3px);transition:.18s}
+.mode-tab:hover .mode-go{opacity:1;transform:none}
+.lobby-hero{position:relative;border:1px solid var(--line-strong);border-radius:18px;padding:30px 32px;margin-bottom:26px;background:linear-gradient(135deg,rgba(76,201,240,.08),rgba(10,14,20,.5) 55%,rgba(180,140,255,.06));overflow:hidden}
+.lobby-hero .page-img{margin:-30px -32px 20px;width:calc(100% + 64px);max-width:none;border-radius:0;display:block}
+.lobby-title{display:flex;gap:16px;align-items:flex-start;margin-bottom:8px}
+.lobby-title h1{font-family:var(--display);font-size:clamp(1.6rem,3.6vw,2.6rem);line-height:1.1;color:var(--text)}
+.lobby-title .lead{color:var(--muted);font-size:.98rem;margin-top:4px}
+.lobby-hero .intro{color:var(--muted);font-size:1rem;max-width:72ch;margin-top:8px}
+.lobby-toc{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-top:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.lobby-toc b{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#4cc9f0;padding-top:6px;white-space:nowrap}
+.lobby-toc div{display:flex;flex-wrap:wrap;gap:6px}
+.lobby-toc a{font-size:.84rem;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:6px 13px;transition:.14s}
+.lobby-toc a:hover{color:var(--text);border-color:rgba(76,201,240,.5)}
+.lobby-related{margin-top:30px;padding-top:6px;border-top:1px solid var(--line)}
+.related-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.related-row a{display:flex;align-items:center;gap:10px;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:11px;padding:13px 14px;font-size:.88rem;line-height:1.35;transition:.14s}
+.related-row a:hover{background:rgba(76,201,240,.09);color:var(--text);border-color:rgba(76,201,240,.4)}
+.related-row .ri{width:20px;height:20px;color:#4cc9f0;flex:0 0 auto}
+.related-row .ri svg{width:20px;height:20px}
+@media (max-width:1024px){
+  .mode-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .related-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){.arcade-hero{min-height:68vh}}
+@media (max-width:640px){
+  .mode-row{grid-template-columns:1fr}
+  .related-row{grid-template-columns:1fr}
+}
