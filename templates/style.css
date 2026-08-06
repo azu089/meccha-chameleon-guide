@@ -429,3 +429,21 @@ details.faq:hover summary .pm{box-shadow:0 0 14px rgba(61,220,132,.55)}
 .chat-faq .pm{margin-left:auto;font-family:var(--mono);color:#4cc9f0;font-size:1.1rem;flex:0 0 auto;transition:transform .2s}
 .chat-faq[open] .pm{transform:rotate(45deg)}
 .chat-a{padding:0 16px 15px;color:var(--muted);font-size:.9rem;line-height:1.6}
+
+/* ============================================================
+   Meccha — Level Path grid (v2.2, 非方块网格的选关布局)
+   ============================================================ */
+.level-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.level-path{position:relative;display:flex;align-items:center;gap:14px;background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 18px;color:var(--text);transition:.18s;overflow:hidden}
+.level-path::before{content:"";position:absolute;top:0;left:0;bottom:0;width:4px;background:linear-gradient(180deg,#3ddc84,#4cc9f0);opacity:0;transition:.2s}
+.level-path:hover{transform:translateX(4px);border-color:rgba(76,201,240,.5);box-shadow:0 16px 36px -20px rgba(0,0,0,.85)}
+.level-path:hover::before{opacity:1}
+.path-no{font-family:var(--mono);font-size:.72rem;font-weight:700;color:#041;background:linear-gradient(135deg,#3ddc84,#4cc9f0);border-radius:7px;padding:5px 8px;flex:0 0 auto}
+.path-icon{width:26px;height:26px;color:#4cc9f0;flex:0 0 auto}
+.path-icon svg{width:26px;height:26px}
+.path-body{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.path-body b{font-family:var(--display);font-size:.98rem;color:var(--text);line-height:1.25}
+.path-body span{color:var(--muted);font-size:.8rem;line-height:1.4}
+.path-go{font-size:.85rem;color:#3ddc84;flex:0 0 auto;opacity:0;transform:translateX(-4px);transition:.18s}
+.level-path:hover .path-go{opacity:1;transform:none}
+@media (max-width:640px){.level-grid{grid-template-columns:1fr}}

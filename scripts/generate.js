@@ -302,12 +302,15 @@ function renderHome(lang){
       <span class="mode-go">${esc(s.readGuide||"Play →")}</span>
     </a>`;
   }).join("");
-  const cards = DATA.pages.map(p => {
+  const cards = DATA.pages.map((p, i) => {
     const m = metaOf(p.slug);
     const t = pageOf(p, lang);
-    return `<a class="guide-card" href="${prefix}/${p.slug}">
-      <span class="icon ${m.ic}">${SVG[m.icon]}</span><span class="arrow">→</span>
-      <h3>${esc(t.title)}</h3><p>${esc(t.metaDescription)}</p>
+    const idx = String(i+1).padStart(2,"0");
+    return `<a class="level-path" href="${prefix}/${p.slug}">
+      <span class="path-no">${idx}</span>
+      <span class="path-icon">${SVG[m.icon]}</span>
+      <span class="path-body"><b>${esc(t.title)}</b><span>${esc(t.metaDescription)}</span></span>
+      <span class="path-go">▶</span>
     </a>`;
   }).join("");
   const badgeTxt = lang==="zh"?"2026 年现象级捉迷藏派对游戏 · 持续更新":lang==="ja"?"2026年話題のかくれんぼパーティゲーム · 定期更新":"2026's viral hide-and-seek hit · Guides updated regularly";
@@ -334,7 +337,7 @@ function renderHome(lang){
     </section>
     <section class="container section">
       <div class="section-head"><div><div class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"Guides"}</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
-      <div class="guide-grid">${cards}</div>
+      <div class="level-grid">${cards}</div>
     </section>
     ${faqHtml ? `<section class="container section"><div class="section-head"><div><div class="kicker">${lang==="zh"?"问答":lang==="ja"?"Q&A":"FAQ"}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
     <section class="container section">
