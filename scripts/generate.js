@@ -58,7 +58,7 @@ const siteI18n = lang => {
     footerNote: s.footerNote || "Unofficial fan site — game and related assets belong to their respective owners.",
     footerSource: s.footerSource || "Information checked against Wikipedia, the official Steam store page, IGN and Steam Community sources.",
     quickAnswers: s.quickAnswers || "Most-asked questions", guides: s.guides || "All Guides", aboutGame: s.aboutGame || "About the game",
-    startPlaying: s.startPlaying || "Start Playing →", getOnSteam: s.getOnSteam || "Get it on Steam ↗", readGuide: s.readGuide || "How to Play →", moreGuides: s.moreGuides || "More Guides",
+    startPlaying: s.startPlaying || "Get it on Steam", getOnSteam: s.getOnSteam || "Get it on Steam ↗", readGuide: s.readGuide || "How to Play →", moreGuides: s.moreGuides || "More Guides",
     sources: s.sources || "Sources & fact-checking", langLabel: s.langLabel || "Language"
   };
 };
@@ -123,14 +123,20 @@ ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?
 </head>
 <body>`;
 }
+/* SVG flags (render on all platforms) */
+const FLAGS = {
+  "en": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0 0 60 40M60 0 0 40" stroke="#fff" stroke-width="11"/><path d="M0 0 60 40M60 0 0 40" stroke="#C8102E" stroke-width="6"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="14"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="8"/></svg>',
+  "zh-CN": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#EE1C25"/><g fill="#FFDE00"><path d="M12 8l1.7 3.4 3.8.5-2.8 2.7.7 3.8L12 16.7l-3.4 1.7.7-3.8-2.8-2.7 3.8-.5z"/><path d="M22 4l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM25 11l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM22 18l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM19 11l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3z"/></g></svg>',
+  "zh-TW": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#FE0000"/><rect width="30" height="20" fill="#000095"/><g fill="#fff" stroke="#fff" stroke-width="1"><path d="M15 2l2.3 6.7 7 .1-5.6 4.2 2.1 6.7-5.8-4-5.8 4 2.1-6.7L5.7 8.8l7-.1z"/><g stroke-width=".6"><path d="M15 2v16M15 2 5.7 8.8 15 15.6M15 2l9.3 6.8L15 15.6M15 2v16M15 18.8 5.7 12 15 5.2M15 18.8l9.3-6.8L15 5.2"/></g></g></svg>',
+  "ja": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="11" fill="#BC002D"/></svg>',
+};
+const LANG_META = { "en":{name:"English",flag:FLAGS.en}, "zh-CN":{name:"简体中文",flag:FLAGS["zh-CN"]}, "zh-TW":{name:"繁體中文",flag:FLAGS["zh-TW"]}, "ja":{name:"日本語",flag:FLAGS.ja} };
 function langSwitcher(lang, slug){
-  const flags = { en: "🇬🇧", zh: "🇨🇳", ja: "🇯🇵" };
-  const names = { en: "English", zh: "中文", ja: "日本語" };
   const items = LANGS.map(l =>
-    `<a href="${urlOf(slug,l)}" class="${l===lang?"active":""}"><span class="flag">${flags[l]||""}</span>${names[l]}</a>`
+    `<a href="${urlOf(slug,l)}" class="${l===lang?"active":""}"><span class="flag svg-flag">${LANG_META[l]?.flag||"🌐"}</span>${LANG_META[l]?.name||l}</a>`
   ).join("");
-  return `<details class="lang-dd" ${slug!=="index"?"":""}>
-    <summary><span class="flag">${flags[lang]||"🌐"}</span>${names[lang]||lang}<span class="caret">▾</span></summary>
+  return `<details class="lang-dd">
+    <summary><span class="flag svg-flag">${LANG_META[lang]?.flag||"🌐"}</span><span class="lang-name">${LANG_META[lang]?.name||lang}</span><span class="caret">▾</span></summary>
     <div class="dd-menu">${items}</div>
   </details>`;
 }
@@ -153,6 +159,11 @@ function header(lang, active){
         <div class="dd-menu">${guideItems}</div>
       </details>
     </nav>
+    <form class="site-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener" role="search">
+      <input type="search" name="q" placeholder="${lang==="zh-CN"||lang==="zh-TW"?"搜索攻略…":lang==="ja"?"ガイドを検索…":"Search guides…"}" aria-label="Search" />
+      <input type="hidden" name="as_sitesearch" value="${esc(DATA.site.domain)}" />
+      <span class="search-ic">🔍</span>
+    </form>
     ${langSwitcher(lang, active || "index")}
   </div>
 </header>`;
@@ -406,5 +417,7 @@ for (const lang of LANGS) {
 fs.writeFileSync(path.join(OUT,"sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`  <url><loc>${u}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.endsWith("/")?"1.0":"0.8"}</priority></url>`).join("\n")}\n</urlset>\n`);
 fs.writeFileSync(path.join(OUT,"robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
 // ads.txt：接入 AdSense 后填 site.json 的 adsenseId，自动生成真实记录；未接入则保持空文件（避免占位符误导审核）
+// 旧 /zh/ 路径重定向到 /zh-CN/（兼容改名前的链接）
+fs.writeFileSync(path.join(OUT,"_redirects"), "/zh/* /zh-CN/:splat 301\n");
 fs.writeFileSync(path.join(OUT,"ads.txt"), DATA.site.adsenseId ? `google.com, ${DATA.site.adsenseId}, DIRECT, f08c47fec0942fa0\n` : "");
 console.log(`✓ Generated ${LANGS.length} locales x ${1+DATA.pages.length+3} pages + sitemap`);

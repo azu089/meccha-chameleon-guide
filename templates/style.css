@@ -327,3 +327,12 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 details.faq:hover{border-color:rgba(61,220,132,.4)}
 details.faq summary .pm{transition:.2s}
 details.faq:hover summary .pm{box-shadow:0 0 14px rgba(61,220,132,.55)}
+/* SVG flags + site search (Meccha v1.5) */
+.svg-flag{width:20px;height:14px;display:inline-block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.14);flex:0 0 auto;vertical-align:-2px}
+.svg-flag svg{width:100%;height:100%;display:block}
+.lang-dd .svg-flag{width:20px;height:14px;margin-right:6px}
+.site-search{position:relative;flex:0 1 190px;min-width:0;margin-left:auto}
+.site-search input{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:9px;color:#f2f5f8;font-size:.84rem;padding:8px 12px 8px 30px;outline:none;transition:.16s}
+.site-search input:focus{border-color:rgba(76,201,240,.6);background:rgba(76,201,240,.06)}
+.search-ic{position:absolute;left:9px;top:50%;transform:translateY(-50%);font-size:.8rem;opacity:.6;pointer-events:none}
+@media (max-width:760px){.site-search{order:4;flex:1 1 100%;margin-left:0}.header-inner{padding-top:8px;padding-bottom:8px}}
