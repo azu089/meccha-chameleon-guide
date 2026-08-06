@@ -465,6 +465,55 @@
       "Play both roles: understanding Hunters makes you a better Hider, and vice versa",
       "Expect no undo: a wrong stroke stays for the whole round, so sample the surface before you commit"
      ]
+    },
+    {
+     "type": "list",
+     "heading": "Common Mistakes That Get You Found",
+     "body": "Most new Chameleons get caught for the same reasons. Fix these and your survival time jumps immediately.",
+     "items": [
+      "Painting the right color on the wrong surface — a perfect match in the wrong spot still stands out; only mimic surfaces near your hiding spot",
+      "Forgetting the light: paint that matches the wall's color but faces a different direction reflects differently and 'shines'",
+      "Moving after painting — any movement creates a visible trail, so commit to a spot before the Hunt phase starts",
+      "Not using the eyedropper — guessing a color by eye is the #1 way to get a 'missed spot' callout",
+      "Painting the whole body one color — real props have texture, edge wear and highlights; add subtle variation to look like part of the scene",
+      "Standing in open floor space — walls, corners and props hide you far better than a clear patch of ground"
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Advanced Chameleon Tactics",
+     "body": "Once the basics feel easy, these tactics win rounds against experienced Seekers.",
+     "items": [
+      "Layer your disguise: paint a base color, then add streaks or patches that match nearby props so you read as a real object",
+      "Use clones as bait — drop a clone in a visible spot, stay hidden nearby, and watch Seekers reveal themselves when they shoot the decoy",
+      "Match the environment's light direction before you commit — check where the map's key light comes from and orient your 'lit' side toward it",
+      "Learn prop silhouettes: each map has a few signature shapes (vending machines, crates, statues) that you can mimic perfectly with the pose system",
+      "In Infection mode, position near teammates: when they get tagged and switch sides, you know exactly which spots the new Hunters will check first",
+      "Pace your painting: don't finish in the first 10 seconds and then wait — a late touch-up right before Hunt phase starts throws off observers who watched you paint"
+     ]
+    },
+    {
+     "type": "steps",
+     "heading": "Deciding Where to Hide",
+     "body": "A repeatable decision process for picking a hiding spot that actually works.",
+     "items": [
+      [
+       "Scan first, commit later",
+       "Take 5-10 seconds to survey the map and note 2-3 props that match your character's size and shape"
+      ],
+      [
+       "Pick the less obvious prop",
+       "Everyone hides behind the big crate. Choose the mid-sized prop with texture you can actually reproduce"
+      ],
+      [
+       "Check the escape route",
+       "If a Seeker checks your spot, is there a prop to hop to? Position yourself so one quick move buys you another hiding option"
+      ],
+      [
+       "Match the sightline",
+       "Hide where passing Seekers naturally look last — above eye level, at the edge of a busy corner, or behind a door frame"
+      ]
+     ]
     }
    ],
    "i18n": {
@@ -558,6 +607,55 @@
         "塗ったら動かない——動きが残像でバレる",
         "両方の役割をやる：狩り役を理解すると隠れ役も上手くなる",
         "やり直しはない前提で：失敗した塗りはラウンド中残るので、塗る前に必ず色を確認する"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "見つかる原因のよくあるミス",
+       "body": "新米カメレオンのほとんどが同じ理由で見つかります。これを直せば生存時間はすぐ伸びます。",
+       "items": [
+        "色は合っていても場所が違う — 間違った場所に完璧な色を塗っても目立ちます。隠れている場所の近くの面だけを真似しましょう",
+        "光を忘れる — 色が合っていても向きが違えば反射が変わり「光って」見えます",
+        "塗った後に動く — 動きは痕跡として見えます。ハント開始前に場所を決めましょう",
+        "スポイトを使わない — 目見当で色を選ぶのは「見逃し」通知の一番の原因です",
+        "全身を1色で塗る — 実際のオブジェクトには質感や擦れ、ハイライトがあります。微妙な変化を足して背景に溶け込みましょう",
+        "開けた床に立つ — 壁や角、小物は何もない地面よりずっと隠れやすいです"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "上級カメレオン戦術",
+       "body": "基本が身についたら、この戦術で経験豊富なシーカーにも勝てます。",
+       "items": [
+        "偽装を重ねる：ベース色を塗り、近くの小物に合う縞や斑点を足して本物のオブジェクトに見せる",
+        "クローンを餌にする——目立つ場所にクローンを置き、近くに隠れて、シーカーがデコイを撃った瞬間に居場所を晒させる",
+        "光の方向を先に確認——マップの主要光源がどこから来るか見て、「光が当たる面」をそちらに向ける",
+        "プロップのシルエットを覚える：各マップには特徴的な形（自動販売機、木箱、像）があり、ポーズで完璧に再現できます",
+        "感染モードではチームメイトの近くに——彼らが感染して陣営が変わると、新しいハンターが最初に確認する場所が分かります",
+        "塗るペースを調整：最初の10秒で全部塗って待つのではなく、ハント開始直前に軽く塗り直すと、塗る様子を見ていた人を惑わせられます"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "隠れる場所の決め方",
+       "body": "使える隠れ場所を選ぶための再現可能な判断フローです。",
+       "items": [
+        [
+         "まず見て、あとで決める",
+         "5〜10秒かけてマップを眺め、自分のキャラのサイズや形に合う小物を2〜3個メモする"
+        ],
+        [
+         "目立たない小物を選ぶ",
+         "みんな大きな木箱の後ろに隠れます。実際に再現できる質感の、中くらいの小物を選びましょう"
+        ],
+        [
+         "逃げ道を確認する",
+         "シーカーが確認に来たとき、飛び移れる小物はありますか？一動作で別の場所に移れる位置に立ちましょう"
+        ],
+        [
+         "視線を考慮する",
+         "通りかかるシーカーが最後に見る場所——目の高さより上、混雑した角の端、ドア枠の後ろ——に隠れましょう"
+        ]
        ]
       }
      ]
@@ -653,6 +751,55 @@
         "两种角色都玩：懂猎人才能当好躲藏者，反之亦然",
         "做好没有撤销的准备：错误的笔触会保留一整局，所以下笔前先取样确认"
        ]
+      },
+      {
+       "type": "list",
+       "heading": "导致你被找到的常见错误",
+       "body": "大多数新手变色龙都因为同样的原因被抓。改掉这些，你的存活时间会立刻提升。",
+       "items": [
+        "颜色对但表面不对——在错误的位置涂出完美颜色仍然显眼；只模仿你藏身点附近的表面",
+        "忘记光线：颜色匹配但朝向不同，反光也不同，会「发亮」",
+        "涂完后移动——任何移动都会留下可见轨迹，所以要在猎捕阶段开始前选定位置",
+        "不用取色器——凭肉眼猜颜色是「漏涂点」通报的第一原因",
+        "全身只涂一种颜色——真实道具都有纹理、磨损边缘和高光；加一点细微变化才能融入场景",
+        "站在开阔地面——墙壁、角落和道具比空旷地面好藏得多"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "进阶变色龙战术",
+       "body": "基础熟练后，这些战术能帮你赢下对阵老手搜寻者的对局。",
+       "items": [
+        "分层伪装：先涂底色，再加与附近道具匹配的条纹或斑块，让自己看起来像一个真实物体",
+        "用分身做诱饵——把分身放在显眼位置，自己藏在附近，搜寻者射击诱饵时就会暴露位置",
+        "下笔前先判断环境光方向——确认地图主光源来自哪里，让自己的「受光面」朝向它",
+        "学习道具剪影：每张地图都有几个标志性形状（自动售货机、箱子、雕像），用姿势系统可以完美模仿",
+        "感染模式中靠近队友站位：他们被抓并转换阵营后，你就知道新猎人会先检查哪些位置",
+        "控制涂色节奏：不要开局 10 秒就涂完干等——在猎捕阶段开始前做一次补涂，能干扰观察过你涂色的人"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "决定藏在哪里",
+       "body": "一套可复用的选点决策流程，帮你找到真正有效的藏身点。",
+       "items": [
+        [
+         "先观察，后决定",
+         "花 5-10 秒观察地图，记下 2-3 个与你的角色体型、形状匹配的道具"
+        ],
+        [
+         "选不那么显眼的道具",
+         "大家都藏在大箱子后面。选中等大小、纹理你能真实复刻的道具"
+        ],
+        [
+         "检查逃跑路线",
+         "如果搜寻者检查你的位置，附近有可以跳过去躲的道具吗？把自己放在一步就能换点的地方"
+        ],
+        [
+         "匹配视线盲区",
+         "藏在路过搜寻者最后才看的位置——视线水平以上、繁忙角落边缘或门框后面"
+        ]
+       ]
       }
      ]
     },
@@ -746,6 +893,55 @@
         "塗完後保持靜止——移動會產生可見殘影",
         "兩種角色都玩：懂獵人才能當好躲藏者，反之亦然",
         "做好沒有撤銷的準備：錯誤的筆觸會保留一整局，所以下筆前先取樣確認"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "導致你被找到的常見錯誤",
+       "body": "大多數新手變色龍都因爲同樣的原因被抓。改掉這些，你的存活時間會立刻提升。",
+       "items": [
+        "顏色對但表面不對——在錯誤的位置塗出完美顏色仍然顯眼；只模仿你藏身點附近的表面",
+        "忘記光線：顏色匹配但朝向不同，反光也不同，會「發亮」",
+        "塗完後移動——任何移動都會留下可見軌跡，所以要在獵捕階段開始前選定位置",
+        "不用取色器——憑肉眼猜顏色是「漏塗點」通報的第一原因",
+        "全身只塗一種顏色——真實道具都有紋理、磨損邊緣和高光；加一點細微變化才能融入場景",
+        "站在開闊地面——牆壁、角落和道具比空曠地面好藏得多"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "進階變色龍戰術",
+       "body": "基礎熟練後，這些戰術能幫你贏下對陣老手搜尋者的對局。",
+       "items": [
+        "分層僞裝：先塗底色，再加與附近道具匹配的條紋或斑塊，讓自己看起來像一個真實物體",
+        "用分身做誘餌——把分身放在顯眼位置，自己藏在附近，搜尋者射擊誘餌時就會暴露位置",
+        "下筆前先判斷環境光方向——確認地圖主光源來自哪裏，讓自己的「受光面」朝向它",
+        "學習道具剪影：每張地圖都有幾個標誌性形狀（自動售貨機、箱子、雕像），用姿勢系統可以完美模仿",
+        "感染模式中靠近隊友站位：他們被抓並轉換陣營後，你就知道新獵人會先檢查哪些位置",
+        "控制塗色節奏：不要開局 10 秒就塗完乾等——在獵捕階段開始前做一次補塗，能干擾觀察過你塗色的人"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "決定藏在哪裏",
+       "body": "一套可複用的選點決策流程，幫你找到真正有效的藏身點。",
+       "items": [
+        [
+         "先觀察，後決定",
+         "花 5-10 秒觀察地圖，記下 2-3 個與你的角色體型、形狀匹配的道具"
+        ],
+        [
+         "選不那麼顯眼的道具",
+         "大家都藏在大箱子後面。選中等大小、紋理你能真實復刻的道具"
+        ],
+        [
+         "檢查逃跑路線",
+         "如果搜尋者檢查你的位置，附近有可以跳過去躲的道具嗎？把自己放在一步就能換點的地方"
+        ],
+        [
+         "匹配視線盲區",
+         "藏在路過搜尋者最後纔看的位置——視線水平以上、繁忙角落邊緣或門框後面"
+        ]
        ]
       }
      ]
@@ -841,6 +1037,55 @@
         "양쪽 역할을 모두 해본다 — 사냥꾼을 이해하면 숨는 역할도 잘한다",
         "되돌리기가 없다는 걸 감안하라: 실수한 붓질은 라운드 내내 남으므로 칠하기 전에 색을 확인한다"
        ]
+      },
+      {
+       "type": "list",
+       "heading": "들키는 흔한 실수",
+       "body": "새내기 카멜레온 대부분이 같은 이유로 들킵니다. 이걸 고치면 생존 시간이 바로 늘어납니다.",
+       "items": [
+        "색은 맞는데 표면이 다름 — 잘못된 위치에 완벽한 색을 칠해도 눈에 띕니다. 숨는 곳 근처 표면만 흉내 내세요",
+        "빛을 잊음 — 색이 맞아도 방향이 다르면 반사가 달라져 '반짝'입니다",
+        "칠한 후 움직임 — 어떤 움직임도 눈에 띄는 흔적을 남깁니다. 사냥 단계 전에 자리를 정하세요",
+        "스포이드 미사용 — 눈대중으로 색을 고르는 건 '놓친 지점' 알림의 1순위 원인입니다",
+        "몸 전체를 한 색으로 — 실제 소품은 질감, 마모, 하이라이트가 있습니다. 미세한 변화를 더해 배경에 녹아드세요",
+        "트인 바닥에 서기 — 벽, 모서리, 소품이 맨 바닥보다 훨씬 잘 숨겨줍니다"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "고급 카멜레온 전술",
+       "body": "기본이 익숙해지면 이 전술로 경험 많은 시커를 이길 수 있습니다.",
+       "items": [
+        "위장을 겹겹이: 베이스 색을 칠한 뒤 근처 소품과 맞는 줄무늬·반점을 더해 실제 사물처럼 보이게",
+        "클론을 미끼로 — 눈에 띄는 곳에 클론을 두고 근처에 숨어, 시커가 미끼를 쏘면 위치를 드러내게 만드세요",
+        "빛 방향 먼저 확인 — 맵의 주광원이 어디인지 보고 '빛을 받는 면'을 그쪽으로 향하게",
+        "소품 실루엣 익히기: 각 맵에는 자판기, 상자, 조각상 같은 상징적 모양이 있고 포즈로 완벽히 재현할 수 있습니다",
+        "인펙션 모드에선 팀원 근처에 — 그들이 감염되어 편을 바꾸면 새 헌터가 먼저 확인할 위치를 정확히 알 수 있습니다",
+        "칠하는 속도 조절: 시작 10초에 다 칠하고 기다리지 말고, 사냥 직전에 한 번 더 손보면 칠하는 모습을 본 사람을 속일 수 있습니다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "숨을 곳 정하기",
+       "body": "실제로 작동하는 은신처를 고르는 반복 가능한 판단 과정입니다.",
+       "items": [
+        [
+         "먼저 살피고 나중에 결정",
+         "5~10초 동안 맵을 훑으며 내 캐릭터 크기·모양과 맞는 소품 2~3개를 메모"
+        ],
+        [
+         "덜 눈에 띄는 소품 선택",
+         "모두 큰 상자 뒤에 숨습니다. 질감을 실제로 재현할 수 있는 중형 소품을 고르세요"
+        ],
+        [
+         "탈출로 확인",
+         "시커가 내 자리를 확인하면 옮겨갈 소품이 있나요? 한 번의 움직임으로 다른 곳에 숨을 수 있는 위치에 서세요"
+        ],
+        [
+         "시선 사각 지대",
+         "지나가는 시커가 마지막에 보는 곳 — 시선 높이 위, 붐비는 모서리 끝, 문틀 뒤 — 에 숨으세요"
+        ]
+       ]
       }
      ]
     },
@@ -934,6 +1179,55 @@
         "Quédate quieto tras pintar: el movimiento deja un rastro visible",
         "Juega ambos roles: entender a los Cazadores te hace mejor Escondedor y viceversa",
         "Cuenta con no poder deshacer: una pincelada errónea dura toda la ronda, así que muestrea la superficie antes de comprometerte"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Errores comunes que te delatan",
+       "body": "La mayoría de los camaleones novatos caen por las mismas razones. Corrígelos y tu tiempo de supervivencia sube de inmediato.",
+       "items": [
+        "El color correcto en la superficie equivocada — una coincidencia perfecta en el sitio equivocado aún destaca; solo imita superficies cerca de tu escondite",
+        "Olvidar la luz: un color que coincide pero mira hacia otra dirección refleja distinto y «brilla»",
+        "Moverse después de pintar — cualquier movimiento deja un rastro visible, así que comprométete con un lugar antes de la fase de caza",
+        "No usar el cuentagotas — adivinar el color a ojo es la razón nº 1 de avisos de «punto fallido»",
+        "Pintar todo el cuerpo de un color — los objetos reales tienen textura, desgaste y brillos; añade variación sutil para parecer parte de la escena",
+        "Pararse en suelo abierto — las paredes, esquinas y accesorios esconden mucho mejor que un claro en el piso"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Tácticas avanzadas de camaleón",
+       "body": "Cuando lo básico sea fácil, estas tácticas ganan rondas contra buscadores experimentados.",
+       "items": [
+        "Superpón tu disfraz: pinta un color base y añade rayas o manchas que coincidan con los accesorios cercanos para que parezcas un objeto real",
+        "Usa los clones como cebo — deja un clon en un lugar visible, quédate escondido cerca y observa cómo los buscadores se delatan al disparar al señuelo",
+        "Comprueba la dirección de la luz antes de decidir — mira de dónde viene la luz clave del mapa y orienta tu lado «iluminado» hacia ella",
+        "Aprende las siluetas de los accesorios: cada mapa tiene formas características (máquinas expendedoras, cajas, estatuas) que puedes imitar con el sistema de poses",
+        "En modo Infección, colócate cerca de compañeros: cuando sean infectados y cambien de bando, sabrás exactamente qué sitios revisarán los nuevos cazadores",
+        "Controla el ritmo de pintado: no termines en los primeros 10 segundos y esperes; un retoque justo antes de la caza desconcierta a quienes te vieron pintar"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "Decidir dónde esconderse",
+       "body": "Un proceso de decisión reutilizable para elegir un escondite que funcione.",
+       "items": [
+        [
+         "Explora primero, decide después",
+         "Tómate 5-10 segundos para ver el mapa y anota 2-3 accesorios que coincidan con el tamaño y forma de tu personaje"
+        ],
+        [
+         "Elige el accesorio menos obvio",
+         "Todos se esconden tras la caja grande. Elige el accesorio mediano con textura que puedas reproducir de verdad"
+        ],
+        [
+         "Revisa la ruta de escape",
+         "Si un buscador revisa tu sitio, ¿hay un accesorio al que saltar? Colócate donde un movimiento rápido te dé otra opción"
+        ],
+        [
+         "Busca el ángulo ciego",
+         "Escóndete donde los buscadores miran al final — sobre la altura de los ojos, al borde de una esquina concurrida o tras el marco de una puerta"
+        ]
        ]
       }
      ]
