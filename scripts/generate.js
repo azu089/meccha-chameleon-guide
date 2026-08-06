@@ -295,7 +295,7 @@ function renderHome(lang){
   const modeTabs = modePages.map((slug)=>{
     const p=DATA.pages.find(x=>x.slug===slug); if(!p) return "";
     const t=pageOf(p,lang); const m=metaOf(slug);
-    return `<a class="mode-tab" href="${prefix}/${slug}">
+    return `<a class="mode-tab" href="${prefix}/${slug}" data-mode="${slug}">
       <span class="mode-ic">${SVG[m.icon]}</span>
       <b>${esc(t.title)}</b>
       <p>${esc(t.metaDescription)}</p>
@@ -306,7 +306,8 @@ function renderHome(lang){
     const m = metaOf(p.slug);
     const t = pageOf(p, lang);
     const idx = String(i+1).padStart(2,"0");
-    return `<a class="level-path" href="${prefix}/${p.slug}">
+    const modeRel = (p.slug==="how-to-play")?"how-to-play":(p.slug==="modes")?"modes":(p.slug==="maps")?"maps":(p.slug==="tips-and-tricks")?"tips-and-tricks":"all";
+    return `<a class="level-path" href="${prefix}/${p.slug}" data-mode-rel="${modeRel}">
       <span class="path-no">${idx}</span>
       <span class="path-icon">${SVG[m.icon]}</span>
       <span class="path-body"><b>${esc(t.title)}</b><span>${esc(t.metaDescription)}</span></span>
@@ -344,7 +345,20 @@ function renderHome(lang){
       <div class="section-head"><div><div class="kicker">${lang==="zh"?"关于":lang==="ja"?"概要":"About"}</div><h2>${esc(s.aboutGame)}</h2></div></div>
       <div class="card"><p>${esc(gintro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
-  </main>`;
+  </main>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var modes=document.querySelectorAll('.mode-tab');
+    var paths=document.querySelectorAll('.level-path');
+    modes.forEach(function(m){
+      m.addEventListener('click', function(ev){
+        // 允许正常跳转，但高亮当前模式
+        modes.forEach(function(x){x.classList.remove('on');});
+        m.classList.add('on');
+      });
+    });
+  });
+  </script>`;
   return head(`${esc(gname)} ${lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
 }
 /* ---------- page ---------- */
