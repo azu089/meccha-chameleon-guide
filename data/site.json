@@ -626,11 +626,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -931,11 +941,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -1264,11 +1284,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -1489,11 +1519,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -1650,19 +1690,39 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     },
     {
      "label": "isThereAnyDeal — MECCHA CHAMELEON",
-     "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/"
+     "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/",
+     "labels": {
+      "zh-CN": "isThereAnyDeal — 超级变色龙比价",
+      "zh-TW": "isThereAnyDeal — 超級變色龍比價",
+      "ja": "isThereAnyDeal — メチャカメレオン価格比較"
+     }
     },
     {
      "label": "SlashSkill — cheats & hacks explained",
-     "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/"
+     "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/",
+     "labels": {
+      "zh-CN": "SlashSkill — 作弊与破解说明",
+      "zh-TW": "SlashSkill — 作弊與破解說明",
+      "ja": "SlashSkill — チートとハック解説"
+     }
     }
    ]
   },
@@ -2079,19 +2139,39 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     },
     {
      "label": "IGN wiki — Patch Notes July 20, 2026",
-     "url": "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_20,_2026"
+     "url": "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_20,_2026",
+     "labels": {
+      "zh-CN": "IGN wiki — 2026年7月20日更新说明",
+      "zh-TW": "IGN wiki — 2026年7月20日更新說明",
+      "ja": "IGN wiki — 2026年7月20日パッチノート"
+     }
     },
     {
      "label": "Changelog.gg — MECCHA CHAMELEON",
-     "url": "https://changelog.gg/games/meccha-chameleon-4704690"
+     "url": "https://changelog.gg/games/meccha-chameleon-4704690",
+     "labels": {
+      "zh-CN": "Changelog.gg — 超级变色龙更新日志",
+      "zh-TW": "Changelog.gg — 超級變色龍更新日誌",
+      "ja": "Changelog.gg — メチャカメレオン"
+     }
     }
    ]
   },
@@ -2356,11 +2436,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -2529,19 +2619,39 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     },
     {
      "label": "SlashSkill — cheats & hacks explained",
-     "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/"
+     "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/",
+     "labels": {
+      "zh-CN": "SlashSkill — 作弊与破解说明",
+      "zh-TW": "SlashSkill — 作弊與破解說明",
+      "ja": "SlashSkill — チートとハック解説"
+     }
     },
     {
      "label": "isThereAnyDeal — MECCHA CHAMELEON",
-     "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/"
+     "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/",
+     "labels": {
+      "zh-CN": "isThereAnyDeal — 超级变色龙比价",
+      "zh-TW": "isThereAnyDeal — 超級變色龍比價",
+      "ja": "isThereAnyDeal — メチャカメレオン価格比較"
+     }
     }
    ]
   },
@@ -2794,15 +2904,30 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     },
     {
      "label": "GamingOnSteam — Steam Deck review & settings",
-     "url": "https://gamingonsteam.com/2026/06/22/can-you-play-mecha-chameleon-on-the-steam-deck-review-best-settings/"
+     "url": "https://gamingonsteam.com/2026/06/22/can-you-play-mecha-chameleon-on-the-steam-deck-review-best-settings/",
+     "labels": {
+      "zh-CN": "GamingOnSteam — Steam Deck 评测与设置",
+      "zh-TW": "GamingOnSteam — Steam Deck 評測與設定",
+      "ja": "GamingOnSteam — Steam Deck レビューと設定"
+     }
     }
    ]
   },
@@ -3007,11 +3132,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -3345,15 +3480,30 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     },
     {
      "label": "wikiHow — Meccha Chameleon Controls",
-     "url": "https://www.wikihow.com/Meccha-Chameleon-Controls"
+     "url": "https://www.wikihow.com/Meccha-Chameleon-Controls",
+     "labels": {
+      "zh-CN": "wikiHow — 超级变色龙操作",
+      "zh-TW": "wikiHow — 超級變色龍操作",
+      "ja": "wikiHow — メチャカメレオン操作"
+     }
     }
    ]
   },
@@ -3559,11 +3709,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   },
@@ -3856,11 +4016,21 @@
    "sources": [
     {
      "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon"
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "超级变色龙 — 维基百科",
+      "zh-TW": "超級變色龍 — 維基百科",
+      "ja": "メチャカメレオン — Wikipedia"
+     }
     },
     {
      "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/"
+     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "labels": {
+      "zh-CN": "Steam 官方商店页",
+      "zh-TW": "Steam 官方商店頁",
+      "ja": "Steam 公式ストア"
+     }
     }
    ]
   }
