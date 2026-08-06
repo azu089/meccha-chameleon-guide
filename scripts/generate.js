@@ -330,11 +330,13 @@ function renderPage(p, lang){
   const toc = t.sections.filter(x=>x.type!=="faq").map((x,i)=>`<a href="#sec-${i+1}">${esc(x.heading)}</a>`).join("");
   const faq = t.sections.find(x=>x.type==="faq");
   const ld = [articleLd(t, lang), breadcrumbLd(t, lang), faq?faqLd(faq.items):null].filter(Boolean);
+  const _wikiLabel = lang==="zh-CN"?"维基百科":lang==="zh-TW"?"維基百科":lang==="ja"?"ウィキペディア":lang==="en"?"Wikipedia":"Wikipedia";
+  const _steamLabel = lang==="zh-CN"?"Steam 官方商店页":lang==="zh-TW"?"Steam 官方商店頁":lang==="ja"?"Steam 公式ストア":"Official Steam store page";
   const sources = (p.sources && p.sources.length ? p.sources : [
-    { label: `${DATA.game.name} — Wikipedia`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
-    { label: "Official Steam store page", url: DATA.game.steamUrl }
+    { label: `${DATA.game.name} — ${_wikiLabel}`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
+    { label: _steamLabel, url: DATA.game.steamUrl }
   ]);
-  const sourceHtml = sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join("");
+  const sourceHtml = sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc((s.labels && s.labels[lang]) || s.label)}</a></li>`).join("");
   const related = DATA.pages.filter(x=>x.slug!==p.slug).slice(0,6).map(x=>{
     const mm = metaOf(x.slug);
     return `<a href="${prefix}/${x.slug}"><span class="ri">${SVG[mm.icon]}</span>${esc(pageOf(x,lang).title)}</a>`;
