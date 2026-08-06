@@ -305,7 +305,8 @@
       "HSV / metallic / roughness sliders fine-tune the finish so your paint matches the material",
       "Match light direction — a perfect color in the wrong light still reflects",
       "After painting, the 'answer check' tells you how close your color is; 'Missed Spot Ranking' shows the worst spots",
-      "Paint your whole visible body — an unpainted hand or foot gives you away"
+      "Paint your whole visible body — an unpainted hand or foot gives you away",
+      "No undo: every brushstroke is permanent until the round ends — paint fast but carefully, because one bad stroke can ruin your disguise (Kotaku)"
      ]
     },
     {
@@ -341,7 +342,8 @@
       "Always use the eyedropper — never guess a color",
       "Match the light: paint faces the same direction as the wall you mimic",
       "Stay still after painting — movement creates a visible trail",
-      "Play both roles: understanding Hunters makes you a better Hider, and vice versa"
+      "Play both roles: understanding Hunters makes you a better Hider, and vice versa",
+      "Expect no undo: a wrong stroke stays for the whole round, so sample the surface before you commit"
      ]
     }
    ],
@@ -397,7 +399,8 @@
         "HSV／メタリック／ラフネスのスライダーで質感を微調整",
         "光の方向を合わせる——色が合っていても光が違うと反射する",
         "塗装後の「答え合わせ」で近さを確認。「塗り残しランキング」で弱点も分かる",
-        "体全体を塗る——手や足が白いとバレる"
+        "体全体を塗る——手や足が白いとバレる",
+        "やり直し不可：筆はラウンド終了まで戻せない——速く、しかし慎重に。1回の失敗が偽装を台無しにする（Kotaku）"
        ]
       },
       {
@@ -433,7 +436,8 @@
         "必ずスポイトを使う——色は勘で決めない",
         "光を合わせる：真似する壁と同じ向きに塗る",
         "塗ったら動かない——動きが残像でバレる",
-        "両方の役割をやる：狩り役を理解すると隠れ役も上手くなる"
+        "両方の役割をやる：狩り役を理解すると隠れ役も上手くなる",
+        "やり直しはない前提で：失敗した塗りはラウンド中残るので、塗る前に必ず色を確認する"
        ]
       }
      ]
@@ -489,7 +493,8 @@
         "HSV/金属度/粗糙度滑块微调质感，让涂料贴合材质",
         "匹配光线方向——颜色对了但光线不对仍会反射",
         "涂完后「答案检查」告诉你颜色接近程度；「漏涂排名」显示最差部位",
-        "涂满整个可见身体——露出的手或脚会出卖你"
+        "涂满整个可见身体——露出的手或脚会出卖你",
+        "无撤销：每一笔在回合结束前都永久保留——涂色要快但也要谨慎，一笔涂错就可能毁掉整个伪装（Kotaku）"
        ]
       },
       {
@@ -525,7 +530,8 @@
         "永远用吸管——绝不猜颜色",
         "匹配光线：让涂色朝向与所模仿墙面一致",
         "涂完后保持静止——移动会产生可见残影",
-        "两种角色都玩：懂猎人才能当好躲藏者，反之亦然"
+        "两种角色都玩：懂猎人才能当好躲藏者，反之亦然",
+        "做好没有撤销的准备：错误的笔触会保留一整局，所以下笔前先取样确认"
        ]
       }
      ]
@@ -581,7 +587,8 @@
         "HSV/金屬度/粗糙度滑塊微調質感，讓塗料貼合材質",
         "匹配光線方向——顏色對了但光線不對仍會反射",
         "塗完後「答案檢查」告訴你顏色接近程度；「漏塗排名」顯示最差部位",
-        "塗滿整個可見身體——露出的手或腳會出賣你"
+        "塗滿整個可見身體——露出的手或腳會出賣你",
+        "無撤銷：每一筆在回合結束前都永久保留——塗色要快但也要謹慎，一筆塗錯就可能毀掉整個僞裝（Kotaku）"
        ]
       },
       {
@@ -617,7 +624,8 @@
         "永遠用吸管——絕不猜顏色",
         "匹配光線：讓塗色朝向與所模仿牆面一致",
         "塗完後保持靜止——移動會產生可見殘影",
-        "兩種角色都玩：懂獵人才能當好躲藏者，反之亦然"
+        "兩種角色都玩：懂獵人才能當好躲藏者，反之亦然",
+        "做好沒有撤銷的準備：錯誤的筆觸會保留一整局，所以下筆前先取樣確認"
        ]
       }
      ]
@@ -641,6 +649,15 @@
       "zh-TW": "Steam 官方商店頁",
       "ja": "Steam 公式ストア"
      }
+    },
+    {
+     "label": "Steam's Latest Viral Multiplayer Game Is a $6 Janky Indie Game That Is Like Prop Hunt, But Good — Kotaku",
+     "url": "https://kotaku.com/steams-latest-viral-multiplayer-game-is-a-6-janky-indie-game-that-is-like-prop-hunt-but-good-2000709515",
+     "labels": {
+      "zh-CN": "Steam 最新爆款：6 美元的粗糙独立游戏，像 Prop Hunt 但更好 — Kotaku",
+      "zh-TW": "Steam 最新爆款：6 美元的粗糙獨立遊戲，像 Prop Hunt 但更好 — Kotaku",
+      "ja": "Steam 最新の話題作：6ドルの粗いインディーゲーム、Prop Hunt に似ているが良い — Kotaku"
+     }
     }
    ]
   },
@@ -654,7 +671,7 @@
     {
      "type": "table",
      "heading": "Game Modes",
-     "body": "The four modes in the current version, with their win conditions (per Wikipedia).",
+     "body": "The four modes in the current version with their win conditions. Normal (also called Basic) was the launch mode; Reverse Chicken Race was added in patch 2.4.0 on July 2, 2026.",
      "columns": [
       "Mode",
       "How It Works",
@@ -662,12 +679,12 @@
      ],
      "rows": [
       [
-       "Basic",
+       "Basic (Normal)",
        "Classic Hider vs Hunter hide-and-seek",
        "Blend into vertical surfaces; stay still once painted"
       ],
       [
-       "Infection",
+       "Infection (Increasing Oni)",
        "Tagged Hiders join the Hunter team",
        "Hunters: tag easy targets first to snowball numbers"
       ],
@@ -681,6 +698,16 @@
        "Each player paints themselves, then every paint job is shown on a pedestal; after the observation time, players hunt for each other",
        "Create a memorable paint job and remember where you saw other players"
       ]
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "How the Mode List Grew (Launch → Today)",
+     "body": "The mode list changed after launch, which is why older articles list only three modes.",
+     "items": [
+      "At launch (June 10, 2026): three modes — Normal, Infection and Double",
+      "Patch 2.4.0 (July 2, 2026): added Reverse Chicken Race as a fourth mode",
+      "Why the confusion: Steam's launch-era store copy says \"three battle modes\" and guides written before July 2 list only three — they simply predate the new mode"
      ]
     },
     {
@@ -713,6 +740,10 @@
       [
        "Do all modes support the same player counts?",
        "All four modes support the game's player range; the recommended range is 2-12 (Steam's store description says 2-10)."
+      ],
+      [
+       "Why do some articles say the game only has three modes?",
+       "At launch it shipped with three — Normal, Infection and Double. Patch 2.4.0 (July 2, 2026) added Reverse Chicken Race as the fourth, so any guide published before that date only lists three."
       ]
      ]
     }
@@ -727,7 +758,7 @@
       {
        "type": "table",
        "heading": "ゲームモード",
-       "body": "現行バージョンの4モードと勝敗条件（Wikipedia より）。",
+       "body": "現行バージョンの4モードと勝敗条件。ノーマル（ベーシック）は発売時からのモードで、リバースチキンレースはパッチ2.4.0（2026-07-02）で追加されました。",
        "columns": [
         "モード",
         "遊び方",
@@ -735,12 +766,12 @@
        ],
        "rows": [
         [
-         "ベーシック",
+         "ベーシック（ノーマル）",
          "定番の隠れ役 vs 狩り役の鬼ごっこ",
          "垂直面に溶け込む。塗ったら動かない"
         ],
         [
-         "感染",
+         "感染（インクリージングオニ）",
          "捕まった隠れ役が狩り側に加わる",
          "狩り役：先に簡単な目標を捕まえて数を増やす"
         ],
@@ -754,6 +785,16 @@
          "各自が体を塗り、全員の作品を台に展示。観察後に互いを探す",
          "印象的な塗装をし、相手の位置を覚える"
         ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "モードの変遷（発売時 → 現在）",
+       "body": "モードは発売後に増えました。旧記事が3モードしか載せていないのはこのためです。",
+       "items": [
+        "発売時（2026-06-10）：ノーマル・感染・ダブルの3モード",
+        "パッチ2.4.0（2026-07-02）：リバースチキンレースが第4モードとして追加",
+        "混乱の原因：Steam 発売時のストア文は「3つの対戦モード」と表記し、7月2日以前の記事は単に新モードより前に書かれたもの"
        ]
       },
       {
@@ -786,6 +827,10 @@
         [
          "全モードで人数範囲は同じですか？",
          "4モードすべて同じ人数範囲に対応。推奨は2-12人（Steam ストアの説明では2-10人）。"
+        ],
+        [
+         "「3モードしかない」と言う記事があるのはなぜ？",
+         "発売時はノーマル・感染・ダブルの3モード。パッチ2.4.0（2026-07-02）でリバースチキンレースが第4モードとして追加されました。それ以前に書かれた記事は3つしか載っていません。"
         ]
        ]
       }
@@ -800,7 +845,7 @@
       {
        "type": "table",
        "heading": "游戏模式",
-       "body": "当前版本的四种模式及其胜负条件（依据 Wikipedia）。",
+       "body": "当前版本的四种模式及其胜负条件。普通（基础）是发售时即有的模式，反向胆小鬼赛在 2.4.0 补丁（2026-07-02）中加入。",
        "columns": [
         "模式",
         "玩法",
@@ -808,12 +853,12 @@
        ],
        "rows": [
         [
-         "基础",
+         "基础（普通）",
          "经典躲藏者 vs 猎人捉迷藏",
          "融入垂直表面；涂好后保持不动"
         ],
         [
-         "感染",
+         "感染（Increasing Oni）",
          "被抓住的躲藏者加入猎人阵营",
          "猎人：先抓容易的目标，滚雪球壮大队伍"
         ],
@@ -827,6 +872,16 @@
          "每名玩家先涂装自己，随后所有涂装作品上台展示；观察结束后互相追捕",
          "做出令人印象深刻的涂装，并记住看到其他人的位置"
         ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "模式演变（发售时 → 现在）",
+       "body": "模式列表在发售后有所扩充，这就是旧文章只写三种模式的原因。",
+       "items": [
+        "发售时（2026-06-10）：普通、感染、双重三种模式",
+        "2.4.0 补丁（2026-07-02）：新增反向胆小鬼赛，成为第四种模式",
+        "混淆来源：Steam 发售时的商店文案写「三种对战模式」，7 月 2 日之前的攻略只列三种——因为它们早于新模式发布"
        ]
       },
       {
@@ -859,6 +914,10 @@
         [
          "所有模式支持的人数范围一样吗？",
          "四个模式都支持游戏的全部人数范围；推荐 2-12 人（Steam 商店页文案为 2-10 人）。"
+        ],
+        [
+         "为什么有些文章说游戏只有三种模式？",
+         "发售时只有三种——普通、感染和双重。2.4.0 补丁（2026-07-02）新增反向胆小鬼赛作为第四种，因此该日期之前发布的攻略只会列出三种。"
         ]
        ]
       }
@@ -873,7 +932,7 @@
       {
        "type": "table",
        "heading": "遊戲模式",
-       "body": "當前版本的四種模式及其勝負條件（依據 Wikipedia）。",
+       "body": "當前版本的四種模式及其勝負條件。普通（基礎）是發售時即有的模式，反向膽小鬼賽在 2.4.0 補丁（2026-07-02）中加入。",
        "columns": [
         "模式",
         "玩法",
@@ -881,12 +940,12 @@
        ],
        "rows": [
         [
-         "基礎",
+         "基礎（普通）",
          "經典躲藏者 vs 獵人捉迷藏",
          "融入垂直表面；塗好後保持不動"
         ],
         [
-         "感染",
+         "感染（Increasing Oni）",
          "被抓住的躲藏者加入獵人陣營",
          "獵人：先抓容易的目標，滾雪球壯大隊伍"
         ],
@@ -900,6 +959,16 @@
          "每名玩家先塗裝自己，隨後所有塗裝作品上臺展示；觀察結束後互相追捕",
          "做出令人印象深刻的塗裝，並記住看到其他人的位置"
         ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "模式演變（發售時 → 現在）",
+       "body": "模式列表在發售後有所擴充，這就是舊文章只寫三種模式的原因。",
+       "items": [
+        "發售時（2026-06-10）：普通、感染、雙重三種模式",
+        "2.4.0 補丁（2026-07-02）：新增反向膽小鬼賽，成爲第四種模式",
+        "混淆來源：Steam 發售時的商店文案寫「三種對戰模式」，7 月 2 日之前的攻略只列三種——因爲它們早於新模式發佈"
        ]
       },
       {
@@ -932,6 +1001,10 @@
         [
          "所有模式支持的人數範圍一樣嗎？",
          "四個模式都支持遊戲的全部人數範圍；推薦 2-12 人（Steam 商店頁文案爲 2-10 人）。"
+        ],
+        [
+         "爲什麼有些文章說遊戲只有三種模式？",
+         "發售時只有三種——普通、感染和雙重。2.4.0 補丁（2026-07-02）新增反向膽小鬼賽作爲第四種，因此該日期之前發佈的攻略只會列出三種。"
         ]
        ]
       }
@@ -955,6 +1028,24 @@
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
       "ja": "Steam 公式ストア"
+     }
+    },
+    {
+     "label": "Meccha Chameleon: All Game Modes, Explained — TheGamer",
+     "url": "https://www.thegamer.com/meccha-chameleon-game-modes-guide/",
+     "labels": {
+      "zh-CN": "全部模式解析 — TheGamer",
+      "zh-TW": "全部模式解析 — TheGamer",
+      "ja": "全モード解説 — TheGamer"
+     }
+    },
+    {
+     "label": "Meccha Chameleon Patch Notes July 2, 2026 — IGN",
+     "url": "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_2,_2026",
+     "labels": {
+      "zh-CN": "2026-07-02 更新公告 — IGN",
+      "zh-TW": "2026-07-02 更新公告 — IGN",
+      "ja": "2026-07-02 パッチノート — IGN"
      }
     }
    ]

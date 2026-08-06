@@ -46,6 +46,10 @@ const CARD_META = {
 const metaOf = slug => CARD_META[slug] || { icon: "codes", ic: "ic-green" };
 
 /* ---------- i18n helpers ---------- */
+const T4 = (lang, zhCN, zhTW, ja, en) =>
+  lang === "zh-TW" ? zhTW : (lang === "zh-CN" ? zhCN : (lang === "ja" ? ja : en));
+const T3 = (lang, zh, ja, en) => (lang.startsWith("zh") ? zh : (lang === "ja" ? ja : en));
+
 const siteI18n = lang => {
   const i = DATA.site.i18n || {};
   const s = i[lang] || {};
@@ -292,9 +296,9 @@ function renderHome(lang){
   <main class="container">
     <section class="hero">
       <div class="hero-copy">
-        <span class="badge"><span class="dot"></span> ${lang==="zh"?"2026 年现象级捉迷藏派对游戏 · 持续更新":lang==="ja"?"2026年話題のかくれんぼパーティゲーム · 定期更新":"2026's viral hide-and-seek hit · Guides updated regularly"}</span>
-        <h1>${esc(gname)} <span class="grad">${lang==="zh"?"攻略":lang==="ja"?"ガイド":"Guides"}</span>${lang==="zh"?"：模式、地图与答案":lang==="ja"?"：モード・マップ・Q&A":" &amp; Answers"}</h1>
-        <p class="lead">${esc(s.tagline)}. ${lang==="zh"?"每页回答一个真实搜索问题，来源可查，持续更新。":lang==="ja"?"各ページが実際の検索に答えます。信頼できる情報源、定期的に更新。":s.description}</p>
+        <span class="badge"><span class="dot"></span> ${T4(lang,"2026 年现象级捉迷藏派对游戏 · 持续更新","2026 年現象級捉迷藏派對遊戲 · 持續更新","2026年話題のかくれんぼパーティゲーム · 定期更新","2026's viral hide-and-seek hit · Guides updated regularly")}</span>
+        <h1>${esc(gname)} <span class="grad">${T4(lang,"攻略","攻略","ガイド","Guides")}</span>${T4(lang,"：模式、地图与答案","：模式、地圖與答案","：モード・マップ・Q&A"," &amp; Answers")}</h1>
+        <p class="lead">${esc(s.tagline)}. ${T4(lang,"每页回答一个真实搜索问题，来源可查，持续更新。","每頁回答一個真實搜尋問題，來源可查，持續更新。","各ページが実際の検索に答えます。信頼できる情報源、定期的に更新。",s.description)}</p>
         <div class="stats">${stats}</div>
         <div class="cta-row">
           <a class="btn btn-primary" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.startPlaying)}</a>
@@ -307,16 +311,16 @@ function renderHome(lang){
       </div>
     </section>
     <section class="section">
-      <div class="section-head"><div><div class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"Guides"}</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
+      <div class="section-head"><div><div class="kicker">${T4(lang,"攻略","攻略","攻略","Guides")}</div><h2>${esc(s.guides)}</h2></div><p>${T4(lang,"每一页都来自真实搜索需求，基于可靠来源。","每一頁都來自真實搜尋需求，基於可靠來源。","各ページは実際の検索ニーズに基づいています。","")}</p></div>
       <div class="guide-grid">${cards}</div>
     </section>
-    ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">${lang==="zh"?"问答":lang==="ja"?"Q&A":"FAQ"}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
+    ${faqHtml ? `<section class="section"><div class="section-head"><div><div class="kicker">${T4(lang,"问答","問答","Q&A","FAQ")}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
     <section class="section">
-      <div class="section-head"><div><div class="kicker">${lang==="zh"?"关于":lang==="ja"?"概要":"About"}</div><h2>${esc(s.aboutGame)}</h2></div></div>
+      <div class="section-head"><div><div class="kicker">${T4(lang,"关于","關於","概要","About")}</div><h2>${esc(s.aboutGame)}</h2></div></div>
       <div class="card"><p>${esc(gintro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
   </main>`;
-  return head(`${esc(gname)} ${lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
+  return head(`${esc(gname)} ${T4(lang,"攻略站","攻略站","攻略ガイド","Guides & Wiki")}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
 }
 
 /* ---------- page ---------- */
@@ -358,7 +362,7 @@ function renderPage(p, lang){
         <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul></div>
       </article>
       <aside class="related">
-        <div class="card"><h2>${lang==="zh"?"本页目录":lang==="ja"?"目次":"On this page"}</h2><div class="toc">${toc||"<span>"+(lang==="zh"?"无":"")+"</span>"}</div></div>
+        <div class="card"><h2>${T4(lang,"本页目录","本頁目錄","目次","On this page")}</h2><div class="toc">${toc||"<span>"+(T4(lang,"无","無","",""))+"</span>"}</div></div>
         <div class="card"><h2>${esc(s.moreGuides)}</h2><div class="related-list">${related}</div></div>
       </aside>
     </div>
@@ -392,19 +396,19 @@ for (const lang of LANGS) {
   const dir = lang === DEF ? OUT : path.join(OUT, lang);
   fs.writeFileSync(path.join(dir,"index.html"), renderHome(lang));
   for (const p of DATA.pages) fs.writeFileSync(path.join(dir, `${p.slug}.html`), renderPage(p, lang));
-  const aboutBody = lang==="zh"
-    ? `<p>${esc(siteI18n(lang).name)} 是一个非官方粉丝攻略站：每一页都对应一个玩家真实搜索的问题（怎么玩、全部模式、地图、成就与兑换码真相、更新日志、配置要求等），答案基于可靠来源并持续更新。</p><p style="margin-top:10px">本站不隶属于游戏开发商或发行商。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。每页底部都列出了当页使用的来源。</p>`
-    : lang==="ja"
-    ? `<p>${esc(siteI18n(lang).name)} は非公式のファンサイトです。各ページはプレイヤーが実際に検索する質問（遊び方、全モード、マップ、実績・コードの真相、アップデート履歴、必要スペックなど）に答え、信頼できる情報源に基づいて定期的に更新しています。</p><p style="margin-top:10px">本サイトは開発元・販売元とは無関係です。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。各ページ下部に出典を記載しています。</p>`
-    : `<p>${esc(siteI18n(lang).name)} is an unofficial fan guide site. Every page answers a real question players search for (how to play, all modes, maps, the truth about achievements and codes, update history, system requirements and more), based on reliable sources and updated regularly.</p><p style="margin-top:10px">This site is not affiliated with the game's developer or publisher. ${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}. Each page lists the sources it used at the bottom.</p>`;
+  const aboutBody = T4(lang,
+    `<p>${esc(siteI18n(lang).name)} 是一个非官方粉丝攻略站：每一页都对应一个玩家真实搜索的问题（怎么玩、全部模式、地图、成就与兑换码真相、更新日志、配置要求等），答案基于可靠来源并持续更新。</p><p style="margin-top:10px">本站不隶属于游戏开发商或发行商。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。每页底部都列出了当页使用的来源。</p>`,
+    `<p>${esc(siteI18n(lang).name)} 是一個非官方粉絲攻略站：每一頁都對應一個玩家真實搜索的問題（怎麼玩、全部模式、地圖、成就與兌換碼真相、更新日誌、配置要求等），答案基於可靠來源並持續更新。</p><p style="margin-top:10px">本站不隸屬於遊戲開發商或發行商。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。每頁底部都列出了當頁使用的來源。</p>`,
+    `<p>${esc(siteI18n(lang).name)} は非公式のファンサイトです。各ページはプレイヤーが実際に検索する質問（遊び方、全モード、マップ、実績・コードの真相、アップデート履歴、必要スペックなど）に答え、信頼できる情報源に基づいて定期的に更新しています。</p><p style="margin-top:10px">本サイトは開発元・販売元とは無関係です。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。各ページ下部に出典を記載しています。</p>`,
+    `<p>${esc(siteI18n(lang).name)} is an unofficial fan guide site. Every page answers a real question players search for (how to play, all modes, maps, the truth about achievements and codes, update history, system requirements and more), based on reliable sources and updated regularly.</p><p style="margin-top:10px">This site is not affiliated with the game's developer or publisher. ${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}. Each page lists the sources it used at the bottom.</p>`);
   fs.writeFileSync(path.join(dir,"about.html"), renderStatic(siteI18n(lang).aboutTitle, aboutBody, "about", lang));
-  const privacyBody = lang==="zh"
-    ? `<p>本网站是游戏攻略站，我们重视访问者隐私。本政策说明我们收集什么、如何使用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">我们收集什么</h2><p>我们使用 Google Analytics（GA4）统计匿名流量：页面浏览量、来源渠道、设备类型与大致地区。我们不收集姓名、邮箱或任何个人身份信息，也不出售数据。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 会设置 Cookie 用于会话统计。你可以在浏览器中禁用 Cookie，或安装 Google Analytics 退出插件。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三方服务</h2><p>本页面从 Google Fonts 加载字体，页面由 Cloudflare 提供 CDN 加速，两者可能记录标准访问日志（IP、UA、时间）。这些服务受其各自的隐私政策约束。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">联系我们</h2><p>如有隐私问题，请发邮件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${new Date().toISOString().slice(0,10)}</p>`
-    : lang==="ja"
-    ? `<p>本サイトはゲーム攻略サイトです。訪問者のプライバシーを尊重しています。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">収集する情報</h2><p>Google Analytics（GA4）で匿名のアクセス統計（ページビュー、流入元、端末タイプ、おおよその地域）を取得しています。氏名・メールアドレスなどの個人情報は収集せず、データの販売も行いません。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics はセッション統計のため Cookie を使用します。ブラウザで無効化するか、Google Analytics のオプトアウトアドオンを利用できます。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三者サービス</h2><p>Google Fonts からフォントを、Cloudflare の CDN を利用しています。これらは標準的なアクセスログ（IP・UA・時刻）を記録する場合があります。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">お問い合わせ</h2><p>プライバシーに関するご質問は <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a> まで。</p><p style="margin-top:14px;opacity:.75">発効日：${new Date().toISOString().slice(0,10)}</p>`
-    : `<p>This is a game guide website and we respect visitor privacy. This policy explains what we collect and how it is used.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">What we collect</h2><p>We use Google Analytics (GA4) for anonymous traffic statistics: page views, referrers, device types and approximate regions. We do not collect names, email addresses or any personally identifiable information, and we do not sell data.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookies</h2><p>Google Analytics sets cookies for session statistics. You can disable cookies in your browser or install the Google Analytics opt-out add-on.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Third-party services</h2><p>Fonts are loaded from Google Fonts and the site is served via Cloudflare's CDN; both may record standard access logs (IP, user agent, time). Those services follow their own privacy policies.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2><p>For privacy questions, email <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>.</p><p style="margin-top:14px;opacity:.75">Effective date: ${new Date().toISOString().slice(0,10)}</p>`;
+  const privacyBody = T4(lang,
+    `<p>本网站是游戏攻略站，我们重视访问者隐私。本政策说明我们收集什么、如何使用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">我们收集什么</h2><p>我们使用 Google Analytics（GA4）统计匿名流量：页面浏览量、来源渠道、设备类型与大致地区。我们不收集姓名、邮箱或任何个人身份信息，也不出售数据。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 会设置 Cookie 用于会话统计。你可以在浏览器中禁用 Cookie，或安装 Google Analytics 退出插件。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三方服务</h2><p>本页面从 Google Fonts 加载字体，页面由 Cloudflare 提供 CDN 加速，两者可能记录标准访问日志（IP、UA、时间）。这些服务受其各自的隐私政策约束。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">联系我们</h2><p>如有隐私问题，请发邮件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${new Date().toISOString().slice(0,10)}</p>`,
+    `<p>本網站是遊戲攻略站，我們重視訪問者隱私。本政策說明我們收集什麼、如何使用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">我們收集什麼</h2><p>我們使用 Google Analytics（GA4）統計匿名流量：頁面瀏覽量、來源渠道、設備類型與大致地區。我們不收集姓名、郵箱或任何個人身份信息，也不出售數據。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 會設置 Cookie 用於會話統計。你可以在瀏覽器中禁用 Cookie，或安裝 Google Analytics 退出插件。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三方服務</h2><p>本頁面從 Google Fonts 加載字體，頁面由 Cloudflare 提供 CDN 加速，兩者可能記錄標準訪問日誌（IP、UA、時間）。這些服務受其各自的隱私政策約束。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">聯繫我們</h2><p>如有隱私問題，請發郵件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${new Date().toISOString().slice(0,10)}</p>`,
+    `<p>本サイトはゲーム攻略サイトです。訪問者のプライバシーを尊重しています。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">収集する情報</h2><p>Google Analytics（GA4）で匿名のアクセス統計（ページビュー、流入元、端末タイプ、おおよその地域）を取得しています。氏名・メールアドレスなどの個人情報は収集せず、データの販売も行いません。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics はセッション統計のため Cookie を使用します。ブラウザで無効化するか、Google Analytics のオプトアウトアドオンを利用できます。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三者サービス</h2><p>Google Fonts からフォントを、Cloudflare の CDN を利用しています。これらは標準的なアクセスログ（IP・UA・時刻）を記録する場合があります。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">お問い合わせ</h2><p>プライバシーに関するご質問は <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a> まで。</p><p style="margin-top:14px;opacity:.75">発効日：${new Date().toISOString().slice(0,10)}</p>`,
+    `<p>This is a game guide website and we respect visitor privacy. This policy explains what we collect and how it is used.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">What we collect</h2><p>We use Google Analytics (GA4) for anonymous traffic statistics: page views, referrers, device types and approximate regions. We do not collect names, email addresses or any personally identifiable information, and we do not sell data.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookies</h2><p>Google Analytics sets cookies for session statistics. You can disable cookies in your browser or install the Google Analytics opt-out add-on.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Third-party services</h2><p>Fonts are loaded from Google Fonts and the site is served via Cloudflare's CDN; both may record standard access logs (IP, user agent, time). Those services follow their own privacy policies.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2><p>For privacy questions, email <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>.</p><p style="margin-top:14px;opacity:.75">Effective date: ${new Date().toISOString().slice(0,10)}</p>`);
   fs.writeFileSync(path.join(dir,"privacy.html"), renderStatic(siteI18n(lang).privacyTitle, privacyBody, "privacy", lang));
-  fs.writeFileSync(path.join(dir,"contact.html"), renderStatic(siteI18n(lang).contactTitle, `<p>${lang==="zh"?"联系我们：":lang==="ja"?"お問い合わせ：":"Reach us at:"} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">${lang==="zh"?"我们通常会在 2-3 个工作日内回复。":lang==="ja"?"通常 2〜3 営業日以内に返信します。":"We usually reply within 2-3 business days."}</p>`, "contact", lang));
+  fs.writeFileSync(path.join(dir,"contact.html"), renderStatic(siteI18n(lang).contactTitle, `<p>${T4(lang,"联系我们：","聯繫我們：","お問い合わせ：","Reach us at:")} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">${T4(lang,"我们通常会在 2-3 个工作日内回复。","我們通常會在 2-3 個工作日內回覆。","通常 2〜3 営業日以内に返信します。","We usually reply within 2-3 business days.")}</p>`, "contact", lang));
 }
 // 404 (default lang)
 fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${DEF}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 — Not Found</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/css/style.css"></head><body>${header(DEF,"")}<main class="container" style="padding-top:70px;text-align:center"><section class="card" style="max-width:540px;margin:0 auto"><h1>404 — Page not found</h1><p style="margin:10px 0 18px">The page you are looking for does not exist. Try one of these guides:</p><div class="related-list" style="text-align:left">${DATA.pages.slice(0,6).map(p=>`<a href="/${p.slug}">${pageOf(p,DEF).title}</a>`).join("")}</div></section></main>${footer(DEF)}</body></html>`);
