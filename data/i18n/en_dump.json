@@ -1,0 +1,870 @@
+{
+ "how-to-play": {
+  "title": "How to Play Meccha Chameleon",
+  "metaTitle": "How to Play Meccha Chameleon: Full Beginner's Guide (2026)",
+  "metaDescription": "New to Meccha Chameleon? Master the paint-to-hide mechanic, the painting system, clones and poses, Hider vs Hunter roles, round flow and beginner quickstart.",
+  "intro": "Meccha Chameleon is simple to learn but surprisingly deep. Here is everything you need to know before your first round.",
+  "sections": [
+   {
+    "type": "steps",
+    "heading": "The Core Loop: Paint to Hide",
+    "body": "Every player starts as a plain white figure. Hiders survive by painting their body to match the map, while Hunters chase them down with a rifle. If at least one Hider is still hidden when the timer ends, the Hider team wins the round.",
+    "items": [
+     "Hold the paint button to cover your body in the map's colors and textures",
+     "Use the eyedropper to sample an exact color — never guess it",
+     "Match the light direction, not just the color, or you will shine",
+     "Adjust metallic and roughness so your surface does not reflect light"
+    ]
+   },
+   {
+    "type": "table",
+    "heading": "Hider vs Hunter: Roles Deep Dive",
+    "body": "Which side you draw completely changes how you win. Hiders are called Chameleons and Hunters are called Seekers in the game.",
+    "columns": [
+     "Role",
+     "Goal",
+     "Key Tools",
+     "Win Condition"
+    ],
+    "rows": [
+     [
+      "Hider (Chameleon)",
+      "Survive until the timer ends",
+      "Paint, clones, poses, size (blobby/cube)",
+      "At least one Hider hidden at time-up"
+     ],
+     [
+      "Hunter (Seeker)",
+      "Find and tag every Hider",
+      "Rifle, free camera, taunt whistle",
+      "Tag all Hiders before time expires"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "The Painting System",
+    "body": "The disguise system is the heart of the game. Get it right and you vanish; get it wrong and you shine.",
+    "items": [
+     "Color picker + eyedropper (E): sample the exact surface color instead of matching by eye",
+     "HSV / metallic / roughness sliders fine-tune the finish so your paint matches the material",
+     "Match light direction — a perfect color in the wrong light still reflects",
+     "After painting, the 'answer check' tells you how close your color is; 'Missed Spot Ranking' shows the worst spots",
+     "Paint your whole visible body — an unpainted hand or foot gives you away",
+     "No undo: every brushstroke is permanent until the round ends — paint fast but carefully, because one bad stroke can ruin your disguise (Kotaku)"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Clones, Poses & Sizes",
+    "body": "Extra tools to sell the disguise (clones were added in update 2.0.0).",
+    "items": [
+     "Clones: press Q after painting and posing to drop a decoy copy — up to two active clones",
+     "If a clone is destroyed, your main body is revealed — clones are not extra lives",
+     "Poses: crouch, sit, curl, lie — use them to match odd shapes (number keys / pose menu)",
+     "Size: choose blobby or the Cube character (added in 1.9.0) to fit different hiding spots",
+     "Taunt: hiders can whistle to bait Hunters; the host can force taunts after a set time"
+    ]
+   },
+   {
+    "type": "steps",
+    "heading": "Round Flow: What Actually Happens",
+    "body": "A full round step by step.",
+    "items": [
+     "Countdown — everyone spawns as a white figure on the map",
+     "Painting phase — Hiders sample colors and paint themselves; Hunters may already be moving",
+     "Hunt time — Seekers search while Chameleons stay frozen in disguise",
+     "Tag & elimination — a tagged Hider is out (or joins the Hunters in Infection mode)",
+     "Timer end — if any Hider remains hidden, the Hider team wins"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "First Steps: Quickstart for Beginners",
+    "body": "Do these five things and you will instantly play better than most new players.",
+    "items": [
+     "Learn to paint fast: enter paint mode (F), drag to cover your body, sample with E",
+     "Always use the eyedropper — never guess a color",
+     "Match the light: paint faces the same direction as the wall you mimic",
+     "Stay still after painting — movement creates a visible trail",
+     "Play both roles: understanding Hunters makes you a better Hider, and vice versa",
+     "Expect no undo: a wrong stroke stays for the whole round, so sample the surface before you commit"
+    ]
+   }
+  ]
+ },
+ "modes": {
+  "title": "All Meccha Chameleon Modes Explained",
+  "metaTitle": "Meccha Chameleon Modes: All 4 Explained (2026)",
+  "metaDescription": "Every Meccha Chameleon game mode explained - Basic, Infection, Double and Reverse Chicken Race - plus the best strategy for each one.",
+  "intro": "Meccha Chameleon ships with several modes that completely change how you play. Here is what each one does and how to win it.",
+  "sections": [
+   {
+    "type": "table",
+    "heading": "Game Modes",
+    "body": "The four modes in the current version with their win conditions. Normal (also called Basic) was the launch mode; Reverse Chicken Race was added in patch 2.4.0 on July 2, 2026.",
+    "columns": [
+     "Mode",
+     "How It Works",
+     "Winning Strategy"
+    ],
+    "rows": [
+     [
+      "Basic (Normal)",
+      "Classic Hider vs Hunter hide-and-seek",
+      "Blend into vertical surfaces; stay still once painted"
+     ],
+     [
+      "Infection (Increasing Oni)",
+      "Tagged Hiders join the Hunter team",
+      "Hunters: tag easy targets first to snowball numbers"
+     ],
+     [
+      "Double",
+      "Everyone hides first, then everyone hunts - the player who finds the most people wins",
+      "Hiders: use clones and poses to split attention before the hunt phase"
+     ],
+     [
+      "Reverse Chicken Race",
+      "Each player paints themselves, then every paint job is shown on a pedestal; after the observation time, players hunt for each other",
+      "Create a memorable paint job and remember where you saw other players"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "How the Mode List Grew (Launch → Today)",
+    "body": "The mode list changed after launch, which is why older articles list only three modes.",
+    "items": [
+     "At launch (June 10, 2026): three modes — Normal, Infection and Double",
+     "Patch 2.4.0 (July 2, 2026): added Reverse Chicken Race as a fourth mode",
+     "Why the confusion: Steam's launch-era store copy says \"three battle modes\" and guides written before July 2 list only three — they simply predate the new mode"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Custom Rooms",
+    "body": "Custom Rooms are a server option rather than a game mode - the host can tune rules for up to 8 players.",
+    "items": [
+     "Tune round time for faster games",
+     "Set a password for private sessions",
+     "Pick which mode the room uses"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "Mode FAQ",
+    "body": "",
+    "items": [
+     [
+      "Which mode should beginners start with?",
+      "Basic (Normal) mode is the simplest — classic hider vs hunter hide-and-seek with no extra rules. Try a few rounds before Infection or Double."
+     ],
+     [
+      "Can the host change the game mode and round time?",
+      "Yes — when creating a server, the host picks the mode and sets the round time before the lobby opens."
+     ],
+     [
+      "Is there a solo or single-player mode?",
+      "No — Meccha Chameleon is an online multiplayer game only, on PC via Steam."
+     ],
+     [
+      "Do all modes support the same player counts?",
+      "All four modes support the game's player range; the recommended range is 2-12 (Steam's store description says 2-10)."
+     ],
+     [
+      "Why do some articles say the game only has three modes?",
+      "At launch it shipped with three — Normal, Infection and Double. Patch 2.4.0 (July 2, 2026) added Reverse Chicken Race as the fourth, so any guide published before that date only lists three."
+     ]
+    ]
+   }
+  ]
+ },
+ "maps": {
+  "title": "All Meccha Chameleon Maps",
+  "metaTitle": "Meccha Chameleon Maps: Base & Workshop (2026)",
+  "metaDescription": "Every base map in Meccha Chameleon, plus how Steam Workshop maps work and where to find the best community maps.",
+  "intro": "Meccha Chameleon's maps are the stage for every round of hide-and-seek. Here are the base maps and how the Workshop extends the game.",
+  "sections": [
+   {
+    "type": "table",
+    "heading": "Base Maps",
+    "body": "Wikipedia lists these official maps in the current version.",
+    "columns": [
+     "Map",
+     "Notes"
+    ],
+    "rows": [
+     [
+      "Hide-and-Seek Mansion",
+      "The game's signature indoor map"
+     ],
+     [
+      "Indoor Country",
+      "A cozy indoor setting"
+     ],
+     [
+      "Sewer",
+      "Dark tunnels that reward good camouflage"
+     ],
+     [
+      "Backrooms",
+      "Homage to the Backrooms aesthetic - off-yellow walls and office spaces (reworked in update 2.1.0)"
+     ],
+     [
+      "Penguin Hotel",
+      "A hotel map from the developer's earlier Penguin Hotel series"
+     ],
+     [
+      "Sugarland",
+      "A bright, colorful map"
+     ],
+     [
+      "Osaka",
+      "A Japan-themed map added after 7 million copies sold"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Steam Workshop Maps",
+    "body": "The game can be modded with custom maps from the Steam Workshop, such as Art Gallery, The Market, Swimming Pool and Viking Market.",
+    "items": [
+     "Install custom maps from the Steam Workshop and load them in Custom Rooms",
+     "Popular community maps include Minecraft-style, FNAF Security Breach and CS2 Mirage remakes",
+     "New official maps are also added in updates (for example the HIKAKIN Museum map)"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "Map FAQ",
+    "body": "",
+    "items": [
+     [
+      "How many maps are there?",
+      "7 base maps (Hide-and-Seek Mansion, Indoor Country, Sewer, Backrooms, Penguin Hotel, Sugarland and Osaka) plus many Steam Workshop maps. New official maps keep being added — 2026 updates added Death Burger, Greece and the Garten of Banban and Exit 8 collab maps."
+     ],
+     [
+      "Are workshop maps free?",
+      "Yes — Steam Workshop maps are community mods you subscribe to for free, then they appear in the game."
+     ],
+     [
+      "Do official maps cost money?",
+      "No — all official maps are included with the game on Steam. There are no paid maps."
+     ],
+     [
+      "Will more maps be added?",
+      "Very likely — the developer has added official maps regularly since launch (Sugarland, Osaka, Death Burger, Greece, plus collab maps)."
+     ]
+    ]
+   }
+  ]
+ },
+ "tips-and-tricks": {
+  "title": "Meccha Chameleon Tips & Tricks: How to Win More",
+  "metaTitle": "Meccha Chameleon Tips & Tricks (2026)",
+  "metaDescription": "Pro tips to win more Meccha Chameleon rounds - color sampling, light direction, clones, poses and Hunter strategies that actually work.",
+  "intro": "These are the specific techniques that separate good players from great ones in Meccha Chameleon.",
+  "sections": [
+   {
+    "type": "list",
+    "heading": "Hider Tips",
+    "body": "Winning as a Hider is about perfecting your disguise.",
+    "items": [
+     "Sample your color with the eyedropper - never guess it",
+     "Match the light direction on the surface you are mimicking",
+     "Lower metallic and roughness so you do not shine",
+     "Use posing commands (crouch, sit, curl) for odd shapes",
+     "Stay still after painting - movement creates a visible trail"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Painting & Color Matching",
+    "body": "The color picker, eyedropper, HSV, metallic and roughness sliders are your camouflage toolkit.",
+    "items": [
+     "Use the eyedropper to sample an exact color instead of matching by eye",
+     "Fine-tune metallic and roughness so the surface finish matches the wall",
+     "Watch the 'answer check' result after painting - it tells you how close your color is",
+     "Watch your silhouette: an otherwise perfect paint job fails if the shape is wrong"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Clones & Poses",
+    "body": "Clones and poses were added to give Hiders more ways to misdirect Hunters.",
+    "items": [
+     "Create a clone with the Q key after painting and posing your character",
+     "You can have up to two clones active at the same time (added in update 2.0.0)",
+     "Spread clones out or overlap them to build convincing disguises",
+     "Remember: if a clone is destroyed, your main body is also revealed - a clone is not a free extra life"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Hunter Tips",
+    "body": "Winning as a Hunter is about reading the environment.",
+    "items": [
+     "Do not look for bright colors - look for wrong shadows",
+     "Check physical player shadows that do not align with map lighting",
+     "Tag easy targets first to grow your team quickly",
+     "Once you have numbers, spread out to cover the whole map"
+    ]
+   }
+  ]
+ },
+ "achievements": {
+  "title": "Meccha Chameleon Achievements (None - Explained)",
+  "metaTitle": "Does Meccha Chameleon Have Achievements? (2026)",
+  "metaDescription": "Does Meccha Chameleon have Steam achievements? Short answer: no, not yet. Here is what we know and what players are asking for.",
+  "intro": "Many players search for Meccha Chameleon achievements. Here is the straight answer, plus what the game offers instead.",
+  "sections": [
+   {
+    "type": "faq",
+    "heading": "Achievements FAQ",
+    "body": "",
+    "items": [
+     [
+      "Does Meccha Chameleon have Steam achievements?",
+      "No. As of August 2026 there are no official Steam achievements for Meccha Chameleon. The Steam store page has no achievements section, and trackers such as isThereAnyDeal list 'Has achievements: No'."
+     ],
+     [
+      "Will achievements be added later?",
+      "Not announced. The developers (lemorion_1224 and Haganeiro) have not confirmed an achievements update, but the game updates frequently - it went from version 1.8 to 2.2 in its first weeks - so it may come."
+     ],
+     [
+      "What does the game track instead?",
+      "Update 2.1.0 added a 'total discoveries' counter, and the game tracks in-game stats and rankings, which work a bit like built-in challenges."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Sources",
+    "body": "Verified against these sources.",
+    "items": [
+     "isThereAnyDeal product page: 'Has achievements: No'",
+     "Meccha Chameleon Steam store page (no achievements tab)",
+     "IGN patch notes for update 2.1.0 (discoveries counter)"
+    ]
+   }
+  ]
+ },
+ "update-log": {
+  "title": "Meccha Chameleon Update Log & Patch Notes",
+  "metaTitle": "Meccha Chameleon Update Log: All Patch Notes (2026)",
+  "metaDescription": "The full Meccha Chameleon update history: versions 1.6 to 3.5, including new maps, collab maps, the Cube character and clones.",
+  "intro": "The full Meccha Chameleon update history: versions 1.6 to 3.5, including the Cube character, clones, new maps, collab maps and more.",
+  "sections": [
+   {
+    "type": "table",
+    "heading": "Version History",
+    "body": "Major versions from verified sources (IGN, GameRant, changelog.gg, Steam Community news).",
+    "columns": [
+     "Version",
+     "Date",
+     "Highlights"
+    ],
+    "rows": [
+     [
+      "3.5.3",
+      "Aug 4, 2026",
+      "Camera options added; color palette and color-setting bugs fixed"
+     ],
+     [
+      "3.5.0",
+      "Aug 2, 2026",
+      "Official 'Exit 8' collab map added, plus quality-of-life improvements"
+     ],
+     [
+      "3.3.0",
+      "Jul 27, 2026",
+      "'Plump' body type added"
+     ],
+     [
+      "3.1.0",
+      "Jul 25, 2026",
+      "'Garten of Banban' collab map; non-UI controller support; workshop security patch"
+     ],
+     [
+      "3.0.0",
+      "Jul 20, 2026",
+      "New official map 'Greece'"
+     ],
+     [
+      "2.9.0",
+      "Jul 19, 2026",
+      "Glow-in-the-dark paint added; paint performance improved"
+     ],
+     [
+      "2.8.0",
+      "Jul 17, 2026",
+      "New official map 'Death Burger'; chat & nameplate language filtering"
+     ],
+     [
+      "2.2.0",
+      "Jun 28, 2026",
+      "Hide-and-Seek Mansion randomization; new Cube size options; stability fixes"
+     ],
+     [
+      "2.1.0",
+      "Jun 27, 2026",
+      "Total discoveries counter; 'The Backrooms' reworked"
+     ],
+     [
+      "2.0.0",
+      "Jun 26, 2026",
+      "Clones added — Hiders can create decoy copies of their painted character"
+     ],
+     [
+      "1.9.0",
+      "Jun 24, 2026",
+      "'Cube' character added; hunter shotgun timing adjusted"
+     ],
+     [
+      "1.6.0–1.8.1",
+      "Jun 21–23, 2026",
+      "'Osaka' map + report feature; hider size options; 11 emotes and map fixes (1.8.0 rolled back, re-released as 1.8.1)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Other Recent Changes",
+    "body": "Additional changes reported in Steam Community news posts.",
+    "items": [
+     "New official map 'HIKAKIN Museum' added (per Steam Community news)",
+     "Fixed an issue where players could get stuck too deeply into walls",
+     "Fixed a translation error on the Korean server-creation screen",
+     "Reduced lag when many players paint at the same time",
+     "July 2026 security note: a malicious Workshop map scare led to a security patch in 3.1.0 — only subscribe to well-reviewed maps"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Where to See the Full History",
+    "body": "For every hotfix and dev post:",
+    "items": [
+     "Official Steam Community News for MECCHA CHAMELEON",
+     "changelog.gg's MECCHA CHAMELEON update timeline",
+     "IGN's Meccha Chameleon wiki patch-note pages"
+    ]
+   }
+  ]
+ },
+ "system-requirements": {
+  "title": "Meccha Chameleon System Requirements & Steam Deck",
+  "metaTitle": "Meccha Chameleon System Requirements & Steam Deck (2026)",
+  "metaDescription": "Can you run Meccha Chameleon? Minimum system requirements, Steam Deck compatibility and how to play on Mac via GeForce NOW.",
+  "intro": "Meccha Chameleon is a light game to run. Here are the official minimum requirements and how it runs on other hardware.",
+  "sections": [
+   {
+    "type": "table",
+    "heading": "Minimum System Requirements",
+    "body": "Official minimum requirements from the Steam store page.",
+    "columns": [
+     "Component",
+     "Requirement"
+    ],
+    "rows": [
+     [
+      "OS",
+      "Windows 10 64-bit"
+     ],
+     [
+      "Processor",
+      "Intel Core i5"
+     ],
+     [
+      "Graphics",
+      "DirectX 11 or 12 compatible graphics card"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Steam Deck & Mac",
+    "body": "How to play on other devices.",
+    "items": [
+     "Steam Deck: officially rated 'Playable' - the game runs, but keyboard-style controls (paint, pose) work best with the trackpad or an attached mouse",
+     "Mac: no native macOS version - play through GeForce NOW cloud streaming (available since June 27, 2026)",
+     "The game is PC-only on Steam; there are no native PS5, Xbox or Switch versions"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "System Requirements FAQ",
+    "body": "",
+    "items": [
+     [
+      "Does Meccha Chameleon need a good PC?",
+      "No — the minimum is modest: Windows 10 64-bit, an Intel Core i5 processor and a DirectX 11 or 12 compatible graphics card. It is a lightweight party game."
+     ],
+     [
+      "Does it work on Mac?",
+      "There is no native Mac version, but Mac players can stream it through GeForce NOW."
+     ],
+     [
+      "Do I need an internet connection?",
+      "Yes — Meccha Chameleon is an online multiplayer game, so a stable connection is required to play."
+     ],
+     [
+      "Is it Steam Deck compatible?",
+      "Valve lists it as Playable; see our Steam Deck guide for settings and control layouts."
+     ]
+    ]
+   }
+  ]
+ },
+ "codes": {
+  "title": "Meccha Chameleon Codes (None - Explained)",
+  "metaTitle": "Are There Meccha Chameleon Codes? (2026)",
+  "metaDescription": "Are there Meccha Chameleon codes or cheats? No official codes exist. Here is how to tell real code claims from Roblox clones and third-party hacks.",
+  "intro": "You may see 'Meccha Chameleon codes' videos and pages. Here is the truth about codes and cheats for this game.",
+  "sections": [
+   {
+    "type": "faq",
+    "heading": "Codes & Cheats FAQ",
+    "body": "",
+    "items": [
+     [
+      "Are there Meccha Chameleon codes?",
+      "No. Meccha Chameleon has no official redeemable codes and no built-in code menu. Any 'Meccha Chameleon codes' page is either about a different game or fake."
+     ],
+     [
+      "Why do I see 'Chameleon codes' for Roblox?",
+      "Those codes are for Roblox clones inspired by the game (for example Paint or Die). They are a different game and do not apply to Meccha Chameleon."
+     ],
+     [
+      "Are there cheats or hacks?",
+      "There are no official cheat codes. Third-party hacks exist but they risk a banned account, a corrupted profile or malware - avoid them."
+     ],
+     [
+      "Are there discount codes for the Steam version?",
+      "Occasionally the game goes on sale on Steam (for example a 15% launch discount), but there are no coupon codes to redeem in-game."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Sources",
+    "body": "Verified against these sources.",
+    "items": [
+     "SlashSkill: 'MECCHA CHAMELEON Cheats and Hacks: What's Real and What's Not'",
+     "Meccha Chameleon Steam store page (no codes or DLC redemption system)"
+    ]
+   }
+  ]
+ },
+ "steam-deck": {
+  "title": "Meccha Chameleon on Steam Deck: Settings & Controls",
+  "metaTitle": "Meccha Chameleon Steam Deck Guide (2026)",
+  "metaDescription": "How Meccha Chameleon runs on Steam Deck — official compatibility, best settings, controls and controller layouts for painting and posing.",
+  "intro": "Meccha Chameleon is listed as Playable (not Verified) on Steam Deck. It runs well, but keyboard-style controls need setup — here is how to set it up for the best experience.",
+  "sections": [
+   {
+    "type": "table",
+    "heading": "Steam Deck Compatibility",
+    "body": "Official rating and what it means (per the Steam store page and gamingonsteam).",
+    "columns": [
+     "Item",
+     "Detail"
+    ],
+    "rows": [
+     [
+      "Official rating",
+      "Playable (not Verified) — runs well, but keyboard-style controls need setup"
+     ],
+     [
+      "Best painting input",
+      "Trackpad or an attached mouse — thumbstick painting is hard to aim"
+     ],
+     [
+      "Recommended settings",
+      "60 FPS cap, VSync off, Shadow Quality High (from gamingonsteam's Deck review)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Controls & Layout Tips",
+    "body": "The game's paint/pose actions are keyboard-oriented, so set up Steam Input.",
+    "items": [
+     "Map paint (F), pose and the eyedropper to easy-to-reach buttons",
+     "Use the right trackpad as a mouse for precise color sampling",
+     "Save a community Steam Input layout from SteamInputDB for this game",
+     "Start from a 'gamepad with mouse' template and adjust"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "Steam Deck FAQ",
+    "body": "",
+    "items": [
+     [
+      "Can you play Meccha Chameleon on Steam Deck?",
+      "Yes — it is rated Playable. Install it from Steam and launch normally."
+     ],
+     [
+      "Do I need a mouse?",
+      "Not required, but the trackpad or a mouse makes painting much easier to control."
+     ],
+     [
+      "Does it run on Windows-only?",
+      "The game is Windows on Steam; the Deck's Proton/SteamOS runs it at Playable level."
+     ]
+    ]
+   }
+  ]
+ },
+ "crossplay": {
+  "title": "Meccha Chameleon Crossplay & Platforms (PC, Mac, Console)",
+  "metaTitle": "Is Meccha Chameleon Crossplay? Platforms Explained (2026)",
+  "metaDescription": "Is Meccha Chameleon cross-platform? It is PC-only on Steam. Play on Mac via GeForce NOW. No PS5, Xbox or Switch version — explained.",
+  "intro": "The straight answer on Meccha Chameleon platforms and crossplay, from the game's official page and Wikipedia.",
+  "sections": [
+   {
+    "type": "faq",
+    "heading": "Platforms FAQ",
+    "body": "",
+    "items": [
+     [
+      "Is Meccha Chameleon crossplay?",
+      "No — there is no crossplay because the game is PC-only on Steam. There are no console or mobile versions to crossplay with."
+     ],
+     [
+      "Can I play on Mac?",
+      "Yes, indirectly: the game streams to macOS through GeForce NOW (available since June 27, 2026). There is no native macOS version."
+     ],
+     [
+      "Is it on PS5, Xbox or Switch?",
+      "No. The developer has not announced any console ports. Wikipedia lists Windows as the only platform."
+     ],
+     [
+      "Can I play on mobile?",
+      "Not officially — no iOS or Android version exists. Only via cloud streaming on compatible devices."
+     ],
+     [
+      "Will Meccha Chameleon come to consoles?",
+      "As of August 2026, no console version has been announced."
+     ],
+     [
+      "Can GeForce NOW players play with Steam players?",
+      "Yes — GeForce NOW streams the same PC version, so everyone plays on the same Steam servers."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "How Players Play Together",
+    "body": "Multiplayer details for PC.",
+    "items": [
+     "Steam PC players play together via public servers or private rooms (up to 24 players, 2-12 recommended)",
+     "GeForce NOW lets Mac players join the same Steam servers",
+     "There is no separate crossplay toggle — the whole game lives on Steam"
+    ]
+   }
+  ]
+ },
+ "controls": {
+  "title": "Meccha Chameleon Controls (Full Key List)",
+  "metaTitle": "Meccha Chameleon Controls: All Keys Explained (2026)",
+  "metaDescription": "Every Meccha Chameleon control: movement, sprint, jump/wall climb, paint mode, eyedropper, clones, poses and camera.",
+  "intro": "The complete Meccha Chameleon keyboard controls, based on the wikiHow controls guide and the official Steam page.",
+  "sections": [
+   {
+    "type": "table",
+    "heading": "Keyboard Controls",
+    "body": "",
+    "columns": [
+     "Action",
+     "Key"
+    ],
+    "rows": [
+     [
+      "Move",
+      "WASD"
+     ],
+     [
+      "Sprint",
+      "Shift"
+     ],
+     [
+      "Jump / wall climb",
+      "Space"
+     ],
+     [
+      "Climb down (wall)",
+      "Ctrl"
+     ],
+     [
+      "Enter paint mode",
+      "F"
+     ],
+     [
+      "Eyedropper (sample color)",
+      "E"
+     ],
+     [
+      "Create / clear clones",
+      "Q"
+     ],
+     [
+      "Poses (crouch, sit, curl, lie)",
+      "Number keys / pose menu"
+     ],
+     [
+      "Camera / free cam",
+      "Mouse look + Right mouse / C"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Painting Essentials",
+    "body": "",
+    "items": [
+     "Press F to enter paint mode, then drag over your body",
+     "Use E to sample the exact color of a surface instead of guessing",
+     "Adjust metallic and roughness so your paint matches the surface finish",
+     "Paint matches light direction — a perfect color in wrong light still shines"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "Control FAQ",
+    "body": "",
+    "items": [
+     [
+      "How do I create a clone?",
+      "Paint and pose yourself first, then press Q to drop a clone of your exact look."
+     ],
+     [
+      "Can I rebind keys?",
+      "Keyboard rebinding is limited; on Steam Deck use Steam Input to remap."
+     ]
+    ]
+   }
+  ]
+ },
+ "multiplayer": {
+  "title": "Meccha Chameleon Multiplayer: Host, Join & Play With Friends",
+  "metaTitle": "Meccha Chameleon Multiplayer Guide (2026)",
+  "metaDescription": "How multiplayer works in Meccha Chameleon — host a room, join public servers, play with friends, player counts and server stability.",
+  "intro": "Meccha Chameleon is an online multiplayer game. Here is how to host, join and play with friends.",
+  "sections": [
+   {
+    "type": "steps",
+    "heading": "Host a Private Room",
+    "body": "",
+    "items": [
+     "From the main menu choose Create Server",
+     "Pick a server name and set a password for friends",
+     "Choose the game mode and set the round time",
+     "Share the server name/password with your group"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Join Public Servers",
+    "body": "",
+    "items": [
+     "Pick Quick Match from the main menu for an instant game",
+     "Use the server browser to find a room by name",
+     "Up to 24 players per server; developers recommend 2-12 for stability",
+     "Steam's store description suggests 2-10 players; Wikipedia lists 2-12 as the recommended range"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "Multiplayer FAQ",
+    "body": "",
+    "items": [
+     [
+      "How many players can play together?",
+      "Up to 24 per server. The recommended range is 2-12 players."
+     ],
+     [
+      "Is it crossplay?",
+      "No — PC only on Steam. Mac players can join via GeForce NOW cloud streaming."
+     ],
+     [
+      "Can I play with friends on Steam?",
+      "Yes — host a private room and share the name/password, or use the Steam friends list."
+     ]
+    ]
+   }
+  ]
+ },
+ "faq": {
+  "title": "Meccha Chameleon FAQ",
+  "metaTitle": "Meccha Chameleon FAQ (2026)",
+  "metaDescription": "Is Meccha Chameleon cross-platform? How many players? Does it have codes or achievements? Quick answers to the most common questions.",
+  "intro": "Quick answers to the questions players search for most.",
+  "sections": [
+   {
+    "type": "faq",
+    "heading": "Frequently Asked Questions",
+    "body": "",
+    "items": [
+     [
+      "Is Meccha Chameleon cross-platform?",
+      "No. The game is officially PC-only on Steam. You can stream it to a Mac with GeForce NOW, but there is no native console, mobile or cross-play version."
+     ],
+     [
+      "How many players can play?",
+      "A server supports up to 24 players. The developers recommend 2-12 players for the best experience, while Steam's store description suggests 2-10."
+     ],
+     [
+      "Are there Meccha Chameleon codes?",
+      "No. There are no official redeemable codes. Beware of Roblox 'Chameleon' clones and third-party cheat tools, which can get your account banned."
+     ],
+     [
+      "Does Meccha Chameleon have Steam achievements?",
+      "No. The game currently has no official Steam achievements - see our dedicated page for details."
+     ],
+     [
+      "How much does Meccha Chameleon cost?",
+      "$5.99 on Steam, and it frequently goes on sale."
+     ],
+     [
+      "What are the system requirements?",
+      "Windows 10 64-bit, an Intel Core i5 processor and a DirectX 11 or 12 compatible graphics card. It is rated Playable on Steam Deck."
+     ],
+     [
+      "When was Meccha Chameleon released?",
+      "June 10, 2026 on Steam (June 9 in US time zones), after being announced on May 15, 2026."
+     ],
+     [
+      "How many maps does Meccha Chameleon have?",
+      "7 base maps plus many Steam Workshop maps, with new official maps added in updates."
+     ],
+     [
+      "Does Meccha Chameleon support controllers?",
+      "Not officially. The game is keyboard-oriented on Steam (paint with F, pose, eyedropper with E). On Steam Deck you can set up Steam Input with a gamepad-plus-mouse template."
+     ],
+     [
+      "Is there voice chat in Meccha Chameleon?",
+      "There is no built-in voice chat. Players usually use Steam friends or third-party voice apps. In-game, Hiders can taunt with a whistle to bait Hunters."
+     ],
+     [
+      "Are workshop maps safe?",
+      "Most are safe, but be careful — one July 2026 workshop scare involved a suspicious map. Only subscribe to well-reviewed maps and keep the game updated."
+     ],
+     [
+      "What is the age rating?",
+      "The game is a casual multiplayer party game without blood or gore. It is suited to most ages, though online play means interacting with strangers."
+     ],
+     [
+      "Is there a Meccha Chameleon mobile or VR version?",
+      "No official mobile or VR versions exist. In July 2026 an unofficial 'Meccha Chameleon VR' appeared on the Meta Quest store; the developer confirmed it is not licensed and warned players not to buy it."
+     ],
+     [
+      "What is the current version of Meccha Chameleon?",
+      "As of August 4, 2026 the latest version is 3.5.3, which added camera options and fixed color palette bugs. The 3.5.0 update (August 2) added an official Exit 8 collab map. See our update log for the full history."
+     ]
+    ]
+   }
+  ]
+ }
+}

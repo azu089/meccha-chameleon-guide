@@ -13,7 +13,9 @@
    "en",
    "zh-CN",
    "zh-TW",
-   "ja"
+   "ja",
+   "ko",
+   "es"
   ],
   "defaultLanguage": "en",
   "i18n": {
@@ -85,6 +87,52 @@
     "moreGuides": "更多攻略",
     "sources": "來源與事實覈對",
     "readGuide": "新手攻略 →"
+   },
+   "ko": {
+    "name": "메카 카멜레온 공략",
+    "tagline": "게임 방법 · 전체 모드 · 맵 · 업데이트 · FAQ",
+    "description": "메카 카멜레온(Meccha Chameleon) 최고의 공략: 게임 방법, 전체 모드와 맵, 업적·코드의 진실, 업데이트 내역, 시스템 요구 사항, FAQ. 정기 업데이트.",
+    "navHome": "홈",
+    "navAbout": "소개",
+    "navPrivacy": "개인정보",
+    "navContact": "문의",
+    "langLabel": "언어",
+    "aboutTitle": "이 사이트 소개",
+    "privacyTitle": "개인정보 처리방침",
+    "contactTitle": "문의하기",
+    "footerNote": "비공식 팬 사이트 — 게임 및 관련 자산은 각 소유자에게 귀속됩니다.",
+    "footerSource": "정보는 Wikipedia, Steam 공식 스토어, IGN, Steam 커뮤니티에서 확인했습니다.",
+    "quickAnswers": "자주 묻는 질문",
+    "guides": "전체 공략",
+    "aboutGame": "게임 소개",
+    "startPlaying": "스팀에서 보기 →",
+    "getOnSteam": "스팀에서 보기 ↗",
+    "moreGuides": "다른 공략",
+    "sources": "출처 및 팩트체크",
+    "readGuide": "공략 보기 →"
+   },
+   "es": {
+    "name": "Guía de Meccha Chameleon",
+    "tagline": "Cómo jugar · Todos los modos · Mapas · Novedades · FAQ",
+    "description": "La mejor guía de Meccha Chameleon: cómo jugar, todos los modos y mapas, la verdad sobre logros y códigos, historial de actualizaciones, requisitos del sistema y FAQ. Actualizada con regularidad.",
+    "navHome": "Inicio",
+    "navAbout": "Acerca de",
+    "navPrivacy": "Privacidad",
+    "navContact": "Contacto",
+    "langLabel": "Idioma",
+    "aboutTitle": "Sobre este sitio",
+    "privacyTitle": "Política de privacidad",
+    "contactTitle": "Contáctanos",
+    "footerNote": "Sitio de fans no oficial: el juego y sus recursos pertenecen a sus respectivos dueños.",
+    "footerSource": "Información verificada con Wikipedia, la tienda oficial de Steam, IGN y la comunidad de Steam.",
+    "quickAnswers": "Preguntas frecuentes",
+    "guides": "Todas las guías",
+    "aboutGame": "Sobre el juego",
+    "startPlaying": "Ver en Steam →",
+    "getOnSteam": "Ver en Steam ↗",
+    "moreGuides": "Más guías",
+    "sources": "Fuentes y verificación",
+    "readGuide": "Guía de juego →"
    }
   }
  },
@@ -138,7 +186,9 @@
   "nameI18n": {
    "ja": "メチャカメレオン",
    "zh-CN": "超级变色龙",
-   "zh-TW": "超級變色龍"
+   "zh-TW": "超級變色龍",
+   "ko": "메카 카멜레온",
+   "es": "Meccha Chameleon"
   },
   "statsI18n": {
    "ja": [
@@ -218,6 +268,58 @@
      "value": "$5.99",
      "label": "Steam 價格"
     }
+   ],
+   "ko": [
+    {
+     "value": "1500만+",
+     "label": "판매량"
+    },
+    {
+     "value": "34만",
+     "label": "동시 접속 피크"
+    },
+    {
+     "value": "4",
+     "label": "게임 모드"
+    },
+    {
+     "value": "7+",
+     "label": "기본 맵"
+    },
+    {
+     "value": "24",
+     "label": "최대 인원"
+    },
+    {
+     "value": "$5.99",
+     "label": "스팀 가격"
+    }
+   ],
+   "es": [
+    {
+     "value": "15M+",
+     "label": "Copias vendidas"
+    },
+    {
+     "value": "340K",
+     "label": "Jugadores pico"
+    },
+    {
+     "value": "4",
+     "label": "Modos de juego"
+    },
+    {
+     "value": "7+",
+     "label": "Mapas base"
+    },
+    {
+     "value": "24",
+     "label": "Máx. jugadores"
+    },
+    {
+     "value": "$5.99",
+     "label": "En Steam"
+    }
    ]
   },
   "keyFactsI18n": {
@@ -244,12 +346,30 @@
     "7 張基礎地圖 + Steam 創意工坊地圖",
     "每服務器最多 24 人（推薦 2-12）",
     "僅 PC（Steam）版，售價 $5.99"
+   ],
+   "ko": [
+    "누적 판매 1,500만 장 이상 (2026년 7월 기준)",
+    "동시 접속 피크 34만 명 이상",
+    "4가지 모드: 베이직, 인펙션, 더블, 리버스 치킨 레이스",
+    "기본 맵 7개 + Steam 워크숍 맵",
+    "서버당 최대 24명 (권장 2-12명)",
+    "PC(Steam) 전용, $5.99"
+   ],
+   "es": [
+    "Más de 15 millones de copias vendidas (a julio de 2026)",
+    "Pico de más de 340.000 jugadores simultáneos",
+    "4 modos: Básico, Infección, Doble y Reverse Chicken Race",
+    "7 mapas base más mapas del Steam Workshop",
+    "Hasta 24 jugadores por servidor (se recomiendan 2-12)",
+    "Solo PC en Steam por $5.99"
    ]
   },
   "introI18n": {
    "ja": "メチャカメレオンは「塗って隠れる」パーティゲームの大ヒット作で、発売初月で1500万本以上を販売。プレイヤーは白い幾何学フィギュアとなり、体をマップに溶け込むように塗って隠れ、狩り役が見つけ出します。同時接続34万人超と Google イースターエッグも話題になった2026年のインディー現象です。",
    "zh-CN": "超级变色龙是爆红的「涂色伪装」派对游戏，发售首月销量突破 1500 万份。玩家是白色几何小人，通过把身体涂成与地图一致来躲藏，猎人则要找出他们。凭借 34 万峰值在线与 Google 官方彩蛋，它是 2026 年的独立游戏现象。",
-   "zh-TW": "超級變色龍是爆紅的「塗色僞裝」派對遊戲，發售首月銷量突破 1500 萬份。玩家是白色幾何小人，通過把身體塗成與地圖一致來躲藏，獵人則要找出他們。憑藉 34 萬峯值在線與 Google 官方彩蛋，它是 2026 年的獨立遊戲現象。"
+   "zh-TW": "超級變色龍是爆紅的「塗色僞裝」派對遊戲，發售首月銷量突破 1500 萬份。玩家是白色幾何小人，通過把身體塗成與地圖一致來躲藏，獵人則要找出他們。憑藉 34 萬峯值在線與 Google 官方彩蛋，它是 2026 年的獨立遊戲現象。",
+   "ko": "메카 카멜레온은 출시 첫 달에 1,500만 장 이상 판매된 바이럴 히트 파티 게임입니다. 플레이어는 흰색 기하학 피규어가 되어 몸을 맵에 녹아들게 칠해 숨고, 사냥꾼이 이들을 찾아냅니다. 동시 접속 34만 명과 구글 이스터에그까지 화제가 된 2026년의 인디 현상입니다.",
+   "es": "Meccha Chameleon es el juego de fiesta viral de pintar para esconderse que vendió más de 15 millones de copias en su primer mes. Los jugadores son figuras geométricas blancas que pintan su cuerpo para fundirse con el mapa mientras los cazadores intentan encontrarlos. Con un pico de 340.000 jugadores simultáneos y su propio huevo de pascua de Google, es el fenómeno indie de 2026."
   }
  },
  "pages": [
@@ -629,6 +749,194 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 게임 방법",
+     "metaTitle": "메카 카멜레온 게임 방법: 초보자 완전 가이드 (2026)",
+     "metaDescription": "메카 카멜레온이 처음이신가요? 칠해서 숨기 메커니즘, 페인트 시스템, 클론과 포즈, 숨는 역할 vs 사냥꾼 역할, 라운드 진행과 초보자 퀵스타트까지 정리했습니다.",
+     "intro": "메카 카멜레온은 배우기 쉽지만 의외로 깊이가 있습니다. 첫 라운드 전에 알아두면 좋은 모든 것을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "핵심 루프: 칠해서 숨기",
+       "body": "모든 플레이어는 흰색 피규어로 시작합니다. 숨는 역할은 몸을 맵에 맞게 칠해 살아남고, 사냥꾼은 소총으로 이들을 추격합니다. 시간이 끝날 때까지 숨는 역할이 한 명이라도 남아 있으면 숨는 쪽이 승리합니다.",
+       "items": [
+        "페인트 버튼을 눌러 몸을 맵의 색과 질감으로 덮는다",
+        "스포이드로 정확한 색을 채취한다 — 감으로 칠하지 않는다",
+        "색뿐 아니라 빛의 방향도 맞춘다, 그렇지 않으면 빛나 보인다",
+        "메탈릭과 러프니스를 조절해 표면이 반사되지 않게 한다"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "숨는 역할 vs 사냥꾼: 역할 심층 분석",
+       "body": "어느 쪽을 맡느냐에 따라 승리 방식이 완전히 달라집니다. 게임에서 숨는 역할은 '카멜레온', 사냥꾼은 '시커'라고 부릅니다.",
+       "columns": [
+        "역할",
+        "목표",
+        "주요 도구",
+        "승리 조건"
+       ],
+       "rows": [
+        [
+         "숨는 역할 (카멜레온)",
+         "시간이 끝날 때까지 살아남기",
+         "페인트, 클론, 포즈, 크기 (블로비/큐브)",
+         "시간 종료 시 한 명 이상 숨어 있으면 승리"
+        ],
+        [
+         "사냥꾼 (시커)",
+         "모든 숨는 역할을 찾아 태그",
+         "소총, 자유 카메라, 조롱 휘파람",
+         "시간 내에 모든 숨는 역할 태그"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "페인트 시스템",
+       "body": "변장 시스템이 이 게임의 핵심입니다. 제대로 칠하면 사라지고, 실수하면 빛나며 들킵니다.",
+       "items": [
+        "컬러 피커 + 스포이드 (E): 눈대중 대신 표면의 정확한 색을 채취",
+        "HSV/메탈릭/러프니스 슬라이더로 마감을 미세 조정해 재질에 맞춘다",
+        "빛의 방향을 맞춘다 — 색이 맞아도 빛이 다르면 반사한다",
+        "칠한 뒤 '정답 확인'으로 색이 얼마나 가까운지, '놓친 부분 랭킹'으로 가장 어색한 곳을 확인",
+        "보이는 몸 전체를 칠한다 — 칠하지 않은 손이나 발이 들통나게 한다",
+        "되돌리기 불가: 모든 붓질은 라운드가 끝날 때까지 되돌릴 수 없다 — 빠르되 신중하게, 한 번의 실수로 변장이 망가진다 (Kotaku)"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "클론, 포즈 & 크기",
+       "body": "변장을 강화하는 추가 도구입니다 (클론은 2.0.0 업데이트에서 추가).",
+       "items": [
+        "클론: 칠하고 포즈를 잡은 뒤 Q를 눌러 미끼 복제본을 배치 — 동시에 최대 2개",
+        "클론이 파괴되면 본체도 노출된다 — 클론은 추가 목숨이 아니다",
+        "포즈: 쪼그려 앉기, 앉기, 몸 웅크리기, 눕기 — 특이한 모양에 맞춘다 (숫자 키/포즈 메뉴)",
+        "크기: 블로비 또는 큐브 캐릭터 (1.9.0 추가)를 골라 숨을 곳에 맞춘다",
+        "도발: 숨는 역할은 휘파람으로 사냥꾼을 유인할 수 있다. 호스트는 일정 시간 후 강제 도발을 설정할 수도 있다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "라운드 진행: 실제 흐름",
+       "body": "한 라운드를 단계별로 설명합니다.",
+       "items": [
+        "카운트다운 — 모두 흰색 피규어로 맵에 스폰",
+        "페인트 단계 — 숨는 역할이 색을 채취해 칠한다. 사냥꾼은 이미 움직이고 있을 수 있다",
+        "사냥 단계 — 시커가 수색하고 카멜레온은 변장한 채 움직이지 않는다",
+        "태그 & 탈락 — 태그된 숨는 역할은 탈락 (인펙션 모드에서는 사냥꾼에 합류)",
+        "시간 종료 — 한 명이라도 숨어 있으면 숨는 쪽 승리"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "첫 단계: 초보자 퀵스타트",
+       "body": "이 다섯 가지만 익혀도 대부분의 신규 플레이어보다 잘할 수 있습니다.",
+       "items": [
+        "빠르게 칠하기: F로 페인트 모드 진입, 드래그로 몸을 덮고, E로 색 채취",
+        "항상 스포이드를 사용한다 — 색을 감으로 정하지 않는다",
+        "빛 맞추기: 흉내 내는 벽과 같은 방향으로 칠한다",
+        "칠한 뒤 움직이지 않는다 — 움직임은 잔상으로 드러난다",
+        "양쪽 역할을 모두 해본다 — 사냥꾼을 이해하면 숨는 역할도 잘한다",
+        "되돌리기가 없다는 걸 감안하라: 실수한 붓질은 라운드 내내 남으므로 칠하기 전에 색을 확인한다"
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Cómo jugar a Meccha Chameleon",
+     "metaTitle": "Cómo jugar a Meccha Chameleon: guía completa para principiantes (2026)",
+     "metaDescription": "¿Nuevo en Meccha Chameleon? Domina la mecánica de pintar para esconderte, el sistema de pintura, clones y poses, los roles de Escondedor y Cazador, el flujo de la ronda y un inicio rápido.",
+     "intro": "Meccha Chameleon es fácil de aprender pero sorprendentemente profundo. Esto es todo lo que necesitas saber antes de tu primera ronda.",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "El bucle principal: pintar para esconderse",
+       "body": "Todos los jugadores empiezan como una figura blanca. Los Escondedores sobreviven pintando su cuerpo para igualar el mapa, mientras los Cazadores los persiguen con un rifle. Si al terminar el tiempo queda al menos un Escondedor oculto, gana el equipo de los Escondedores.",
+       "items": [
+        "Mantén pulsado el botón de pintar para cubrir tu cuerpo con los colores y texturas del mapa",
+        "Usa el cuentagotas para muestrear un color exacto: nunca lo adivines",
+        "Iguala la dirección de la luz, no solo el color, o brillarás",
+        "Ajusta metalizado y rugosidad para que tu superficie no refleje la luz"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "Escondedor vs Cazador: roles a fondo",
+       "body": "Qué bando te toque cambia por completo cómo ganas. En el juego los Escondedores se llaman Camaleones y los Cazadores se llaman Buscadores.",
+       "columns": [
+        "Rol",
+        "Objetivo",
+        "Herramientas clave",
+        "Condición de victoria"
+       ],
+       "rows": [
+        [
+         "Escondedor (Camaleón)",
+         "Sobrevivir hasta que acabe el tiempo",
+         "Pintura, clones, poses, tamaño (bloby/cubo)",
+         "Al menos un Escondedor oculto al terminar el tiempo"
+        ],
+        [
+         "Cazador (Buscador)",
+         "Encontrar y marcar a todos",
+         "Rifle, cámara libre, silbato de provocación",
+         "Marcar a todos antes de que expire el tiempo"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "El sistema de pintura",
+       "body": "El sistema de disfraz es el corazón del juego. Si lo haces bien desapareces; si fallas, brillas.",
+       "items": [
+        "Selector de color + cuentagotas (E): muestrea el color exacto de la superficie en vez de igualarlo a ojo",
+        "Los deslizadores HSV/metalizado/rugosidad ajustan el acabado para que la pintura iguale el material",
+        "Iguala la dirección de la luz: un color perfecto con luz equivocada sigue reflejando",
+        "Tras pintar, la 'comprobación de respuesta' te dice qué tan cerca está tu color; el 'ranking de zonas olvidadas' muestra los peores puntos",
+        "Pinta todo tu cuerpo visible: una mano o un pie sin pintar te delata",
+        "Sin deshacer: cada pincelada es permanente hasta que termina la ronda — pinta rápido pero con cuidado, porque una mala pincelada puede arruinar tu disfraz (Kotaku)"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Clones, poses y tamaños",
+       "body": "Herramientas extra para vender el disfraz (los clones se añadieron en la actualización 2.0.0).",
+       "items": [
+        "Clones: pulsa Q tras pintar y posar para soltar una copia señuelo: hasta dos clones activos",
+        "Si destruyen un clon, tu cuerpo principal queda expuesto: los clones no son vidas extra",
+        "Poses: agacharse, sentarse, encogerse, tumbarse: úsalas para igualar formas raras (teclas numéricas/menú de poses)",
+        "Tamaño: elige Bloby o el personaje Cubo (añadido en 1.9.0) para distintos escondites",
+        "Provocación: los Escondedores pueden silbar para atraer a los Cazadores; el anfitrión puede forzar provocaciones tras un tiempo"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "Flujo de la ronda: qué ocurre realmente",
+       "body": "Una ronda completa, paso a paso.",
+       "items": [
+        "Cuenta atrás: todos aparecen como figuras blancas en el mapa",
+        "Fase de pintura: los Escondedores muestrean colores y se pintan; los Cazadores ya pueden moverse",
+        "Fase de caza: los Buscadores buscan mientras los Camaleones permanecen quietos en su disfraz",
+        "Marca y eliminación: un Escondedor marcado queda fuera (o se une a los Cazadores en modo Infección)",
+        "Fin del tiempo: si queda algún Escondedor oculto, gana el equipo de los Escondedores"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Primeros pasos: inicio rápido para novatos",
+       "body": "Haz estas cinco cosas y jugarás mejor que la mayoría de los nuevos jugadores al instante.",
+       "items": [
+        "Aprende a pintar rápido: entra en modo pintura (F), arrastra para cubrir tu cuerpo y muestrea con E",
+        "Usa siempre el cuentagotas: nunca adivines un color",
+        "Iguala la luz: pinta mirando en la misma dirección que la pared que imitas",
+        "Quédate quieto tras pintar: el movimiento deja un rastro visible",
+        "Juega ambos roles: entender a los Cazadores te hace mejor Escondedor y viceversa",
+        "Cuenta con no poder deshacer: una pincelada errónea dura toda la ronda, así que muestrea la superficie antes de comprometerte"
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -638,7 +946,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -647,7 +957,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -656,7 +968,9 @@
      "labels": {
       "zh-CN": "Steam 最新爆款：6 美元的粗糙独立游戏，像 Prop Hunt 但更好 — Kotaku",
       "zh-TW": "Steam 最新爆款：6 美元的粗糙獨立遊戲，像 Prop Hunt 但更好 — Kotaku",
-      "ja": "Steam 最新の話題作：6ドルの粗いインディーゲーム、Prop Hunt に似ているが良い — Kotaku"
+      "ja": "Steam 最新の話題作：6ドルの粗いインディーゲーム、Prop Hunt に似ているが良い — Kotaku",
+      "ko": "Steam 최신 바이럴 멀티플레이: 6달러짜리 조잡한 인디지만 Prop Hunt보다 낫다 — Kotaku",
+      "es": "El último éxito viral de Steam es un indie tosco de 6 $ que es como Prop Hunt, pero bueno — Kotaku"
      }
     }
    ]
@@ -1009,6 +1323,180 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 전체 모드 설명",
+     "metaTitle": "메카 카멜레온 모드: 전체 4가지 설명 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 게임 모드를 설명합니다 — 베이직, 인펙션, 더블, 리버스 치킨 레이스 — 그리고 각 모드의 최고의 전략까지.",
+     "intro": "메카 카멜레온에는 플레이 방식을 완전히 바꾸는 여러 모드가 있습니다. 각 모드가 하는 일과 이기는 방법을 소개합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "게임 모드",
+       "body": "현재 버전의 4가지 모드와 승리 조건입니다. 노멀(베이직)은 출시 때부터 있던 모드이고, 리버스 치킨 레이스는 2.4.0 패치(2026년 7월 2일)에서 추가되었습니다.",
+       "columns": [
+        "모드",
+        "진행 방식",
+        "승리 전략"
+       ],
+       "rows": [
+        [
+         "베이직 (노멀)",
+         "클래식 숨는 역할 vs 사냥꾼 숨바꼭질",
+         "수직면에 녹아들고, 칠한 뒤에는 움직이지 않는다"
+        ],
+        [
+         "인펙션 (인크리싱 오니)",
+         "태그된 숨는 역할이 사냥꾼 팀에 합류",
+         "사냥꾼: 쉬운 목표부터 태그해 숫자를 키운다"
+        ],
+        [
+         "더블",
+         "모두 먼저 숨고, 그다음 모두 사냥 — 가장 많이 찾은 사람이 승리",
+         "숨는 단계에서 클론과 포즈로 주의를 분산한다"
+        ],
+        [
+         "리버스 치킨 레이스",
+         "각자 몸을 칠하고, 모든 작품을 받침대에 전시. 관찰 시간 후 서로를 사냥",
+         "기억에 남는 칠하기를 하고, 다른 플레이어를 본 위치를 기억한다"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "모드의 변천 (출시 → 현재)",
+       "body": "모드 목록은 출시 후 늘어났습니다. 그래서 오래된 기사는 3가지 모드만 다룹니다.",
+       "items": [
+        "출시 (2026년 6월 10일): 노멀, 인펙션, 더블 3가지 모드",
+        "2.4.0 패치 (2026년 7월 2일): 리버스 치킨 레이스가 4번째 모드로 추가",
+        "혼란의 원인: Steam 출시 당시 스토어 문구는 '3가지 대전 모드'라고 했고, 7월 2일 이전에 작성된 공략은 새 모드보다 먼저 쓰인 것"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "커스텀 룸",
+       "body": "커스텀 룸은 게임 모드가 아니라 서버 옵션입니다 — 호스트가 최대 8명까지 규칙을 조정할 수 있습니다.",
+       "items": [
+        "라운드 시간을 조정해 빠른 게임으로",
+        "비밀번호를 설정해 비공개 세션으로",
+        "방에서 사용할 모드를 선택"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "모드 FAQ",
+       "body": "",
+       "items": [
+        [
+         "게임에 모드가 3개뿐이라고 하는 기사가 있는 이유는?",
+         "출시 당시에는 노멀, 인펙션, 더블 3개였습니다. 2.4.0 패치(2026년 7월 2일)가 리버스 치킨 레이스를 4번째로 추가했기 때문에, 그 이전에 게시된 공략은 3개만 다룹니다."
+        ],
+        [
+         "초보자는 어떤 모드부터 시작해야 하나요?",
+         "베이직(노멀) 모드가 가장 단순합니다 — 추가 규칙 없는 클래식 숨바꼭질. 인펙션이나 더블 전에 몇 라운드 해보세요."
+        ],
+        [
+         "호스트가 모드와 라운드 시간을 바꿀 수 있나요?",
+         "네 — 서버를 만들 때 호스트가 모드를 고르고 라운드 시간을 설정합니다."
+        ],
+        [
+         "솔로 모드가 있나요?",
+         "없습니다 — 메카 카멜레온은 Steam PC에서만 즐기는 온라인 멀티플레이 전용 게임입니다."
+        ],
+        [
+         "모든 모드가 같은 인원 범위를 지원하나요?",
+         "4개 모드 모두 게임의 전체 인원 범위를 지원합니다. 권장 범위는 2-12명입니다 (Steam 스토어 설명은 2-10명)."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Todos los modos de Meccha Chameleon explicados",
+     "metaTitle": "Modos de Meccha Chameleon: los 4 explicados (2026)",
+     "metaDescription": "Todos los modos de juego de Meccha Chameleon explicados: Básico, Infección, Doble y Reverse Chicken Race, además de la mejor estrategia para cada uno.",
+     "intro": "Meccha Chameleon incluye varios modos que cambian por completo la forma de jugar. Esto es lo que hace cada uno y cómo ganar.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Modos de juego",
+       "body": "Los cuatro modos de la versión actual con sus condiciones de victoria. Básico (Normal) fue el modo de lanzamiento; Reverse Chicken Race se añadió en el parche 2.4.0 (2 de julio de 2026).",
+       "columns": [
+        "Modo",
+        "Cómo funciona",
+        "Estrategia ganadora"
+       ],
+       "rows": [
+        [
+         "Básico (Normal)",
+         "Escondite clásico de Escondedor contra Cazador",
+         "Fúndete con superficies verticales; quédate quieto una vez pintado"
+        ],
+        [
+         "Infección (Increasing Oni)",
+         "Los Escondedores marcados se unen al equipo de Cazadores",
+         "Cazadores: marca primero a los objetivos fáciles para hacer crecer tu equipo"
+        ],
+        [
+         "Doble",
+         "Primero todos se esconden, luego todos cazan: gana quien encuentre a más gente",
+         "Escondedores: usa clones y poses para dividir la atención antes de la fase de caza"
+        ],
+        [
+         "Reverse Chicken Race",
+         "Cada jugador se pinta y cada obra se muestra en un pedestal; tras el tiempo de observación, todos se cazan entre sí",
+         "Crea un pintado memorable y recuerda dónde viste a los demás"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Cómo creció la lista de modos (lanzamiento → hoy)",
+       "body": "La lista de modos cambió después del lanzamiento, por eso los artículos antiguos solo mencionan tres.",
+       "items": [
+        "En el lanzamiento (10 de junio de 2026): tres modos: Normal, Infección y Doble",
+        "Parche 2.4.0 (2 de julio de 2026): añadió Reverse Chicken Race como cuarto modo",
+        "Por qué la confusión: el texto de la tienda de Steam del lanzamiento dice 'tres modos de combate' y las guías escritas antes del 2 de julio solo listan tres: simplemente son anteriores al modo nuevo"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Salas personalizadas",
+       "body": "Las salas personalizadas son una opción de servidor, no un modo: el anfitrión puede ajustar reglas para hasta 8 jugadores.",
+       "items": [
+        "Ajusta el tiempo de ronda para partidas más rápidas",
+        "Pon una contraseña para sesiones privadas",
+        "Elige el modo que usa la sala"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ de modos",
+       "body": "",
+       "items": [
+        [
+         "¿Por qué algunos artículos dicen que el juego solo tiene tres modos?",
+         "En el lanzamiento venía con tres: Normal, Infección y Doble. El parche 2.4.0 (2 de julio de 2026) añadió Reverse Chicken Race como cuarto, así que cualquier guía publicada antes de esa fecha solo lista tres."
+        ],
+        [
+         "¿Con qué modo deberían empezar los principiantes?",
+         "El modo Básico (Normal) es el más sencillo: escondite clásico de Escondedor contra Cazador sin reglas extra. Prueba unas rondas antes de Infección o Doble."
+        ],
+        [
+         "¿El anfitrión puede cambiar el modo y el tiempo de ronda?",
+         "Sí: al crear un servidor, el anfitrión elige el modo y fija el tiempo de ronda antes de abrir el lobby."
+        ],
+        [
+         "¿Hay un modo para un solo jugador?",
+         "No: Meccha Chameleon es solo multijugador online, en PC vía Steam."
+        ],
+        [
+         "¿Todos los modos admiten los mismos jugadores?",
+         "Los cuatro modos admiten el rango completo del juego; el rango recomendado es de 2 a 12 (la descripción de Steam dice 2 a 10)."
+        ]
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -1018,7 +1506,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -1027,7 +1517,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -1036,7 +1528,9 @@
      "labels": {
       "zh-CN": "全部模式解析 — TheGamer",
       "zh-TW": "全部模式解析 — TheGamer",
-      "ja": "全モード解説 — TheGamer"
+      "ja": "全モード解説 — TheGamer",
+      "ko": "전체 게임 모드 해설 — TheGamer",
+      "es": "Todos los modos de juego, explicados — TheGamer"
      }
     },
     {
@@ -1045,7 +1539,9 @@
      "labels": {
       "zh-CN": "2026-07-02 更新公告 — IGN",
       "zh-TW": "2026-07-02 更新公告 — IGN",
-      "ja": "2026-07-02 パッチノート — IGN"
+      "ja": "2026-07-02 パッチノート — IGN",
+      "ko": "2026-07-02 패치 노트 — IGN",
+      "es": "Notas del parche del 2 de julio de 2026 — IGN"
      }
     }
    ]
@@ -1370,6 +1866,166 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 전체 맵",
+     "metaTitle": "메카 카멜레온 맵: 기본 & 워크숍 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 기본 맵, Steam 워크숍 맵 작동 방식, 최고의 커뮤니티 맵을 찾는 곳까지.",
+     "intro": "메카 카멜레온의 맵은 매 라운드 숨바꼭질의 무대입니다. 기본 맵과 워크숍이 게임을 확장하는 방식을 소개합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "기본 맵",
+       "body": "Wikipedia는 현재 버전의 공식 맵으로 다음을 나열합니다.",
+       "columns": [
+        "맵",
+        "설명"
+       ],
+       "rows": [
+        [
+         "숨바꼭질 저택 (Hide-and-Seek Mansion)",
+         "게임의 대표 실내 맵"
+        ],
+        [
+         "인도어 컨트리 (Indoor Country)",
+         "아늑한 실내 배경"
+        ],
+        [
+         "하수구 (Sewer)",
+         "좋은 위장이 빛을 발하는 어두운 터널"
+        ],
+        [
+         "백룸 (Backrooms)",
+         "백룸 미학에 대한 오마주 — 누렇게 바랜 벽과 사무 공간 (2.1.0 업데이트에서 리메이크)"
+        ],
+        [
+         "펭귄 호텔 (Penguin Hotel)",
+         "개발자의 초기 작품 '펭귄 호텔' 시리즈의 호텔 맵"
+        ],
+        [
+         "슈거랜드 (Sugarland)",
+         "밝고 화려한 맵"
+        ],
+        [
+         "오사카 (Osaka)",
+         "판매 700만 장 돌파 후 추가된 일본 테마 맵"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Steam 워크숍 맵",
+       "body": "게임은 Steam 워크숍의 커스텀 맵으로 모딩할 수 있습니다 — 아트 갤러리, 더 마켓, 수영장, 바이킹 마켓 등.",
+       "items": [
+        "Steam 워크숍에서 커스텀 맵을 설치하고 커스텀 룸에서 불러온다",
+        "인기 커뮤니티 맵에는 마인크래프트 스타일, FNAF 시큐리티 브리치, CS2 미라지 리메이크가 있다",
+        "새 공식 맵도 업데이트로 추가된다 (예: HIKAKIN 뮤지엄 맵)"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "맵 FAQ",
+       "body": "",
+       "items": [
+        [
+         "맵은 몇 개인가요?",
+         "기본 맵 7개 (숨바꼭질 저택, 인도어 컨트리, 하수구, 백룸, 펭귄 호텔, 슈거랜드, 오사카) + 수많은 Steam 워크숍 맵. 공식 맵도 계속 추가됩니다 — 2026년 업데이트는 데스 버거, 그리스, 가튼 오브 밴밴·엑싯 8 콜라보 맵을 추가했습니다."
+        ],
+        [
+         "워크숍 맵은 무료인가요?",
+         "네 — Steam 워크숍 맵은 구독만 하면 무료로 쓸 수 있는 커뮤니티 모드이며, 구독하면 게임에 나타납니다."
+        ],
+        [
+         "공식 맵은 유료인가요?",
+         "아니요 — 모든 공식 맵은 Steam 게임에 포함되어 있습니다. 유료 맵은 없습니다."
+        ],
+        [
+         "맵이 더 추가될까요?",
+         "가능성이 매우 높습니다 — 개발자는 출시 이후 꾸준히 공식 맵을 추가해 왔습니다 (슈거랜드, 오사카, 데스 버거, 그리스, 콜라보 맵)."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Todos los mapas de Meccha Chameleon",
+     "metaTitle": "Mapas de Meccha Chameleon: base y Workshop (2026)",
+     "metaDescription": "Todos los mapas base de Meccha Chameleon, cómo funcionan los mapas del Steam Workshop y dónde encontrar los mejores mapas de la comunidad.",
+     "intro": "Los mapas de Meccha Chameleon son el escenario de cada ronda de escondite. Aquí están los mapas base y cómo el Workshop amplía el juego.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Mapas base",
+       "body": "Wikipedia enumera estos mapas oficiales en la versión actual.",
+       "columns": [
+        "Mapa",
+        "Notas"
+       ],
+       "rows": [
+        [
+         "Mansión del Escondite",
+         "El mapa interior insignia del juego"
+        ],
+        [
+         "País Interior",
+         "Un entorno interior acogedor"
+        ],
+        [
+         "Alcantarilla",
+         "Túneles oscuros que premian un buen camuflaje"
+        ],
+        [
+         "Backrooms",
+         "Homenaje a la estética Backrooms: paredes amarillentas y oficinas (rediseñado en la actualización 2.1.0)"
+        ],
+        [
+         "Hotel Pingüino",
+         "Un mapa de hotel de la serie anterior del desarrollador, Penguin Hotel"
+        ],
+        [
+         "Sugarland",
+         "Un mapa brillante y colorido"
+        ],
+        [
+         "Osaka",
+         "Un mapa temático de Japón añadido tras superar los 7 millones de copias"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Mapas del Steam Workshop",
+       "body": "El juego se puede modificar con mapas personalizados del Steam Workshop, como Art Gallery, The Market, Swimming Pool y Viking Market.",
+       "items": [
+        "Instala mapas personalizados del Steam Workshop y cárgalos en Salas personalizadas",
+        "Los mapas populares de la comunidad incluyen remakes estilo Minecraft, FNAF Security Breach y CS2 Mirage",
+        "También se añaden nuevos mapas oficiales en las actualizaciones (por ejemplo, el mapa Museo HIKAKIN)"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ de mapas",
+       "body": "",
+       "items": [
+        [
+         "¿Cuántos mapas hay?",
+         "7 mapas base (Mansión del Escondite, País Interior, Alcantarilla, Backrooms, Hotel Pingüino, Sugarland y Osaka) más muchos del Steam Workshop. Se siguen añadiendo mapas oficiales: las actualizaciones de 2026 añadieron Death Burger, Greece y los mapas colaborativos de Garten of Banban y Exit 8."
+        ],
+        [
+         "¿Los mapas del Workshop son gratis?",
+         "Sí: los mapas del Steam Workshop son mods de la comunidad que suscribes gratis y luego aparecen en el juego."
+        ],
+        [
+         "¿Los mapas oficiales cuestan dinero?",
+         "No: todos los mapas oficiales vienen incluidos con el juego en Steam. No hay mapas de pago."
+        ],
+        [
+         "¿Añadirán más mapas?",
+         "Muy probablemente: el desarrollador ha añadido mapas oficiales con regularidad desde el lanzamiento (Sugarland, Osaka, Death Burger, Greece y colaboraciones)."
+        ]
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -1379,7 +2035,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -1388,7 +2046,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     }
    ]
@@ -1605,6 +2265,112 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 팁 & 요령: 더 많이 이기는 법",
+     "metaTitle": "메카 카멜레온 팁 & 요령 (2026)",
+     "metaDescription": "메카 카멜레온에서 더 많이 이기는 프로 팁 — 색 채취, 빛의 방향, 클론, 포즈, 실제로 효과 있는 사냥꾼 전략.",
+     "intro": "메카 카멜레온에서 좋은 플레이어와 뛰어난 플레이어를 가르는 구체적인 테크닉을 모았습니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "숨는 역할 팁",
+       "body": "숨는 역할로 이기는 핵심은 변장을 완성하는 것입니다.",
+       "items": [
+        "스포이드로 색을 채취한다 — 감으로 정하지 않는다",
+        "흉내 내는 표면의 빛 방향을 맞춘다",
+        "메탈릭과 러프니스를 낮춰 빛나지 않게 한다",
+        "특이한 모양에는 포즈 명령(쪼그려 앉기, 앉기, 웅크리기)을 쓴다",
+        "칠한 뒤 움직이지 않는다 — 움직임은 잔상으로 드러난다"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "칠하기 & 색 맞추기",
+       "body": "컬러 피커, 스포이드, HSV, 메탈릭, 러프니스 슬라이더가 위장 도구 모음입니다.",
+       "items": [
+        "눈대중 대신 스포이드로 정확한 색을 채취한다",
+        "메탈릭과 러프니스를 미세 조정해 마감이 벽과 맞게 한다",
+        "칠한 뒤 '정답 확인' 결과를 본다 — 색이 얼마나 가까운지 알려준다",
+        "실루엣을 조심한다 — 모양이 어긋나면 완벽한 칠도 실패한다"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "클론 & 포즈",
+       "body": "클론과 포즈는 숨는 역할이 사냥꾼을 속일 방법을 더 주기 위해 추가되었습니다.",
+       "items": [
+        "캐릭터를 칠하고 포즈를 잡은 뒤 Q 키로 클론을 만든다",
+        "동시에 최대 2개의 클론을 활성화할 수 있다 (2.0.0 업데이트에서 추가)",
+        "클론을 흩어 놓거나 겹쳐서 설득력 있는 위장을 만든다",
+        "기억하세요: 클론이 파괴되면 본체도 노출됩니다 — 클론은 공짜 추가 목숨이 아닙니다"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "사냥꾼 팁",
+       "body": "사냥꾼으로 이기는 핵심은 환경을 읽는 것입니다.",
+       "items": [
+        "밝은 색을 찾지 말고, 잘못된 그림자를 찾는다",
+        "맵 조명과 어긋나는 실제 플레이어 그림자를 확인한다",
+        "쉬운 목표부터 태그해 팀을 빠르게 키운다",
+        "숫자가 모이면 흩어져 맵 전체를 커버한다"
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Consejos y trucos de Meccha Chameleon: cómo ganar más",
+     "metaTitle": "Consejos y trucos de Meccha Chameleon (2026)",
+     "metaDescription": "Consejos profesionales para ganar más rondas de Meccha Chameleon: muestreo de color, dirección de la luz, clones, poses y estrategias de Cazador que funcionan.",
+     "intro": "Estas son las técnicas concretas que separan a los buenos jugadores de los grandes en Meccha Chameleon.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "Consejos para Escondedores",
+       "body": "Ganar como Escondedor consiste en perfeccionar tu disfraz.",
+       "items": [
+        "Muestrea tu color con el cuentagotas: nunca lo adivines",
+        "Iguala la dirección de la luz de la superficie que imitas",
+        "Baja metalizado y rugosidad para no brillar",
+        "Usa órdenes de pose (agacharse, sentarse, encogerse) para formas raras",
+        "Quédate quieto tras pintar: el movimiento deja un rastro visible"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Pintura y combinación de colores",
+       "body": "El selector de color, el cuentagotas y los deslizadores HSV, metalizado y rugosidad son tu kit de camuflaje.",
+       "items": [
+        "Usa el cuentagotas para muestrear un color exacto en vez de igualarlo a ojo",
+        "Ajusta metalizado y rugosidad para que el acabado iguale la pared",
+        "Mira el resultado de la 'comprobación de respuesta' tras pintar: te dice qué tan cerca está tu color",
+        "Vigila tu silueta: un pintado perfecto falla si la forma es incorrecta"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Clones y poses",
+       "body": "Los clones y las poses se añadieron para dar a los Escondedores más formas de despistar a los Cazadores.",
+       "items": [
+        "Crea un clon con la tecla Q tras pintar y posar a tu personaje",
+        "Puedes tener hasta dos clones activos a la vez (añadido en la actualización 2.0.0)",
+        "Reparte los clones o superponlos para crear disfraces convincentes",
+        "Recuerda: si destruyen un clon, tu cuerpo principal también queda expuesto: un clon no es una vida extra gratis"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Consejos para Cazadores",
+       "body": "Ganar como Cazador consiste en leer el entorno.",
+       "items": [
+        "No busques colores brillantes: busca sombras incorrectas",
+        "Revisa las sombras físicas de los jugadores que no coinciden con la iluminación del mapa",
+        "Marca primero a los objetivos fáciles para hacer crecer tu equipo rápido",
+        "Una vez con ventaja numérica, sepárate para cubrir todo el mapa"
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -1614,7 +2380,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -1623,7 +2391,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     }
    ]
@@ -1776,6 +2546,80 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 업적 (없음 — 설명)",
+     "metaTitle": "메카 카멜레온에 업적이 있나요? (2026)",
+     "metaDescription": "메카 카멜레온에 Steam 업적이 있나요? 짧게 답하면: 아니요, 아직은 없습니다. 알려진 사실과 플레이어들이 요청하는 내용을 정리했습니다.",
+     "intro": "많은 플레이어가 메카 카멜레온 업적을 검색합니다. 여기에 정확한 답과 게임이 대신 제공하는 것을 소개합니다.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "업적 FAQ",
+       "body": "",
+       "items": [
+        [
+         "메카 카멜레온에 Steam 업적이 있나요?",
+         "없습니다. 2026년 8월 기준 메카 카멜레온의 공식 Steam 업적은 없습니다. Steam 상점 페이지에 업적 섹션이 없고, isThereAnyDeal 같은 트래커도 '업적 있음: 아니요'로 표시합니다."
+        ],
+        [
+         "업적이 나중에 추가될까요?",
+         "발표된 바 없습니다. 개발자(lemorion_1224와 Haganeiro)는 업적 업데이트를 확인하지 않았지만, 게임은 자주 업데이트됩니다 — 첫 주에 1.8에서 2.2까지 올라갔죠 — 그래서 추가될 수도 있습니다."
+        ],
+        [
+         "대신 게임이 추적하는 것은 무엇인가요?",
+         "2.1.0 업데이트가 '총 발견 수' 카운터를 추가했고, 게임은 인게임 통계와 랭킹을 추적해 내장 챌린지처럼 작동합니다."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "출처",
+       "body": "다음 출처에서 확인했습니다.",
+       "items": [
+        "isThereAnyDeal 제품 페이지: '업적 있음: 아니요'",
+        "메카 카멜레온 Steam 상점 페이지 (업적 탭 없음)",
+        "2.1.0 업데이트 IGN 패치 노트 (발견 수 카운터)"
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Logros de Meccha Chameleon (ninguno, explicado)",
+     "metaTitle": "¿Meccha Chameleon tiene logros? (2026)",
+     "metaDescription": "¿Tiene Meccha Chameleon logros de Steam? Respuesta corta: no, todavía no. Esto es lo que sabemos y lo que piden los jugadores.",
+     "intro": "Muchos jugadores buscan los logros de Meccha Chameleon. Esta es la respuesta directa, además de lo que el juego ofrece en su lugar.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "FAQ de logros",
+       "body": "",
+       "items": [
+        [
+         "¿Tiene Meccha Chameleon logros de Steam?",
+         "No. A agosto de 2026 no hay logros oficiales de Steam para Meccha Chameleon. La página de la tienda de Steam no tiene sección de logros y rastreadores como isThereAnyDeal muestran 'Tiene logros: No'."
+        ],
+        [
+         "¿Añadirán logros más adelante?",
+         "No se ha anunciado. Los desarrolladores (lemorion_1224 y Haganeiro) no han confirmado una actualización de logros, pero el juego se actualiza a menudo — pasó de la versión 1.8 a la 2.2 en sus primeras semanas — así que podría llegar."
+        ],
+        [
+         "¿Qué registra el juego en su lugar?",
+         "La actualización 2.1.0 añadió un contador de 'descubrimientos totales', y el juego registra estadísticas y clasificaciones que funcionan como retos integrados."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Fuentes",
+       "body": "Verificado con estas fuentes.",
+       "items": [
+        "Página de producto de isThereAnyDeal: 'Tiene logros: No'",
+        "Página de la tienda de Steam de Meccha Chameleon (sin pestaña de logros)",
+        "Notas del parche 2.1.0 de IGN (contador de descubrimientos)"
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -1785,7 +2629,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -1794,7 +2640,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -1803,7 +2651,9 @@
      "labels": {
       "zh-CN": "isThereAnyDeal — 超级变色龙比价",
       "zh-TW": "isThereAnyDeal — 超級變色龍比價",
-      "ja": "isThereAnyDeal — メチャカメレオン価格比較"
+      "ja": "isThereAnyDeal — メチャカメレオン価格比較",
+      "ko": "isThereAnyDeal — MECCHA CHAMELEON",
+      "es": "isThereAnyDeal — MECCHA CHAMELEON"
      }
     },
     {
@@ -1812,7 +2662,9 @@
      "labels": {
       "zh-CN": "SlashSkill — 作弊与破解说明",
       "zh-TW": "SlashSkill — 作弊與破解說明",
-      "ja": "SlashSkill — チートとハック解説"
+      "ja": "SlashSkill — チートとハック解説",
+      "ko": "SlashSkill — 치트와 핵 해설",
+      "es": "SlashSkill — trucos y hacks explicados"
      }
     }
    ]
@@ -2225,6 +3077,210 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 업데이트 로그 & 패치 노트",
+     "metaTitle": "메카 카멜레온 업데이트 로그: 전체 패치 노트 (2026)",
+     "metaDescription": "메카 카멜레온 전체 업데이트 내역: 1.6부터 3.5까지, 새 맵, 콜라보 맵, 큐브 캐릭터, 클론 포함.",
+     "intro": "메카 카멜레온 전체 업데이트 내역: 1.6부터 3.5까지, 큐브 캐릭터, 클론, 새 맵, 콜라보 맵 등을 포함합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "버전 내역",
+       "body": "검증된 출처(IGN, GameRant, changelog.gg, Steam 커뮤니티 뉴스)의 주요 버전입니다.",
+       "columns": [
+        "버전",
+        "날짜",
+        "주요 변경"
+       ],
+       "rows": [
+        [
+         "3.5.3",
+         "2026-08-04",
+         "카메라 옵션 추가, 색상 팔레트·색 설정 버그 수정"
+        ],
+        [
+         "3.5.0",
+         "2026-08-02",
+         "공식 'Exit 8' 콜라보 맵 추가 및 품질 개선"
+        ],
+        [
+         "3.3.0",
+         "2026-07-27",
+         "'통통(Plump)' 체형 추가"
+        ],
+        [
+         "3.1.0",
+         "2026-07-25",
+         "'Garten of Banban' 콜라보 맵, 비UI 컨트롤러 지원, 워크숍 보안 패치"
+        ],
+        [
+         "3.0.0",
+         "2026-07-20",
+         "새 공식 맵 '그리스(Greece)'"
+        ],
+        [
+         "2.9.0",
+         "2026-07-19",
+         "야광 페인트 추가, 페인트 성능 개선"
+        ],
+        [
+         "2.8.0",
+         "2026-07-17",
+         "새 공식 맵 '데스 버거(Death Burger)', 채팅·이름표 언어 필터"
+        ],
+        [
+         "2.2.0",
+         "2026-06-28",
+         "숨바꼭질 저택 랜덤화, 새 큐브 크기 옵션, 안정성 수정"
+        ],
+        [
+         "2.1.0",
+         "2026-06-27",
+         "총 발견 수 카운터, '백룸' 리메이크"
+        ],
+        [
+         "2.0.0",
+         "2026-06-26",
+         "클론 추가 — 숨는 역할이 칠한 캐릭터의 미끼 복제본 생성"
+        ],
+        [
+         "1.9.0",
+         "2026-06-24",
+         "'큐브' 캐릭터 추가, 사냥꾼 산탄총 타이밍 조정"
+        ],
+        [
+         "1.6.0–1.8.1",
+         "2026-06-21~23",
+         "'오사카' 맵 + 신고 기능, 숨는 역할 크기 옵션, 이모트 11개와 맵 수정 (1.8.0 롤백 후 1.8.1로 재배포)"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "기타 최근 변경",
+       "body": "Steam 커뮤니티 뉴스에 보고된 추가 변경입니다.",
+       "items": [
+        "새 공식 맵 'HIKAKIN 뮤지엄' 추가 (Steam 커뮤니티 뉴스 기준)",
+        "플레이어가 벽에 너무 깊이 끼는 문제 수정",
+        "한국어 서버 생성 화면의 번역 오류 수정",
+        "많은 플레이어가 동시에 칠할 때의 랙 감소",
+        "2026년 7월 보안 참고: 악성 워크숍 맵 소동으로 3.1.0에 보안 패치 — 평판 좋은 맵에만 구독하세요"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "전체 내역 보는 곳",
+       "body": "모든 핫픽스와 개발자 게시물은 다음에서 확인하세요:",
+       "items": [
+        "MECCHA CHAMELEON 공식 Steam 커뮤니티 뉴스",
+        "changelog.gg의 MECCHA CHAMELEON 업데이트 타임라인",
+        "IGN의 Meccha Chameleon 위키 패치 노트 페이지"
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Registro de actualizaciones y notas de parche de Meccha Chameleon",
+     "metaTitle": "Registro de actualizaciones de Meccha Chameleon: todas las notas (2026)",
+     "metaDescription": "El historial completo de actualizaciones de Meccha Chameleon: versiones 1.6 a 3.5, con nuevos mapas, mapas de colaboración, el personaje Cubo y los clones.",
+     "intro": "El historial completo de actualizaciones de Meccha Chameleon: versiones 1.6 a 3.5, con el personaje Cubo, clones, nuevos mapas, mapas de colaboración y más.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Historial de versiones",
+       "body": "Versiones principales de fuentes verificadas (IGN, GameRant, changelog.gg, noticias de la comunidad de Steam).",
+       "columns": [
+        "Versión",
+        "Fecha",
+        "Aspectos destacados"
+       ],
+       "rows": [
+        [
+         "3.5.3",
+         "4 ago 2026",
+         "Opciones de cámara añadidas; corregidos errores de paleta de color y ajuste de color"
+        ],
+        [
+         "3.5.0",
+         "2 ago 2026",
+         "Añadido el mapa oficial de colaboración 'Exit 8' y mejoras de calidad de vida"
+        ],
+        [
+         "3.3.0",
+         "27 jul 2026",
+         "Añadido el tipo de cuerpo 'Regordete'"
+        ],
+        [
+         "3.1.0",
+         "25 jul 2026",
+         "Mapa de colaboración 'Garten of Banban'; soporte de mando no-UI; parche de seguridad del Workshop"
+        ],
+        [
+         "3.0.0",
+         "20 jul 2026",
+         "Nuevo mapa oficial 'Greece'"
+        ],
+        [
+         "2.9.0",
+         "19 jul 2026",
+         "Pintura que brilla en la oscuridad añadida; mejorado el rendimiento de la pintura"
+        ],
+        [
+         "2.8.0",
+         "17 jul 2026",
+         "Nuevo mapa oficial 'Death Burger'; filtrado de idioma en chat y placas de nombre"
+        ],
+        [
+         "2.2.0",
+         "28 jun 2026",
+         "Aleatorización de la Mansión del Escondite; nuevas opciones de tamaño de Cubo; correcciones de estabilidad"
+        ],
+        [
+         "2.1.0",
+         "27 jun 2026",
+         "Contador de descubrimientos totales; rediseñado 'The Backrooms'"
+        ],
+        [
+         "2.0.0",
+         "26 jun 2026",
+         "Clones añadidos: los Escondedores pueden crear copias señuelo de su personaje pintado"
+        ],
+        [
+         "1.9.0",
+         "24 jun 2026",
+         "Personaje 'Cubo' añadido; ajustado el tiempo de la escopeta del cazador"
+        ],
+        [
+         "1.6.0–1.8.1",
+         "21–23 jun 2026",
+         "Mapa 'Osaka' + función de reporte; opciones de tamaño del Escondedor; 11 emotes y correcciones de mapas (1.8.0 revertida y relanzada como 1.8.1)"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Otros cambios recientes",
+       "body": "Cambios adicionales reportados en las noticias de la comunidad de Steam.",
+       "items": [
+        "Añadido el nuevo mapa oficial 'Museo HIKAKIN' (según las noticias de la comunidad de Steam)",
+        "Corregido un problema por el que los jugadores quedaban atascados demasiado dentro de las paredes",
+        "Corregido un error de traducción en la pantalla coreana de creación de servidores",
+        "Reducido el lag cuando muchos jugadores pintan a la vez",
+        "Nota de seguridad de julio de 2026: un susto de mapa malicioso del Workshop llevó a un parche de seguridad en 3.1.0 — suscríbete solo a mapas bien valorados"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Dónde ver el historial completo",
+       "body": "Para cada hotfix y publicación del desarrollador:",
+       "items": [
+        "Noticias oficiales de la comunidad de Steam de MECCHA CHAMELEON",
+        "Cronología de actualizaciones de MECCHA CHAMELEON en changelog.gg",
+        "Páginas de notas de parche del wiki de Meccha Chameleon de IGN"
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -2234,7 +3290,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -2243,7 +3301,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -2252,7 +3312,9 @@
      "labels": {
       "zh-CN": "IGN wiki — 2026年7月20日更新说明",
       "zh-TW": "IGN wiki — 2026年7月20日更新說明",
-      "ja": "IGN wiki — 2026年7月20日パッチノート"
+      "ja": "IGN wiki — 2026年7月20日パッチノート",
+      "ko": "IGN 위키 — 2026-07-20 패치 노트",
+      "es": "Wiki de IGN — notas del parche del 20 de julio de 2026"
      }
     },
     {
@@ -2261,7 +3323,9 @@
      "labels": {
       "zh-CN": "Changelog.gg — 超级变色龙更新日志",
       "zh-TW": "Changelog.gg — 超級變色龍更新日誌",
-      "ja": "Changelog.gg — メチャカメレオン"
+      "ja": "Changelog.gg — メチャカメレオン",
+      "ko": "Changelog.gg — MECCHA CHAMELEON",
+      "es": "Changelog.gg — MECCHA CHAMELEON"
      }
     }
    ]
@@ -2522,6 +3586,134 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 시스템 요구 사항 & Steam 덱",
+     "metaTitle": "메카 카멜레온 시스템 요구 사항 & Steam 덱 (2026)",
+     "metaDescription": "메카 카멜레온을 실행할 수 있나요? 최소 시스템 요구 사항, Steam 덱 호환성, GeForce NOW로 Mac에서 플레이하는 방법.",
+     "intro": "메카 카멜레온은 가볍게 실행되는 게임입니다. 공식 최소 요구 사항과 다른 하드웨어에서의 실행 방식을 소개합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "최소 시스템 요구 사항",
+       "body": "Steam 상점 페이지의 공식 최소 요구 사항입니다.",
+       "columns": [
+        "구성",
+        "요구 사항"
+       ],
+       "rows": [
+        [
+         "OS",
+         "Windows 10 64-bit"
+        ],
+        [
+         "프로세서",
+         "Intel Core i5"
+        ],
+        [
+         "그래픽",
+         "DirectX 11 또는 12 호환 그래픽 카드"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Steam 덱 & Mac",
+       "body": "다른 기기에서 플레이하는 방법입니다.",
+       "items": [
+        "Steam 덱: 공식 등급 '플레이 가능' — 실행은 되지만, 키보드식 조작(칠하기, 포즈)은 트랙패드나 연결한 마우스로 하는 게 가장 좋습니다",
+        "Mac: 네이티브 macOS 버전은 없음 — GeForce NOW 클라우드 스트리밍으로 플레이 (2026년 6월 27일부터 제공)",
+        "이 게임은 Steam에서 PC 전용입니다. 네이티브 PS5/Xbox/Switch 버전은 없습니다"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "시스템 요구 사항 FAQ",
+       "body": "",
+       "items": [
+        [
+         "메카 카멜레온은 좋은 PC가 필요한가요?",
+         "아니요 — 최소 사양이 낮습니다: Windows 10 64-bit, Intel Core i5 프로세서, DirectX 11/12 호환 그래픽 카드면 됩니다. 가벼운 파티 게임입니다."
+        ],
+        [
+         "Mac에서 되나요?",
+         "네이티브 Mac 버전은 없지만, Mac 플레이어는 GeForce NOW로 스트리밍할 수 있습니다."
+        ],
+        [
+         "인터넷 연결이 필요한가요?",
+         "네 — 메카 카멜레온은 온라인 멀티플레이 게임이라 플레이하려면 안정적인 연결이 필요합니다."
+        ],
+        [
+         "Steam 덱과 호환되나요?",
+         "Valve는 '플레이 가능'으로 표시합니다. 설정과 조작 레이아웃은 Steam 덱 가이드를 참고하세요."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Requisitos del sistema de Meccha Chameleon y Steam Deck",
+     "metaTitle": "Requisitos del sistema de Meccha Chameleon y Steam Deck (2026)",
+     "metaDescription": "¿Puedes ejecutar Meccha Chameleon? Requisitos mínimos del sistema, compatibilidad con Steam Deck y cómo jugar en Mac vía GeForce NOW.",
+     "intro": "Meccha Chameleon es un juego ligero de ejecutar. Estos son los requisitos mínimos oficiales y cómo corre en otros equipos.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Requisitos mínimos del sistema",
+       "body": "Requisitos mínimos oficiales de la página de la tienda de Steam.",
+       "columns": [
+        "Componente",
+        "Requisito"
+       ],
+       "rows": [
+        [
+         "SO",
+         "Windows 10 de 64 bits"
+        ],
+        [
+         "Procesador",
+         "Intel Core i5"
+        ],
+        [
+         "Gráficos",
+         "Tarjeta gráfica compatible con DirectX 11 o 12"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Steam Deck y Mac",
+       "body": "Cómo jugar en otros dispositivos.",
+       "items": [
+        "Steam Deck: clasificado oficialmente como 'Jugable': el juego funciona, pero los controles estilo teclado (pintar, posar) funcionan mejor con el panel táctil o un ratón conectado",
+        "Mac: no hay versión nativa de macOS: juega mediante la transmisión en la nube de GeForce NOW (disponible desde el 27 de junio de 2026)",
+        "El juego es solo para PC en Steam; no hay versiones nativas de PS5, Xbox ni Switch"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ de requisitos del sistema",
+       "body": "",
+       "items": [
+        [
+         "¿Meccha Chameleon necesita un buen PC?",
+         "No: el mínimo es modesto: Windows 10 de 64 bits, un procesador Intel Core i5 y una tarjeta compatible con DirectX 11 o 12. Es un juego de fiesta ligero."
+        ],
+        [
+         "¿Funciona en Mac?",
+         "No hay versión nativa de Mac, pero los jugadores de Mac pueden transmitirlo con GeForce NOW."
+        ],
+        [
+         "¿Necesito conexión a internet?",
+         "Sí: Meccha Chameleon es un juego multijugador online, así que se requiere una conexión estable."
+        ],
+        [
+         "¿Es compatible con Steam Deck?",
+         "Valve lo lista como Jugable; consulta nuestra guía de Steam Deck para ajustes y diseños de control."
+        ]
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -2531,7 +3723,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -2540,7 +3734,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     }
    ]
@@ -2705,6 +3901,86 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 코드 (없음 — 설명)",
+     "metaTitle": "메카 카멜레온 코드가 있나요? (2026)",
+     "metaDescription": "메카 카멜레온 코드나 치트가 있나요? 공식 코드는 없습니다. 진짜 코드 주장과 Roblox 클론, 서드파티 핵을 구별하는 방법을 소개합니다.",
+     "intro": "인터넷에 '메카 카멜레온 코드' 영상과 페이지가 보일 수 있습니다. 이 게임의 코드와 치트에 대한 진실을 정리했습니다.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "코드 & 치트 FAQ",
+       "body": "",
+       "items": [
+        [
+         "메카 카멜레온 코드가 있나요?",
+         "없습니다. 메카 카멜레온에는 공식 교환 코드도, 내장 코드 메뉴도 없습니다. '메카 카멜레온 코드' 페이지는 다른 게임이거나 가짜입니다."
+        ],
+        [
+         "Roblox용 '카멜레온 코드'가 보이는 이유는?",
+         "그 코드들은 게임에서 영감을 받은 Roblox 클론(예: Paint or Die)용입니다. 다른 게임이므로 메카 카멜레온에는 적용되지 않습니다."
+        ],
+        [
+         "치트나 핵이 있나요?",
+         "공식 치트 코드는 없습니다. 서드파티 핵은 존재하지만 계정 정지, 프로필 손상, 악성코드 위험이 있으니 피하세요."
+        ],
+        [
+         "Steam 버전 할인 코드가 있나요?",
+         "가끔 Steam에서 게임이 세일됩니다(예: 출시 15% 할인). 하지만 인게임에서 교환할 쿠폰 코드는 없습니다."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "출처",
+       "body": "다음 출처에서 확인했습니다.",
+       "items": [
+        "SlashSkill: 'MECCHA CHAMELEON 치트와 핵: 진짜와 가짜'",
+        "메카 카멜레온 Steam 상점 페이지 (코드/DLC 교환 시스템 없음)"
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Códigos de Meccha Chameleon (ninguno, explicado)",
+     "metaTitle": "¿Hay códigos de Meccha Chameleon? (2026)",
+     "metaDescription": "¿Hay códigos o trucos de Meccha Chameleon? No existen códigos oficiales. Así puedes distinguir las afirmaciones reales de los clones de Roblox y los hacks de terceros.",
+     "intro": "Puede que veas vídeos y páginas de 'códigos de Meccha Chameleon'. Esta es la verdad sobre códigos y trucos para este juego.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "FAQ de códigos y trucos",
+       "body": "",
+       "items": [
+        [
+         "¿Hay códigos de Meccha Chameleon?",
+         "No. Meccha Chameleon no tiene códigos canjeables oficiales ni menú de códigos integrado. Cualquier página de 'códigos de Meccha Chameleon' es de otro juego o es falsa."
+        ],
+        [
+         "¿Por qué veo 'códigos de Chameleon' para Roblox?",
+         "Esos códigos son para clones de Roblox inspirados en el juego (por ejemplo Paint or Die). Son otro juego y no aplican a Meccha Chameleon."
+        ],
+        [
+         "¿Hay trucos o hacks?",
+         "No hay códigos de trucos oficiales. Existen hacks de terceros, pero arriesgan el baneo de tu cuenta, un perfil corrupto o malware: evítalos."
+        ],
+        [
+         "¿Hay códigos de descuento para la versión de Steam?",
+         "De vez en cuando el juego sale en oferta en Steam (por ejemplo, un 15 % de descuento de lanzamiento), pero no hay códigos de cupón para canjear en el juego."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Fuentes",
+       "body": "Verificado con estas fuentes.",
+       "items": [
+        "SlashSkill: 'Trucos y hacks de MECCHA CHAMELEON: qué es real y qué no'",
+        "Página de la tienda de Steam de Meccha Chameleon (sin sistema de códigos ni canje de DLC)"
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -2714,7 +3990,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -2723,7 +4001,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -2732,7 +4012,9 @@
      "labels": {
       "zh-CN": "SlashSkill — 作弊与破解说明",
       "zh-TW": "SlashSkill — 作弊與破解說明",
-      "ja": "SlashSkill — チートとハック解説"
+      "ja": "SlashSkill — チートとハック解説",
+      "ko": "SlashSkill — 치트와 핵 해설",
+      "es": "SlashSkill — trucos y hacks explicados"
      }
     },
     {
@@ -2741,7 +4023,9 @@
      "labels": {
       "zh-CN": "isThereAnyDeal — 超级变色龙比价",
       "zh-TW": "isThereAnyDeal — 超級變色龍比價",
-      "ja": "isThereAnyDeal — メチャカメレオン価格比較"
+      "ja": "isThereAnyDeal — メチャカメレオン価格比較",
+      "ko": "isThereAnyDeal — MECCHA CHAMELEON",
+      "es": "isThereAnyDeal — MECCHA CHAMELEON"
      }
     }
    ]
@@ -2990,6 +4274,128 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "Steam 덱에서 메카 카멜레온: 설정 & 조작",
+     "metaTitle": "메카 카멜레온 Steam 덱 가이드 (2026)",
+     "metaDescription": "Steam 덱에서 메카 카멜레온 실행 방법 — 공식 호환성, 최적 설정, 칠하기와 포즈를 위한 조작 및 컨트롤러 레이아웃.",
+     "intro": "메카 카멜레온은 Steam 덱에서 '플레이 가능'(Verified 아님)으로 표시됩니다. 잘 실행되지만 키보드식 조작은 설정이 필요합니다 — 최고의 환경을 위한 설정법입니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Steam 덱 호환성",
+       "body": "공식 등급과 그 의미입니다 (Steam 상점 페이지 및 gamingonsteam 기준).",
+       "columns": [
+        "항목",
+        "세부"
+       ],
+       "rows": [
+        [
+         "공식 등급",
+         "플레이 가능 (Verified 아님) — 잘 실행되지만 키보드식 조작은 설정 필요"
+        ],
+        [
+         "최고의 칠하기 입력",
+         "트랙패드 또는 연결한 마우스 — 엄지스틱으로 칠하는 것은 조준이 어렵다"
+        ],
+        [
+         "권장 설정",
+         "60 FPS 제한, VSync 끔, 그림자 품질 높음 (gamingonsteam의 덱 리뷰 기준)"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "조작 & 레이아웃 팁",
+       "body": "게임의 칠하기/포즈 동작은 키보드 중심이라 Steam Input을 설정하세요.",
+       "items": [
+        "칠하기(F), 포즈, 스포이드를 누르기 쉬운 버튼에 매핑",
+        "오른쪽 트랙패드를 마우스로 사용해 정밀한 색 채취",
+        "이 게임용 커뮤니티 Steam Input 레이아웃을 SteamInputDB에서 저장",
+        "'게임패드 + 마우스' 템플릿에서 시작해 조정"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "Steam 덱 FAQ",
+       "body": "",
+       "items": [
+        [
+         "Steam 덱에서 메카 카멜레온을 플레이할 수 있나요?",
+         "네 — '플레이 가능' 등급입니다. Steam에서 설치하고 평소처럼 실행하면 됩니다."
+        ],
+        [
+         "마우스가 필요한가요?",
+         "필수는 아니지만, 트랙패드나 마우스가 있으면 칠하기 제어가 훨씬 쉽습니다."
+        ],
+        [
+         "Windows 전용인가요?",
+         "이 게임은 Steam에서 Windows용입니다. 덱의 Proton/SteamOS가 '플레이 가능' 수준으로 실행합니다."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Meccha Chameleon en Steam Deck: ajustes y controles",
+     "metaTitle": "Guía de Meccha Chameleon para Steam Deck (2026)",
+     "metaDescription": "Cómo corre Meccha Chameleon en Steam Deck: compatibilidad oficial, mejores ajustes, controles y diseños de mando para pintar y posar.",
+     "intro": "Meccha Chameleon figura como Jugable (no Verificado) en Steam Deck. Corre bien, pero los controles estilo teclado necesitan configuración: así lo dejas listo para la mejor experiencia.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Compatibilidad con Steam Deck",
+       "body": "Clasificación oficial y su significado (según la tienda de Steam y gamingonsteam).",
+       "columns": [
+        "Elemento",
+        "Detalle"
+       ],
+       "rows": [
+        [
+         "Clasificación oficial",
+         "Jugable (no Verificado): corre bien, pero los controles estilo teclado necesitan configuración"
+        ],
+        [
+         "Mejor entrada para pintar",
+         "Panel táctil o ratón conectado: pintar con el stick es difícil de apuntar"
+        ],
+        [
+         "Ajustes recomendados",
+         "Límite de 60 FPS, VSync apagado, calidad de sombras Alta (según el análisis de gamingonsteam del Deck)"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Consejos de controles y diseño",
+       "body": "Las acciones de pintar/posar del juego están orientadas al teclado, así que configura Steam Input.",
+       "items": [
+        "Asigna pintar (F), posar y el cuentagotas a botones de fácil acceso",
+        "Usa el panel táctil derecho como ratón para muestrear color con precisión",
+        "Guarda un diseño de Steam Input de la comunidad desde SteamInputDB para este juego",
+        "Empieza desde una plantilla de 'mando con ratón' y ajusta"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ de Steam Deck",
+       "body": "",
+       "items": [
+        [
+         "¿Puedo jugar Meccha Chameleon en Steam Deck?",
+         "Sí: tiene clasificación Jugable. Instálalo desde Steam e inícialo normalmente."
+        ],
+        [
+         "¿Necesito un ratón?",
+         "No es obligatorio, pero el panel táctil o un ratón hace mucho más fácil controlar la pintura."
+        ],
+        [
+         "¿Es solo para Windows?",
+         "El juego es para Windows en Steam; el Proton/SteamOS del Deck lo ejecuta a nivel Jugable."
+        ]
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -2999,7 +4405,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -3008,7 +4416,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -3017,7 +4427,9 @@
      "labels": {
       "zh-CN": "GamingOnSteam — Steam Deck 评测与设置",
       "zh-TW": "GamingOnSteam — Steam Deck 評測與設定",
-      "ja": "GamingOnSteam — Steam Deck レビューと設定"
+      "ja": "GamingOnSteam — Steam Deck レビューと設定",
+      "ko": "GamingOnSteam — Steam 덱 리뷰 & 설정",
+      "es": "GamingOnSteam — análisis y ajustes de Steam Deck"
      }
     }
    ]
@@ -3218,6 +4630,104 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 크로스플레이 & 플랫폼 (PC, Mac, 콘솔)",
+     "metaTitle": "메카 카멜레온 크로스플레이인가요? 플랫폼 설명 (2026)",
+     "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? Steam에서 PC 전용입니다. GeForce NOW로 Mac에서 플레이. PS5/Xbox/Switch 버전 없음 — 설명.",
+     "intro": "게임 공식 페이지와 Wikipedia를 바탕으로 한 메카 카멜레온 플랫폼과 크로스플레이에 대한 정확한 답변입니다.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "플랫폼 FAQ",
+       "body": "",
+       "items": [
+        [
+         "메카 카멜레온은 크로스플레이인가요?",
+         "아니요 — 게임이 Steam에서 PC 전용이므로 크로스플레이가 없습니다. 크로스플레이할 콘솔/모바일 버전도 없습니다."
+        ],
+        [
+         "Mac에서 플레이할 수 있나요?",
+         "네, 간접적으로요: GeForce NOW를 통해 macOS로 스트리밍됩니다 (2026년 6월 27일부터 제공). 네이티브 macOS 버전은 없습니다."
+        ],
+        [
+         "PS5/Xbox/Switch에 있나요?",
+         "없습니다. 개발자는 콘솔 이식을 발표하지 않았습니다. Wikipedia도 유일한 플랫폼으로 Windows를 꼽습니다."
+        ],
+        [
+         "모바일로 플레이할 수 있나요?",
+         "공식적으로는 아닙니다 — iOS/Android 버전이 없습니다. 호환 기기에서 클라우드 스트리밍으로만 가능합니다."
+        ],
+        [
+         "콘솔로 나올까요?",
+         "2026년 8월 기준 콘솔 버전 발표는 없습니다."
+        ],
+        [
+         "GeForce NOW 플레이어는 Steam 플레이어와 같이 플레이할 수 있나요?",
+         "네 — GeForce NOW가 동일한 PC 버전을 스트리밍하므로 모두 같은 Steam 서버에서 플레이합니다."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "플레이어들이 함께 플레이하는 방식",
+       "body": "PC용 멀티플레이 세부 사항입니다.",
+       "items": [
+        "Steam PC 플레이어는 공개 서버나 비공개 룸으로 함께 플레이합니다 (최대 24명, 권장 2-12명)",
+        "GeForce NOW로 Mac 플레이어도 같은 Steam 서버에 참여할 수 있습니다",
+        "별도의 크로스플레이 토글은 없습니다 — 게임 전체가 Steam 안에 있습니다"
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Crossplay y plataformas de Meccha Chameleon (PC, Mac, consolas)",
+     "metaTitle": "¿Meccha Chameleon tiene crossplay? Plataformas explicadas (2026)",
+     "metaDescription": "¿Es Meccha Chameleon multiplataforma? Es solo para PC en Steam. Juega en Mac vía GeForce NOW. No hay versión de PS5, Xbox ni Switch: explicado.",
+     "intro": "La respuesta directa sobre las plataformas y el crossplay de Meccha Chameleon, según la página oficial del juego y Wikipedia.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "FAQ de plataformas",
+       "body": "",
+       "items": [
+        [
+         "¿Tiene Meccha Chameleon crossplay?",
+         "No: no hay crossplay porque el juego es solo para PC en Steam. No hay versiones de consola ni móvil con las que cruzar."
+        ],
+        [
+         "¿Puedo jugar en Mac?",
+         "Sí, indirectamente: el juego se transmite a macOS mediante GeForce NOW (disponible desde el 27 de junio de 2026). No hay versión nativa de macOS."
+        ],
+        [
+         "¿Está en PS5, Xbox o Switch?",
+         "No. El desarrollador no ha anunciado ports de consola. Wikipedia lista Windows como la única plataforma."
+        ],
+        [
+         "¿Puedo jugar en el móvil?",
+         "Oficialmente no: no existe versión de iOS ni Android. Solo mediante transmisión en la nube en dispositivos compatibles."
+        ],
+        [
+         "¿Saldrá en consolas?",
+         "A agosto de 2026 no se ha anunciado ninguna versión de consola."
+        ],
+        [
+         "¿Los jugadores de GeForce NOW juegan con los de Steam?",
+         "Sí: GeForce NOW transmite la misma versión de PC, así que todos juegan en los mismos servidores de Steam."
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Cómo juegan juntos los jugadores",
+       "body": "Detalles del multijugador en PC.",
+       "items": [
+        "Los jugadores de Steam en PC juegan juntos mediante servidores públicos o salas privadas (hasta 24 jugadores, se recomiendan 2-12)",
+        "GeForce NOW permite que los jugadores de Mac se unan a los mismos servidores de Steam",
+        "No hay un botón de crossplay aparte: todo el juego vive en Steam"
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -3227,7 +4737,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -3236,7 +4748,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     }
    ]
@@ -3565,6 +5079,164 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 조작 (전체 키 목록)",
+     "metaTitle": "메카 카멜레온 조작: 전체 키 설명 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 조작: 이동, 달리기, 점프/벽 오르기, 페인트 모드, 스포이드, 클론, 포즈, 카메라.",
+     "intro": "wikiHow 조작 가이드와 공식 Steam 페이지를 바탕으로 한 메카 카멜레온 전체 키보드 조작입니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "키보드 조작",
+       "columns": [
+        "동작",
+        "키"
+       ],
+       "rows": [
+        [
+         "이동",
+         "WASD"
+        ],
+        [
+         "달리기",
+         "Shift"
+        ],
+        [
+         "점프 / 벽 오르기",
+         "Space"
+        ],
+        [
+         "벽 내려오기",
+         "Ctrl"
+        ],
+        [
+         "페인트 모드 진입",
+         "F"
+        ],
+        [
+         "스포이드 (색 채취)",
+         "E"
+        ],
+        [
+         "클론 생성 / 제거",
+         "Q"
+        ],
+        [
+         "포즈 (쪼그려 앉기, 앉기, 웅크리기, 눕기)",
+         "숫자 키 / 포즈 메뉴"
+        ],
+        [
+         "카메라 / 자유 시점",
+         "마우스 룩 + 오른쪽 마우스 / C"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "칠하기 필수",
+       "items": [
+        "F를 눌러 페인트 모드에 들어간 뒤 몸 위를 드래그",
+        "감으로 맞추지 말고 E로 표면의 정확한 색을 채취",
+        "메탈릭과 러프니스를 조절해 칠이 표면 마감과 맞게",
+        "칠은 빛의 방향을 따라야 한다 — 색이 맞아도 빛이 다르면 반짝인다"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "조작 FAQ",
+       "body": "",
+       "items": [
+        [
+         "클론은 어떻게 만들나요?",
+         "먼저 자신을 칠하고 포즈를 잡은 뒤 Q를 눌러 똑같은 모습의 클론을 배치합니다."
+        ],
+        [
+         "키를 바꿀 수 있나요?",
+         "키보드 리바인딩은 제한적입니다. Steam 덱에서는 Steam Input으로 재매핑하세요."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Controles de Meccha Chameleon (lista completa de teclas)",
+     "metaTitle": "Controles de Meccha Chameleon: todas las teclas explicadas (2026)",
+     "metaDescription": "Todos los controles de Meccha Chameleon: movimiento, sprint, salto/escalada, modo pintura, cuentagotas, clones, poses y cámara.",
+     "intro": "Los controles completos de teclado de Meccha Chameleon, según la guía de controles de wikiHow y la página oficial de Steam.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "Controles de teclado",
+       "columns": [
+        "Acción",
+        "Tecla"
+       ],
+       "rows": [
+        [
+         "Moverse",
+         "WASD"
+        ],
+        [
+         "Esprintar",
+         "Shift"
+        ],
+        [
+         "Saltar / escalar paredes",
+         "Espacio"
+        ],
+        [
+         "Bajar (pared)",
+         "Ctrl"
+        ],
+        [
+         "Entrar en modo pintura",
+         "F"
+        ],
+        [
+         "Cuentagotas (muestrear color)",
+         "E"
+        ],
+        [
+         "Crear / borrar clones",
+         "Q"
+        ],
+        [
+         "Poses (agacharse, sentarse, encogerse, tumbarse)",
+         "Teclas numéricas / menú de poses"
+        ],
+        [
+         "Cámara / cámara libre",
+         "Movimiento del ratón + botón derecho / C"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Esenciales de pintura",
+       "items": [
+        "Pulsa F para entrar en modo pintura y arrastra sobre tu cuerpo",
+        "Usa E para muestrear el color exacto de una superficie en vez de adivinar",
+        "Ajusta metalizado y rugosidad para que la pintura iguale el acabado de la superficie",
+        "La pintura sigue la dirección de la luz: un color perfecto con luz equivocada sigue brillando"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ de controles",
+       "body": "",
+       "items": [
+        [
+         "¿Cómo creo un clon?",
+         "Píntate y pósate primero, luego pulsa Q para soltar un clon con tu aspecto exacto."
+        ],
+        [
+         "¿Puedo cambiar las teclas?",
+         "La reasignación de teclado es limitada; en Steam Deck usa Steam Input para reasignar."
+        ]
+       ]
+      }
+     ]
     }
    },
    "image": "/images/controls.jpg",
@@ -3575,7 +5247,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -3584,7 +5258,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     },
     {
@@ -3593,7 +5269,9 @@
      "labels": {
       "zh-CN": "wikiHow — 超级变色龙操作",
       "zh-TW": "wikiHow — 超級變色龍操作",
-      "ja": "wikiHow — メチャカメレオン操作"
+      "ja": "wikiHow — メチャカメレオン操作",
+      "ko": "wikiHow — 메카 카멜레온 조작",
+      "es": "wikiHow — Controles de Meccha Chameleon"
      }
     }
    ]
@@ -3794,6 +5472,100 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 멀티플레이: 방장, 참가 & 친구와 플레이",
+     "metaTitle": "메카 카멜레온 멀티플레이 가이드 (2026)",
+     "metaDescription": "메카 카멜레온 멀티플레이 작동 방식 — 방 만들기, 공개 서버 참가, 친구와 플레이, 인원 수, 서버 안정성.",
+     "intro": "메카 카멜레온은 온라인 멀티플레이 게임입니다. 방을 만들고, 참가하고, 친구와 플레이하는 방법입니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "비공개 룸 만들기",
+       "items": [
+        "메인 메뉴에서 서버 만들기(Create Server) 선택",
+        "서버 이름을 정하고 친구용 비밀번호 설정",
+        "게임 모드 선택 및 라운드 시간 설정",
+        "서버 이름/비밀번호를 그룹과 공유"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "공개 서버 참가",
+       "items": [
+        "메인 메뉴에서 빠른 매칭(Quick Match)을 골라 즉시 게임",
+        "서버 브라우저로 이름을 검색해 룸 찾기",
+        "서버당 최대 24명, 개발자는 안정성을 위해 2-12명 권장",
+        "Steam 상점 설명은 2-10명을 권장하고, Wikipedia는 2-12명을 권장 범위로 꼽습니다"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "멀티플레이 FAQ",
+       "body": "",
+       "items": [
+        [
+         "몇 명까지 같이 플레이할 수 있나요?",
+         "서버당 최대 24명. 권장 범위는 2-12명입니다."
+        ],
+        [
+         "크로스플레이인가요?",
+         "아니요 — Steam에서 PC 전용입니다. Mac 플레이어는 GeForce NOW 클라우드 스트리밍으로 참여할 수 있습니다."
+        ],
+        [
+         "Steam에서 친구와 플레이할 수 있나요?",
+         "네 — 비공개 룸을 만들고 이름/비밀번호를 공유하거나 Steam 친구 목록을 사용하세요."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Multijugador de Meccha Chameleon: crear, unirse y jugar con amigos",
+     "metaTitle": "Guía de multijugador de Meccha Chameleon (2026)",
+     "metaDescription": "Cómo funciona el multijugador de Meccha Chameleon: crear sala, unirse a servidores públicos, jugar con amigos, número de jugadores y estabilidad.",
+     "intro": "Meccha Chameleon es un juego multijugador online. Así se crea una sala, se une y se juega con amigos.",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "Crear una sala privada",
+       "items": [
+        "Desde el menú principal elige Crear servidor",
+        "Pon un nombre al servidor y fija una contraseña para los amigos",
+        "Elige el modo de juego y fija el tiempo de ronda",
+        "Comparte el nombre/contraseña del servidor con tu grupo"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Unirse a servidores públicos",
+       "items": [
+        "Elige Partida rápida en el menú principal para jugar al instante",
+        "Usa el navegador de servidores para encontrar una sala por nombre",
+        "Hasta 24 jugadores por servidor; los desarrolladores recomiendan 2-12 para estabilidad",
+        "La descripción de la tienda de Steam sugiere 2-10 jugadores; Wikipedia lista 2-12 como rango recomendado"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ de multijugador",
+       "body": "",
+       "items": [
+        [
+         "¿Cuántos jugadores pueden jugar juntos?",
+         "Hasta 24 por servidor. El rango recomendado es de 2 a 12 jugadores."
+        ],
+        [
+         "¿Tiene crossplay?",
+         "No: solo PC en Steam. Los jugadores de Mac pueden unirse vía la transmisión en la nube de GeForce NOW."
+        ],
+        [
+         "¿Puedo jugar con amigos de Steam?",
+         "Sí: crea una sala privada y comparte el nombre/contraseña, o usa la lista de amigos de Steam."
+        ]
+       ]
+      }
+     ]
     }
    },
    "image": "/images/multiplayer.jpg",
@@ -3804,7 +5576,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -3813,7 +5587,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     }
    ]
@@ -4102,6 +5878,148 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 FAQ",
+     "metaTitle": "메카 카멜레온 FAQ (2026)",
+     "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? 몇 명까지? 코드나 업적이 있나요? 가장 흔한 질문에 대한 빠른 답변.",
+     "intro": "플레이어들이 가장 많이 검색하는 질문에 대한 빠른 답변입니다.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "자주 묻는 질문",
+       "body": "",
+       "items": [
+        [
+         "메카 카멜레온은 크로스플랫폼인가요?",
+         "아니요. 이 게임은 공식적으로 Steam에서 PC 전용입니다. GeForce NOW로 Mac에 스트리밍할 수 있지만 네이티브 콘솔·모바일·크로스플레이 버전은 없습니다."
+        ],
+        [
+         "몇 명까지 플레이할 수 있나요?",
+         "서버는 최대 24명을 지원합니다. 개발자는 최상의 경험을 위해 2-12명을 권장하고, Steam 상점 설명은 2-10명을 제안합니다."
+        ],
+        [
+         "메카 카멜레온 코드가 있나요?",
+         "없습니다. 공식 교환 코드는 없습니다. Roblox '카멜레온' 클론과 서드파티 치트 도구는 계정 정지 위험이 있으니 조심하세요."
+        ],
+        [
+         "메카 카멜레온에 Steam 업적이 있나요?",
+         "없습니다. 이 게임에는 현재 공식 Steam 업적이 없습니다 — 자세한 내용은 전용 페이지를 참고하세요."
+        ],
+        [
+         "메카 카멜레온 가격은 얼마인가요?",
+         "Steam에서 $5.99이며 자주 세일합니다."
+        ],
+        [
+         "시스템 요구 사항은 무엇인가요?",
+         "Windows 10 64-bit, Intel Core i5 프로세서, DirectX 11 또는 12 호환 그래픽 카드입니다. Steam 덱에서는 '플레이 가능' 등급입니다."
+        ],
+        [
+         "메카 카멜레온은 언제 출시되었나요?",
+         "2026년 5월 15일 발표 후 Steam에서 2026년 6월 10일 출시 (미국 시간대 기준 6월 9일)."
+        ],
+        [
+         "메카 카멜레온 맵은 몇 개인가요?",
+         "기본 맵 7개 + 수많은 Steam 워크숍 맵이며, 업데이트로 새 공식 맵이 계속 추가됩니다."
+        ],
+        [
+         "메카 카멜레온은 컨트롤러를 지원하나요?",
+         "공식적으로는 아닙니다. 게임은 Steam에서 키보드 중심입니다 (F로 칠하기, 포즈, E로 스포이드). Steam 덱에서는 '게임패드 + 마우스' 템플릿으로 Steam Input을 설정할 수 있습니다."
+        ],
+        [
+         "메카 카멜레온에 음성 채팅이 있나요?",
+         "내장 음성 채팅은 없습니다. 보통 Steam 친구나 서드파티 음성 앱을 사용합니다. 인게임에서 숨는 역할은 휘파람으로 사냥꾼을 유인할 수 있습니다."
+        ],
+        [
+         "워크숍 맵은 안전한가요?",
+         "대부분 안전하지만 주의하세요 — 2026년 7월 워크숍 소동에서 의심스러운 맵이 있었습니다. 평판 좋은 맵에만 구독하고 게임을 최신 상태로 유지하세요."
+        ],
+        [
+         "연령 등급은 무엇인가요?",
+         "피나 고어 없이 가벼운 멀티플레이 파티 게임입니다. 대부분의 연령대에 적합하지만, 온라인 플레이 특성상 낯선 사람과 상호작용하게 됩니다."
+        ],
+        [
+         "메카 카멜레온 모바일이나 VR 버전이 있나요?",
+         "공식 모바일·VR 버전은 없습니다. 2026년 7월 Meta Quest 스토어에 비공식 'Meccha Chameleon VR'이 등장했는데, 개발자는 라이선스가 없는 것으로 확인하고 구매하지 말라고 경고했습니다."
+        ],
+        [
+         "메카 카멜레온의 현재 버전은 무엇인가요?",
+         "2026년 8월 4일 기준 최신 버전은 3.5.3으로, 카메라 옵션을 추가하고 색상 팔레트 버그를 수정했습니다. 3.5.0 업데이트(8월 2일)는 공식 Exit 8 콜라보 맵을 추가했습니다. 전체 내역은 업데이트 로그를 참고하세요."
+        ]
+       ]
+      }
+     ]
+    },
+    "es": {
+     "title": "Preguntas frecuentes de Meccha Chameleon",
+     "metaTitle": "FAQ de Meccha Chameleon (2026)",
+     "metaDescription": "¿Es Meccha Chameleon multiplataforma? ¿Cuántos jugadores? ¿Tiene códigos o logros? Respuestas rápidas a las preguntas más comunes.",
+     "intro": "Respuestas rápidas a las preguntas que más buscan los jugadores.",
+     "sections": [
+      {
+       "type": "faq",
+       "heading": "Preguntas frecuentes",
+       "body": "",
+       "items": [
+        [
+         "¿Es Meccha Chameleon multiplataforma?",
+         "No. El juego es oficialmente solo para PC en Steam. Puedes transmitirlo a una Mac con GeForce NOW, pero no hay versión nativa de consola, móvil ni crossplay."
+        ],
+        [
+         "¿Cuántos jugadores pueden jugar?",
+         "Un servidor admite hasta 24 jugadores. Los desarrolladores recomiendan 2-12 para la mejor experiencia, mientras que la descripción de Steam sugiere 2-10."
+        ],
+        [
+         "¿Hay códigos de Meccha Chameleon?",
+         "No. No hay códigos canjeables oficiales. Cuidado con los clones 'Chameleon' de Roblox y las herramientas de trampas de terceros, que pueden hacer que baneen tu cuenta."
+        ],
+        [
+         "¿Tiene Meccha Chameleon logros de Steam?",
+         "No. El juego actualmente no tiene logros oficiales de Steam: consulta nuestra página dedicada para más detalles."
+        ],
+        [
+         "¿Cuánto cuesta Meccha Chameleon?",
+         "$5.99 en Steam y suele salir en oferta con frecuencia."
+        ],
+        [
+         "¿Cuáles son los requisitos del sistema?",
+         "Windows 10 de 64 bits, un procesador Intel Core i5 y una tarjeta gráfica compatible con DirectX 11 o 12. Está clasificado como Jugable en Steam Deck."
+        ],
+        [
+         "¿Cuándo salió Meccha Chameleon?",
+         "El 10 de junio de 2026 en Steam (9 de junio en zonas horarias de EE. UU.), tras anunciarse el 15 de mayo de 2026."
+        ],
+        [
+         "¿Cuántos mapas tiene Meccha Chameleon?",
+         "7 mapas base más muchos del Steam Workshop, y se añaden nuevos mapas oficiales en las actualizaciones."
+        ],
+        [
+         "¿Meccha Chameleon admite mandos?",
+         "No oficialmente. El juego está orientado al teclado en Steam (pintar con F, posar, cuentagotas con E). En Steam Deck puedes configurar Steam Input con una plantilla de mando más ratón."
+        ],
+        [
+         "¿Hay chat de voz en Meccha Chameleon?",
+         "No hay chat de voz integrado. Los jugadores suelen usar amigos de Steam o aplicaciones de voz de terceros. En el juego, los Escondedores pueden provocar con un silbato para atraer a los Cazadores."
+        ],
+        [
+         "¿Los mapas del Workshop son seguros?",
+         "La mayoría sí, pero ten cuidado: un susto de julio de 2026 en el Workshop involucró un mapa sospechoso. Suscríbete solo a mapas bien valorados y mantén el juego actualizado."
+        ],
+        [
+         "¿Cuál es la clasificación por edades?",
+         "Es un juego de fiesta multijugador casual sin sangre ni violencia gráfica. Apto para la mayoría de edades, aunque el juego online implica interactuar con desconocidos."
+        ],
+        [
+         "¿Hay versión móvil o de realidad virtual?",
+         "No existen versiones móviles ni de VR oficiales. En julio de 2026 apareció un 'Meccha Chameleon VR' no oficial en la tienda de Meta Quest; el desarrollador confirmó que no está licenciado y advirtió a los jugadores que no lo compraran."
+        ],
+        [
+         "¿Cuál es la versión actual de Meccha Chameleon?",
+         "A 4 de agosto de 2026 la última versión es la 3.5.3, que añadió opciones de cámara y corrigió errores de paleta de color. La actualización 3.5.0 (2 de agosto) añadió un mapa oficial de colaboración con Exit 8. Consulta nuestro registro de actualizaciones para el historial completo."
+        ]
+       ]
+      }
+     ]
     }
    },
    "sources": [
@@ -4111,7 +6029,9 @@
      "labels": {
       "zh-CN": "超级变色龙 — 维基百科",
       "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia"
+      "ja": "メチャカメレオン — Wikipedia",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
      }
     },
     {
@@ -4120,7 +6040,9 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア"
+      "ja": "Steam 公式ストア",
+      "ko": "Steam 공식 상점",
+      "es": "Tienda oficial de Steam"
      }
     }
    ]
