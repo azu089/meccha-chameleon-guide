@@ -377,12 +377,12 @@ function renderPage(p, lang){
   const sections = t.sections.map(renderSection).join("");
   const toc = t.sections.filter(x=>x.type!=="faq").map((x,i)=>`<a href="#sec-${i+1}">${esc(x.heading)}</a>`).join("");
   const faq = t.sections.find(x=>x.type==="faq");
-  const ld = [articleLd(t, lang), breadcrumbLd(t, lang), faq?faqLd(faq.items):null].filter(Boolean);
+  const ld = [articleLd({...t, slug:p.slug}, lang), breadcrumbLd({...t, slug:p.slug}, lang), faq?faqLd(faq.items):null].filter(Boolean);
   const sources = (p.sources && p.sources.length ? p.sources : [
     { label: `${DATA.game.name} — Wikipedia`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
     { label: "Official Steam store page", url: DATA.game.steamUrl }
   ]);
-  const sourceHtml = sources.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a></li>`).join("");
+  const sourceHtml = sources.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.labels && x.labels[lang]) || x.label)}</a></li>`).join("");
   const related = DATA.pages.filter(x=>x.slug!==p.slug).slice(0,6).map(x=>{
     const mm = metaOf(x.slug);
     return `<a href="${prefix}/${x.slug}"><span class="ri">${SVG[mm.icon]}</span><span>${esc(pageOf(x,lang).title)}</span></a>`;

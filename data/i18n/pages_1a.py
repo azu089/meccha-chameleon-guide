@@ -48,7 +48,7 @@ PAGES = {
  },
  "es": {
   "title": "Cómo jugar a Meccha Chameleon",
-  "metaTitle": "Cómo jugar a Meccha Chameleon: guía completa para principiantes (2026)",
+  "metaTitle": "Cómo jugar a Meccha Chameleon: guía de inicio (2026)",
   "metaDescription": "¿Nuevo en Meccha Chameleon? Domina la mecánica de pintar para esconderte, el sistema de pintura, clones y poses, los roles de Escondedor y Cazador, el flujo de la ronda y un inicio rápido.",
   "intro": "Meccha Chameleon es fácil de aprender pero sorprendentemente profundo. Esto es todo lo que necesitas saber antes de tu primera ronda.",
   "sections": [

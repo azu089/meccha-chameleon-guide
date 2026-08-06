@@ -1091,7 +1091,7 @@
     },
     "es": {
      "title": "Cómo jugar a Meccha Chameleon",
-     "metaTitle": "Cómo jugar a Meccha Chameleon: guía para principiantes (2026)",
+     "metaTitle": "Cómo jugar a Meccha Chameleon: guía de inicio (2026)",
      "metaDescription": "¿Nuevo en Meccha Chameleon? Domina la mecánica de pintar para esconderte, el sistema de pintura, clones y poses, los roles de Escondedor y Cazador, el flujo de la ronda y un inicio rápido.",
      "intro": "Meccha Chameleon es fácil de aprender pero sorprendentemente profundo. Esto es todo lo que necesitas saber antes de tu primera ronda.",
      "sections": [
@@ -1238,9 +1238,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -1251,7 +1251,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -1260,9 +1260,9 @@
      "label": "Steam's Latest Viral Multiplayer Game Is a $6 Janky Indie Game That Is Like Prop Hunt, But Good — Kotaku",
      "url": "https://kotaku.com/steams-latest-viral-multiplayer-game-is-a-6-janky-indie-game-that-is-like-prop-hunt-but-good-2000709515",
      "labels": {
-      "zh-CN": "Steam 最新爆款：6 美元的粗糙独立游戏，像 Prop Hunt 但更好 — Kotaku",
-      "zh-TW": "Steam 最新爆款：6 美元的粗糙獨立遊戲，像 Prop Hunt 但更好 — Kotaku",
-      "ja": "Steam 最新の話題作：6ドルの粗いインディーゲーム、Prop Hunt に似ているが良い — Kotaku",
+      "zh-CN": "Steam 最新爆火多人游戏：6 美元的粗糙独立游戏，却比 Prop Hunt 更好 — Kotaku",
+      "zh-TW": "Steam 最新爆火多人遊戲：6 美元的粗糙獨立遊戲，卻比 Prop Hunt 更好 — Kotaku",
+      "ja": "Steam 最新のバイラルマルチプレイ：6ドルの雑なインディーが Prop Hunt より面白い — Kotaku",
       "ko": "Steam 최신 바이럴 멀티플레이: 6달러짜리 조잡한 인디지만 Prop Hunt보다 낫다 — Kotaku",
       "es": "El último éxito viral de Steam es un indie tosco de 6 $ que es como Prop Hunt, pero bueno — Kotaku"
      }
@@ -1798,9 +1798,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -1811,7 +1811,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -1820,9 +1820,9 @@
      "label": "Meccha Chameleon: All Game Modes, Explained — TheGamer",
      "url": "https://www.thegamer.com/meccha-chameleon-game-modes-guide/",
      "labels": {
-      "zh-CN": "全部模式解析 — TheGamer",
-      "zh-TW": "全部模式解析 — TheGamer",
-      "ja": "全モード解説 — TheGamer",
+      "zh-CN": "超级变色龙：全部游戏模式详解 — TheGamer",
+      "zh-TW": "超級變色龍：全部遊戲模式詳解 — TheGamer",
+      "ja": "メチャカメレオン：全モード解説 — TheGamer",
       "ko": "전체 게임 모드 해설 — TheGamer",
       "es": "Todos los modos de juego, explicados — TheGamer"
      }
@@ -1831,8 +1831,8 @@
      "label": "Meccha Chameleon Patch Notes July 2, 2026 — IGN",
      "url": "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_2,_2026",
      "labels": {
-      "zh-CN": "2026-07-02 更新公告 — IGN",
-      "zh-TW": "2026-07-02 更新公告 — IGN",
+      "zh-CN": "2026-07-02 补丁说明 — IGN",
+      "zh-TW": "2026-07-02 補丁說明 — IGN",
       "ja": "2026-07-02 パッチノート — IGN",
       "ko": "2026-07-02 패치 노트 — IGN",
       "es": "Notas del parche del 2 de julio de 2026 — IGN"
@@ -1849,61 +1849,102 @@
    "sections": [
     {
      "type": "table",
+     "tag": "MAPS",
      "heading": "Base Maps",
-     "body": "Wikipedia lists these official maps in the current version.",
+     "body": "Meccha Chameleon launched with 4 maps and now ships 7 official ones. The notes below combine the official map list with hiding-spot coverage from InGameNews and GameShedge.",
      "columns": [
       "Map",
-      "Notes"
+      "Theme",
+      "Tactical note"
      ],
      "rows": [
       [
        "Hide-and-Seek Mansion",
-       "The game's signature indoor map"
+       "Signature indoor map",
+       "The community gold standard — dense rooms, kitchen appliances, laundry and bathroom fixtures give endless mimic options; large enough to switch hiding spots mid-round"
       ],
       [
        "Indoor Country",
-       "A cozy indoor setting"
+       "Cozy indoor barn",
+       "Hay bales, pumpkins, horse statues and cow cutouts; flexible borders let you tuck into tight corners"
       ],
       [
        "Sewer",
-       "Dark tunnels that reward good camouflage"
+       "Dark underground tunnels",
+       "Often called the most balanced map — graffiti walls give unique camouflage; canisters, lockers and sandbags for cover"
       ],
       [
        "Backrooms",
-       "Homage to the Backrooms aesthetic - off-yellow walls and office spaces (reworked in update 2.1.0)"
+       "Backrooms homage — off-yellow walls and office spaces (reworked in update 2.1.0)",
+       "Small and sparse, so hunters search fast; hide in office cubicles, trash piles and the damaged highway section"
       ],
       [
        "Penguin Hotel",
-       "A hotel map from the developer's earlier Penguin Hotel series"
+       "Hotel from the developer's earlier Penguin Hotel series",
+       "One of the largest maps with multiple floors; penguin statues and plush toys everywhere, balloons add awkward geometry"
       ],
       [
        "Sugarland",
-       "A bright, colorful map"
+       "Bright candy theme",
+       "Candy houses, gumdrops and gingerbread buildings; elevated spots hunters often forget, but slanted angles make poses tricky"
       ],
       [
        "Osaka",
-       "A Japan-themed map added after 7 million copies sold"
+       "Japan theme, added after 7 million copies sold",
+       "The smallest official map yet dense — trucks, shops, elevated signs and alleyways reward quick paint-and-hide"
       ]
      ]
     },
     {
      "type": "list",
+     "tag": "WORKSHOP",
      "heading": "Steam Workshop Maps",
-     "body": "The game can be modded with custom maps from the Steam Workshop, such as Art Gallery, The Market, Swimming Pool and Viking Market.",
+     "body": "The Workshop is where Meccha Chameleon's community shines. These are the most-covered community maps in 2026 guides.",
      "items": [
-      "Install custom maps from the Steam Workshop and load them in Custom Rooms",
-      "Popular community maps include Minecraft-style, FNAF Security Breach and CS2 Mirage remakes",
-      "New official maps are also added in updates (for example the HIKAKIN Museum map)"
+      "Minecraft map by Skolas — the most-subscribed game-inspired Workshop map (91,000+ subscribers)",
+      "Art Gallery by Popunia — built around the paint-and-hide loop",
+      "FNAF Security Breach, CS2 Mirage / de_dust2, Among Us Skeld and Fortnite Dusty Divot remakes",
+      "Viking Market, The Market, Swimming Pool and other community classics",
+      "Official maps keep arriving too — 2026 updates added Death Burger, Greece, and the Garten of Banban + Exit 8 collab maps"
+     ]
+    },
+    {
+     "type": "steps",
+     "tag": "INSTALL",
+     "heading": "How to Install Workshop Maps",
+     "body": "Custom maps are free mods — subscribe, download, and they show up in your game.",
+     "items": [
+      [
+       "Open the Steam Workshop",
+       "Browse the Meccha Chameleon Workshop hub — search for a map or look through popular."
+      ],
+      [
+       "Subscribe to maps",
+       "Click Subscribe on any map; Steam downloads it automatically."
+      ],
+      [
+       "Launch and open Custom Rooms",
+       "Subscribed maps appear in Custom Rooms — host or join a room to play them."
+      ],
+      [
+       "Hosts pick the map",
+       "The host selects from the subscribed maps before each round starts."
+      ]
      ]
     },
     {
      "type": "faq",
+     "tag": "QA",
      "heading": "Map FAQ",
      "body": "",
      "items": [
       [
        "How many maps are there?",
        "7 base maps (Hide-and-Seek Mansion, Indoor Country, Sewer, Backrooms, Penguin Hotel, Sugarland and Osaka) plus many Steam Workshop maps. New official maps keep being added — 2026 updates added Death Burger, Greece and the Garten of Banban and Exit 8 collab maps."
+      ],
+      [
+       "Which map is best to learn the game?",
+       "Hide-and-Seek Mansion is the community gold standard and the most featured map; Sewer is widely considered the most balanced. Both are good starting points."
       ],
       [
        "Are workshop maps free?",
@@ -1920,150 +1961,157 @@
      ]
     }
    ],
-   "i18n": {
-    "ja": {
-     "title": "メチャカメレオン全マップ",
-     "metaTitle": "メチャカメレオン全マップ：標準マップとワークショップマップ（2026）",
-     "metaDescription": "メチャカメレオンの標準マップ全種と、Steam ワークショップの使い方・人気マップを紹介。",
-     "intro": "メチャカメレオンのマップは、かくれんぼの舞台です。標準マップとワークショップの拡張方法をまとめました。",
-     "sections": [
-      {
-       "type": "table",
-       "heading": "標準マップ",
-       "body": "Wikipedia に掲載されている現行バージョンの公式マップ。",
-       "columns": [
-        "マップ",
-        "説明"
-       ],
-       "rows": [
-        [
-         "かくれんぼ屋敷",
-         "ゲームを象徴する屋内マップ"
-        ],
-        [
-         "田舎の家",
-         "暖かな屋内ステージ"
-        ],
-        [
-         "下水道",
-         "迷彩が映える薄暗いトンネル"
-        ],
-        [
-         "バックルームズ",
-         "Backrooms 風の黄色い壁とオフィス（2.1.0でリワーク）"
-        ],
-        [
-         "ペンギンホテル",
-         "開発者の前作シリーズ由来のホテル"
-        ],
-        [
-         "シュガーランド",
-         "明るくカラフルなマップ"
-        ],
-        [
-         "大阪",
-         "700万本突破後に追加された日本テーマのマップ"
-        ]
-       ]
-      },
-      {
-       "type": "list",
-       "heading": "Steam ワークショップ",
-       "body": "Steam ワークショップのカスタムマップ（アートギャラリー、マーケット、プール、バイキングマーケット等）をプレイできます。",
-       "items": [
-        "ワークショップから購読し、カスタムルームで読み込む",
-        "人気は Minecraft 風・FNAF・CS2 ミラージュの再現など",
-        "アップデートで新公式マップも追加（例：HIKAKIN ミュージアム）"
-       ]
-      },
-      {
-       "type": "faq",
-       "heading": "マップFAQ",
-       "body": "",
-       "items": [
-        [
-         "マップは何枚ありますか？",
-         "標準7枚（かくれんぼマンション、屋内カントリー、下水道、バックルームズ、ペンギンホテル、シュガーランド、大阪）＋多数のワークショップマップ。公式マップも追加され続けており、2026年のアップデートでデスバーガー、ギリシャ、『Garten of Banban』『8番出口』コラボマップが登場しました。"
-        ],
-        [
-         "ワークショップマップは無料ですか？",
-         "はい——ワークショップマップはコミュニティ製のMODで、無料で購読するとゲーム内に表示されます。"
-        ],
-        [
-         "公式マップは有料ですか？",
-         "いいえ——公式マップはすべて Steam 版ゲームに含まれています。有料マップはありません。"
-        ],
-        [
-         "今後もマップは増えますか？",
-         "おそらく増えます——発売以来、開発者は公式マップを継続的に追加しています（シュガーランド、大阪、デスバーガー、ギリシャ、コラボマップなど）。"
-        ]
-       ]
-      }
-     ]
+   "sources": [
+    {
+     "label": "Wikipedia — Meccha Chameleon",
+     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
+     "labels": {
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
+      "ko": "메카 카멜레온 — 위키백과",
+      "es": "Meccha Chameleon — Wikipedia"
+     }
     },
+    {
+     "label": "InGameNews — every official map ranked",
+     "url": "https://ingamenews.com/indie/every-official-meccha-chameleon-map-ranked-from-worst-to-best/",
+     "labels": {
+      "zh-CN": "InGameNews — 全部官方地图排名",
+      "zh-TW": "InGameNews — 全部官方地圖排名",
+      "ja": "InGameNews — 公式マップ全ランキング",
+      "ko": "InGameNews — 공식 맵 전체 순위",
+      "es": "InGameNews — todos los mapas oficiales, clasificados"
+     }
+    },
+    {
+     "label": "GameShedge — best hiding spots on every map",
+     "url": "https://www.gameshedge.com/meccha-chameleon-best-hiding-spots-guide/",
+     "labels": {
+      "zh-CN": "GameShedge — 每张地图最佳躲藏点",
+      "zh-TW": "GameShedge — 每張地圖最佳躲藏點",
+      "ja": "GameShedge — 全マップの隠れ場所ガイド",
+      "ko": "GameShedge — 맵별 최고의 숨는 장소 가이드",
+      "es": "GameShedge — mejores escondites de cada mapa"
+     }
+    },
+    {
+     "label": "Sportskeeda — 5 best Workshop maps",
+     "url": "https://widgets.sportskeeda.com/esports/5-best-meccha-chameleon-maps-based-famous-video-games",
+     "labels": {
+      "zh-CN": "Sportskeeda — 5 张最佳游戏灵感地图",
+      "zh-TW": "Sportskeeda — 5 張最佳遊戲靈感地圖",
+      "ja": "Sportskeeda — 有名ゲーム由来のベスト5マップ",
+      "ko": "Sportskeeda — 유명 게임 기반 베스트 5 맵",
+      "es": "Sportskeeda — los 5 mejores mapas basados en juegos famosos"
+     }
+    }
+   ],
+   "i18n": {
     "zh-CN": {
      "title": "超级变色龙全部地图",
-     "metaTitle": "超级变色龙全部地图：基础地图与创意工坊地图（2026）",
-     "metaDescription": "超级变色龙每一张基础地图，以及创意工坊地图的用法与热门社区地图。",
-     "intro": "超级变色龙的地图是每一局捉迷藏的舞台。下面是基础地图与创意工坊的扩展方式。",
+     "metaTitle": "超级变色龙地图：基础与创意工坊（2026）",
+     "metaDescription": "超级变色龙的全部基础地图、每张地图的战术要点，以及热门 Steam 创意工坊地图与安装方法。",
+     "intro": "超级变色龙的每一局捉迷藏都在地图上展开。这里列出全部 7 张基础地图、每张图上真正重要的战术要点，以及创意工坊如何扩展游戏。",
      "sections": [
       {
        "type": "table",
+       "tag": "地图",
        "heading": "基础地图",
-       "body": "Wikipedia 列出的当前版本官方地图。",
+       "body": "超级变色龙首发时有 4 张地图，现在有 7 张官方地图。下表综合官方地图名单与 InGameNews、GameShedge 的躲藏点攻略。",
        "columns": [
         "地图",
-        "说明"
+        "主题",
+        "战术要点"
        ],
        "rows": [
         [
          "捉迷藏宅邸",
-         "游戏标志性的室内地图"
+         "标志性室内地图",
+         "社区公认的标杆——密集的房间、厨房电器、洗衣房与浴室设施提供无尽的伪装选择；地图够大，可以局中换位"
         ],
         [
          "乡村室内",
-         "温馨的室内场景"
+         "温馨的室内谷仓",
+         "干草捆、南瓜、马雕像与奶牛剪影；边界灵活，能藏进狭窄角落"
         ],
         [
          "下水道",
-         "适合伪装的昏暗隧道"
+         "昏暗的地下隧道",
+         "常被认为最平衡的地图——涂鸦墙提供独特伪装；油桶、储物柜与沙袋都是掩体"
         ],
         [
          "后室",
-         "致敬 Backrooms——米黄墙与办公空间（2.1.0 重制）"
+         "致敬 Backrooms——米黄墙与办公空间（2.1.0 重制）",
+         "地图小而空旷，猎人搜索很快；藏在办公隔间、垃圾堆与破损公路路段"
         ],
         [
          "企鹅酒店",
-         "来自开发者早期《企鹅酒店》系列的酒店地图"
+         "来自开发者早期《企鹅酒店》系列的酒店",
+         "最大地图之一，多层结构；到处都是企鹅雕像与玩偶，气球带来别扭的几何"
         ],
         [
          "糖果乐园",
-         "明亮的彩色地图"
+         "明亮的糖果主题",
+         "糖果屋、橡皮糖与姜饼建筑；高处位置猎人常忘查，但倾斜角度让摆姿势变难"
         ],
         [
          "大阪",
-         "销量破 700 万后加入的日本主题地图"
+         "销量破 700 万后加入的日本主题地图",
+         "最小的官方地图但密度极高——卡车、商店、高架招牌与小巷奖励快速涂装躲藏"
         ]
        ]
       },
       {
        "type": "list",
+       "tag": "创意工坊",
        "heading": "Steam 创意工坊地图",
-       "body": "可通过 Steam 创意工坊加载自定义地图，例如画廊、市场、游泳池与维京市场。",
+       "body": "创意工坊是超级变色龙社区发光的地方。以下是 2026 年攻略中最常被提到的社区地图。",
        "items": [
-        "从创意工坊订阅地图，在自定义房间加载",
-        "热门社区地图包括 Minecraft 风、FNAF 保安室、CS2 荒漠迷城等复刻",
-        "更新也会加入新官方地图（例如 HIKAKIN 博物馆）"
+        "Skolas 的 Minecraft 地图——订阅量最高的游戏灵感地图（9.1 万+ 订阅）",
+        "Popunia 的 Art Gallery（画廊）——围绕涂装躲藏玩法设计",
+        "FNAF 保安室、CS2 荒漠迷城 / 沙二、Among Us 飞船与堡垒之夜 Dusty Divot 复刻",
+        "维京市场、市场、游泳池等社区经典",
+        "官方地图也在持续加入——2026 年更新新增死亡汉堡、希腊，以及《班班幼儿园》与《8番出口》合作地图"
+       ]
+      },
+      {
+       "type": "steps",
+       "tag": "安装",
+       "heading": "如何安装创意工坊地图",
+       "body": "自定义地图是免费模组——订阅、下载，就会出现在游戏里。",
+       "items": [
+        [
+         "打开 Steam 创意工坊",
+         "浏览超级变色龙的创意工坊主页——搜索地图或翻阅热门。"
+        ],
+        [
+         "订阅地图",
+         "在任意地图上点击订阅；Steam 会自动下载。"
+        ],
+        [
+         "启动并打开自定义房间",
+         "已订阅的地图会出现在自定义房间——开房或加入游玩。"
+        ],
+        [
+         "房主选图",
+         "每局开始前由房主从已订阅的地图中选择。"
+        ]
        ]
       },
       {
        "type": "faq",
+       "tag": "问答",
        "heading": "地图常见问题",
        "body": "",
        "items": [
         [
          "游戏有多少张地图？",
-         "7 张基础地图（躲猫猫豪宅、乡村室内、下水道、后室、企鹅酒店、糖果乐园和大阪）加大量 Steam 创意工坊地图。官方还在持续新增——2026 年的更新加入了死亡汉堡、希腊以及《班班幼儿园》《8番出口》合作地图。"
+         "7 张基础地图（捉迷藏宅邸、乡村室内、下水道、后室、企鹅酒店、糖果乐园和大阪）加大量 Steam 创意工坊地图。官方还在持续新增——2026 年的更新加入了死亡汉堡、希腊以及《班班幼儿园》《8番出口》合作地图。"
+        ],
+        [
+         "哪张地图适合新手学习？",
+         "捉迷藏宅邸是社区公认的标杆、出镜率最高的地图；下水道被广泛认为最平衡。两者都是不错的起点。"
         ],
         [
          "创意工坊地图免费吗？",
@@ -2083,71 +2131,112 @@
     },
     "zh-TW": {
      "title": "超級變色龍全部地圖",
-     "metaTitle": "超級變色龍全部地圖：基礎地圖與創意工坊地圖（2026）",
-     "metaDescription": "超級變色龍每一張基礎地圖，以及創意工坊地圖的用法與熱門社區地圖。",
-     "intro": "超級變色龍的地圖是每一局捉迷藏的舞臺。下面是基礎地圖與創意工坊的擴展方式。",
+     "metaTitle": "超級變色龍地圖：基礎與創意工坊（2026）",
+     "metaDescription": "超級變色龍的全部基礎地圖、每張地圖的戰術要點，以及熱門 Steam 創意工坊地圖與安裝方法。",
+     "intro": "超級變色龍的每一局捉迷藏都在地圖上展開。這裡列出全部 7 張基礎地圖、每張圖上真正重要的戰術要點，以及創意工坊如何擴展遊戲。",
      "sections": [
       {
        "type": "table",
+       "tag": "地圖",
        "heading": "基礎地圖",
-       "body": "Wikipedia 列出的當前版本官方地圖。",
+       "body": "超級變色龍首發時有 4 張地圖，現在有 7 張官方地圖。下表綜合官方地圖名單與 InGameNews、GameShedge 的躲藏點攻略。",
        "columns": [
         "地圖",
-        "說明"
+        "主題",
+        "戰術要點"
        ],
        "rows": [
         [
          "捉迷藏宅邸",
-         "遊戲標誌性的室內地圖"
+         "標誌性室內地圖",
+         "社群公認的標竿——密集的房間、廚房電器、洗衣房與浴室設施提供無盡的偽裝選擇；地圖夠大，可以局中換位"
         ],
         [
          "鄉村室內",
-         "溫馨的室內場景"
+         "溫馨的室內穀倉",
+         "乾草捆、南瓜、馬雕像與乳牛剪影；邊界靈活，能藏進狹窄角落"
         ],
         [
          "下水道",
-         "適合僞裝的昏暗隧道"
+         "昏暗的地下隧道",
+         "常被認為最平衡的地圖——塗鴉牆提供獨特偽裝；油桶、置物櫃與沙袋都是掩體"
         ],
         [
          "後室",
-         "致敬 Backrooms——米黃牆與辦公空間（2.1.0 重製）"
+         "致敬 Backrooms——米黃牆與辦公空間（2.1.0 重製）",
+         "地圖小而空曠，獵人搜索很快；藏在辦公隔間、垃圾堆與破損公路路段"
         ],
         [
          "企鵝酒店",
-         "來自開發者早期《企鵝酒店》系列的酒店地圖"
+         "來自開發者早期《企鵝酒店》系列的酒店",
+         "最大地圖之一，多層結構；到處都是企鵝雕像與玩偶，氣球帶來彆扭的幾何"
         ],
         [
          "糖果樂園",
-         "明亮的彩色地圖"
+         "明亮的糖果主題",
+         "糖果屋、橡皮糖與薑餅建築；高處位置獵人常忘查，但傾斜角度讓擺姿勢變難"
         ],
         [
          "大阪",
-         "銷量破 700 萬後加入的日本主題地圖"
+         "銷量破 700 萬後加入的日本主題地圖",
+         "最小的官方地圖但密度極高——卡車、商店、高架招牌與小巷獎勵快速塗裝躲藏"
         ]
        ]
       },
       {
        "type": "list",
+       "tag": "創意工坊",
        "heading": "Steam 創意工坊地圖",
-       "body": "可通過 Steam 創意工坊加載自定義地圖，例如畫廊、市場、游泳池與維京市場。",
+       "body": "創意工坊是超級變色龍社群發光的地方。以下是 2026 年攻略中最常被提到的社群地圖。",
        "items": [
-        "從創意工坊訂閱地圖，在自定義房間加載",
-        "熱門社區地圖包括 Minecraft 風、FNAF 保安室、CS2 荒漠迷城等復刻",
-        "更新也會加入新官方地圖（例如 HIKAKIN 博物館）"
+        "Skolas 的 Minecraft 地圖——訂閱量最高的遊戲靈感地圖（9.1 萬+ 訂閱）",
+        "Popunia 的 Art Gallery（畫廊）——圍繞塗裝躲藏玩法設計",
+        "FNAF 保全室、CS2 荒漠迷城 / 沙二、Among Us 飛船與要塞英雄 Dusty Divot 復刻",
+        "維京市場、市場、游泳池等社群經典",
+        "官方地圖也在持續加入——2026 年更新新增死亡漢堡、希臘，以及《班班幼兒園》與《8番出口》合作地圖"
+       ]
+      },
+      {
+       "type": "steps",
+       "tag": "安裝",
+       "heading": "如何安裝創意工坊地圖",
+       "body": "自訂地圖是免費模組——訂閱、下載，就會出現在遊戲裡。",
+       "items": [
+        [
+         "打開 Steam 創意工坊",
+         "瀏覽超級變色龍的創意工坊主頁——搜尋地圖或翻閱熱門。"
+        ],
+        [
+         "訂閱地圖",
+         "在任意地圖上點擊訂閱；Steam 會自動下載。"
+        ],
+        [
+         "啟動並打開自訂房間",
+         "已訂閱的地圖會出現在自訂房間——開房或加入遊玩。"
+        ],
+        [
+         "房主選圖",
+         "每局開始前由房主從已訂閱的地圖中選擇。"
+        ]
        ]
       },
       {
        "type": "faq",
+       "tag": "問答",
        "heading": "地圖常見問題",
        "body": "",
        "items": [
         [
          "遊戲有多少張地圖？",
-         "7 張基礎地圖（躲貓貓豪宅、鄉村室內、下水道、後室、企鵝酒店、糖果樂園和大阪）加大量 Steam 創意工坊地圖。官方還在持續新增——2026 年的更新加入了死亡漢堡、希臘以及《班班幼兒園》《8番出口》合作地圖。"
+         "7 張基礎地圖（捉迷藏宅邸、鄉村室內、下水道、後室、企鵝酒店、糖果樂園和大阪）加大量 Steam 創意工坊地圖。官方還在持續新增——2026 年的更新加入了死亡漢堡、希臘以及《班班幼兒園》《8番出口》合作地圖。"
+        ],
+        [
+         "哪張地圖適合新手學習？",
+         "捉迷藏宅邸是社群公認的標竿、出鏡率最高的地圖；下水道被廣泛認為最平衡。兩者都是不錯的起點。"
         ],
         [
          "創意工坊地圖免費嗎？",
-         "免費——創意工坊地圖是社區模組，訂閱即可免費使用，之後會在遊戲內出現。"
+         "免費——創意工坊地圖是社群模組，訂閱即可免費使用，之後會在遊戲內出現。"
         ],
         [
          "官方地圖要花錢嗎？",
@@ -2161,81 +2250,243 @@
       }
      ]
     },
-    "ko": {
-     "title": "메카 카멜레온 전체 맵",
-     "metaTitle": "메카 카멜레온 맵: 기본 & 워크숍 (2026)",
-     "metaDescription": "메카 카멜레온의 모든 기본 맵, Steam 워크숍 맵 작동 방식, 최고의 커뮤니티 맵을 찾는 곳까지.",
-     "intro": "메카 카멜레온의 맵은 매 라운드 숨바꼭질의 무대입니다. 기본 맵과 워크숍이 게임을 확장하는 방식을 소개합니다.",
+    "ja": {
+     "title": "メチャカメレオン全マップ",
+     "metaTitle": "メチャカメレオン全マップ：標準マップとワークショップマップ（2026）",
+     "metaDescription": "メチャカメレオンの標準マップ全種・各マップの戦術メモ、人気ワークショップマップとその導入方法。",
+     "intro": "メチャカメレオンのマップは、かくれんぼの舞台。標準7マップと各マップで重要な戦術、ワークショップで広がる世界をまとめました。",
      "sections": [
       {
        "type": "table",
-       "heading": "기본 맵",
-       "body": "Wikipedia는 현재 버전의 공식 맵으로 다음을 나열합니다.",
+       "tag": "マップ",
+       "heading": "標準マップ",
+       "body": "メチャカメレオンは4マップで発売され、現在は公式7マップ。下表は公式マップ一覧に InGameNews・GameShedge の隠れ場所攻略を組み合わせたものです。",
        "columns": [
-        "맵",
-        "설명"
+        "マップ",
+        "テーマ",
+        "戦術メモ"
        ],
        "rows": [
         [
-         "숨바꼭질 저택 (Hide-and-Seek Mansion)",
-         "게임의 대표 실내 맵"
+         "かくれんぼ屋敷",
+         "ゲームを象徴する屋内マップ",
+         "コミュニティの金看板——部屋が密集し、キッチン家電・洗濯物・浴室設備で無限の変装が可能。大きく、ラウンド中に隠れ場所を変えられる"
         ],
         [
-         "인도어 컨트리 (Indoor Country)",
-         "아늑한 실내 배경"
+         "田舎の家",
+         "暖かな屋内納屋",
+         "干し草の俵・カボチャ・馬の像・牛の切り抜き。境界が柔軟で狭い隅に潜り込める"
         ],
         [
-         "하수구 (Sewer)",
-         "좋은 위장이 빛을 발하는 어두운 터널"
+         "下水道",
+         "薄暗い地下トンネル",
+         "最もバランスが良いと評される——落書きの壁が独特のカモフラージュに。カニスター・ロッカー・土嚢がカバーに"
         ],
         [
-         "백룸 (Backrooms)",
-         "백룸 미학에 대한 오마주 — 누렇게 바랜 벽과 사무 공간 (2.1.0 업데이트에서 리메이크)"
+         "バックルームズ",
+         "Backrooms 風——黄色い壁とオフィス（2.1.0でリワーク）",
+         "小さく物が少ないため、ハンターの探索が速い。オフィスキュービクル・ゴミの山・壊れた高速道路に隠れる"
         ],
         [
-         "펭귄 호텔 (Penguin Hotel)",
-         "개발자의 초기 작품 '펭귄 호텔' 시리즈의 호텔 맵"
+         "ペンギンホテル",
+         "開発者の前作シリーズ由来のホテル",
+         "最大級のマップで複数フロア。ペンギン像やぬいぐるみが大量にあり、風船が扱いにくい地形を作る"
         ],
         [
-         "슈거랜드 (Sugarland)",
-         "밝고 화려한 맵"
+         "シュガーランド",
+         "明るいキャンディテーマ",
+         "キャンディハウス・グミ・ジンジャーブレッドの建物。ハンターが見落としがちな高所があるが、斜めの角度がポーズを難しくする"
         ],
         [
-         "오사카 (Osaka)",
-         "판매 700만 장 돌파 후 추가된 일본 테마 맵"
+         "大阪",
+         "700万本突破後に追加された日本テーマのマップ",
+         "最小の公式マップだが密度が高い——トラック・店舗・高所の看板・路地が素早い塗り隠れを報いる"
         ]
        ]
       },
       {
        "type": "list",
-       "heading": "Steam 워크숍 맵",
-       "body": "게임은 Steam 워크숍의 커스텀 맵으로 모딩할 수 있습니다 — 아트 갤러리, 더 마켓, 수영장, 바이킹 마켓 등.",
+       "tag": "ワークショップ",
+       "heading": "Steam ワークショップマップ",
+       "body": "ワークショップこそメチャカメレオンコミュニティの見せ場。以下は2026年のガイドで最も取り上げられるコミュニティマップです。",
        "items": [
-        "Steam 워크숍에서 커스텀 맵을 설치하고 커스텀 룸에서 불러온다",
-        "인기 커뮤니티 맵에는 마인크래프트 스타일, FNAF 시큐리티 브리치, CS2 미라지 리메이크가 있다",
-        "새 공식 맵도 업데이트로 추가된다 (예: HIKAKIN 뮤지엄 맵)"
+        "Skolas 作の Minecraft マップ——最も購読されたゲーム由来マップ（9.1万+ 購読）",
+        "Popunia 作の Art Gallery——塗って隠れるゲームプレイに特化",
+        "FNAF セキュリティ・ブリーチ、CS2 ミラージュ / de_dust2、Among Us の Skeld、フォートナイト Dusty Divot の再現",
+        "バイキングマーケット、ザ・マーケット、スイミングプールなど定番",
+        "公式マップも追加され続けている——2026年はデスバーガー、ギリシャ、『Garten of Banban』『8番出口』コラボが登場"
+       ]
+      },
+      {
+       "type": "steps",
+       "tag": "導入",
+       "heading": "ワークショップマップの導入方法",
+       "body": "カスタムマップは無料MOD——購読してダウンロードすればゲーム内に表示されます。",
+       "items": [
+        [
+         "Steam ワークショップを開く",
+         "メチャカメレオンのワークショップハブで検索または人気を閲覧。"
+        ],
+        [
+         "マップを購読する",
+         "任意のマップで「購読」をクリック——Steam が自動でダウンロード。"
+        ],
+        [
+         "起動してカスタムルームを開く",
+         "購読済みマップがカスタムルームに表示——ホストか参加でプレイ。"
+        ],
+        [
+         "ホストがマップを選ぶ",
+         "各ラウンド開始前に、ホストが購読済みマップから選択します。"
+        ]
        ]
       },
       {
        "type": "faq",
+       "tag": "FAQ",
+       "heading": "マップFAQ",
+       "body": "",
+       "items": [
+        [
+         "マップは何枚ありますか？",
+         "標準7枚（かくれんぼ屋敷、田舎の家、下水道、バックルームズ、ペンギンホテル、シュガーランド、大阪）＋多数のワークショップマップ。公式マップも追加され続けており、2026年のアップデートでデスバーガー、ギリシャ、『Garten of Banban』『8番出口』コラボマップが登場しました。"
+        ],
+        [
+         "初心者に最適なマップは？",
+         "かくれんぼ屋敷がコミュニティの金看板・最もフィーチャーされるマップ。下水道は最もバランスが良いと広く言われます。どちらも良い入門です。"
+        ],
+        [
+         "ワークショップマップは無料ですか？",
+         "はい——コミュニティ製のMODで、無料で購読するとゲーム内に表示されます。"
+        ],
+        [
+         "公式マップは有料ですか？",
+         "いいえ——公式マップはすべて Steam 版ゲームに含まれています。有料マップはありません。"
+        ],
+        [
+         "今後もマップは増えますか？",
+         "ほぼ確実に——開発者は発売以来、公式マップを定期的に追加しています（シュガーランド、大阪、デスバーガー、ギリシャ、コラボなど）。"
+        ]
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "메카 카멜레온 전체 맵",
+     "metaTitle": "메카 카멜레온 맵: 기본 & 워크숍 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 기본 맵, 맵별 전술 포인트, 인기 Steam 워크숍 맵과 설치 방법.",
+     "intro": "메카 카멜레온의 모든 라운드는 맵을 무대로 펼쳐집니다. 기본 맵 7종, 맵마다 중요한 전술 포인트, 그리고 워크숍이 게임을 확장하는 방법을 정리했습니다.",
+     "sections": [
+      {
+       "type": "table",
+       "tag": "맵",
+       "heading": "기본 맵",
+       "body": "메카 카멜레온은 맵 4종으로 출시되어 현재 공식 7종입니다. 아래 표는 공식 맵 목록에 InGameNews·GameShedge의 숨는 장소 공략을 결합한 것입니다.",
+       "columns": [
+        "맵",
+        "테마",
+        "전술 포인트"
+       ],
+       "rows": [
+        [
+         "숨바꼭질 저택",
+         "게임의 대표 실내 맵",
+         "커뮤니티의 금본위——밀집한 방, 주방 가전, 세탁실과 욕실 시설로 무한 변장 가능. 크고, 라운드 중에 숨는 곳을 바꿀 수 있음"
+        ],
+        [
+         "인도어 컨트리",
+         "아늑한 실내 헛간",
+         "건초 더미, 호박, 말 조각상, 소 모형. 경계가 유연해 좁은 구석에도 숨을 수 있음"
+        ],
+        [
+         "하수구",
+         "어두운 지하 터널",
+         "가장 균형 잡힌 맵으로 자주 언급됨——낙서 벽이 독특한 위장을 제공하고, 캐니스터·사물함·모래주머니가 엄폐물"
+        ],
+        [
+         "백룸",
+         "백룸 오마주 — 누렇게 바랜 벽과 사무 공간 (2.1.0 업데이트로 리워크)",
+         "작고 물건이 적어 사냥꾼의 탐색이 빠름——오피스 큐비클, 쓰레기 더미, 부서진 고속도로 구간에 숨기"
+        ],
+        [
+         "펭귄 호텔",
+         "개발자의 초기작 '펭귄 호텔' 시리즈의 호텔",
+         "가장 큰 맵 중 하나로 다층 구조. 펭귄 조각상과 봉제인형이 가득하고, 풍선이 어색한 지형을 만듦"
+        ],
+        [
+         "슈거랜드",
+         "밝은 캔디 테마",
+         "캔디 하우스, 구미, 진저브레드 건물. 사냥꾼이 자주 놓치는 높은 곳이 있지만, 비스듬한 각도가 포즈를 어렵게 함"
+        ],
+        [
+         "오사카",
+         "판매 700만 장 돌파 후 추가된 일본 테마 맵",
+         "가장 작은 공식 맵이지만 밀도가 높음——트럭, 상점, 높은 간판, 골목이 빠른 페인트 앤 하이드를 보상"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "tag": "워크숍",
+       "heading": "Steam 워크숍 맵",
+       "body": "워크숍이야말로 메카 카멜레온 커뮤니티의 무대입니다. 다음은 2026년 가이드에서 가장 많이 다뤄지는 커뮤니티 맵입니다.",
+       "items": [
+        "Skolas의 Minecraft 맵——가장 많이 구독된 게임 모티브 맵 (9.1만+ 구독)",
+        "Popunia의 Art Gallery——페인트 앤 하이드 게임플레이에 맞춰 설계",
+        "FNAF Security Breach, CS2 Mirage / de_dust2, Among Us Skeld, 포트나이트 Dusty Divot 리메이크",
+        "바이킹 마켓, 더 마켓, 수영장 등 커뮤니티 명작",
+        "공식 맵도 계속 추가됨——2026년 업데이트로 데스 버거, 그리스, Garten of Banban·8번 출구 콜라보 맵 등장"
+       ]
+      },
+      {
+       "type": "steps",
+       "tag": "설치",
+       "heading": "워크숍 맵 설치 방법",
+       "body": "커스텀 맵은 무료 모드입니다——구독하고 다운로드하면 게임에 표시됩니다.",
+       "items": [
+        [
+         "Steam 워크숍 열기",
+         "메카 카멜레온 워크숍 허브에서 맵을 검색하거나 인기 목록을 둘러보세요."
+        ],
+        [
+         "맵 구독하기",
+         "원하는 맵에서 구독을 클릭——Steam이 자동으로 다운로드합니다."
+        ],
+        [
+         "실행 후 커스텀 룸 열기",
+         "구독한 맵이 커스텀 룸에 표시됩니다——방을 만들거나 참여해 플레이하세요."
+        ],
+        [
+         "호스트가 맵 선택",
+         "각 라운드 시작 전에 호스트가 구독한 맵 중에서 고릅니다."
+        ]
+       ]
+      },
+      {
+       "type": "faq",
+       "tag": "FAQ",
        "heading": "맵 FAQ",
        "body": "",
        "items": [
         [
          "맵은 몇 개인가요?",
-         "기본 맵 7개 (숨바꼭질 저택, 인도어 컨트리, 하수구, 백룸, 펭귄 호텔, 슈거랜드, 오사카) + 수많은 Steam 워크숍 맵. 공식 맵도 계속 추가됩니다 — 2026년 업데이트는 데스 버거, 그리스, 가튼 오브 밴밴·엑싯 8 콜라보 맵을 추가했습니다."
+         "기본 맵 7종(숨바꼭질 저택, 인도어 컨트리, 하수구, 백룸, 펭귄 호텔, 슈거랜드, 오사카)에 수많은 Steam 워크숍 맵. 공식 맵도 계속 추가되어 2026년 업데이트로 데스 버거, 그리스, Garten of Banban·8번 출구 콜라보 맵이 나왔습니다."
+        ],
+        [
+         "초보자에게 가장 좋은 맵은?",
+         "숨바꼭질 저택이 커뮤니티의 금본위이자 가장 많이 소개되는 맵이고, 하수구는 가장 균형 잡힌 맵으로 널리 알려져 있습니다. 둘 다 좋은 시작점입니다."
         ],
         [
          "워크숍 맵은 무료인가요?",
-         "네 — Steam 워크숍 맵은 구독만 하면 무료로 쓸 수 있는 커뮤니티 모드이며, 구독하면 게임에 나타납니다."
+         "네——커뮤니티 모드로 무료 구독 후 게임에 표시됩니다."
         ],
         [
          "공식 맵은 유료인가요?",
-         "아니요 — 모든 공식 맵은 Steam 게임에 포함되어 있습니다. 유료 맵은 없습니다."
+         "아니요——모든 공식 맵은 Steam 게임에 포함되어 있으며 유료 맵은 없습니다."
         ],
         [
-         "맵이 더 추가될까요?",
-         "가능성이 매우 높습니다 — 개발자는 출시 이후 꾸준히 공식 맵을 추가해 왔습니다 (슈거랜드, 오사카, 데스 버거, 그리스, 콜라보 맵)."
+         "앞으로 맵이 더 추가되나요?",
+         "매우 그럴 가능성이 높습니다——개발자는 출시 이후 줄곧 공식 맵을 정기적으로 추가해 왔습니다(슈거랜드, 오사카, 데스 버거, 그리스, 콜라보 등)."
         ]
        ]
       }
@@ -2244,108 +2495,125 @@
     "es": {
      "title": "Todos los mapas de Meccha Chameleon",
      "metaTitle": "Mapas de Meccha Chameleon: base y Workshop (2026)",
-     "metaDescription": "Todos los mapas base de Meccha Chameleon, cómo funcionan los mapas del Steam Workshop y dónde encontrar los mejores mapas de la comunidad.",
-     "intro": "Los mapas de Meccha Chameleon son el escenario de cada ronda de escondite. Aquí están los mapas base y cómo el Workshop amplía el juego.",
+     "metaDescription": "Todos los mapas base de Meccha Chameleon, qué hace distinto a cada uno, los mejores mapas del Steam Workshop y cómo instalarlos.",
+     "intro": "Los mapas de Meccha Chameleon son el escenario de cada ronda de escondite. Aquí tienes los 7 mapas base, las notas tácticas que importan en cada uno y cómo el Steam Workshop amplía el juego.",
      "sections": [
       {
        "type": "table",
+       "tag": "MAPAS",
        "heading": "Mapas base",
-       "body": "Wikipedia enumera estos mapas oficiales en la versión actual.",
+       "body": "Meccha Chameleon salió con 4 mapas y ahora incluye 7 oficiales. La tabla combina la lista oficial con las guías de escondites de InGameNews y GameShedge.",
        "columns": [
         "Mapa",
-        "Notas"
+        "Tema",
+        "Nota táctica"
        ],
        "rows": [
         [
          "Mansión del Escondite",
-         "El mapa interior insignia del juego"
+         "El mapa interior insignia",
+         "El estándar de oro de la comunidad: habitaciones densas, electrodomésticos, lavandería y baños dan infinitas opciones de camuflaje; es bastante grande para cambiar de escondite a mitad de ronda"
         ],
         [
          "País Interior",
-         "Un entorno interior acogedor"
+         "Granero interior acogedor",
+         "Pacas de heno, calabazas, estatuas de caballos y recortes de vacas; los bordes flexibles permiten esconderse en rincones"
         ],
         [
          "Alcantarilla",
-         "Túneles oscuros que premian un buen camuflaje"
+         "Túneles subterráneos oscuros",
+         "A menudo llamado el mapa más equilibrado: los muros con grafitis dan un camuflaje único; bidones, taquillas y sacos de arena como cobertura"
         ],
         [
          "Backrooms",
-         "Homenaje a la estética Backrooms: paredes amarillentas y oficinas (rediseñado en la actualización 2.1.0)"
+         "Homenaje a Backrooms: paredes amarillentas y oficinas (rehecho en la 2.1.0)",
+         "Pequeño y escaso, así que los cazadores registran rápido; escóndete en cubículos, montones de basura y el tramo de autopista dañado"
         ],
         [
          "Hotel Pingüino",
-         "Un mapa de hotel de la serie anterior del desarrollador, Penguin Hotel"
+         "Hotel de la serie anterior del desarrollador",
+         "Uno de los mapas más grandes, con varias plantas; estatuas y peluches de pingüinos por todas partes, los globos crean geometría incómoda"
         ],
         [
          "Sugarland",
-         "Un mapa brillante y colorido"
+         "Tema de caramelos brillante",
+         "Casas de caramelo, gominolas y edificios de jengibre; hay alturas que los cazadores olvidan, pero los ángulos inclinados dificultan las poses"
         ],
         [
          "Osaka",
-         "Un mapa temático de Japón añadido tras superar los 7 millones de copias"
+         "Tema de Japón, añadido tras 7 millones de copias",
+         "El mapa oficial más pequeño pero denso: camiones, tiendas, letreros elevados y callejones premian pintar y esconderse rápido"
         ]
        ]
       },
       {
        "type": "list",
+       "tag": "WORKSHOP",
        "heading": "Mapas del Steam Workshop",
-       "body": "El juego se puede modificar con mapas personalizados del Steam Workshop, como Art Gallery, The Market, Swimming Pool y Viking Market.",
+       "body": "El Workshop es donde brilla la comunidad de Meccha Chameleon. Estos son los mapas comunitarios más cubiertos en las guías de 2026.",
        "items": [
-        "Instala mapas personalizados del Steam Workshop y cárgalos en Salas personalizadas",
-        "Los mapas populares de la comunidad incluyen remakes estilo Minecraft, FNAF Security Breach y CS2 Mirage",
-        "También se añaden nuevos mapas oficiales en las actualizaciones (por ejemplo, el mapa Museo HIKAKIN)"
+        "Mapa de Minecraft por Skolas: el mapa inspirado en juegos más suscrito (más de 91.000 suscriptores)",
+        "Art Gallery por Popunia: creado en torno a la mecánica de pintar y esconderse",
+        "Recreaciones de FNAF Security Breach, CS2 Mirage / de_dust2, Skeld de Among Us y Dusty Divot de Fortnite",
+        "Mercado vikingo, El Mercado, Piscina y otros clásicos de la comunidad",
+        "Los mapas oficiales también siguen llegando: en 2026 se añadieron Death Burger, Grecia y los colaborativos de Garten of Banban y Exit 8"
+       ]
+      },
+      {
+       "type": "steps",
+       "tag": "INSTALAR",
+       "heading": "Cómo instalar mapas del Workshop",
+       "body": "Los mapas personalizados son mods gratuitos: suscríbete, descarga y aparecen en tu juego.",
+       "items": [
+        [
+         "Abre el Steam Workshop",
+         "Explora el centro del Workshop de Meccha Chameleon: busca un mapa o mira los populares."
+        ],
+        [
+         "Suscríbete a los mapas",
+         "Haz clic en Suscribirse en cualquier mapa; Steam lo descarga automáticamente."
+        ],
+        [
+         "Inicia y abre Salas personalizadas",
+         "Los mapas suscritos aparecen en Salas personalizadas: crea o únete a una para jugarlos."
+        ],
+        [
+         "El anfitrión elige el mapa",
+         "El anfitrión selecciona entre los mapas suscritos antes de cada ronda."
+        ]
        ]
       },
       {
        "type": "faq",
-       "heading": "FAQ de mapas",
+       "tag": "PREGUNTAS",
+       "heading": "Preguntas frecuentes sobre mapas",
        "body": "",
        "items": [
         [
          "¿Cuántos mapas hay?",
-         "7 mapas base (Mansión del Escondite, País Interior, Alcantarilla, Backrooms, Hotel Pingüino, Sugarland y Osaka) más muchos del Steam Workshop. Se siguen añadiendo mapas oficiales: las actualizaciones de 2026 añadieron Death Burger, Greece y los mapas colaborativos de Garten of Banban y Exit 8."
+         "7 mapas base (Mansión del Escondite, País Interior, Alcantarilla, Backrooms, Hotel Pingüino, Sugarland y Osaka) más muchos del Workshop. Siguen añadiéndose oficiales: en 2026 llegaron Death Burger, Grecia y los colaborativos de Garten of Banban y Exit 8."
+        ],
+        [
+         "¿Qué mapa es mejor para aprender?",
+         "La Mansión del Escondite es el estándar de oro de la comunidad y el mapa más destacado; la Alcantarilla se considera el más equilibrado. Ambos son buenos puntos de partida."
         ],
         [
          "¿Los mapas del Workshop son gratis?",
-         "Sí: los mapas del Steam Workshop son mods de la comunidad que suscribes gratis y luego aparecen en el juego."
+         "Sí: son mods de la comunidad a los que te suscribes gratis y luego aparecen en el juego."
         ],
         [
          "¿Los mapas oficiales cuestan dinero?",
          "No: todos los mapas oficiales vienen incluidos con el juego en Steam. No hay mapas de pago."
         ],
         [
-         "¿Añadirán más mapas?",
-         "Muy probablemente: el desarrollador ha añadido mapas oficiales con regularidad desde el lanzamiento (Sugarland, Osaka, Death Burger, Greece y colaboraciones)."
+         "¿Se añadirán más mapas?",
+         "Muy probablemente: el desarrollador ha añadido mapas oficiales con regularidad desde el lanzamiento (Sugarland, Osaka, Death Burger, Grecia y colaborativos)."
         ]
        ]
       }
      ]
     }
-   },
-   "sources": [
-    {
-     "label": "Meccha Chameleon — Wikipedia",
-     "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
-     "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
-      "ko": "메카 카멜레온 — 위키백과",
-      "es": "Meccha Chameleon — Wikipedia"
-     }
-    },
-    {
-     "label": "Official Steam store page",
-     "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
-     "labels": {
-      "zh-CN": "Steam 官方商店页",
-      "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
-      "ko": "Steam 공식 상점",
-      "es": "Tienda oficial de Steam"
-     }
-    }
-   ]
+   }
   },
   {
    "slug": "tips-and-tricks",
@@ -2672,9 +2940,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -2685,7 +2953,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -2921,9 +3189,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -2934,7 +3202,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -2943,9 +3211,9 @@
      "label": "isThereAnyDeal — MECCHA CHAMELEON",
      "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/",
      "labels": {
-      "zh-CN": "isThereAnyDeal — 超级变色龙比价",
-      "zh-TW": "isThereAnyDeal — 超級變色龍比價",
-      "ja": "isThereAnyDeal — メチャカメレオン価格比較",
+      "zh-CN": "isThereAnyDeal — 超级变色龙",
+      "zh-TW": "isThereAnyDeal — 超級變色龍",
+      "ja": "isThereAnyDeal — メチャカメレオン",
       "ko": "isThereAnyDeal — MECCHA CHAMELEON",
       "es": "isThereAnyDeal — MECCHA CHAMELEON"
      }
@@ -2954,8 +3222,8 @@
      "label": "SlashSkill — cheats & hacks explained",
      "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/",
      "labels": {
-      "zh-CN": "SlashSkill — 作弊与破解说明",
-      "zh-TW": "SlashSkill — 作弊與破解說明",
+      "zh-CN": "SlashSkill — 作弊与外挂详解",
+      "zh-TW": "SlashSkill — 作弊與外掛詳解",
       "ja": "SlashSkill — チートとハック解説",
       "ko": "SlashSkill — 치트와 핵 해설",
       "es": "SlashSkill — trucos y hacks explicados"
@@ -3582,9 +3850,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -3595,7 +3863,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -3604,9 +3872,9 @@
      "label": "IGN wiki — Patch Notes July 20, 2026",
      "url": "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_20,_2026",
      "labels": {
-      "zh-CN": "IGN wiki — 2026年7月20日更新说明",
-      "zh-TW": "IGN wiki — 2026年7月20日更新說明",
-      "ja": "IGN wiki — 2026年7月20日パッチノート",
+      "zh-CN": "IGN 维基 — 2026-07-20 补丁说明",
+      "zh-TW": "IGN 維基 — 2026-07-20 補丁說明",
+      "ja": "IGN Wiki — 2026-07-20 パッチノート",
       "ko": "IGN 위키 — 2026-07-20 패치 노트",
       "es": "Wiki de IGN — notas del parche del 20 de julio de 2026"
      }
@@ -3615,8 +3883,8 @@
      "label": "Changelog.gg — MECCHA CHAMELEON",
      "url": "https://changelog.gg/games/meccha-chameleon-4704690",
      "labels": {
-      "zh-CN": "Changelog.gg — 超级变色龙更新日志",
-      "zh-TW": "Changelog.gg — 超級變色龍更新日誌",
+      "zh-CN": "Changelog.gg — 超级变色龙",
+      "zh-TW": "Changelog.gg — 超級變色龍",
       "ja": "Changelog.gg — メチャカメレオン",
       "ko": "Changelog.gg — MECCHA CHAMELEON",
       "es": "Changelog.gg — MECCHA CHAMELEON"
@@ -4015,9 +4283,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -4028,7 +4296,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -4282,9 +4550,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -4295,7 +4563,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -4304,8 +4572,8 @@
      "label": "SlashSkill — cheats & hacks explained",
      "url": "https://www.slashskill.com/meccha-chameleon-cheats-and-hacks-whats-real-and-whats-not/",
      "labels": {
-      "zh-CN": "SlashSkill — 作弊与破解说明",
-      "zh-TW": "SlashSkill — 作弊與破解說明",
+      "zh-CN": "SlashSkill — 作弊与外挂详解",
+      "zh-TW": "SlashSkill — 作弊與外掛詳解",
       "ja": "SlashSkill — チートとハック解説",
       "ko": "SlashSkill — 치트와 핵 해설",
       "es": "SlashSkill — trucos y hacks explicados"
@@ -4315,9 +4583,9 @@
      "label": "isThereAnyDeal — MECCHA CHAMELEON",
      "url": "https://isthereanydeal.com/product/019e2737-daa0-73e3-bd42-5a3bdc0b703d/",
      "labels": {
-      "zh-CN": "isThereAnyDeal — 超级变色龙比价",
-      "zh-TW": "isThereAnyDeal — 超級變色龍比價",
-      "ja": "isThereAnyDeal — メチャカメレオン価格比較",
+      "zh-CN": "isThereAnyDeal — 超级变色龙",
+      "zh-TW": "isThereAnyDeal — 超級變色龍",
+      "ja": "isThereAnyDeal — メチャカメレオン",
       "ko": "isThereAnyDeal — MECCHA CHAMELEON",
       "es": "isThereAnyDeal — MECCHA CHAMELEON"
      }
@@ -4697,9 +4965,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -4710,7 +4978,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -4721,7 +4989,7 @@
      "labels": {
       "zh-CN": "GamingOnSteam — Steam Deck 评测与设置",
       "zh-TW": "GamingOnSteam — Steam Deck 評測與設定",
-      "ja": "GamingOnSteam — Steam Deck レビューと設定",
+      "ja": "GamingOnSteam — Steam Deck レビュー＆設定",
       "ko": "GamingOnSteam — Steam 덱 리뷰 & 설정",
       "es": "GamingOnSteam — análisis y ajustes de Steam Deck"
      }
@@ -5029,9 +5297,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -5042,7 +5310,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -5539,9 +5807,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -5552,7 +5820,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -5868,9 +6136,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -5881,7 +6149,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -6321,9 +6589,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -6334,7 +6602,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -6428,9 +6696,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -6441,7 +6709,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -6450,11 +6718,11 @@
      "label": "TheGamer — Steam Summer Sale charts",
      "url": "https://www.thegamer.com/steam-summer-sale-2026-top-selling-chart/",
      "labels": {
-      "zh-CN": "TheGamer — 夏促畅销榜",
-      "zh-TW": "TheGamer — 夏促暢銷榜",
-      "ja": "TheGamer — サマーセール売上",
-      "ko": "TheGamer — 여름 세일 차트",
-      "es": "TheGamer — gráficas de rebajas"
+      "zh-CN": "TheGamer — Steam 夏促畅销榜",
+      "zh-TW": "TheGamer — Steam 夏促暢銷榜",
+      "ja": "TheGamer — Steam サマーセールの売上チャート",
+      "ko": "TheGamer — Steam 여름 세일 판매 차트",
+      "es": "TheGamer — gráficas de ventas del Steam Summer Sale"
      }
     }
    ],
@@ -6965,9 +7233,9 @@
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",
      "labels": {
-      "zh-CN": "超级变色龙 — 维基百科",
-      "zh-TW": "超級變色龍 — 維基百科",
-      "ja": "メチャカメレオン — Wikipedia",
+      "zh-CN": "维基百科 — 超级变色龙",
+      "zh-TW": "維基百科 — 超級變色龍",
+      "ja": "Wikipedia — メチャカメレオン",
       "ko": "메카 카멜레온 — 위키백과",
       "es": "Meccha Chameleon — Wikipedia"
      }
@@ -6978,7 +7246,7 @@
      "labels": {
       "zh-CN": "Steam 官方商店页",
       "zh-TW": "Steam 官方商店頁",
-      "ja": "Steam 公式ストア",
+      "ja": "Steam 公式ストアページ",
       "ko": "Steam 공식 상점",
       "es": "Tienda oficial de Steam"
      }
@@ -6987,11 +7255,11 @@
      "label": "TheGamer — Steam Summer Sale charts",
      "url": "https://www.thegamer.com/steam-summer-sale-2026-top-selling-chart/",
      "labels": {
-      "zh-CN": "TheGamer — 夏促畅销榜",
-      "zh-TW": "TheGamer — 夏促暢銷榜",
-      "ja": "TheGamer — サマーセール売上",
-      "ko": "TheGamer — 여름 세일 차트",
-      "es": "TheGamer — gráficas de rebajas"
+      "zh-CN": "TheGamer — Steam 夏促畅销榜",
+      "zh-TW": "TheGamer — Steam 夏促暢銷榜",
+      "ja": "TheGamer — Steam サマーセールの売上チャート",
+      "ko": "TheGamer — Steam 여름 세일 판매 차트",
+      "es": "TheGamer — gráficas de ventas del Steam Summer Sale"
      }
     }
    ],

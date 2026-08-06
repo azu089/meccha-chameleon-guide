@@ -7,54 +7,247 @@ PAGES = {
  "ko": {
   "title": "메카 카멜레온 전체 맵",
   "metaTitle": "메카 카멜레온 맵: 기본 & 워크숍 (2026)",
-  "metaDescription": "메카 카멜레온의 모든 기본 맵, Steam 워크숍 맵 작동 방식, 최고의 커뮤니티 맵을 찾는 곳까지.",
-  "intro": "메카 카멜레온의 맵은 매 라운드 숨바꼭질의 무대입니다. 기본 맵과 워크숍이 게임을 확장하는 방식을 소개합니다.",
+  "metaDescription": "메카 카멜레온의 모든 기본 맵, 맵별 전술 포인트, 인기 Steam 워크숍 맵과 설치 방법.",
+  "intro": "메카 카멜레온의 모든 라운드는 맵을 무대로 펼쳐집니다. 기본 맵 7종, 맵마다 중요한 전술 포인트, 그리고 워크숍이 게임을 확장하는 방법을 정리했습니다.",
   "sections": [
-   {"type":"table","heading":"기본 맵","body":"Wikipedia는 현재 버전의 공식 맵으로 다음을 나열합니다.","columns":["맵","설명"],"rows":[
-     ["숨바꼭질 저택 (Hide-and-Seek Mansion)","게임의 대표 실내 맵"],
-     ["인도어 컨트리 (Indoor Country)","아늑한 실내 배경"],
-     ["하수구 (Sewer)","좋은 위장이 빛을 발하는 어두운 터널"],
-     ["백룸 (Backrooms)","백룸 미학에 대한 오마주 — 누렇게 바랜 벽과 사무 공간 (2.1.0 업데이트에서 리메이크)"],
-     ["펭귄 호텔 (Penguin Hotel)","개발자의 초기 작품 '펭귄 호텔' 시리즈의 호텔 맵"],
-     ["슈거랜드 (Sugarland)","밝고 화려한 맵"],
-     ["오사카 (Osaka)","판매 700만 장 돌파 후 추가된 일본 테마 맵"]]},
-   {"type":"list","heading":"Steam 워크숍 맵","body":"게임은 Steam 워크숍의 커스텀 맵으로 모딩할 수 있습니다 — 아트 갤러리, 더 마켓, 수영장, 바이킹 마켓 등.","items":[
-     "Steam 워크숍에서 커스텀 맵을 설치하고 커스텀 룸에서 불러온다",
-     "인기 커뮤니티 맵에는 마인크래프트 스타일, FNAF 시큐리티 브리치, CS2 미라지 리메이크가 있다",
-     "새 공식 맵도 업데이트로 추가된다 (예: HIKAKIN 뮤지엄 맵)"]},
-   {"type":"faq","heading":"맵 FAQ","body":"","items":[
-     ["맵은 몇 개인가요?","기본 맵 7개 (숨바꼭질 저택, 인도어 컨트리, 하수구, 백룸, 펭귄 호텔, 슈거랜드, 오사카) + 수많은 Steam 워크숍 맵. 공식 맵도 계속 추가됩니다 — 2026년 업데이트는 데스 버거, 그리스, 가튼 오브 밴밴·엑싯 8 콜라보 맵을 추가했습니다."],
-     ["워크숍 맵은 무료인가요?","네 — Steam 워크숍 맵은 구독만 하면 무료로 쓸 수 있는 커뮤니티 모드이며, 구독하면 게임에 나타납니다."],
-     ["공식 맵은 유료인가요?","아니요 — 모든 공식 맵은 Steam 게임에 포함되어 있습니다. 유료 맵은 없습니다."],
-     ["맵이 더 추가될까요?","가능성이 매우 높습니다 — 개발자는 출시 이후 꾸준히 공식 맵을 추가해 왔습니다 (슈거랜드, 오사카, 데스 버거, 그리스, 콜라보 맵)."]]},
-  ],
+   {
+    "type": "table",
+    "tag": "맵",
+    "heading": "기본 맵",
+    "body": "메카 카멜레온은 맵 4종으로 출시되어 현재 공식 7종입니다. 아래 표는 공식 맵 목록에 InGameNews·GameShedge의 숨는 장소 공략을 결합한 것입니다.",
+    "columns": [
+     "맵",
+     "테마",
+     "전술 포인트"
+    ],
+    "rows": [
+     [
+      "숨바꼭질 저택",
+      "게임의 대표 실내 맵",
+      "커뮤니티의 금본위——밀집한 방, 주방 가전, 세탁실과 욕실 시설로 무한 변장 가능. 크고, 라운드 중에 숨는 곳을 바꿀 수 있음"
+     ],
+     [
+      "인도어 컨트리",
+      "아늑한 실내 헛간",
+      "건초 더미, 호박, 말 조각상, 소 모형. 경계가 유연해 좁은 구석에도 숨을 수 있음"
+     ],
+     [
+      "하수구",
+      "어두운 지하 터널",
+      "가장 균형 잡힌 맵으로 자주 언급됨——낙서 벽이 독특한 위장을 제공하고, 캐니스터·사물함·모래주머니가 엄폐물"
+     ],
+     [
+      "백룸",
+      "백룸 오마주 — 누렇게 바랜 벽과 사무 공간 (2.1.0 업데이트로 리워크)",
+      "작고 물건이 적어 사냥꾼의 탐색이 빠름——오피스 큐비클, 쓰레기 더미, 부서진 고속도로 구간에 숨기"
+     ],
+     [
+      "펭귄 호텔",
+      "개발자의 초기작 '펭귄 호텔' 시리즈의 호텔",
+      "가장 큰 맵 중 하나로 다층 구조. 펭귄 조각상과 봉제인형이 가득하고, 풍선이 어색한 지형을 만듦"
+     ],
+     [
+      "슈거랜드",
+      "밝은 캔디 테마",
+      "캔디 하우스, 구미, 진저브레드 건물. 사냥꾼이 자주 놓치는 높은 곳이 있지만, 비스듬한 각도가 포즈를 어렵게 함"
+     ],
+     [
+      "오사카",
+      "판매 700만 장 돌파 후 추가된 일본 테마 맵",
+      "가장 작은 공식 맵이지만 밀도가 높음——트럭, 상점, 높은 간판, 골목이 빠른 페인트 앤 하이드를 보상"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "워크숍",
+    "heading": "Steam 워크숍 맵",
+    "body": "워크숍이야말로 메카 카멜레온 커뮤니티의 무대입니다. 다음은 2026년 가이드에서 가장 많이 다뤄지는 커뮤니티 맵입니다.",
+    "items": [
+     "Skolas의 Minecraft 맵——가장 많이 구독된 게임 모티브 맵 (9.1만+ 구독)",
+     "Popunia의 Art Gallery——페인트 앤 하이드 게임플레이에 맞춰 설계",
+     "FNAF Security Breach, CS2 Mirage / de_dust2, Among Us Skeld, 포트나이트 Dusty Divot 리메이크",
+     "바이킹 마켓, 더 마켓, 수영장 등 커뮤니티 명작",
+     "공식 맵도 계속 추가됨——2026년 업데이트로 데스 버거, 그리스, Garten of Banban·8번 출구 콜라보 맵 등장"
+    ]
+   },
+   {
+    "type": "steps",
+    "tag": "설치",
+    "heading": "워크숍 맵 설치 방법",
+    "body": "커스텀 맵은 무료 모드입니다——구독하고 다운로드하면 게임에 표시됩니다.",
+    "items": [
+     [
+      "Steam 워크숍 열기",
+      "메카 카멜레온 워크숍 허브에서 맵을 검색하거나 인기 목록을 둘러보세요."
+     ],
+     [
+      "맵 구독하기",
+      "원하는 맵에서 구독을 클릭——Steam이 자동으로 다운로드합니다."
+     ],
+     [
+      "실행 후 커스텀 룸 열기",
+      "구독한 맵이 커스텀 룸에 표시됩니다——방을 만들거나 참여해 플레이하세요."
+     ],
+     [
+      "호스트가 맵 선택",
+      "각 라운드 시작 전에 호스트가 구독한 맵 중에서 고릅니다."
+     ]
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "FAQ",
+    "heading": "맵 FAQ",
+    "body": "",
+    "items": [
+     [
+      "맵은 몇 개인가요?",
+      "기본 맵 7종(숨바꼭질 저택, 인도어 컨트리, 하수구, 백룸, 펭귄 호텔, 슈거랜드, 오사카)에 수많은 Steam 워크숍 맵. 공식 맵도 계속 추가되어 2026년 업데이트로 데스 버거, 그리스, Garten of Banban·8번 출구 콜라보 맵이 나왔습니다."
+     ],
+     [
+      "초보자에게 가장 좋은 맵은?",
+      "숨바꼭질 저택이 커뮤니티의 금본위이자 가장 많이 소개되는 맵이고, 하수구는 가장 균형 잡힌 맵으로 널리 알려져 있습니다. 둘 다 좋은 시작점입니다."
+     ],
+     [
+      "워크숍 맵은 무료인가요?",
+      "네——커뮤니티 모드로 무료 구독 후 게임에 표시됩니다."
+     ],
+     [
+      "공식 맵은 유료인가요?",
+      "아니요——모든 공식 맵은 Steam 게임에 포함되어 있으며 유료 맵은 없습니다."
+     ],
+     [
+      "앞으로 맵이 더 추가되나요?",
+      "매우 그럴 가능성이 높습니다——개발자는 출시 이후 줄곧 공식 맵을 정기적으로 추가해 왔습니다(슈거랜드, 오사카, 데스 버거, 그리스, 콜라보 등)."
+     ]
+    ]
+   }
+  ]
  },
  "es": {
   "title": "Todos los mapas de Meccha Chameleon",
   "metaTitle": "Mapas de Meccha Chameleon: base y Workshop (2026)",
-  "metaDescription": "Todos los mapas base de Meccha Chameleon, cómo funcionan los mapas del Steam Workshop y dónde encontrar los mejores mapas de la comunidad.",
-  "intro": "Los mapas de Meccha Chameleon son el escenario de cada ronda de escondite. Aquí están los mapas base y cómo el Workshop amplía el juego.",
+  "metaDescription": "Todos los mapas base de Meccha Chameleon, qué hace distinto a cada uno, los mejores mapas del Steam Workshop y cómo instalarlos.",
+  "intro": "Los mapas de Meccha Chameleon son el escenario de cada ronda de escondite. Aquí tienes los 7 mapas base, las notas tácticas que importan en cada uno y cómo el Steam Workshop amplía el juego.",
   "sections": [
-   {"type":"table","heading":"Mapas base","body":"Wikipedia enumera estos mapas oficiales en la versión actual.","columns":["Mapa","Notas"],"rows":[
-     ["Mansión del Escondite","El mapa interior insignia del juego"],
-     ["País Interior","Un entorno interior acogedor"],
-     ["Alcantarilla","Túneles oscuros que premian un buen camuflaje"],
-     ["Backrooms","Homenaje a la estética Backrooms: paredes amarillentas y oficinas (rediseñado en la actualización 2.1.0)"],
-     ["Hotel Pingüino","Un mapa de hotel de la serie anterior del desarrollador, Penguin Hotel"],
-     ["Sugarland","Un mapa brillante y colorido"],
-     ["Osaka","Un mapa temático de Japón añadido tras superar los 7 millones de copias"]]},
-   {"type":"list","heading":"Mapas del Steam Workshop","body":"El juego se puede modificar con mapas personalizados del Steam Workshop, como Art Gallery, The Market, Swimming Pool y Viking Market.","items":[
-     "Instala mapas personalizados del Steam Workshop y cárgalos en Salas personalizadas",
-     "Los mapas populares de la comunidad incluyen remakes estilo Minecraft, FNAF Security Breach y CS2 Mirage",
-     "También se añaden nuevos mapas oficiales en las actualizaciones (por ejemplo, el mapa Museo HIKAKIN)"]},
-   {"type":"faq","heading":"FAQ de mapas","body":"","items":[
-     ["¿Cuántos mapas hay?","7 mapas base (Mansión del Escondite, País Interior, Alcantarilla, Backrooms, Hotel Pingüino, Sugarland y Osaka) más muchos del Steam Workshop. Se siguen añadiendo mapas oficiales: las actualizaciones de 2026 añadieron Death Burger, Greece y los mapas colaborativos de Garten of Banban y Exit 8."],
-     ["¿Los mapas del Workshop son gratis?","Sí: los mapas del Steam Workshop son mods de la comunidad que suscribes gratis y luego aparecen en el juego."],
-     ["¿Los mapas oficiales cuestan dinero?","No: todos los mapas oficiales vienen incluidos con el juego en Steam. No hay mapas de pago."],
-     ["¿Añadirán más mapas?","Muy probablemente: el desarrollador ha añadido mapas oficiales con regularidad desde el lanzamiento (Sugarland, Osaka, Death Burger, Greece y colaboraciones)."]]},
-  ],
- },
+   {
+    "type": "table",
+    "tag": "MAPAS",
+    "heading": "Mapas base",
+    "body": "Meccha Chameleon salió con 4 mapas y ahora incluye 7 oficiales. La tabla combina la lista oficial con las guías de escondites de InGameNews y GameShedge.",
+    "columns": [
+     "Mapa",
+     "Tema",
+     "Nota táctica"
+    ],
+    "rows": [
+     [
+      "Mansión del Escondite",
+      "El mapa interior insignia",
+      "El estándar de oro de la comunidad: habitaciones densas, electrodomésticos, lavandería y baños dan infinitas opciones de camuflaje; es bastante grande para cambiar de escondite a mitad de ronda"
+     ],
+     [
+      "País Interior",
+      "Granero interior acogedor",
+      "Pacas de heno, calabazas, estatuas de caballos y recortes de vacas; los bordes flexibles permiten esconderse en rincones"
+     ],
+     [
+      "Alcantarilla",
+      "Túneles subterráneos oscuros",
+      "A menudo llamado el mapa más equilibrado: los muros con grafitis dan un camuflaje único; bidones, taquillas y sacos de arena como cobertura"
+     ],
+     [
+      "Backrooms",
+      "Homenaje a Backrooms: paredes amarillentas y oficinas (rehecho en la 2.1.0)",
+      "Pequeño y escaso, así que los cazadores registran rápido; escóndete en cubículos, montones de basura y el tramo de autopista dañado"
+     ],
+     [
+      "Hotel Pingüino",
+      "Hotel de la serie anterior del desarrollador",
+      "Uno de los mapas más grandes, con varias plantas; estatuas y peluches de pingüinos por todas partes, los globos crean geometría incómoda"
+     ],
+     [
+      "Sugarland",
+      "Tema de caramelos brillante",
+      "Casas de caramelo, gominolas y edificios de jengibre; hay alturas que los cazadores olvidan, pero los ángulos inclinados dificultan las poses"
+     ],
+     [
+      "Osaka",
+      "Tema de Japón, añadido tras 7 millones de copias",
+      "El mapa oficial más pequeño pero denso: camiones, tiendas, letreros elevados y callejones premian pintar y esconderse rápido"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "tag": "WORKSHOP",
+    "heading": "Mapas del Steam Workshop",
+    "body": "El Workshop es donde brilla la comunidad de Meccha Chameleon. Estos son los mapas comunitarios más cubiertos en las guías de 2026.",
+    "items": [
+     "Mapa de Minecraft por Skolas: el mapa inspirado en juegos más suscrito (más de 91.000 suscriptores)",
+     "Art Gallery por Popunia: creado en torno a la mecánica de pintar y esconderse",
+     "Recreaciones de FNAF Security Breach, CS2 Mirage / de_dust2, Skeld de Among Us y Dusty Divot de Fortnite",
+     "Mercado vikingo, El Mercado, Piscina y otros clásicos de la comunidad",
+     "Los mapas oficiales también siguen llegando: en 2026 se añadieron Death Burger, Grecia y los colaborativos de Garten of Banban y Exit 8"
+    ]
+   },
+   {
+    "type": "steps",
+    "tag": "INSTALAR",
+    "heading": "Cómo instalar mapas del Workshop",
+    "body": "Los mapas personalizados son mods gratuitos: suscríbete, descarga y aparecen en tu juego.",
+    "items": [
+     [
+      "Abre el Steam Workshop",
+      "Explora el centro del Workshop de Meccha Chameleon: busca un mapa o mira los populares."
+     ],
+     [
+      "Suscríbete a los mapas",
+      "Haz clic en Suscribirse en cualquier mapa; Steam lo descarga automáticamente."
+     ],
+     [
+      "Inicia y abre Salas personalizadas",
+      "Los mapas suscritos aparecen en Salas personalizadas: crea o únete a una para jugarlos."
+     ],
+     [
+      "El anfitrión elige el mapa",
+      "El anfitrión selecciona entre los mapas suscritos antes de cada ronda."
+     ]
+    ]
+   },
+   {
+    "type": "faq",
+    "tag": "PREGUNTAS",
+    "heading": "Preguntas frecuentes sobre mapas",
+    "body": "",
+    "items": [
+     [
+      "¿Cuántos mapas hay?",
+      "7 mapas base (Mansión del Escondite, País Interior, Alcantarilla, Backrooms, Hotel Pingüino, Sugarland y Osaka) más muchos del Workshop. Siguen añadiéndose oficiales: en 2026 llegaron Death Burger, Grecia y los colaborativos de Garten of Banban y Exit 8."
+     ],
+     [
+      "¿Qué mapa es mejor para aprender?",
+      "La Mansión del Escondite es el estándar de oro de la comunidad y el mapa más destacado; la Alcantarilla se considera el más equilibrado. Ambos son buenos puntos de partida."
+     ],
+     [
+      "¿Los mapas del Workshop son gratis?",
+      "Sí: son mods de la comunidad a los que te suscribes gratis y luego aparecen en el juego."
+     ],
+     [
+      "¿Los mapas oficiales cuestan dinero?",
+      "No: todos los mapas oficiales vienen incluidos con el juego en Steam. No hay mapas de pago."
+     ],
+     [
+      "¿Se añadirán más mapas?",
+      "Muy probablemente: el desarrollador ha añadido mapas oficiales con regularidad desde el lanzamiento (Sugarland, Osaka, Death Burger, Grecia y colaborativos)."
+     ]
+    ]
+   }
+  ]
+ }
 },
+
 # ============ TIPS AND TRICKS ============
 "tips-and-tricks": {
  "ko": {
