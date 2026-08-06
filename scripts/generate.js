@@ -34,6 +34,8 @@ const SVG = {
   "system-requirements": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>',
   "codes": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>',
   "faq": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>',
+  "where-to-buy": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>',
+  "how-long-to-beat": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
   "up": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>'
 };
 const CARD_META = {
@@ -41,7 +43,9 @@ const CARD_META = {
   "maps": { icon: "maps", ic: "ic-yellow" }, "tips-and-tricks": { icon: "tips-and-tricks", ic: "ic-coral" },
   "achievements": { icon: "achievements", ic: "ic-purple" }, "update-log": { icon: "update-log", ic: "ic-blue" },
   "system-requirements": { icon: "system-requirements", ic: "ic-green" }, "codes": { icon: "codes", ic: "ic-yellow" },
-  "faq": { icon: "faq", ic: "ic-coral" }
+  "faq": { icon: "faq", ic: "ic-coral" },
+  "where-to-buy": { icon: "where-to-buy", ic: "ic-blue" },
+  "how-long-to-beat": { icon: "how-long-to-beat", ic: "ic-yellow" }
 };
 const metaOf = slug => CARD_META[slug] || { icon: "codes", ic: "ic-green" };
 
@@ -133,8 +137,10 @@ const FLAGS = {
   "zh-CN": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#EE1C25"/><g fill="#FFDE00"><path d="M12 8l1.7 3.4 3.8.5-2.8 2.7.7 3.8L12 16.7l-3.4 1.7.7-3.8-2.8-2.7 3.8-.5z"/><path d="M22 4l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM25 11l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM22 18l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM19 11l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3z"/></g></svg>',
   "zh-TW": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#FE0000"/><rect width="30" height="20" fill="#000095"/><g fill="#fff" stroke="#fff" stroke-width="1"><path d="M15 2l2.3 6.7 7 .1-5.6 4.2 2.1 6.7-5.8-4-5.8 4 2.1-6.7L5.7 8.8l7-.1z"/><g stroke-width=".6"><path d="M15 2v16M15 2 5.7 8.8 15 15.6M15 2l9.3 6.8L15 15.6M15 2v16M15 18.8 5.7 12 15 5.2M15 18.8l9.3-6.8L15 5.2"/></g></g></svg>',
   "ja": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="11" fill="#BC002D"/></svg>',
+  "ko": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><g transform="translate(30 20)"><g transform="rotate(45)"><rect x="-10" y="-5" width="20" height="10" fill="#CD2E3A"/><rect x="-10" y="0" width="20" height="10" fill="#0047A0"/><circle r="6" fill="#fff"/></g><circle r="5" fill="#CD2E3A"/><path d="M0-5a5 5 0 0 1 0 10 2 2 0 0 1 0-10" fill="#0047A0"/></g><g fill="#000"><path d="M15 2h3v6h-3zM15 32h3v6h-3zM42 2h3v6h-3zM42 32h3v6h-3z"/></g></svg>',
+  "es": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/><g transform="translate(30 20)"><path d="M-10 0a10 10 0 0 1 10-10 10 10 0 0 1 0 20 10 10 0 0 1-10-10z" fill="#fff" opacity=".85"/></g></svg>'
 };
-const LANG_META = { "en":{name:"English",flag:FLAGS.en}, "zh-CN":{name:"简体中文",flag:FLAGS["zh-CN"]}, "zh-TW":{name:"繁體中文",flag:FLAGS["zh-TW"]}, "ja":{name:"日本語",flag:FLAGS.ja} };
+const LANG_META = { "en":{name:"English",flag:FLAGS.en}, "zh-CN":{name:"简体中文",flag:FLAGS["zh-CN"]}, "zh-TW":{name:"繁體中文",flag:FLAGS["zh-TW"]}, "ja":{name:"日本語",flag:FLAGS.ja}, "ko":{name:"한국어",flag:FLAGS.ko}, "es":{name:"Español",flag:FLAGS.es} };
 function langSwitcher(lang, slug){
   const items = LANGS.map(l =>
     `<a href="${urlOf(slug,l)}" class="${l===lang?"active":""}"><span class="flag svg-flag">${LANG_META[l]?.flag||"🌐"}</span>${LANG_META[l]?.name||l}</a>`
@@ -151,7 +157,7 @@ function header(lang, active){
     const m = metaOf(p.slug);
     return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(pageOf(p,lang).title)}</a>`;
   }).join("");
-  const guidesLabel = { en: "Guides", zh: "攻略", ja: "攻略" }[lang] || "Guides";
+  const guidesLabel = lang.startsWith("zh") ? "攻略" : (lang === "ja" ? "攻略" : (lang === "ko" ? "가이드" : (lang === "es" ? "Guías" : "Guides")));
   const homeLabel = s.navHome;
   return `<header class="site-header">
   <div class="container header-inner">
@@ -164,7 +170,7 @@ function header(lang, active){
       </details>
     </nav>
     <form class="site-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener" role="search">
-      <input type="search" name="q" placeholder="${lang==="zh-CN"||lang==="zh-TW"?"搜索攻略…":lang==="ja"?"ガイドを検索…":"Search guides…"}" aria-label="Search" />
+      <input type="search" name="q" placeholder="${lang.startsWith('zh')?'搜索攻略…':lang==='ja'?'ガイドを検索…':lang==='ko'?'가이드 검색…':lang==='es'?'Buscar guías…':'Search guides…'}" aria-label="Search" />
       <input type="hidden" name="as_sitesearch" value="${esc(DATA.site.domain)}" />
       <span class="search-ic">🔍</span>
     </form>
@@ -314,8 +320,8 @@ function renderHome(lang){
       <span class="path-go">▶</span>
     </a>`;
   }).join("");
-  const badgeTxt = lang==="zh"?"2026 年现象级捉迷藏派对游戏 · 持续更新":lang==="ja"?"2026年話題のかくれんぼパーティゲーム · 定期更新":"2026's viral hide-and-seek hit · Guides updated regularly";
-  const h1Tail = lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"GUIDES";
+  const badgeTxt = lang.startsWith("zh")?"2026 年现象级捉迷藏派对游戏 · 持续更新":lang==="ja"?"2026年話題のかくれんぼパーティゲーム · 定期更新":"2026's viral hide-and-seek hit · Guides updated regularly";
+  const h1Tail = lang.startsWith("zh")?"攻略站":lang==="ja"?"攻略ガイド":"GUIDES";
   const body = `
   <main>
     <section class="arcade-hero">
@@ -333,16 +339,16 @@ function renderHome(lang){
       </div>
     </section>
     <section class="container section">
-      <div class="section-head"><div><div class="kicker">${lang==="zh"?"选择模式":lang==="ja"?"モード選択":"PICK A MODE"}</div><h2>${lang==="zh"?"模式大厅":lang==="ja"?"モードホール":"Mode Lobby"}</h2></div><p>${lang==="zh"?"每个模式一条直达攻略。":lang==="ja"?"各モードへのショートカット。":"One shortcut per mode."}</p></div>
+      <div class="section-head"><div><div class="kicker">${lang.startsWith("zh")?"选择模式":lang==="ja"?"モード選択":"PICK A MODE"}</div><h2>${lang.startsWith("zh")?"模式大厅":lang==="ja"?"モードホール":"Mode Lobby"}</h2></div><p>${lang.startsWith("zh")?"每个模式一条直达攻略。":lang==="ja"?"各モードへのショートカット。":"One shortcut per mode."}</p></div>
       <div class="mode-row">${modeTabs}</div>
     </section>
     <section class="container section">
-      <div class="section-head"><div><div class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"Guides"}</div><h2>${esc(s.guides)}</h2></div><p>${lang==="zh"?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
+      <div class="section-head"><div><div class="kicker">${lang.startsWith("zh")?"攻略":lang==="ja"?"攻略":"Guides"}</div><h2>${esc(s.guides)}</h2></div><p>${lang.startsWith("zh")?"每一页都来自真实搜索需求，基于可靠来源。":lang==="ja"?"各ページは実際の検索ニーズに基づいています。":""}</p></div>
       <div class="level-grid">${cards}</div>
     </section>
-    ${faqHtml ? `<section class="container section"><div class="section-head"><div><div class="kicker">${lang==="zh"?"问答":lang==="ja"?"Q&A":"FAQ"}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
+    ${faqHtml ? `<section class="container section"><div class="section-head"><div><div class="kicker">${lang.startsWith("zh")?"问答":lang==="ja"?"Q&A":"FAQ"}</div><h2>${esc(s.quickAnswers)}</h2></div></div>${faqHtml}</section>` : ""}
     <section class="container section">
-      <div class="section-head"><div><div class="kicker">${lang==="zh"?"关于":lang==="ja"?"概要":"About"}</div><h2>${esc(s.aboutGame)}</h2></div></div>
+      <div class="section-head"><div><div class="kicker">${lang.startsWith("zh")?"关于":lang==="ja"?"概要":"About"}</div><h2>${esc(s.aboutGame)}</h2></div></div>
       <div class="card"><p>${esc(gintro)}</p><ul class="checks" style="margin-top:14px">${keyFacts}</ul></div>
     </section>
   </main>
@@ -359,7 +365,7 @@ function renderHome(lang){
     });
   });
   </script>`;
-  return head(`${esc(gname)} ${lang==="zh"?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
+  return head(`${esc(gname)} ${lang.startsWith("zh")?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
 }
 /* ---------- page ---------- */
 function renderPage(p, lang){
@@ -389,18 +395,18 @@ function renderPage(p, lang){
       <div class="lobby-title">
         <span class="icon ${m.ic}" style="width:52px;height:52px;border-radius:14px;display:grid;place-items:center">${SVG[m.icon]}</span>
         <div>
-          <span class="kicker">${lang==="zh"?"攻略":lang==="ja"?"攻略":"GUIDE"}</span>
+          <span class="kicker">${lang.startsWith("zh")?"攻略":lang==="ja"?"攻略":"GUIDE"}</span>
           <h1>${esc(t.title)}</h1>
           <p class="lead">${esc(t.metaDescription)}</p>
         </div>
       </div>
       <p class="intro">${esc(t.intro)}</p>
-      ${toc ? `<div class="lobby-toc"><b>${lang==="zh"?"本页目录":lang==="ja"?"目次":"On this page"}</b><div>${toc}</div></div>` : ""}
+      ${toc ? `<div class="lobby-toc"><b>${lang.startsWith("zh")?"本页目录":lang==="ja"?"目次":"On this page"}</b><div>${toc}</div></div>` : ""}
     </div>
     ${sections}
     <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul></div>
     <div class="lobby-related">
-      <div class="section-head"><div><div class="kicker">${esc(s.moreGuides)}</div><h2>${lang==="zh"?"继续探索":lang==="ja"?"続けて探索":"Keep exploring"}</h2></div></div>
+      <div class="section-head"><div><div class="kicker">${esc(s.moreGuides)}</div><h2>${lang.startsWith("zh")?"继续探索":lang==="ja"?"続けて探索":"Keep exploring"}</h2></div></div>
       <div class="related-list related-row">${related}</div>
     </div>
   </main>`;
