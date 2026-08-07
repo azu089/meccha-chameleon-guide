@@ -248,7 +248,7 @@ PAGES = {
  }
 },
 
-# ============ TIPS AND TRICKS ============
+# ============ TIPS
 "tips-and-tricks": {
  "ko": {
   "title": "메카 카멜레온 팁 & 요령: 더 많이 이기는 법",
@@ -256,28 +256,90 @@ PAGES = {
   "metaDescription": "메카 카멜레온에서 더 많이 이기는 프로 팁 — 색 채취, 빛의 방향, 클론, 포즈, 실제로 효과 있는 사냥꾼 전략.",
   "intro": "메카 카멜레온에서 좋은 플레이어와 뛰어난 플레이어를 가르는 구체적인 테크닉을 모았습니다.",
   "sections": [
-   {"type":"list","heading":"숨는 역할 팁","body":"숨는 역할로 이기는 핵심은 변장을 완성하는 것입니다.","items":[
+   {
+    "type": "list",
+    "heading": "숨는 역할 팁",
+    "body": "숨는 역할로 이기는 핵심은 변장을 완성하는 것입니다.",
+    "items": [
      "스포이드로 색을 채취한다 — 감으로 정하지 않는다",
      "흉내 내는 표면의 빛 방향을 맞춘다",
      "메탈릭과 러프니스를 낮춰 빛나지 않게 한다",
      "특이한 모양에는 포즈 명령(쪼그려 앉기, 앉기, 웅크리기)을 쓴다",
-     "칠한 뒤 움직이지 않는다 — 움직임은 잔상으로 드러난다"]},
-   {"type":"list","heading":"칠하기 & 색 맞추기","body":"컬러 피커, 스포이드, HSV, 메탈릭, 러프니스 슬라이더가 위장 도구 모음입니다.","items":[
+     "칠한 뒤 움직이지 않는다 — 움직임은 잔상으로 드러난다"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "칠하기 & 색 맞추기",
+    "body": "컬러 피커, 스포이드, HSV, 메탈릭, 러프니스 슬라이더가 위장 도구 모음입니다.",
+    "items": [
      "눈대중 대신 스포이드로 정확한 색을 채취한다",
      "메탈릭과 러프니스를 미세 조정해 마감이 벽과 맞게 한다",
      "칠한 뒤 '정답 확인' 결과를 본다 — 색이 얼마나 가까운지 알려준다",
-     "실루엣을 조심한다 — 모양이 어긋나면 완벽한 칠도 실패한다"]},
-   {"type":"list","heading":"클론 & 포즈","body":"클론과 포즈는 숨는 역할이 사냥꾼을 속일 방법을 더 주기 위해 추가되었습니다.","items":[
+     "실루엣을 조심한다 — 모양이 어긋나면 완벽한 칠도 실패한다"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "클론 & 포즈",
+    "body": "클론과 포즈는 숨는 역할이 사냥꾼을 속일 방법을 더 주기 위해 추가되었습니다.",
+    "items": [
      "캐릭터를 칠하고 포즈를 잡은 뒤 Q 키로 클론을 만든다",
      "동시에 최대 2개의 클론을 활성화할 수 있다 (2.0.0 업데이트에서 추가)",
      "클론을 흩어 놓거나 겹쳐서 설득력 있는 위장을 만든다",
-     "기억하세요: 클론이 파괴되면 본체도 노출됩니다 — 클론은 공짜 추가 목숨이 아닙니다"]},
-   {"type":"list","heading":"사냥꾼 팁","body":"사냥꾼으로 이기는 핵심은 환경을 읽는 것입니다.","items":[
+     "기억하세요: 클론이 파괴되면 본체도 노출됩니다 — 클론은 공짜 추가 목숨이 아닙니다"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "사냥꾼 팁",
+    "body": "사냥꾼으로 이기는 핵심은 환경을 읽는 것입니다.",
+    "items": [
      "밝은 색을 찾지 말고, 잘못된 그림자를 찾는다",
      "맵 조명과 어긋나는 실제 플레이어 그림자를 확인한다",
      "쉬운 목표부터 태그해 팀을 빠르게 키운다",
-     "숫자가 모이면 흩어져 맵 전체를 커버한다"]},
-  ],
+     "숫자가 모이면 흩어져 맵 전체를 커버한다"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "고급 콤보와 심리전",
+    "body": "기본이 몸에 배면, 이 콤보들이 박빙 라운드를 가릅니다.",
+    "items": [
+     "클론을 미끼로: 클론을 그럴듯한 소품으로 칠하고 자신은 다른 곳으로 — 사냥꾼은 보통 클론부터 태그합니다",
+     "포즈와 소품 결합: 벽에 평평하게 칠하는 대신 가구 형태에 맞춰 쪼그려 숨기",
+     "클론 2개를 겹쳐 문이나 복도 시야를 막기 (2.0.0부터 동시 2개까지)",
+     "사냥꾼은 먼저 빛을 읽기: 맵 조명과 안 맞는 플레이어 그림자가 가장 큰 실마리",
+     "숨바꼭질 저택 같은 대형 맵에선 라운드 중 은신처를 옮기기 — 사냥꾼은 구역에 집중합니다"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "빠른 답변",
+    "items": [
+     [
+      "클론은 몇 개까지?",
+      "동시 2개까지 (2.0.0에서 추가). 클론이 파괴되면 본체도 노출됩니다."
+     ],
+     [
+      "메탈릭과 러프니스는 뭐에 쓰나요?",
+      "칠한 표면의 빛 반사를 조절합니다. 표면과 맞추지 않으면 변장이 빛나서 들킵니다."
+     ],
+     [
+      "색이 맞는지 어떻게 알죠?",
+      "칠한 직후 '정답 체크'를 쓰세요 — 목표와 색이 얼마나 가까운지 알려줍니다."
+     ],
+     [
+      "최고의 숨는 전략은?",
+      "색과 모양을 모두 맞추세요. 이상한 모양은 포즈 명령을, 칠한 뒤에는 완전히 가만히 — 움직이면 잔상이 남습니다."
+     ],
+     [
+      "콤보 연습에 좋은 맵은?",
+      "숨바꼭질 저택이 소품이 가장 많고, 하수구가 사냥꾼 읽기 연습에 최적입니다."
+     ]
+    ]
+   }
+  ]
  },
  "es": {
   "title": "Consejos y trucos de Meccha Chameleon: cómo ganar más",
@@ -285,28 +347,90 @@ PAGES = {
   "metaDescription": "Consejos profesionales para ganar más rondas de Meccha Chameleon: muestreo de color, dirección de la luz, clones, poses y estrategias de Cazador que funcionan.",
   "intro": "Estas son las técnicas concretas que separan a los buenos jugadores de los grandes en Meccha Chameleon.",
   "sections": [
-   {"type":"list","heading":"Consejos para Escondedores","body":"Ganar como Escondedor consiste en perfeccionar tu disfraz.","items":[
+   {
+    "type": "list",
+    "heading": "Consejos para Escondedores",
+    "body": "Ganar como Escondedor consiste en perfeccionar tu disfraz.",
+    "items": [
      "Muestrea tu color con el cuentagotas: nunca lo adivines",
      "Iguala la dirección de la luz de la superficie que imitas",
      "Baja metalizado y rugosidad para no brillar",
      "Usa órdenes de pose (agacharse, sentarse, encogerse) para formas raras",
-     "Quédate quieto tras pintar: el movimiento deja un rastro visible"]},
-   {"type":"list","heading":"Pintura y combinación de colores","body":"El selector de color, el cuentagotas y los deslizadores HSV, metalizado y rugosidad son tu kit de camuflaje.","items":[
+     "Quédate quieto tras pintar: el movimiento deja un rastro visible"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Pintura y combinación de colores",
+    "body": "El selector de color, el cuentagotas y los deslizadores HSV, metalizado y rugosidad son tu kit de camuflaje.",
+    "items": [
      "Usa el cuentagotas para muestrear un color exacto en vez de igualarlo a ojo",
      "Ajusta metalizado y rugosidad para que el acabado iguale la pared",
      "Mira el resultado de la 'comprobación de respuesta' tras pintar: te dice qué tan cerca está tu color",
-     "Vigila tu silueta: un pintado perfecto falla si la forma es incorrecta"]},
-   {"type":"list","heading":"Clones y poses","body":"Los clones y las poses se añadieron para dar a los Escondedores más formas de despistar a los Cazadores.","items":[
+     "Vigila tu silueta: un pintado perfecto falla si la forma es incorrecta"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Clones y poses",
+    "body": "Los clones y las poses se añadieron para dar a los Escondedores más formas de despistar a los Cazadores.",
+    "items": [
      "Crea un clon con la tecla Q tras pintar y posar a tu personaje",
      "Puedes tener hasta dos clones activos a la vez (añadido en la actualización 2.0.0)",
      "Reparte los clones o superponlos para crear disfraces convincentes",
-     "Recuerda: si destruyen un clon, tu cuerpo principal también queda expuesto: un clon no es una vida extra gratis"]},
-   {"type":"list","heading":"Consejos para Cazadores","body":"Ganar como Cazador consiste en leer el entorno.","items":[
+     "Recuerda: si destruyen un clon, tu cuerpo principal también queda expuesto: un clon no es una vida extra gratis"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Consejos para Cazadores",
+    "body": "Ganar como Cazador consiste en leer el entorno.",
+    "items": [
      "No busques colores brillantes: busca sombras incorrectas",
      "Revisa las sombras físicas de los jugadores que no coinciden con la iluminación del mapa",
      "Marca primero a los objetivos fáciles para hacer crecer tu equipo rápido",
-     "Una vez con ventaja numérica, sepárate para cubrir todo el mapa"]},
-  ],
- },
+     "Una vez con ventaja numérica, sepárate para cubrir todo el mapa"
+    ]
+   },
+   {
+    "type": "list",
+    "heading": "Combos avanzados y juegos mentales",
+    "body": "Cuando lo básico es instintivo, estos combos deciden las rondas reñidas.",
+    "items": [
+     "Usa los clones como señuelo: pinta un clon como un objeto convincente y deslízate a un segundo sitio — los Cazadores suelen marcar primero al clon",
+     "Combina poses con objetos: agáchate dentro de la geometría del mobiliario en vez de pintarte plano contra la pared",
+     "Apila los dos clones para cubrir una puerta o pasillo (máximo 2 clones activos desde la 2.0.0)",
+     "Para Cazadores, lee primero la luz: una sombra de jugador que no coincide con la iluminación del mapa es la mayor pista",
+     "Muévete entre dos escondites a mitad de ronda en mapas grandes como la Mansión del Escondite: los Cazadores se comprometen con zonas"
+    ]
+   },
+   {
+    "type": "faq",
+    "heading": "Respuestas rápidas",
+    "items": [
+     [
+      "¿Cuántos clones puedo crear?",
+      "Hasta 2 activos a la vez (añadido en la 2.0.0). Recuerda: si destruyen un clon, tu cuerpo principal queda expuesto."
+     ],
+     [
+      "¿Qué hacen metalizado y rugosidad?",
+      "Controlan cómo refleja la luz tu pintura. Ajústalos a la superficie o tu disfraz brillará y te delatará."
+     ],
+     [
+      "¿Cómo sé si mi color coincide?",
+      "Usa la 'comprobación de respuesta' justo después de pintar: te dice qué tan cerca está tu color del objetivo."
+     ],
+     [
+      "¿Cuál es la mejor estrategia para esconderse?",
+      "Iguala color Y forma. Usa órdenes de pose para formas raras y quédate perfectamente quieto tras pintar: el movimiento deja un rastro."
+     ],
+     [
+      "¿Qué mapa es mejor para practicar combos?",
+      "La Mansión del Escondite tiene más objetos interactivos; la Alcantarilla es la más equilibrada para practicar lecturas de Cazador."
+     ]
+    ]
+   }
+  ]
+ }
 },
 }

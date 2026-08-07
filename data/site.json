@@ -2666,6 +2666,44 @@
       "Tag easy targets first to grow your team quickly",
       "Once you have numbers, spread out to cover the whole map"
      ]
+    },
+    {
+     "type": "list",
+     "heading": "Advanced Combos & Mind Games",
+     "body": "Once the basics are second nature, these combos decide close rounds.",
+     "items": [
+      "Use clones as decoys: paint a clone into a convincing prop, then slip to a second spot — hunters often tag the clone first",
+      "Pair poses with props: crouch inside furniture geometry instead of painting yourself flat against a wall",
+      "Stack both clones to cover a doorway or hallway sightline (max 2 active clones since 2.0.0)",
+      "For hunters, read light first: a player shadow that does not match the map's lighting is the biggest tell in the game",
+      "Move between two hiding spots mid-round on big maps like Hide-and-Seek Mansion — hunters commit to areas"
+     ]
+    },
+    {
+     "type": "faq",
+     "heading": "Quick Answers",
+     "items": [
+      [
+       "How many clones can I make?",
+       "Up to 2 active at once (added in 2.0.0). Remember: if a clone is destroyed, your main body is exposed too."
+      ],
+      [
+       "What do metallic and roughness do?",
+       "They control how light reflects off your paint. Match them to the surface, or your disguise will shine and give you away."
+      ],
+      [
+       "How do I know my color matches?",
+       "Use the 'answer check' right after painting — it tells you how close your color is to the target."
+      ],
+      [
+       "What is the best hiding strategy?",
+       "Match color AND shape. Use pose commands for odd shapes, and stay perfectly still after painting — movement leaves a trail."
+      ],
+      [
+       "Which map is best for learning combos?",
+       "Hide-and-Seek Mansion has the most interactive props; the Sewer is the most balanced for practicing hunter reads."
+      ]
+     ]
     }
    ],
    "i18n": {
@@ -2718,6 +2756,44 @@
         "マップの照明と合わないプレイヤーの影を確認",
         "先に簡単な目標を捕まえて数を増やす",
         "人数が増えたら散開してマップ全体をカバー"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "上級コンボと心理戦",
+       "body": "基本が身についたら、これらのコンボが拮抗したラウンドを決めます。",
+       "items": [
+        "分身をデコイに：分身を本物らしい小道具に塗り、自分は別の場所へ——ハンターは先に分身をタグることが多い",
+        "ポーズと小道具を組み合わせる：壁に平らに塗るより、家具の形に合わせてしゃがみ込む",
+        "分身を2つ重ねて扉や通路の視線を封じる（2.0.0以降、同時2体まで）",
+        "ハンターはまず光を読む：マップの照明と合わないプレイヤーの影が最大の手掛かり",
+        "かくれんぼ屋敷のような大型マップでは、ラウンド中に隠れ場所を変える——ハンターは場所に固執する"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "よくある質問",
+       "items": [
+        [
+         "分身はいくつ作れる？",
+         "同時2体まで（2.0.0で追加）。分身が破壊されると本体も露呈します。"
+        ],
+        [
+         "メタリックとラフネスは何に使う？",
+         "塗装での光の反射を制御します。表面に合わせないと偽装が光ってバレます。"
+        ],
+        [
+         "色が合っているかどうかは？",
+         "塗った直後に「正解チェック」——目標との色の近さを教えてくれます。"
+        ],
+        [
+         "最強の隠れ方は？",
+         "色と形の両方を合わせる。変な形はポーズ命令を、塗った後は完全に静止——動くと残像でバレます。"
+        ],
+        [
+         "コンボ練習に最適なマップは？",
+         "かくれんぼ屋敷は小道具が最多。下水道はハンターの読み練習に最適。"
+        ]
        ]
       }
      ]
@@ -2772,6 +2848,44 @@
         "先抓容易的目标，快速壮大队伍",
         "人数占优后散开，覆盖整张地图"
        ]
+      },
+      {
+       "type": "list",
+       "heading": "进阶连招与心理战",
+       "body": "当基础成为本能，这些连招决定势均力敌的回合。",
+       "items": [
+        "用分身当诱饵：把一个分身涂成逼真的道具，自己溜到第二个位置——猎人往往会先标记分身",
+        "姿势搭配道具：钻进家具几何体里蹲下，而不是把自己平贴在墙上",
+        "把两个分身叠起来封住门口或走廊视野（2.0.0 起最多同时 2 个分身）",
+        "猎人先读光：与地图光照不符的玩家影子，是全游戏最大的破绽",
+        "在捉迷藏宅邸这类大地图上，局中在两个藏身点之间转移——猎人会押注区域"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "常见问题速答",
+       "items": [
+        [
+         "能造多少个分身？",
+         "最多同时 2 个（2.0.0 加入）。记住：分身被毁，本体也会暴露。"
+        ],
+        [
+         "金属度和粗糙度有什么用？",
+         "控制光线在涂色上的反射。匹配表面，否则你的伪装会反光露馅。"
+        ],
+        [
+         "怎么知道颜色对不对？",
+         "涂完后立刻用「判定检查」——它会告诉你颜色与目标的接近程度。"
+        ],
+        [
+         "最好的躲藏策略是什么？",
+         "颜色和形状都要匹配。奇怪形状用姿势指令，涂完后保持绝对静止——移动会留下残影。"
+        ],
+        [
+         "哪张图适合练连招？",
+         "捉迷藏宅邸交互道具最多；下水道最适合练猎人读图。"
+        ]
+       ]
       }
      ]
     },
@@ -2824,6 +2938,44 @@
         "檢查與地圖光照不一致的玩家影子",
         "先抓容易的目標，快速壯大隊伍",
         "人數佔優後散開，覆蓋整張地圖"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "進階連招與心理戰",
+       "body": "當基礎成為本能，這些連招決定勢均力敵的回合。",
+       "items": [
+        "用分身當誘餌：把一個分身塗成逼真的道具，自己溜到第二個位置——獵人往往會先標記分身",
+        "姿勢搭配道具：鑽進家具幾何體裡蹲下，而不是把自己平貼在牆上",
+        "把兩個分身疊起來封住門口或走廊視野（2.0.0 起最多同時 2 個分身）",
+        "獵人先讀光：與地圖光照不符的玩家影子，是全遊戲最大的破綻",
+        "在捉迷藏宅邸這類大地圖上，局中在兩個藏身點之間轉移——獵人會押注區域"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "常見問題速答",
+       "items": [
+        [
+         "能造多少個分身？",
+         "最多同時 2 個（2.0.0 加入）。記住：分身被毀，本體也會暴露。"
+        ],
+        [
+         "金屬度和粗糙度有什麼用？",
+         "控制光線在塗色上的反射。匹配表面，否則你的偽裝會反光露餡。"
+        ],
+        [
+         "怎麼知道顏色對不對？",
+         "塗完後立刻用「判定檢查」——它會告訴你顏色與目標的接近程度。"
+        ],
+        [
+         "最好的躲藏策略是什麼？",
+         "顏色和形狀都要匹配。奇怪形狀用姿勢指令，塗完後保持絕對靜止——移動會留下殘影。"
+        ],
+        [
+         "哪張圖適合練連招？",
+         "捉迷藏宅邸互動道具最多；下水道最適合練獵人讀圖。"
+        ]
        ]
       }
      ]
@@ -2878,6 +3030,44 @@
         "쉬운 목표부터 태그해 팀을 빠르게 키운다",
         "숫자가 모이면 흩어져 맵 전체를 커버한다"
        ]
+      },
+      {
+       "type": "list",
+       "heading": "고급 콤보와 심리전",
+       "body": "기본이 몸에 배면, 이 콤보들이 박빙 라운드를 가릅니다.",
+       "items": [
+        "클론을 미끼로: 클론을 그럴듯한 소품으로 칠하고 자신은 다른 곳으로 — 사냥꾼은 보통 클론부터 태그합니다",
+        "포즈와 소품 결합: 벽에 평평하게 칠하는 대신 가구 형태에 맞춰 쪼그려 숨기",
+        "클론 2개를 겹쳐 문이나 복도 시야를 막기 (2.0.0부터 동시 2개까지)",
+        "사냥꾼은 먼저 빛을 읽기: 맵 조명과 안 맞는 플레이어 그림자가 가장 큰 실마리",
+        "숨바꼭질 저택 같은 대형 맵에선 라운드 중 은신처를 옮기기 — 사냥꾼은 구역에 집중합니다"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "빠른 답변",
+       "items": [
+        [
+         "클론은 몇 개까지?",
+         "동시 2개까지 (2.0.0에서 추가). 클론이 파괴되면 본체도 노출됩니다."
+        ],
+        [
+         "메탈릭과 러프니스는 뭐에 쓰나요?",
+         "칠한 표면의 빛 반사를 조절합니다. 표면과 맞추지 않으면 변장이 빛나서 들킵니다."
+        ],
+        [
+         "색이 맞는지 어떻게 알죠?",
+         "칠한 직후 '정답 체크'를 쓰세요 — 목표와 색이 얼마나 가까운지 알려줍니다."
+        ],
+        [
+         "최고의 숨는 전략은?",
+         "색과 모양을 모두 맞추세요. 이상한 모양은 포즈 명령을, 칠한 뒤에는 완전히 가만히 — 움직이면 잔상이 남습니다."
+        ],
+        [
+         "콤보 연습에 좋은 맵은?",
+         "숨바꼭질 저택이 소품이 가장 많고, 하수구가 사냥꾼 읽기 연습에 최적입니다."
+        ]
+       ]
       }
      ]
     },
@@ -2930,6 +3120,44 @@
         "Revisa las sombras físicas de los jugadores que no coinciden con la iluminación del mapa",
         "Marca primero a los objetivos fáciles para hacer crecer tu equipo rápido",
         "Una vez con ventaja numérica, sepárate para cubrir todo el mapa"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Combos avanzados y juegos mentales",
+       "body": "Cuando lo básico es instintivo, estos combos deciden las rondas reñidas.",
+       "items": [
+        "Usa los clones como señuelo: pinta un clon como un objeto convincente y deslízate a un segundo sitio — los Cazadores suelen marcar primero al clon",
+        "Combina poses con objetos: agáchate dentro de la geometría del mobiliario en vez de pintarte plano contra la pared",
+        "Apila los dos clones para cubrir una puerta o pasillo (máximo 2 clones activos desde la 2.0.0)",
+        "Para Cazadores, lee primero la luz: una sombra de jugador que no coincide con la iluminación del mapa es la mayor pista",
+        "Muévete entre dos escondites a mitad de ronda en mapas grandes como la Mansión del Escondite: los Cazadores se comprometen con zonas"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "Respuestas rápidas",
+       "items": [
+        [
+         "¿Cuántos clones puedo crear?",
+         "Hasta 2 activos a la vez (añadido en la 2.0.0). Recuerda: si destruyen un clon, tu cuerpo principal queda expuesto."
+        ],
+        [
+         "¿Qué hacen metalizado y rugosidad?",
+         "Controlan cómo refleja la luz tu pintura. Ajústalos a la superficie o tu disfraz brillará y te delatará."
+        ],
+        [
+         "¿Cómo sé si mi color coincide?",
+         "Usa la 'comprobación de respuesta' justo después de pintar: te dice qué tan cerca está tu color del objetivo."
+        ],
+        [
+         "¿Cuál es la mejor estrategia para esconderse?",
+         "Iguala color Y forma. Usa órdenes de pose para formas raras y quédate perfectamente quieto tras pintar: el movimiento deja un rastro."
+        ],
+        [
+         "¿Qué mapa es mejor para practicar combos?",
+         "La Mansión del Escondite tiene más objetos interactivos; la Alcantarilla es la más equilibrada para practicar lecturas de Cazador."
+        ]
        ]
       }
      ]
