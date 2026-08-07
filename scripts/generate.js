@@ -365,7 +365,7 @@ function renderHome(lang){
     });
   });
   </script>`;
-  return head(`${esc(gname)} ${lang.startsWith("zh")?"攻略站":lang==="ja"?"攻略ガイド":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
+  return head(`${esc(gname)} ${lang.startsWith("zh")?"攻略站":lang==="ja"?"攻略ガイド":lang==="ko"?"공략 가이드":lang==="es"?"Guías y Wiki":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
 }
 /* ---------- page ---------- */
 function renderPage(p, lang){
