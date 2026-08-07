@@ -1,116 +1,458 @@
 {
-  "https://mecchachameleonguides.com/": {},
-  "https://mecchachameleonguides.com/about": {},
-  "https://mecchachameleonguides.com/achievements": {},
-  "https://mecchachameleonguides.com/codes": {},
-  "https://mecchachameleonguides.com/contact": {},
-  "https://mecchachameleonguides.com/controls": {},
-  "https://mecchachameleonguides.com/crossplay": {},
-  "https://mecchachameleonguides.com/es/": {},
-  "https://mecchachameleonguides.com/es/about": {},
-  "https://mecchachameleonguides.com/es/achievements": {},
-  "https://mecchachameleonguides.com/es/codes": {},
-  "https://mecchachameleonguides.com/es/contact": {},
-  "https://mecchachameleonguides.com/es/controls": {},
-  "https://mecchachameleonguides.com/es/crossplay": {},
-  "https://mecchachameleonguides.com/es/faq": {},
-  "https://mecchachameleonguides.com/es/how-long-to-beat": {},
-  "https://mecchachameleonguides.com/es/how-to-play": {},
-  "https://mecchachameleonguides.com/es/maps": {},
-  "https://mecchachameleonguides.com/es/modes": {},
-  "https://mecchachameleonguides.com/es/multiplayer": {},
-  "https://mecchachameleonguides.com/es/privacy": {},
-  "https://mecchachameleonguides.com/es/steam-deck": {},
-  "https://mecchachameleonguides.com/es/system-requirements": {},
-  "https://mecchachameleonguides.com/es/tips-and-tricks": {},
-  "https://mecchachameleonguides.com/es/update-log": {},
-  "https://mecchachameleonguides.com/es/where-to-buy": {},
-  "https://mecchachameleonguides.com/faq": {},
-  "https://mecchachameleonguides.com/how-long-to-beat": {},
-  "https://mecchachameleonguides.com/how-to-play": {},
-  "https://mecchachameleonguides.com/ja/": {},
-  "https://mecchachameleonguides.com/ja/about": {},
-  "https://mecchachameleonguides.com/ja/achievements": {},
-  "https://mecchachameleonguides.com/ja/codes": {},
-  "https://mecchachameleonguides.com/ja/contact": {},
-  "https://mecchachameleonguides.com/ja/controls": {},
-  "https://mecchachameleonguides.com/ja/crossplay": {},
-  "https://mecchachameleonguides.com/ja/faq": {},
-  "https://mecchachameleonguides.com/ja/how-long-to-beat": {},
-  "https://mecchachameleonguides.com/ja/how-to-play": {},
-  "https://mecchachameleonguides.com/ja/maps": {},
-  "https://mecchachameleonguides.com/ja/modes": {},
-  "https://mecchachameleonguides.com/ja/multiplayer": {},
-  "https://mecchachameleonguides.com/ja/privacy": {},
-  "https://mecchachameleonguides.com/ja/steam-deck": {},
-  "https://mecchachameleonguides.com/ja/system-requirements": {},
-  "https://mecchachameleonguides.com/ja/tips-and-tricks": {},
-  "https://mecchachameleonguides.com/ja/update-log": {},
-  "https://mecchachameleonguides.com/ja/where-to-buy": {},
-  "https://mecchachameleonguides.com/ko/": {},
-  "https://mecchachameleonguides.com/ko/about": {},
-  "https://mecchachameleonguides.com/ko/achievements": {},
-  "https://mecchachameleonguides.com/ko/codes": {},
-  "https://mecchachameleonguides.com/ko/contact": {},
-  "https://mecchachameleonguides.com/ko/controls": {},
-  "https://mecchachameleonguides.com/ko/crossplay": {},
-  "https://mecchachameleonguides.com/ko/faq": {},
-  "https://mecchachameleonguides.com/ko/how-long-to-beat": {},
-  "https://mecchachameleonguides.com/ko/how-to-play": {},
-  "https://mecchachameleonguides.com/ko/maps": {},
-  "https://mecchachameleonguides.com/ko/modes": {},
-  "https://mecchachameleonguides.com/ko/multiplayer": {},
-  "https://mecchachameleonguides.com/ko/privacy": {},
-  "https://mecchachameleonguides.com/ko/steam-deck": {},
-  "https://mecchachameleonguides.com/ko/system-requirements": {},
-  "https://mecchachameleonguides.com/ko/tips-and-tricks": {},
-  "https://mecchachameleonguides.com/ko/update-log": {},
-  "https://mecchachameleonguides.com/ko/where-to-buy": {},
-  "https://mecchachameleonguides.com/maps": {},
-  "https://mecchachameleonguides.com/modes": {},
-  "https://mecchachameleonguides.com/multiplayer": {},
-  "https://mecchachameleonguides.com/privacy": {},
-  "https://mecchachameleonguides.com/steam-deck": {},
-  "https://mecchachameleonguides.com/system-requirements": {},
-  "https://mecchachameleonguides.com/tips-and-tricks": {},
-  "https://mecchachameleonguides.com/update-log": {},
-  "https://mecchachameleonguides.com/where-to-buy": {},
-  "https://mecchachameleonguides.com/zh-CN/": {},
-  "https://mecchachameleonguides.com/zh-CN/about": {},
-  "https://mecchachameleonguides.com/zh-CN/achievements": {},
-  "https://mecchachameleonguides.com/zh-CN/codes": {},
-  "https://mecchachameleonguides.com/zh-CN/contact": {},
-  "https://mecchachameleonguides.com/zh-CN/controls": {},
-  "https://mecchachameleonguides.com/zh-CN/crossplay": {},
-  "https://mecchachameleonguides.com/zh-CN/faq": {},
-  "https://mecchachameleonguides.com/zh-CN/how-long-to-beat": {},
-  "https://mecchachameleonguides.com/zh-CN/how-to-play": {},
-  "https://mecchachameleonguides.com/zh-CN/maps": {},
-  "https://mecchachameleonguides.com/zh-CN/modes": {},
-  "https://mecchachameleonguides.com/zh-CN/multiplayer": {},
-  "https://mecchachameleonguides.com/zh-CN/privacy": {},
-  "https://mecchachameleonguides.com/zh-CN/steam-deck": {},
-  "https://mecchachameleonguides.com/zh-CN/system-requirements": {},
-  "https://mecchachameleonguides.com/zh-CN/tips-and-tricks": {},
-  "https://mecchachameleonguides.com/zh-CN/update-log": {},
-  "https://mecchachameleonguides.com/zh-CN/where-to-buy": {},
-  "https://mecchachameleonguides.com/zh-TW/": {},
-  "https://mecchachameleonguides.com/zh-TW/about": {},
-  "https://mecchachameleonguides.com/zh-TW/achievements": {},
-  "https://mecchachameleonguides.com/zh-TW/codes": {},
-  "https://mecchachameleonguides.com/zh-TW/contact": {},
-  "https://mecchachameleonguides.com/zh-TW/controls": {},
-  "https://mecchachameleonguides.com/zh-TW/crossplay": {},
-  "https://mecchachameleonguides.com/zh-TW/faq": {},
-  "https://mecchachameleonguides.com/zh-TW/how-long-to-beat": {},
-  "https://mecchachameleonguides.com/zh-TW/how-to-play": {},
-  "https://mecchachameleonguides.com/zh-TW/maps": {},
-  "https://mecchachameleonguides.com/zh-TW/modes": {},
-  "https://mecchachameleonguides.com/zh-TW/multiplayer": {},
-  "https://mecchachameleonguides.com/zh-TW/privacy": {},
-  "https://mecchachameleonguides.com/zh-TW/steam-deck": {},
-  "https://mecchachameleonguides.com/zh-TW/system-requirements": {},
-  "https://mecchachameleonguides.com/zh-TW/tips-and-tricks": {},
-  "https://mecchachameleonguides.com/zh-TW/update-log": {},
-  "https://mecchachameleonguides.com/zh-TW/where-to-buy": {}
+  "https://mecchachameleonguides.com/": {
+    "hash": "991b568cf8276c3039e3e2a4385b9bf9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/about": {
+    "hash": "36be6633bb04dd53fa0c39fbfa583dbb",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/achievements": {
+    "hash": "2270f46afdd9093232cc9c9ab8d07f9f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/codes": {
+    "hash": "d2e8e3f71da27abf5e78b8fcc8c06946",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/contact": {
+    "hash": "ebf5d94d927e263fdafeb71812399005",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/controls": {
+    "hash": "c74f9d30d761d4ccb7af899afbf8bacc",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/crossplay": {
+    "hash": "ee4e6bb2a1a06174df48202182ed5f19",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/": {
+    "hash": "4722a198d59a42b0b98279f566b6ace2",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/about": {
+    "hash": "1571203cf7f1c78a6aa997aa9856514e",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/achievements": {
+    "hash": "9bbcb1e86b272d0f931d37ebcfeb84c8",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/codes": {
+    "hash": "585a4c7045d8f7f829e54dfc752ba3b7",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/contact": {
+    "hash": "c27476b92ad857fe075bb3e080358007",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/controls": {
+    "hash": "f504791d9c4e0910c50d348ded6d160d",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/crossplay": {
+    "hash": "0a134ddb832701372962dadda3dcdede",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/faq": {
+    "hash": "b385dba81d5a334b600d014a3db0e117",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/how-long-to-beat": {
+    "hash": "7cd3c8fe987d862a5c8005fb820302ce",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/how-to-play": {
+    "hash": "a7bd50f99531741002bbcb391bba10ab",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/maps": {
+    "hash": "7247003a1795d6ea09dd9d3888a9aad6",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/modes": {
+    "hash": "645dfd362525d183e30273624df53024",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/multiplayer": {
+    "hash": "8ffbd643b97c307f93fba230db768e58",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/privacy": {
+    "hash": "e6861ffc5243ddde39877b42a01b3d56",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/steam-deck": {
+    "hash": "980f8f736abdd1bd8201fead0c5501c9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/system-requirements": {
+    "hash": "de7c66be4f0b46c46518fde0887d4ca6",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/tips-and-tricks": {
+    "hash": "67febb475bb2140d9b55f24388177dc1",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/update-log": {
+    "hash": "0b0764ddf00067eca72f979c7bf61428",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/es/where-to-buy": {
+    "hash": "3f131aef65b6f2c7ae8f8489a268e66c",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/faq": {
+    "hash": "184fa36a6cb332ac8f2c91a753c1c521",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/how-long-to-beat": {
+    "hash": "4e8d44f301c61c3e1b523966cdbf4976",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/how-to-play": {
+    "hash": "acd3144d5080a14ec05566889299afac",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/": {
+    "hash": "4039ada9c04abe9f3f043449fd4cf922",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/about": {
+    "hash": "dc1db15164aa440cad0222c3761c14ca",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/achievements": {
+    "hash": "79468edcc99c52c8d0ec95618438e816",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/codes": {
+    "hash": "8d0e7fa7470897a92b05549d4a773cf4",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/contact": {
+    "hash": "38bb1b680a5d92de803c162ec638cc78",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/controls": {
+    "hash": "4f73a4cd9e42a6fe61c413e58da8bb7d",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/crossplay": {
+    "hash": "1306b551209a0af85fdf52d9d11da9c0",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/faq": {
+    "hash": "f831121f40031688fc6d7f638d37c062",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/how-long-to-beat": {
+    "hash": "537da650a470ec5da94d2433fe11d15f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/how-to-play": {
+    "hash": "5ac5db8c17b46f97f06f318bcb215648",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/maps": {
+    "hash": "85ec639bc9240f88385e2cfe49931b15",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/modes": {
+    "hash": "1a2c38d14e5d43872ab2beb568323e83",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/multiplayer": {
+    "hash": "0cbf3444cb28356adea4fe05018a225c",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/privacy": {
+    "hash": "f95dcbb2798f2c75e6812fa901ba3f83",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/steam-deck": {
+    "hash": "f580ecb37d05f7558d1120695d0e2692",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/system-requirements": {
+    "hash": "1873270f9018c1ce4029a4d344874b9a",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/tips-and-tricks": {
+    "hash": "cf9d455b36a1c15388f2c3f887687b3d",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/update-log": {
+    "hash": "c124bab293f8322d185e75bab79bb471",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ja/where-to-buy": {
+    "hash": "220200fd7e03b238f6dd1f0ea2e346f2",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/": {
+    "hash": "d19ff3ab8ab6bce059a3812915bf0eed",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/about": {
+    "hash": "0a7737c0e7ee22e29ba46927e1df6780",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/achievements": {
+    "hash": "67a3f9c06bcd189cfa60b92777382163",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/codes": {
+    "hash": "522ec1c42bc6b6cfb7459c16ae0da7ec",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/contact": {
+    "hash": "2a982c6dd37e4c8f69ea51ff8809e278",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/controls": {
+    "hash": "620c3967c8536f5e2ee001e7be9586a1",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/crossplay": {
+    "hash": "0a3e9caf523bfae4635006445076f98b",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/faq": {
+    "hash": "139eeaaa3296e6507ea47f63ddd6dd86",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/how-long-to-beat": {
+    "hash": "df6b61a51494ba77b569d8aa8ebf152f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/how-to-play": {
+    "hash": "bc268cb80f695f2bfbd8641816e72bd2",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/maps": {
+    "hash": "0f453593338ab934ac19709bf689288f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/modes": {
+    "hash": "e892892f12d180dbf03de9429e48d38e",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/multiplayer": {
+    "hash": "23f503cef9027fae0d711176dc809995",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/privacy": {
+    "hash": "0e5b3d1ca9b1b6b1061e7c5b9bda1590",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/steam-deck": {
+    "hash": "5ed8b0f1ee4eb6518982b18b018b8a45",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/system-requirements": {
+    "hash": "865d79e92d7cd41c5cf8b697aa7486c9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/tips-and-tricks": {
+    "hash": "187b92c411badae1edec5db554667ee6",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/update-log": {
+    "hash": "098f0c04a433f47070cbf93090942736",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/ko/where-to-buy": {
+    "hash": "1e95d39b595a7332846d6b6129e68da6",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/maps": {
+    "hash": "b4a89db9c83c7fff7d67683b80de28a6",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/modes": {
+    "hash": "6825790f6b4f7621169f4af6d8ea52a9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/multiplayer": {
+    "hash": "cad61ffeeb386c43d88953dd2bdb0826",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/privacy": {
+    "hash": "fa93ab03250668331b449a01ba0e3cf4",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/steam-deck": {
+    "hash": "9ccd380e5b7bb5d90568e719dc06fbd4",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/system-requirements": {
+    "hash": "2c37f0a469ee103a747eb32b9297516f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/tips-and-tricks": {
+    "hash": "b05879093ac37dcc58984832d59021f7",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/update-log": {
+    "hash": "927044b1eb7f37ef6732533c6510f7de",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/where-to-buy": {
+    "hash": "1827aba0bb222abbc4cdbf7c34feb1d0",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/": {
+    "hash": "ccc2cb6603677193744094ecf3530905",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/about": {
+    "hash": "93f92a070898fc88254e9fdd964caea9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/achievements": {
+    "hash": "35755489ede70f492910c4da32155c25",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/codes": {
+    "hash": "3cbb6b93402177b5f16425cb49381299",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/contact": {
+    "hash": "eea4837a3475c6465cb71045bd6de0aa",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/controls": {
+    "hash": "932144d4780b9a791902e766314d1ffd",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/crossplay": {
+    "hash": "c48405fe8b217f383c11fe9107bf83e0",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/faq": {
+    "hash": "b53ca9cddd2c1a8c029293469add4fe9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/how-long-to-beat": {
+    "hash": "51314915487d6b4657bbe3f36b29063b",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/how-to-play": {
+    "hash": "c0e16beeca411724255544bd277cb3d6",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/maps": {
+    "hash": "b1b637e5b6262695a4f73b9eb0892c6f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/modes": {
+    "hash": "b4844b837897bcc2eb85594f3277c583",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/multiplayer": {
+    "hash": "70ba2166d296487fb86bb860aa29ab91",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/privacy": {
+    "hash": "37e2a878c71764041a6f181f717e67c4",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/steam-deck": {
+    "hash": "20808eab7cc22be3daa08df0d18c3ae9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/system-requirements": {
+    "hash": "21d4f26226d9805c099d08bd38598aae",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/tips-and-tricks": {
+    "hash": "6c5ce7949500949ae7060bca73a4b901",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/update-log": {
+    "hash": "26dc9be6213ef179f15cac3c55c01e84",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-CN/where-to-buy": {
+    "hash": "814a461e6ce20bc45bbd8242452ad9fc",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/": {
+    "hash": "24f9e335c69ae975a97fe6a278641505",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/about": {
+    "hash": "affde6dcf697e9a091b45513207c29e7",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/achievements": {
+    "hash": "ad44c4f7afbc0c0d09dc18baf85bdc0b",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/codes": {
+    "hash": "785ba7f3beb84d90ec7e2ef6f15d3362",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/contact": {
+    "hash": "8a8a934ffa9a5bf639dd68ce18059294",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/controls": {
+    "hash": "a1e25dd0cc7f21aef7afd2b9004307ed",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/crossplay": {
+    "hash": "53d3c430c049e1133963542b6a12f781",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/faq": {
+    "hash": "7920d760f6ae37526a4ce82106baf7b9",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/how-long-to-beat": {
+    "hash": "091efe6716914813b68709f7a9d1d074",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/how-to-play": {
+    "hash": "fc4d562084e6c18e2d12c9922d1af1e7",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/maps": {
+    "hash": "b16850cb2c71716aaaf8d7a978ffed3f",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/modes": {
+    "hash": "0d7e3d4a7f1457a98873024f933b56bc",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/multiplayer": {
+    "hash": "93690b936baef90c81d549db8a7fc4b5",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/privacy": {
+    "hash": "48d90571050e2311d4f0a0a63747c106",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/steam-deck": {
+    "hash": "3caf26fcc0699402c6a84d3404a5bda5",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/system-requirements": {
+    "hash": "eb71e802d61e48db971363fd7349cc82",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/tips-and-tricks": {
+    "hash": "4810122be4f1588459adda0d4fdf8a40",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/update-log": {
+    "hash": "ec524dd8d748f8281ec18eb7a027dcdf",
+    "date": "2026-08-07"
+  },
+  "https://mecchachameleonguides.com/zh-TW/where-to-buy": {
+    "hash": "7a874b5c976603f816babfcf9d6a2b68",
+    "date": "2026-08-07"
+  }
 }
