@@ -344,7 +344,7 @@ PAGES = {
  "es": {
   "title": "Consejos y trucos de Meccha Chameleon: cómo ganar más",
   "metaTitle": "Consejos y trucos de Meccha Chameleon (2026)",
-  "metaDescription": "Consejos profesionales para ganar más rondas de Meccha Chameleon: muestreo de color, dirección de la luz, clones, poses y estrategias de Cazador que funcionan.",
+  "metaDescription": "Consejos para ganar más rondas en Meccha Chameleon: muestreo de color, dirección de la luz, clones, poses y estrategias de Cazador que funcionan.",
   "intro": "Estas son las técnicas concretas que separan a los buenos jugadores de los grandes en Meccha Chameleon.",
   "sections": [
    {

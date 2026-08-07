@@ -27,7 +27,7 @@ PAGES = {
  },
  "es": {
   "title": "Requisitos del sistema de Meccha Chameleon y Steam Deck",
-  "metaTitle": "Requisitos del sistema de Meccha Chameleon y Steam Deck (2026)",
+  "metaTitle": "Requisitos de Meccha Chameleon y Steam Deck (2026)",
   "metaDescription": "¿Puedes ejecutar Meccha Chameleon? Requisitos mínimos del sistema, compatibilidad con Steam Deck y cómo jugar en Mac vía GeForce NOW.",
   "intro": "Meccha Chameleon es un juego ligero de ejecutar. Estos son los requisitos mínimos oficiales y cómo corre en otros equipos.",
   "sections": [
@@ -97,7 +97,7 @@ PAGES = {
  "ko": {
   "title": "메카 카멜레온 크로스플레이 & 플랫폼 (PC, Mac, 콘솔)",
   "metaTitle": "메카 카멜레온 크로스플레이인가요? 플랫폼 설명 (2026)",
-  "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? Steam에서 PC 전용입니다. GeForce NOW로 Mac에서 플레이. PS5/Xbox/Switch 버전 없음 — 설명.",
+  "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? Steam PC 전용이며 GeForce NOW로 Mac 플레이 가능. 콘솔 버전은 없습니다.",
   "intro": "게임 공식 페이지와 Wikipedia를 바탕으로 한 메카 카멜레온 플랫폼과 크로스플레이에 대한 정확한 답변입니다.",
   "sections": [
    {"type":"faq","heading":"플랫폼 FAQ","body":"","items":[
@@ -115,7 +115,7 @@ PAGES = {
  },
  "es": {
   "title": "Crossplay y plataformas de Meccha Chameleon (PC, Mac, consolas)",
-  "metaTitle": "¿Meccha Chameleon tiene crossplay? Plataformas explicadas (2026)",
+  "metaTitle": "¿Meccha Chameleon tiene crossplay? Plataformas (2026)",
   "metaDescription": "¿Es Meccha Chameleon multiplataforma? Es solo para PC en Steam. Juega en Mac vía GeForce NOW. No hay versión de PS5, Xbox ni Switch: explicado.",
   "intro": "La respuesta directa sobre las plataformas y el crossplay de Meccha Chameleon, según la página oficial del juego y Wikipedia.",
   "sections": [

@@ -7,7 +7,7 @@ PAGES = {
  "ko": {
   "title": "메카 카멜레온 게임 방법",
   "metaTitle": "메카 카멜레온 게임 방법: 초보자 완전 가이드 (2026)",
-  "metaDescription": "메카 카멜레온이 처음이신가요? 칠해서 숨기 메커니즘, 페인트 시스템, 클론과 포즈, 숨는 역할 vs 사냥꾼 역할, 라운드 진행과 초보자 퀵스타트까지 정리했습니다.",
+  "metaDescription": "메카 카멜레온 입문 가이드: 칠해서 숨기 메커니즘, 페인트 시스템, 클론과 포즈, 숨는 역할과 사냥꾼 역할, 라운드 진행.",
   "intro": "메카 카멜레온은 배우기 쉽지만 의외로 깊이가 있습니다. 첫 라운드 전에 알아두면 좋은 모든 것을 정리했습니다.",
   "sections": [
    {"type":"steps","heading":"핵심 루프: 칠해서 숨기","body":"모든 플레이어는 흰색 피규어로 시작합니다. 숨는 역할은 몸을 맵에 맞게 칠해 살아남고, 사냥꾼은 소총으로 이들을 추격합니다. 시간이 끝날 때까지 숨는 역할이 한 명이라도 남아 있으면 숨는 쪽이 승리합니다.","items":[
@@ -49,7 +49,7 @@ PAGES = {
  "es": {
   "title": "Cómo jugar a Meccha Chameleon",
   "metaTitle": "Cómo jugar a Meccha Chameleon: guía de inicio (2026)",
-  "metaDescription": "¿Nuevo en Meccha Chameleon? Domina la mecánica de pintar para esconderte, el sistema de pintura, clones y poses, los roles de Escondedor y Cazador, el flujo de la ronda y un inicio rápido.",
+  "metaDescription": "¿Nuevo en Meccha Chameleon? Domina pintar para esconderte, el sistema de pintura, clones y poses, los roles de Escondedor y Cazador y el flujo de ronda.",
   "intro": "Meccha Chameleon es fácil de aprender pero sorprendentemente profundo. Esto es todo lo que necesitas saber antes de tu primera ronda.",
   "sections": [
    {"type":"steps","heading":"El bucle principal: pintar para esconderse","body":"Todos los jugadores empiezan como una figura blanca. Los Escondedores sobreviven pintando su cuerpo para igualar el mapa, mientras los Cazadores los persiguen con un rifle. Si al terminar el tiempo queda al menos un Escondedor oculto, gana el equipo de los Escondedores.","items":[

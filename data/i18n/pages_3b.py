@@ -32,7 +32,7 @@ PAGES = {
  },
  "es": {
   "title": "Controles de Meccha Chameleon (lista completa de teclas)",
-  "metaTitle": "Controles de Meccha Chameleon: todas las teclas explicadas (2026)",
+  "metaTitle": "Controles de Meccha Chameleon: todas las teclas (2026)",
   "metaDescription": "Todos los controles de Meccha Chameleon: movimiento, sprint, salto/escalada, modo pintura, cuentagotas, clones, poses y cámara.",
   "intro": "Los controles completos de teclado de Meccha Chameleon, según la guía de controles de wikiHow y la página oficial de Steam.",
   "sections": [

@@ -58,7 +58,7 @@ PAGES = {
  "es": {
   "title": "Códigos de Meccha Chameleon (ninguno, explicado)",
   "metaTitle": "¿Hay códigos de Meccha Chameleon? (2026)",
-  "metaDescription": "¿Hay códigos o trucos de Meccha Chameleon? No existen códigos oficiales. Así puedes distinguir las afirmaciones reales de los clones de Roblox y los hacks de terceros.",
+  "metaDescription": "¿Hay códigos o trucos de Meccha Chameleon? No existen códigos oficiales. Aprende a distinguir lo real de los clones de Roblox y los hacks de terceros.",
   "intro": "Puede que veas vídeos y páginas de 'códigos de Meccha Chameleon'. Esta es la verdad sobre códigos y trucos para este juego.",
   "sections": [
    {"type":"faq","heading":"FAQ de códigos y trucos","body":"","items":[

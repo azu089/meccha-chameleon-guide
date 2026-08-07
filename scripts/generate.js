@@ -7,20 +7,20 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const KIT = require("./lib/site-kit");   // 共用基建：URL/schema/sitemap/图片/lastmod
 const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
 const OUT = path.join(ROOT, "public");
-const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-const clean = slug => String(slug).replace(/\.html$/,"");
+const esc = KIT.esc;
+const clean = KIT.clean;
 const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
-const urlOf = (slug, lang) => {
-  const base = `https://${DATA.site.domain}`;
-  const p = clean(slug);
-  const pathPart = lang === DEF ? (p === "index" ? "/" : `/${p}`) : (p === "index" ? `/${lang}/` : `/${lang}/${p}`);
-  return base + pathPart;
-};
+const urlOf = KIT.createUrl({ domain: DATA.site.domain, defaultLang: DEF });
+const TODAY = new Date().toISOString().slice(0,10);
+const LM = KIT.createLastmod({ manifestPath: path.join(ROOT,"data",".lastmod.json"), today: TODAY });
+// hero/配图 srcset：3136 原图太重（1440p 屏 100vw 会直接拉满），补 1920 档兜住主流大屏
+const HERO_SET = "/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero-1920.jpg 1920w, /images/hero.jpg 3136w";
 
 /* ---------- SVG icons ---------- */
 const SVG = {
@@ -82,10 +82,11 @@ const pageOf = (page, lang) => {
  * 注意：所有 ld 函数返回【对象】，最终由调用方包成 JSON 数组一次性 stringify。
  * 多个对象用换行拼接进同一个 <script> 是非法 JSON，会导致 Google 无法解析 schema。
  */
-const siteLd = lang => ({"@context":"https://schema.org","@type":"WebSite",name:siteI18n(lang).name,url:urlOf("index",lang),description:siteI18n(lang).description});
-const articleLd = (p, lang) => ({"@context":"https://schema.org","@type":"Article",headline:p.title,description:p.metaDescription,mainEntityOfPage:urlOf(p.slug,lang),datePublished:"2026-08-05",dateModified:new Date().toISOString().slice(0,10),inLanguage:lang,publisher:{"@type":"Organization",name:siteI18n(lang).name}});
-const faqLd = items => ({"@context":"https://schema.org","@type":"FAQPage",mainEntity:items.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}}))});
-const breadcrumbLd = (p, lang) => ({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:siteI18n(lang).navHome,item:`https://${DATA.site.domain}/${lang===DEF?"":lang+"/"}`},{"@type":"ListItem",position:2,name:p.title,item:urlOf(p.slug,lang)}]});
+const siteLd = lang => KIT.ld.website({name:siteI18n(lang).name,url:urlOf("index",lang),description:siteI18n(lang).description});
+// dateModified 用占位符，构建末尾按「内容是否真的变了」替换成真实日期（见 KIT.createLastmod）
+const articleLd = (p, lang) => KIT.ld.article({page:p,lang,urlOf,siteName:siteI18n(lang).name,datePublished:"2026-08-05",dateModified:KIT.LASTMOD_TOKEN});
+const faqLd = items => KIT.ld.faq(items);
+const breadcrumbLd = (p, lang) => KIT.ld.breadcrumb({page:p,lang,urlOf,homeName:siteI18n(lang).navHome});
 
 /* ---------- head / header / footer ---------- */
 function hreflang(slug){
@@ -124,7 +125,7 @@ ${gsc}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
-<link rel="preload" as="image" href="/images/hero.jpg" imagesrcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" imagesizes="(max-width: 900px) 92vw, 55vw" fetchpriority="high" />
+${KIT.heroPreload({ srcset: HERO_SET, sizes: "100vw" })}
 <script type="application/ld+json">${ld}</script>
 ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
@@ -325,7 +326,7 @@ function renderHome(lang){
   const body = `
   <main>
     <section class="arcade-hero">
-      <div class="arcade-bg"><img src="/images/hero.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 3136w" sizes="100vw" alt="${esc(gname)} key art" loading="eager" width="3136" height="1344" fetchpriority="high" /></div>
+      <div class="arcade-bg">${KIT.picture({ src:"/images/hero.jpg", srcset:HERO_SET, sizes:"100vw", attrs:`alt="${esc(gname)} key art" loading="eager" width="3136" height="1344" fetchpriority="high"` })}</div>
       <div class="arcade-overlay"></div>
       <div class="container arcade-copy">
         <span class="badge"><span class="dot"></span> ${esc(badgeTxt)}</span>
@@ -391,7 +392,12 @@ function renderPage(p, lang){
   <main class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="${prefix}/">${esc(s.navHome)}</a> <span>›</span> <span>${esc(t.title)}</span></nav>
     <div class="lobby-hero">
-      ${p.image ? `<img class="page-img" src="${esc(p.image)}" srcset="${esc(p.image.replace('.jpg','-640.jpg'))} 640w, ${esc(p.image.replace('.jpg','-1280.jpg'))} 1280w, ${esc(p.image)} 3136w" sizes="(max-width: 640px) 92vw, 820px" width="3136" height="1344" alt="${esc(t.title)}" loading="lazy" />` : ""}
+      ${p.image ? KIT.picture({
+        src: esc(p.image),
+        srcset: `${esc(p.image.replace('.jpg','-640.jpg'))} 640w, ${esc(p.image.replace('.jpg','-1280.jpg'))} 1280w, ${esc(p.image.replace('.jpg','-1920.jpg'))} 1920w, ${esc(p.image)} 3136w`,
+        sizes: "(max-width: 640px) 92vw, 820px",
+        attrs: `class="page-img" width="3136" height="1344" alt="${esc(t.title)}" loading="lazy"`
+      }) : ""}
       <div class="lobby-title">
         <span class="icon ${m.ic}" style="width:52px;height:52px;border-radius:14px;display:grid;place-items:center">${SVG[m.icon]}</span>
         <div>
@@ -417,10 +423,15 @@ function renderStatic(title, contentHtml, slug, lang){
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
   const body = `<main class="container"><nav class="crumbs"><a href="${prefix}/">${esc(s.navHome)}</a> <span>›</span> <span>${esc(title)}</span></nav><article style="max-width:820px"><div class="page-hero"><h1>${esc(title)}</h1></div><div class="card">${contentHtml}</div></article></main>`;
-  return head(`${title} — ${s.name}`, `${title} — ${s.name}`, [articleLd({title, metaDescription:`${title} — ${s.name}`, slug}, lang)], slug, lang) + header(lang, slug) + body + footer(lang);
+  const desc = KIT.staticDesc(slug, lang, s.name, title);
+  return head(`${title} — ${s.name}`, desc, [articleLd({title, metaDescription:desc, slug}, lang)], slug, lang) + header(lang, slug) + body + footer(lang);
 }
 
 /* ---------- build ---------- */
+// 写页面统一走这里：顺手按「内容是否真变了」打 lastmod 戳（占位符 → 真实日期）
+const writePage = (filePath, slug, lang, html) =>
+  fs.writeFileSync(filePath, LM.stamp(urlOf(slug, lang), html));
+
 fs.mkdirSync(path.join(OUT,"css"),{recursive:true});
 fs.mkdirSync(path.join(OUT,"images"),{recursive:true});
 for (const f of fs.readdirSync(OUT)) {
@@ -436,8 +447,8 @@ if (fs.existsSync(SRC_FAV)) for (const f of fs.readdirSync(SRC_FAV)) fs.copyFile
 
 for (const lang of LANGS) {
   const dir = lang === DEF ? OUT : path.join(OUT, lang);
-  fs.writeFileSync(path.join(dir,"index.html"), renderHome(lang));
-  for (const p of DATA.pages) fs.writeFileSync(path.join(dir, `${p.slug}.html`), renderPage(p, lang));
+  writePage(path.join(dir,"index.html"), "index", lang, renderHome(lang));
+  for (const p of DATA.pages) writePage(path.join(dir, `${p.slug}.html`), p.slug, lang, renderPage(p, lang));
   const aboutBody = T4(lang,
     `<p>${esc(siteI18n(lang).name)} 是一个非官方粉丝攻略站：每一页都对应一个玩家真实搜索的问题（怎么玩、全部模式、地图、成就与兑换码真相、更新日志、配置要求等），答案基于可靠来源并持续更新。</p><p style="margin-top:10px">本站不隶属于游戏开发商或发行商。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。每页底部都列出了当页使用的来源。</p>`,
     `<p>${esc(siteI18n(lang).name)} 是一個非官方粉絲攻略站：每一頁都對應一個玩家真實搜索的問題（怎麼玩、全部模式、地圖、成就與兌換碼真相、更新日誌、配置要求等），答案基於可靠來源並持續更新。</p><p style="margin-top:10px">本站不隸屬於遊戲開發商或發行商。${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}。每頁底部都列出了當頁使用的來源。</p>`,
@@ -445,7 +456,7 @@ for (const lang of LANGS) {
     `<p>${esc(siteI18n(lang).name)}은(는) 비공식 팬 공략 사이트입니다. 각 페이지는 플레이어가 실제로 검색하는 질문(게임 방법, 전체 모드, 맵, 업적·코드의 진실, 업데이트 내역, 시스템 요구 사항 등)에 답하며, 신뢰할 수 있는 출처에 기반해 정기적으로 업데이트됩니다.</p><p style="margin-top:10px">이 사이트는 게임 개발사·퍼블리셔와 무관합니다. ${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)} 각 페이지 하단에 해당 페이지가 사용한 출처를 표기합니다.</p>`,
     `<p>${esc(siteI18n(lang).name)} es un sitio de fans no oficial. Cada página responde a una pregunta real que los jugadores buscan (cómo jugar, todos los modos, mapas, la verdad sobre logros y códigos, historial de actualizaciones, requisitos del sistema y más), basada en fuentes fiables y actualizada con regularidad.</p><p style="margin-top:10px">Este sitio no está afiliado al desarrollador ni al editor del juego. ${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}. Cada página lista las fuentes que usó al final.</p>`,
         `<p>${esc(siteI18n(lang).name)} is an unofficial fan guide site. Every page answers a real question players search for (how to play, all modes, maps, the truth about achievements and codes, update history, system requirements and more), based on reliable sources and updated regularly.</p><p style="margin-top:10px">This site is not affiliated with the game's developer or publisher. ${esc(siteI18n(lang).footerNote)}</p><p style="margin-top:10px">${esc(siteI18n(lang).footerSource)}. Each page lists the sources it used at the bottom.</p>`);
-fs.writeFileSync(path.join(dir,"about.html"), renderStatic(siteI18n(lang).aboutTitle, aboutBody, "about", lang));
+writePage(path.join(dir,"about.html"), "about", lang, renderStatic(siteI18n(lang).aboutTitle, aboutBody, "about", lang));
   const privacyBody = T4(lang,
     `<p>本网站是游戏攻略站，我们重视访问者隐私。本政策说明我们收集什么、如何使用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">我们收集什么</h2><p>我们使用 Google Analytics（GA4）统计匿名流量：页面浏览量、来源渠道、设备类型与大致地区。我们不收集姓名、邮箱或任何个人身份信息，也不出售数据。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 会设置 Cookie 用于会话统计。你可以在浏览器中禁用 Cookie，或安装 Google Analytics 退出插件。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三方服务</h2><p>本页面从 Google Fonts 加载字体，页面由 Cloudflare 提供 CDN 加速，两者可能记录标准访问日志（IP、UA、时间）。这些服务受其各自的隐私政策约束。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">联系我们</h2><p>如有隐私问题，请发邮件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${new Date().toISOString().slice(0,10)}</p>`,
     `<p>本網站是遊戲攻略站，我們重視訪問者隱私。本政策說明我們收集什麼、如何使用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">我們收集什麼</h2><p>我們使用 Google Analytics（GA4）統計匿名流量：頁面瀏覽量、來源渠道、設備類型與大致地區。我們不收集姓名、郵箱或任何個人身份信息，也不出售數據。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 會設置 Cookie 用於會話統計。你可以在瀏覽器中禁用 Cookie，或安裝 Google Analytics 退出插件。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">第三方服務</h2><p>本頁面從 Google Fonts 加載字體，頁面由 Cloudflare 提供 CDN 加速，兩者可能記錄標準訪問日誌（IP、UA、時間）。這些服務受其各自的隱私政策約束。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">聯繫我們</h2><p>如有隱私問題，請發郵件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${new Date().toISOString().slice(0,10)}</p>`,
@@ -453,23 +464,38 @@ fs.writeFileSync(path.join(dir,"about.html"), renderStatic(siteI18n(lang).aboutT
     `<p>이 사이트는 게임 공략 사이트이며 방문자의 개인정보를 소중히 여깁니다. 본 방침은 무엇을 수집하고 어떻게 사용하는지 설명합니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">수집하는 정보</h2><p>Google Analytics(GA4)로 익명 트래픽 통계(페이지뷰, 유입 경로, 기기 유형, 대략적인 지역)를 수집합니다. 이름·이메일 등 개인 식별 정보는 수집하지 않으며 데이터를 판매하지 않습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">쿠키</h2><p>Google Analytics는 세션 통계를 위해 쿠키를 사용합니다. 브라우저에서 쿠키를 비활성화하거나 Google Analytics 옵트아웃 애드온을 설치할 수 있습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">제3자 서비스</h2><p>Google Fonts에서 폰트를, Cloudflare CDN으로 페이지를 제공하며, 둘 다 표준 접근 로그(IP, UA, 시간)를 기록할 수 있습니다. 해당 서비스는 각자의 개인정보 처리방침을 따릅니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">문의</h2><p>개인정보 관련 문의는 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>로 보내주세요.</p><p style="margin-top:14px;opacity:.75">시행일: ${new Date().toISOString().slice(0,10)}</p>`,
     `<p>Este sitio es una web de guías de juegos y respetamos la privacidad de los visitantes. Esta política explica qué recopilamos y cómo se usa.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Qué recopilamos</h2><p>Usamos Google Analytics (GA4) para estadísticas anónimas de tráfico: visitas, referencias, tipos de dispositivo y regiones aproximadas. No recopilamos nombres, correos electrónicos ni información personal identificable, y no vendemos datos.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookies</h2><p>Google Analytics establece cookies para estadísticas de sesión. Puedes desactivar las cookies en tu navegador o instalar el complemento de exclusión de Google Analytics.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Servicios de terceros</h2><p>Las fuentes se cargan desde Google Fonts y el sitio se sirve mediante el CDN de Cloudflare; ambos pueden registrar registros de acceso estándar (IP, agente de usuario, hora). Esos servicios siguen sus propias políticas de privacidad.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Contacto</h2><p>Para preguntas de privacidad, escribe a <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>.</p><p style="margin-top:14px;opacity:.75">Fecha de entrada en vigor: ${new Date().toISOString().slice(0,10)}</p>`,
         `<p>This is a game guide website and we respect visitor privacy. This policy explains what we collect and how it is used.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">What we collect</h2><p>We use Google Analytics (GA4) for anonymous traffic statistics: page views, referrers, device types and approximate regions. We do not collect names, email addresses or any personally identifiable information, and we do not sell data.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookies</h2><p>Google Analytics sets cookies for session statistics. You can disable cookies in your browser or install the Google Analytics opt-out add-on.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Third-party services</h2><p>Fonts are loaded from Google Fonts and the site is served via Cloudflare's CDN; both may record standard access logs (IP, user agent, time). Those services follow their own privacy policies.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2><p>For privacy questions, email <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>.</p><p style="margin-top:14px;opacity:.75">Effective date: ${new Date().toISOString().slice(0,10)}</p>`);
-fs.writeFileSync(path.join(dir,"privacy.html"), renderStatic(siteI18n(lang).privacyTitle, privacyBody, "privacy", lang));
-  fs.writeFileSync(path.join(dir,"contact.html"), renderStatic(siteI18n(lang).contactTitle, `<p>${T4(lang,"联系我们：","聯繫我們：","お問い合わせ：","문의하기：","Escríbenos a:","Reach us at:")} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">${T4(lang,"我们通常会在 2-3 个工作日内回复。","我們通常會在 2-3 個工作日內回覆。","通常 2〜3 営業日以内に返信します。","보통 2-3 영업일 내에 답변드립니다.","Normalmente respondemos en 2-3 días laborables.","We usually reply within 2-3 business days.")}</p>`, "contact", lang));
+writePage(path.join(dir,"privacy.html"), "privacy", lang, renderStatic(siteI18n(lang).privacyTitle, privacyBody, "privacy", lang));
+  writePage(path.join(dir,"contact.html"), "contact", lang, renderStatic(siteI18n(lang).contactTitle, `<p>${T4(lang,"联系我们：","聯繫我們：","お問い合わせ：","문의하기：","Escríbenos a:","Reach us at:")} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">${T4(lang,"我们通常会在 2-3 个工作日内回复。","我們通常會在 2-3 個工作日內回覆。","通常 2〜3 営業日以内に返信します。","보통 2-3 영업일 내에 답변드립니다.","Normalmente respondemos en 2-3 días laborables.","We usually reply within 2-3 business days.")}</p>`, "contact", lang));
 }
 // 404 (default lang)
 fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${DEF}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 — Not Found</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/css/style.css"></head><body>${header(DEF,"")}<main class="container" style="padding-top:70px;text-align:center"><section class="card" style="max-width:540px;margin:0 auto"><h1>404 — Page not found</h1><p style="margin:10px 0 18px">The page you are looking for does not exist. Try one of these guides:</p><div class="related-list" style="text-align:left">${DATA.pages.slice(0,6).map(p=>`<a href="/${p.slug}">${pageOf(p,DEF).title}</a>`).join("")}</div></section></main>${footer(DEF)}</body></html>`);
 
-// sitemap
-const today = new Date().toISOString().slice(0,10);
+// sitemap —— 静态页（about/privacy/contact）此前被漏掉，18 个 URL 只能靠内链被发现
 const urls = [];
 for (const lang of LANGS) {
-  urls.push(urlOf("index",lang));
-  for (const p of DATA.pages) urls.push(urlOf(p.slug,lang));
+  urls.push({ loc: urlOf("index",lang), priority: "1.0" });
+  for (const p of DATA.pages) urls.push({ loc: urlOf(p.slug,lang), priority: "0.8" });
+  for (const sp of ["about","privacy","contact"]) urls.push({ loc: urlOf(sp,lang), priority: "0.3" });
 }
-fs.writeFileSync(path.join(OUT,"sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`  <url><loc>${u}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.endsWith("/")?"1.0":"0.8"}</priority></url>`).join("\n")}\n</urlset>\n`);
-fs.writeFileSync(path.join(OUT,"robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
-// ads.txt：接入 AdSense 后填 site.json 的 adsenseId，自动生成真实记录；未接入则保持空文件（避免占位符误导审核）
+const n = KIT.writeSitemap(OUT, urls, LM);
+KIT.writeRobots(OUT, DATA.site.domain);
+KIT.writeAds(OUT, DATA.site.adsenseId);
+KIT.writeHeaders(OUT);
+KIT.writeIndexNowKey(OUT, DATA.site.indexNowKey);
+// llms.txt：给 AI agent 的机器可读入口（不是 SEO 手段，见 site-kit 注释）
+KIT.writeLlmsTxt(OUT, {
+  siteName: DATA.site.name,
+  domain: DATA.site.domain,
+  summary: `Unofficial ${DATA.game.name} guide site. Each page answers one question players actually search for, and lists the sources it was checked against. Available in ${LANGS.length} languages: ${LANGS.join(", ")}.`,
+  pages: DATA.pages.map(p => { const t = pageOf(p, DEF); return { slug: p.slug, title: t.title, desc: t.metaDescription }; }),
+  notes: [
+    "Facts are checked against the official Steam store page and reputable gaming media; every page lists its own sources at the bottom.",
+    "Anything we could not verify is explicitly marked as unverified — gaps are left open rather than filled with generated text.",
+    "Localised versions live under /<lang>/ (e.g. /ja/how-to-play) and are declared via hreflang on every page.",
+    "This is an unofficial fan site, not affiliated with the game's developer or publisher."
+  ]
+});
 // 旧 /zh/ 路径重定向到 /zh-CN/（兼容改名前的链接）
 fs.writeFileSync(path.join(OUT,"_redirects"), "/zh/* /zh-CN/:splat 301\n");
-fs.writeFileSync(path.join(OUT,"ads.txt"), DATA.site.adsenseId ? `google.com, ${DATA.site.adsenseId}, DIRECT, f08c47fec0942fa0\n` : "");
-console.log(`✓ Generated ${LANGS.length} locales x ${1+DATA.pages.length+3} pages + sitemap`);
+const lm = LM.save();
+console.log(`✓ ${LANGS.length} locales × ${1+DATA.pages.length+3} pages｜sitemap ${n} URL｜内容有变更 ${lm.changed}/${lm.total} 页`);

@@ -5,7 +5,7 @@ SITE = {
  "ko": {
   "name": "메카 카멜레온 공략",
   "tagline": "게임 방법 · 전체 모드 · 맵 · 업데이트 · FAQ",
-  "description": "메카 카멜레온(Meccha Chameleon) 최고의 공략: 게임 방법, 전체 모드와 맵, 업적·코드의 진실, 업데이트 내역, 시스템 요구 사항, FAQ. 정기 업데이트.",
+  "description": "메카 카멜레온 공략: 게임 방법, 전체 모드와 맵, 업적·코드의 진실, 업데이트 내역, 시스템 요구 사항, FAQ.",
   "navHome": "홈",
   "navAbout": "소개",
   "navPrivacy": "개인정보",
@@ -28,7 +28,7 @@ SITE = {
  "es": {
   "name": "Guía de Meccha Chameleon",
   "tagline": "Cómo jugar · Todos los modos · Mapas · Novedades · FAQ",
-  "description": "La mejor guía de Meccha Chameleon: cómo jugar, todos los modos y mapas, la verdad sobre logros y códigos, historial de actualizaciones, requisitos del sistema y FAQ. Actualizada con regularidad.",
+  "description": "La mejor guía de Meccha Chameleon: cómo jugar, todos los modos y mapas, la verdad sobre logros y códigos, actualizaciones, requisitos y FAQ.",
   "navHome": "Inicio",
   "navAbout": "Acerca de",
   "navPrivacy": "Privacidad",
