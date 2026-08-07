@@ -10,6 +10,8 @@ const crypto = require("crypto");
 const KIT = require("./lib/site-kit");   // 共用基建：URL/schema/sitemap/图片/lastmod
 const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
+// 联盟链接：site.json 的 affiliates 没配 ID 时原样输出原链接，配了才加追踪参数 + rel="sponsored"
+const AFF = KIT.createAffiliate(DATA.site.affiliates);
 const OUT = path.join(ROOT, "public");
 const esc = KIT.esc;
 const clean = KIT.clean;
@@ -383,7 +385,10 @@ function renderPage(p, lang){
     { label: `${DATA.game.name} — Wikipedia`, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(DATA.game.name)}` },
     { label: "Official Steam store page", url: DATA.game.steamUrl }
   ]);
-  const sourceHtml = sources.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.labels && x.labels[lang]) || x.label)}</a></li>`).join("");
+  const sourceHtml = sources.map(x => `<li>${AFF.anchor({ url: x.url, text: (x.labels && x.labels[lang]) || x.label })}</li>`).join("");
+  // FTC：页面上只要有一条计佣链接就必须披露，且要显示在链接附近
+  const affNote = AFF.needsDisclosure(sources.map(x=>x.url))
+    ? `<p class="aff-note">${esc(KIT.affiliateDisclosure(lang))}</p>` : "";
   const related = DATA.pages.filter(x=>x.slug!==p.slug).slice(0,6).map(x=>{
     const mm = metaOf(x.slug);
     return `<a href="${prefix}/${x.slug}"><span class="ri">${SVG[mm.icon]}</span><span>${esc(pageOf(x,lang).title)}</span></a>`;
@@ -410,7 +415,7 @@ function renderPage(p, lang){
       ${toc ? `<div class="lobby-toc"><b>${lang.startsWith("zh")?"本页目录":lang==="ja"?"目次":"On this page"}</b><div>${toc}</div></div>` : ""}
     </div>
     ${sections}
-    <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul></div>
+    <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul>${affNote}</div>
     <div class="lobby-related">
       <div class="section-head"><div><div class="kicker">${esc(s.moreGuides)}</div><h2>${lang.startsWith("zh")?"继续探索":lang==="ja"?"続けて探索":"Keep exploring"}</h2></div></div>
       <div class="related-list related-row">${related}</div>

@@ -175,6 +175,8 @@ li+li{margin-top:0}
 .sources li::before{content:"•";position:absolute;left:0;color:var(--blue)}
 .sources a{color:var(--blue);border-bottom:1px dashed rgba(76,201,240,.4);transition:.15s}
 .sources a:hover{color:var(--green);border-bottom-color:rgba(61,220,132,.5)}
+/* 联盟披露（FTC）：只在页面含计佣链接时输出，压低视觉权重但必须可读 */
+.aff-note{margin-top:12px;padding-top:10px;border-top:1px dashed var(--border);color:var(--muted-2);font-size:.76rem;line-height:1.55}
 
 /* Breadcrumb + article */
 .crumbs{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted-2);padding:22px 0 6px}
