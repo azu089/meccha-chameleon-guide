@@ -135,7 +135,8 @@
     "sources": "Fuentes y verificación",
     "readGuide": "Guía de juego →"
    }
-  }
+  },
+  "awinVerification": "awin"
  },
  "game": {
   "name": "Meccha Chameleon",
