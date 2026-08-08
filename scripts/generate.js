@@ -201,7 +201,7 @@ function footer(lang){
       <p>${esc(s.footerNote)}</p>
       <p>${esc(s.footerSource)} · ${new Date().toISOString().slice(0,10)}</p>
     </div>
-    ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}
+    ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}\n    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
   </div>
 <script>
 // Close dropdowns on outside click / Escape
