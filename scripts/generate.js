@@ -292,6 +292,16 @@ function renderSection(s){
   }
 }
 /* ---------- home ---------- */
+function isoDate(str){
+  const m=/([A-Za-z]+) (\d+), (\d+)/.exec(str||"")||[];
+  const mo={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12,January:1,February:2,March:3,April:4,May:5,June:6,July:7,August:8,September:9,October:10,November:11,December:12};
+  return m[3] ? `${m[3]}-${String(mo[m[1]]||0).padStart(2,"0")}-${String(m[2]).padStart(2,"0")}` : TODAY;
+}
+
+function gameLd(){
+  return {"@context":"https://schema.org","@type":"VideoGame",name:DATA.game.name,description:DATA.game.intro,url:DATA.game.steamUrl,applicationCategory:"Game",operatingSystem:"Windows",genre:DATA.game.genre,datePublished:isoDate(DATA.game.releaseDate),inLanguage:"en",offers:{"@type":"Offer",price:DATA.game.price,priceCurrency:"USD",availability:"https://schema.org/InStock"}};
+}
+
 function renderHome(lang){
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
@@ -371,7 +381,7 @@ function renderHome(lang){
     });
   });
   </script>`;
-  return head(`${esc(gname)} ${lang.startsWith("zh")?"攻略站":lang==="ja"?"攻略ガイド":lang==="ko"?"공략 가이드":lang==="es"?"Guías y Wiki":"Guides & Wiki"}`, s.description, [], "index", lang) + header(lang, "") + body + footer(lang);
+  return head(`${esc(gname)} ${lang.startsWith("zh")?"攻略站":lang==="ja"?"攻略ガイド":lang==="ko"?"공략 가이드":lang==="es"?"Guías y Wiki":"Guides & Wiki"}`, s.description, [gameLd()], "index", lang) + header(lang, "") + body + footer(lang);
 }
 /* ---------- page ---------- */
 function renderPage(p, lang){
