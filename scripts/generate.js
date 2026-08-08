@@ -161,7 +161,10 @@ function header(lang, active){
   const prefix = lang === DEF ? "" : `/${lang}`;
   const guideItems = DATA.pages.map(p => {
     const m = metaOf(p.slug);
-    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span>${esc(pageOf(p,lang).title)}</a>`;
+    // 下拉目录显示时去掉游戏名前缀（页面 title/SEO 不动）
+    const _t = pageOf(p,lang).title;
+    const _disp = _t.replace(/\s*Meccha Chameleon\s*/g," ").replace(/\s+/g," ").trim() || _t;
+    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span><span>${esc(_disp)}</span></a>`;
   }).join("");
   const guidesLabel = lang.startsWith("zh") ? "攻略" : (lang === "ja" ? "攻略" : (lang === "ko" ? "가이드" : (lang === "es" ? "Guías" : "Guides")));
   const homeLabel = s.navHome;
