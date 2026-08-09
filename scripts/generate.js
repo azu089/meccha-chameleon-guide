@@ -521,6 +521,6 @@ KIT.writeLlmsTxt(OUT, {
   ]
 });
 // 旧 /zh/ 路径重定向到 /zh-CN/（兼容改名前的链接）
-KIT.writeRedirects(OUT, DATA.site.domain, "/zh/* /zh-CN/:splat 301");
+fs.writeFileSync(path.join(OUT,"_redirects"), "/zh/* /zh-CN/:splat 301\n");
 const lm = LM.save();
 console.log(`✓ ${LANGS.length} locales × ${1+DATA.pages.length+3} pages｜sitemap ${n} URL｜内容有变更 ${lm.changed}/${lm.total} 页`);
