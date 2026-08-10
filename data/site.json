@@ -136,12 +136,7 @@
     "readGuide": "Guía de juego →"
    }
   },
-  "awinVerification": "awin",
   "affiliates": {
-   "fanatical.com": {
-    "type": "wrap",
-    "template": "https://www.awin1.com/cread.php?awinmid=118821&awinaffid=3026091&ued={url}"
-   }
   },
   "adsterra": "<script async=\"async\" data-cfasync=\"false\" src=\"https://pl30754294.effectivecpmnetwork.com/0c3b12f9a492c82d399cade1ef48e078/invoke.js\"></script> <div id=\"container-0c3b12f9a492c82d399cade1ef48e078\"></div>"
  },
