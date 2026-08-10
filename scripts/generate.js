@@ -463,6 +463,7 @@ function renderPage(p, lang){
       ${toc ? `<div class="lobby-toc"><b>${lang.startsWith("zh")?"本页目录":lang==="ja"?"目次":"On this page"}</b><div>${toc}</div></div>` : ""}
     </div>
     ${sections}
+    ${renderAmazonAffiliate(lang)}
     <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul>${affNote}</div>
     <div class="lobby-related">
       <div class="section-head"><div><div class="kicker">${esc(s.moreGuides)}</div><h2>${lang.startsWith("zh")?"继续探索":lang==="ja"?"続けて探索":"Keep exploring"}</h2></div></div>
