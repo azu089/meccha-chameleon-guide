@@ -136,8 +136,7 @@
     "readGuide": "Guía de juego →"
    }
   },
-  "affiliates": {
-  },
+  "affiliates": {},
   "adsterra": "<script async=\"async\" data-cfasync=\"false\" src=\"https://pl30754294.effectivecpmnetwork.com/0c3b12f9a492c82d399cade1ef48e078/invoke.js\"></script> <div id=\"container-0c3b12f9a492c82d399cade1ef48e078\"></div>"
  },
  "game": {
@@ -6187,8 +6186,8 @@
   {
    "slug": "multiplayer",
    "title": "Meccha Chameleon Multiplayer: Host, Join & Play With Friends",
-   "metaTitle": "Meccha Chameleon Multiplayer Guide (2026)",
-   "metaDescription": "How multiplayer works in Meccha Chameleon — host a room, join public servers, play with friends, player counts and server stability.",
+   "metaTitle": "Meccha Chameleon Multiplayer: Fix & Player Limit (2026)",
+   "metaDescription": "How Meccha Chameleon multiplayer works: host a room, join public servers, fix not-working issues, the 24-player limit, and mobile/cloud play.",
    "intro": "Meccha Chameleon is an online multiplayer game. Here is how to host, join and play with friends.",
    "sections": [
     {
@@ -6229,6 +6228,18 @@
       [
        "Can I play with friends on Steam?",
        "Yes — host a private room and share the name/password, or use the Steam friends list."
+      ],
+      [
+       "Is Meccha Chameleon on Android or mobile?",
+       "No native mobile version — the game is PC-only on Steam. On phones or tablets you can only play through cloud streaming (GeForce NOW streams the same PC version)."
+      ],
+      [
+       "Meccha Chameleon multiplayer not working?",
+       "It's a fully online game — there is no offline or LAN mode. If you can't connect: make sure Steam shows you as Online, try Quick Match (public servers) before the server browser, and restart the game if a room won't appear."
+      ],
+      [
+       "Can I play offline or on LAN?",
+       "No — multiplayer is online-only (Steam servers). The game has no offline co-op or LAN mode."
       ]
      ]
     }
@@ -6236,8 +6247,8 @@
    "i18n": {
     "ja": {
      "title": "メチャカメレオン マルチプレイ：ホスト・参加・フレンドと遊ぶ",
-     "metaTitle": "メチャカメレオン マルチプレイ：ルーム作成・参加方法（2026）",
-     "metaDescription": "メチャカメレオンのマルチプレイ解説——ルーム作成、公開サーバー参加、フレンドと遊ぶ、人数と安定性。",
+     "metaTitle": "メチャカメレオン マルチプレイ：繋がらない時の対処と人数上限（2026）",
+     "metaDescription": "メチャカメレオンのマルチプレイ：ルーム作成、公開サーバー参加、繋がらない時の対処、24人上限、モバイル版の有無。",
      "intro": "メチャカメレオンはオンラインマルチプレイゲームです。ホスト・参加・フレンドとの遊び方を解説します。",
      "sections": [
       {
@@ -6278,6 +6289,18 @@
         [
          "Steam フレンドと遊べますか？",
          "はい——プライベートルームを作って名前/パスワードを共有するか、Steam フレンドリストを使います。"
+        ],
+        [
+         "Android やモバイル版はありますか？",
+         "ネイティブのモバイル版はありません——ゲームは Steam の PC 版のみです。スマホ/タブレットではクラウドストリーミング（GeForce NOW が同じ PC 版を配信）でのみ遊べます。"
+        ],
+        [
+         "マルチプレイに繋がらない場合",
+         "完全オンラインのゲームで、オフラインや LAN モードはありません。繋がらないときは：Steam がオンライン表示か確認→サーバーブラウザより先にクイックマッチ（公開サーバー）を試す→部屋が出なければ再起動。"
+        ],
+        [
+         "オフラインや LAN で遊べますか？",
+         "いいえ——マルチプレイはオンライン限定（Steam サーバー）です。オフライン協力や LAN モードはありません。"
         ]
        ]
       }
@@ -6285,8 +6308,8 @@
     },
     "zh-CN": {
      "title": "超级变色龙联机：建房、加入与好友同玩",
-     "metaTitle": "超级变色龙联机：如何建房/加入与好友同玩（2026）",
-     "metaDescription": "超级变色龙联机详解——建房、加入公开服务器、与好友同玩、人数与服务器稳定性。",
+     "metaTitle": "超级变色龙联机：连不上修复与人数上限（2026）",
+     "metaDescription": "超级变色龙联机怎么玩：建房、加入公开服务器、连不上的排查、24 人上限，以及是否有手机版。",
      "intro": "超级变色龙是在线多人游戏。下面说明如何建房、加入并与好友一起玩。",
      "sections": [
       {
@@ -6327,6 +6350,18 @@
         [
          "能和 Steam 好友一起玩吗？",
          "可以——开私人房间分享名称/密码，或使用 Steam 好友列表。"
+        ],
+        [
+         "有安卓或手机版吗？",
+         "没有原生移动版——游戏仅 Steam PC 版。手机/平板上只能通过云串流玩（GeForce NOW 串流的是同一个 PC 版）。"
+        ],
+        [
+         "联机连不上怎么办？",
+         "游戏是纯在线联机，没有离线或局域网模式。连不上时：先确认 Steam 显示为在线，先用快速匹配（公共服务器）再试服务器浏览器，房间不出现就重启游戏。"
+        ],
+        [
+         "能离线或局域网玩吗？",
+         "不能——多人模式仅限在线（Steam 服务器）。游戏没有离线合作或局域网模式。"
         ]
        ]
       }
@@ -6334,8 +6369,8 @@
     },
     "zh-TW": {
      "title": "超級變色龍聯機：建房、加入與好友同玩",
-     "metaTitle": "超級變色龍聯機：如何建房/加入與好友同玩（2026）",
-     "metaDescription": "超級變色龍聯機詳解——建房、加入公開服務器、與好友同玩、人數與服務器穩定性。",
+     "metaTitle": "超級變色龍連線：連不上修復與人數上限（2026）",
+     "metaDescription": "超級變色龍連線怎麼玩：建房、加入公開伺服器、連不上的排查、24 人上限，以及是否有手機版。",
      "intro": "超級變色龍是在線多人遊戲。下面說明如何建房、加入並與好友一起玩。",
      "sections": [
       {
@@ -6376,6 +6411,18 @@
         [
          "能和 Steam 好友一起玩嗎？",
          "可以——開私人房間分享名稱/密碼，或使用 Steam 好友列表。"
+        ],
+        [
+         "有安卓或手機版嗎？",
+         "沒有原生行動版——遊戲僅 Steam PC 版。手機/平板上只能透過雲端串流玩（GeForce NOW 串流的是同一個 PC 版）。"
+        ],
+        [
+         "連線連不上怎麼辦？",
+         "遊戲是純線上連線，沒有離線或區域網路模式。連不上時：先確認 Steam 顯示為線上，先用快速匹配（公共伺服器）再試伺服器瀏覽器，房間不出現就重啟遊戲。"
+        ],
+        [
+         "能離線或區域網路玩嗎？",
+         "不能——多人模式僅限線上（Steam 伺服器）。遊戲沒有離線合作或區域網路模式。"
         ]
        ]
       }
@@ -6383,8 +6430,8 @@
     },
     "ko": {
      "title": "메카 카멜레온 멀티플레이: 방장, 참가 & 친구와 플레이",
-     "metaTitle": "메카 카멜레온 멀티플레이 가이드 (2026)",
-     "metaDescription": "메카 카멜레온 멀티플레이 작동 방식 — 방 만들기, 공개 서버 참가, 친구와 플레이, 인원 수, 서버 안정성.",
+     "metaTitle": "메카 카멜레온 멀티플레이: 안 될 때 해결법과 인원 상한 (2026)",
+     "metaDescription": "메카 카멜레온 멀티플레이: 룸 생성, 공개 서버 참가, 연결 안 될 때 해결법, 24명 상한, 모바일 버전 유무.",
      "intro": "메카 카멜레온은 온라인 멀티플레이 게임입니다. 방을 만들고, 참가하고, 친구와 플레이하는 방법입니다.",
      "sections": [
       {
@@ -6423,6 +6470,18 @@
         [
          "Steam에서 친구와 플레이할 수 있나요?",
          "네 — 비공개 룸을 만들고 이름/비밀번호를 공유하거나 Steam 친구 목록을 사용하세요."
+        ],
+        [
+         "Android나 모바일 버전이 있나요?",
+         "네이티브 모바일 버전은 없습니다 — 게임은 Steam에서 PC 전용입니다. 휴대폰/태블릿에서는 클라우드 스트리밍(GeForce NOW가 같은 PC 버전을 스트리밍)으로만 플레이할 수 있습니다."
+        ],
+        [
+         "멀티플레이가 안 될 때는?",
+         "완전 온라인 게임이라 오프라인이나 LAN 모드는 없습니다. 연결이 안 되면: Steam이 온라인 상태인지 확인 → 서버 브라우저보다 퀵 매치(공개 서버) 먼저 시도 → 방이 안 보이면 게임 재시작."
+        ],
+        [
+         "오프라인이나 LAN으로 할 수 있나요?",
+         "아니요 — 멀티플레이는 온라인 전용(Steam 서버)입니다. 오프라인 협동이나 LAN 모드는 없습니다."
         ]
        ]
       }
@@ -6430,8 +6489,8 @@
     },
     "es": {
      "title": "Multijugador de Meccha Chameleon: crear, unirse y jugar con amigos",
-     "metaTitle": "Guía de multijugador de Meccha Chameleon (2026)",
-     "metaDescription": "Cómo funciona el multijugador de Meccha Chameleon: crear sala, unirse a servidores públicos, jugar con amigos, número de jugadores y estabilidad.",
+     "metaTitle": "Multijugador de Meccha Chameleon: arreglos y límite (2026)",
+     "metaDescription": "Multijugador de Meccha Chameleon: crear sala, unirse a servidores, arreglar 'no funciona', límite de 24 jugadores y versión móvil.",
      "intro": "Meccha Chameleon es un juego multijugador online. Así se crea una sala, se une y se juega con amigos.",
      "sections": [
       {
@@ -6470,6 +6529,18 @@
         [
          "¿Puedo jugar con amigos de Steam?",
          "Sí: crea una sala privada y comparte el nombre/contraseña, o usa la lista de amigos de Steam."
+        ],
+        [
+         "¿Hay versión de Android o móvil?",
+         "No hay versión móvil nativa — el juego es solo para PC en Steam. En el móvil o tablet solo se puede jugar por transmisión en la nube (GeForce NOW transmite la misma versión de PC)."
+        ],
+        [
+         "¿El multijugador no funciona?",
+         "Es un juego 100 % online, sin modo offline ni LAN. Si no conectas: comprueba que Steam esté en línea, prueba Quick Match (servidores públicos) antes que el buscador de servidores, y reinicia el juego si la sala no aparece."
+        ],
+        [
+         "¿Se puede jugar sin conexión o en LAN?",
+         "No — el multijugador es solo online (servidores de Steam). No hay cooperativo offline ni modo LAN."
         ]
        ]
       }

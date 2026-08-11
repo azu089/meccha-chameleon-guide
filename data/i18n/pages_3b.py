@@ -61,8 +61,8 @@ PAGES = {
 "multiplayer": {
  "ko": {
   "title": "메카 카멜레온 멀티플레이: 방장, 참가 & 친구와 플레이",
-  "metaTitle": "메카 카멜레온 멀티플레이 가이드 (2026)",
-  "metaDescription": "메카 카멜레온 멀티플레이 작동 방식 — 방 만들기, 공개 서버 참가, 친구와 플레이, 인원 수, 서버 안정성.",
+  "metaTitle": "메카 카멜레온 멀티플레이: 안 될 때 해결법과 인원 상한 (2026)",
+  "metaDescription": "메카 카멜레온 멀티플레이: 룸 생성, 공개 서버 참가, 연결 안 될 때 해결법, 24명 상한, 모바일 버전 유무.",
   "intro": "메카 카멜레온은 온라인 멀티플레이 게임입니다. 방을 만들고, 참가하고, 친구와 플레이하는 방법입니다.",
   "sections": [
    {"type":"steps","heading":"비공개 룸 만들기","items":[
@@ -78,13 +78,16 @@ PAGES = {
    {"type":"faq","heading":"멀티플레이 FAQ","body":"","items":[
      ["몇 명까지 같이 플레이할 수 있나요?","서버당 최대 24명. 권장 범위는 2-12명입니다."],
      ["크로스플레이인가요?","아니요 — Steam에서 PC 전용입니다. Mac 플레이어는 GeForce NOW 클라우드 스트리밍으로 참여할 수 있습니다."],
-     ["Steam에서 친구와 플레이할 수 있나요?","네 — 비공개 룸을 만들고 이름/비밀번호를 공유하거나 Steam 친구 목록을 사용하세요."]]},
+     ["Steam에서 친구와 플레이할 수 있나요?","네 — 비공개 룸을 만들고 이름/비밀번호를 공유하거나 Steam 친구 목록을 사용하세요."],
+     ["Android나 모바일 버전이 있나요?","네이티브 모바일 버전은 없습니다 — 게임은 Steam에서 PC 전용입니다. 휴대폰/태블릿에서는 클라우드 스트리밍(GeForce NOW가 같은 PC 버전을 스트리밍)으로만 플레이할 수 있습니다."],
+     ["멀티플레이가 안 될 때는?","완전 온라인 게임이라 오프라인이나 LAN 모드는 없습니다. 연결이 안 되면: Steam이 온라인 상태인지 확인 → 서버 브라우저보다 퀵 매치(공개 서버) 먼저 시도 → 방이 안 보이면 게임 재시작."],
+     ["오프라인이나 LAN으로 할 수 있나요?","아니요 — 멀티플레이는 온라인 전용(Steam 서버)입니다. 오프라인 협동이나 LAN 모드는 없습니다."]]},
   ],
  },
  "es": {
   "title": "Multijugador de Meccha Chameleon: crear, unirse y jugar con amigos",
-  "metaTitle": "Guía de multijugador de Meccha Chameleon (2026)",
-  "metaDescription": "Cómo funciona el multijugador de Meccha Chameleon: crear sala, unirse a servidores públicos, jugar con amigos, número de jugadores y estabilidad.",
+  "metaTitle": "Multijugador de Meccha Chameleon: arreglos y límite (2026)",
+  "metaDescription": "Multijugador de Meccha Chameleon: crear sala, unirse a servidores, arreglar 'no funciona', límite de 24 jugadores y versión móvil.",
   "intro": "Meccha Chameleon es un juego multijugador online. Así se crea una sala, se une y se juega con amigos.",
   "sections": [
    {"type":"steps","heading":"Crear una sala privada","items":[
@@ -100,7 +103,10 @@ PAGES = {
    {"type":"faq","heading":"FAQ de multijugador","body":"","items":[
      ["¿Cuántos jugadores pueden jugar juntos?","Hasta 24 por servidor. El rango recomendado es de 2 a 12 jugadores."],
      ["¿Tiene crossplay?","No: solo PC en Steam. Los jugadores de Mac pueden unirse vía la transmisión en la nube de GeForce NOW."],
-     ["¿Puedo jugar con amigos de Steam?","Sí: crea una sala privada y comparte el nombre/contraseña, o usa la lista de amigos de Steam."]]},
+     ["¿Puedo jugar con amigos de Steam?","Sí: crea una sala privada y comparte el nombre/contraseña, o usa la lista de amigos de Steam."],
+     ["¿Hay versión de Android o móvil?","No hay versión móvil nativa — el juego es solo para PC en Steam. En el móvil o tablet solo se puede jugar por transmisión en la nube (GeForce NOW transmite la misma versión de PC)."],
+     ["¿El multijugador no funciona?","Es un juego 100 % online, sin modo offline ni LAN. Si no conectas: comprueba que Steam esté en línea, prueba Quick Match (servidores públicos) antes que el buscador de servidores, y reinicia el juego si la sala no aparece."],
+     ["¿Se puede jugar sin conexión o en LAN?","No — el multijugador es solo online (servidores de Steam). No hay cooperativo offline ni modo LAN."]]},
   ],
  },
 },
