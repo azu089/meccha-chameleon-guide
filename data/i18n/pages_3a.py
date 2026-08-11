@@ -96,8 +96,8 @@ PAGES = {
 "crossplay": {
  "ko": {
   "title": "메카 카멜레온 크로스플레이 & 플랫폼 (PC, Mac, 콘솔)",
-  "metaTitle": "메카 카멜레온 크로스플레이인가요? 플랫폼 설명 (2026)",
-  "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? Steam PC 전용이며 GeForce NOW로 Mac 플레이 가능. 콘솔 버전은 없습니다.",
+  "metaTitle": "메카 카멜레온 크로스플레이? 아니요 — Steam PC 전용 (2026)",
+  "metaDescription": "메카 카멜레온은 Steam PC 전용: 크로스플레이 없음, PS5/Xbox/Switch 없음. Mac은 GeForce NOW로 참여 가능.",
   "intro": "게임 공식 페이지와 Wikipedia를 바탕으로 한 메카 카멜레온 플랫폼과 크로스플레이에 대한 정확한 답변입니다.",
   "sections": [
    {"type":"faq","heading":"플랫폼 FAQ","body":"","items":[
@@ -115,8 +115,8 @@ PAGES = {
  },
  "es": {
   "title": "Crossplay y plataformas de Meccha Chameleon (PC, Mac, consolas)",
-  "metaTitle": "¿Meccha Chameleon tiene crossplay? Plataformas (2026)",
-  "metaDescription": "¿Es Meccha Chameleon multiplataforma? Es solo para PC en Steam. Juega en Mac vía GeForce NOW. No hay versión de PS5, Xbox ni Switch: explicado.",
+  "metaTitle": "¿Meccha Chameleon tiene crossplay? No — solo PC (2026)",
+  "metaDescription": "Meccha Chameleon es solo para PC en Steam: sin crossplay ni versiones de PS5, Xbox o Switch. En Mac, juega vía GeForce NOW (hasta 24 jugadores).",
   "intro": "La respuesta directa sobre las plataformas y el crossplay de Meccha Chameleon, según la página oficial del juego y Wikipedia.",
   "sections": [
    {"type":"faq","heading":"FAQ de plataformas","body":"","items":[

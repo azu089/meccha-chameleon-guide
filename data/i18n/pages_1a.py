@@ -93,8 +93,8 @@ PAGES = {
 "modes": {
  "ko": {
   "title": "메카 카멜레온 전체 모드 설명",
-  "metaTitle": "메카 카멜레온 모드: 전체 4가지 설명 (2026)",
-  "metaDescription": "메카 카멜레온의 모든 게임 모드를 설명합니다 — 베이직, 인펙션, 더블, 리버스 치킨 레이스 — 그리고 각 모드의 최고의 전략까지.",
+  "metaTitle": "메카 카멜레온 모드: 전체 4가지 + 승리법 (2026)",
+  "metaDescription": "메카 카멜레온의 모든 모드 — 베이직, 인펙션, 더블, 리버스 치킨 레이스 — 규칙과 각 모드 최고의 승리 전략.",
   "intro": "메카 카멜레온에는 플레이 방식을 완전히 바꾸는 여러 모드가 있습니다. 각 모드가 하는 일과 이기는 방법을 소개합니다.",
   "sections": [
    {"type":"table","heading":"게임 모드","body":"현재 버전의 4가지 모드와 승리 조건입니다. 노멀(베이직)은 출시 때부터 있던 모드이고, 리버스 치킨 레이스는 2.4.0 패치(2026년 7월 2일)에서 추가되었습니다.","columns":["모드","진행 방식","승리 전략"],"rows":[
@@ -120,8 +120,8 @@ PAGES = {
  },
  "es": {
   "title": "Todos los modos de Meccha Chameleon explicados",
-  "metaTitle": "Modos de Meccha Chameleon: los 4 explicados (2026)",
-  "metaDescription": "Todos los modos de juego de Meccha Chameleon explicados: Básico, Infección, Doble y Reverse Chicken Race, además de la mejor estrategia para cada uno.",
+  "metaTitle": "Modos de Meccha Chameleon: los 4 + cómo ganar (2026)",
+  "metaDescription": "Todos los modos de Meccha Chameleon — Básico, Infección, Doble y Reverse Chicken Race — con reglas y la mejor estrategia para ganar.",
   "intro": "Meccha Chameleon incluye varios modos que cambian por completo la forma de jugar. Esto es lo que hace cada uno y cómo ganar.",
   "sections": [
    {"type":"table","heading":"Modos de juego","body":"Los cuatro modos de la versión actual con sus condiciones de victoria. Básico (Normal) fue el modo de lanzamiento; Reverse Chicken Race se añadió en el parche 2.4.0 (2 de julio de 2026).","columns":["Modo","Cómo funciona","Estrategia ganadora"],"rows":[

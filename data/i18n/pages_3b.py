@@ -6,8 +6,8 @@ PAGES = {
 "controls": {
  "ko": {
   "title": "메카 카멜레온 조작 (전체 키 목록)",
-  "metaTitle": "메카 카멜레온 조작: 전체 키 설명 (2026)",
-  "metaDescription": "메카 카멜레온의 모든 조작: 이동, 달리기, 점프/벽 오르기, 페인트 모드, 스포이드, 클론, 포즈, 카메라.",
+  "metaTitle": "메카 카멜레온 조작: 전체 키 & 리매핑 (2026)",
+  "metaDescription": "메카 카멜레온의 모든 조작: 이동, 달리기, 점프/벽 오르기, 페인트 모드, 스포이드, 클론, 포즈, 카메라 — 리매핑 방법도.",
   "intro": "wikiHow 조작 가이드와 공식 Steam 페이지를 바탕으로 한 메카 카멜레온 전체 키보드 조작입니다.",
   "sections": [
    {"type":"table","heading":"키보드 조작","columns":["동작","키"],"rows":[
@@ -32,8 +32,8 @@ PAGES = {
  },
  "es": {
   "title": "Controles de Meccha Chameleon (lista completa de teclas)",
-  "metaTitle": "Controles de Meccha Chameleon: todas las teclas (2026)",
-  "metaDescription": "Todos los controles de Meccha Chameleon: movimiento, sprint, salto/escalada, modo pintura, cuentagotas, clones, poses y cámara.",
+  "metaTitle": "Controles de Meccha Chameleon: teclas y remapeo (2026)",
+  "metaDescription": "Todos los controles de Meccha Chameleon: movimiento, sprint, salto/escalada, pintar, cuentagotas, clones, poses y cámara — y cómo remapear.",
   "intro": "Los controles completos de teclado de Meccha Chameleon, según la guía de controles de wikiHow y la página oficial de Steam.",
   "sections": [
    {"type":"table","heading":"Controles de teclado","columns":["Acción","Tecla"],"rows":[

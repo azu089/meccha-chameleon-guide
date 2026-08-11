@@ -5,8 +5,8 @@ PAGES = {
 "faq": {
  "ko": {
   "title": "메카 카멜레온 FAQ",
-  "metaTitle": "메카 카멜레온 FAQ (2026)",
-  "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? 몇 명까지? 코드나 업적이 있나요? 가장 흔한 질문에 대한 빠른 답변.",
+  "metaTitle": "메카 카멜레온 FAQ: 크로스플레이·인원·플랫폼 (2026)",
+  "metaDescription": "메카 카멜레온 크로스플레이? 최대 인원? Mac·PS5·Xbox·Switch 버전? 코드와 업적 — 자주 묻는 질문 빠른 답변.",
   "intro": "플레이어들이 가장 많이 검색하는 질문에 대한 빠른 답변입니다.",
   "sections": [
    {"type":"faq","heading":"자주 묻는 질문","body":"","items":[
@@ -28,8 +28,8 @@ PAGES = {
  },
  "es": {
   "title": "Preguntas frecuentes de Meccha Chameleon",
-  "metaTitle": "FAQ de Meccha Chameleon (2026)",
-  "metaDescription": "¿Es Meccha Chameleon multiplataforma? ¿Cuántos jugadores? ¿Tiene códigos o logros? Respuestas rápidas a las preguntas más comunes.",
+  "metaTitle": "FAQ de Meccha Chameleon: crossplay y plataformas (2026)",
+  "metaDescription": "¿Es Meccha Chameleon multiplataforma? ¿Cuántos jugadores? ¿Mac, PS5, Xbox o Switch? Códigos y logros — respuestas rápidas.",
   "intro": "Respuestas rápidas a las preguntas que más buscan los jugadores.",
   "sections": [
    {"type":"faq","heading":"Preguntas frecuentes","body":"","items":[

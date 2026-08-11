@@ -1276,8 +1276,8 @@
   {
    "slug": "modes",
    "title": "All Meccha Chameleon Modes Explained",
-   "metaTitle": "Meccha Chameleon Modes: All 4 Explained (2026)",
-   "metaDescription": "Every Meccha Chameleon game mode explained - Basic, Infection, Double and Reverse Chicken Race - plus the best strategy for each one.",
+   "metaTitle": "Meccha Chameleon Modes: All 4 + How to Win (2026)",
+   "metaDescription": "All Meccha Chameleon modes — Basic, Infection, Double and Reverse Chicken Race — with rules and the best strategy to win each one.",
    "intro": "Meccha Chameleon ships with several modes that completely change how you play. Here is what each one does and how to win it.",
    "sections": [
     {
@@ -1363,8 +1363,8 @@
    "i18n": {
     "ja": {
      "title": "メチャカメレオン全モード解説",
-     "metaTitle": "メチャカメレオン全モード解説（2026年最新）",
-     "metaDescription": "メチャカメレオンの全モードを解説——ベーシック、感染、ダブル、リバースチキンレース——各モードの勝ち方付き。",
+     "metaTitle": "メチャカメレオン全モード：4種と勝ち方（2026）",
+     "metaDescription": "メチャカメレオンの全モード——ベーシック、感染、ダブル、リバースチキンレース——ルールと勝つコツ。",
      "intro": "メチャカメレオンには複数のモードがあり、遊び方が大きく変わります。それぞれのルールと勝ち方を紹介します。",
      "sections": [
       {
@@ -1450,8 +1450,8 @@
     },
     "zh-CN": {
      "title": "超级变色龙全部模式详解",
-     "metaTitle": "超级变色龙全部模式：基础/感染/双重/反向胆小鬼赛（2026）",
-     "metaDescription": "超级变色龙每种游戏模式详解——基础、感染、双重、反向胆小鬼赛——以及每种模式的最佳策略。",
+     "metaTitle": "超级变色龙模式：全部 4 种 + 获胜技巧（2026）",
+     "metaDescription": "超级变色龙全部模式——基础、感染、双重、反向胆小鬼赛——规则与每种模式的最佳获胜策略。",
      "intro": "超级变色龙有多种模式，玩法截然不同。下面说明每种模式怎么玩、怎么赢。",
      "sections": [
       {
@@ -1537,8 +1537,8 @@
     },
     "zh-TW": {
      "title": "超級變色龍全部模式詳解",
-     "metaTitle": "超級變色龍全部模式：基礎/感染/雙重/反向膽小鬼賽（2026）",
-     "metaDescription": "超級變色龍每種遊戲模式詳解——基礎、感染、雙重、反向膽小鬼賽——以及每種模式的最佳策略。",
+     "metaTitle": "超級變色龍模式：全部 4 種 + 獲勝技巧（2026）",
+     "metaDescription": "超級變色龍全部模式——基礎、感染、雙重、反向膽小鬼賽——規則與每種模式的最佳獲勝策略。",
      "intro": "超級變色龍有多種模式，玩法截然不同。下面說明每種模式怎麼玩、怎麼贏。",
      "sections": [
       {
@@ -1624,8 +1624,8 @@
     },
     "ko": {
      "title": "메카 카멜레온 전체 모드 설명",
-     "metaTitle": "메카 카멜레온 모드: 전체 4가지 설명 (2026)",
-     "metaDescription": "메카 카멜레온의 모든 게임 모드를 설명합니다 — 베이직, 인펙션, 더블, 리버스 치킨 레이스 — 그리고 각 모드의 최고의 전략까지.",
+     "metaTitle": "메카 카멜레온 모드: 전체 4가지 + 승리법 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 모드 — 베이직, 인펙션, 더블, 리버스 치킨 레이스 — 규칙과 각 모드 최고의 승리 전략.",
      "intro": "메카 카멜레온에는 플레이 방식을 완전히 바꾸는 여러 모드가 있습니다. 각 모드가 하는 일과 이기는 방법을 소개합니다.",
      "sections": [
       {
@@ -1711,8 +1711,8 @@
     },
     "es": {
      "title": "Todos los modos de Meccha Chameleon explicados",
-     "metaTitle": "Modos de Meccha Chameleon: los 4 explicados (2026)",
-     "metaDescription": "Todos los modos de juego de Meccha Chameleon explicados: Básico, Infección, Doble y Reverse Chicken Race, además de la mejor estrategia para cada uno.",
+     "metaTitle": "Modos de Meccha Chameleon: los 4 + cómo ganar (2026)",
+     "metaDescription": "Todos los modos de Meccha Chameleon — Básico, Infección, Doble y Reverse Chicken Race — con reglas y la mejor estrategia para ganar.",
      "intro": "Meccha Chameleon incluye varios modos que cambian por completo la forma de jugar. Esto es lo que hace cada uno y cómo ganar.",
      "sections": [
       {
@@ -1847,8 +1847,8 @@
   {
    "slug": "maps",
    "title": "All Meccha Chameleon Maps",
-   "metaTitle": "Meccha Chameleon Maps: Base & Workshop (2026)",
-   "metaDescription": "Every base map in Meccha Chameleon, plus how Steam Workshop maps work and where to find the best community maps.",
+   "metaTitle": "Meccha Chameleon Maps: All Base + Steam Workshop (2026)",
+   "metaDescription": "Every base map in Meccha Chameleon with tactical notes, plus how Steam Workshop maps work and the best community maps to try.",
    "intro": "Meccha Chameleon's maps are the stage for every round of hide-and-seek. Here are the base maps and how the Workshop extends the game.",
    "sections": [
     {
@@ -2014,8 +2014,8 @@
    "i18n": {
     "zh-CN": {
      "title": "超级变色龙全部地图",
-     "metaTitle": "超级变色龙地图：基础与创意工坊（2026）",
-     "metaDescription": "超级变色龙的全部基础地图、每张地图的战术要点，以及热门 Steam 创意工坊地图与安装方法。",
+     "metaTitle": "超级变色龙地图：全部基础图 + 创意工坊（2026）",
+     "metaDescription": "超级变色龙全部基础地图与战术要点，Steam 创意工坊地图怎么装、热门社区地图推荐。",
      "intro": "超级变色龙的每一局捉迷藏都在地图上展开。这里列出全部 7 张基础地图、每张图上真正重要的战术要点，以及创意工坊如何扩展游戏。",
      "sections": [
       {
@@ -2135,8 +2135,8 @@
     },
     "zh-TW": {
      "title": "超級變色龍全部地圖",
-     "metaTitle": "超級變色龍地圖：基礎與創意工坊（2026）",
-     "metaDescription": "超級變色龍的全部基礎地圖、每張地圖的戰術要點，以及熱門 Steam 創意工坊地圖與安裝方法。",
+     "metaTitle": "超級變色龍地圖：全部基礎圖 + 創意工坊（2026）",
+     "metaDescription": "超級變色龍全部基礎地圖與戰術要點，Steam 創意工坊地圖怎麼裝、熱門社群地圖推薦。",
      "intro": "超級變色龍的每一局捉迷藏都在地圖上展開。這裡列出全部 7 張基礎地圖、每張圖上真正重要的戰術要點，以及創意工坊如何擴展遊戲。",
      "sections": [
       {
@@ -2256,8 +2256,8 @@
     },
     "ja": {
      "title": "メチャカメレオン全マップ",
-     "metaTitle": "メチャカメレオン全マップ：標準マップとワークショップマップ（2026）",
-     "metaDescription": "メチャカメレオンの標準マップ全種・各マップの戦術メモ、人気ワークショップマップとその導入方法。",
+     "metaTitle": "メチャカメレオン全マップ：標準 + ワークショップ（2026）",
+     "metaDescription": "メチャカメレオンの全標準マップと戦術、Steam ワークショップマップの入れ方と人気マップ紹介。",
      "intro": "メチャカメレオンのマップは、かくれんぼの舞台。標準7マップと各マップで重要な戦術、ワークショップで広がる世界をまとめました。",
      "sections": [
       {
@@ -2377,8 +2377,8 @@
     },
     "ko": {
      "title": "메카 카멜레온 전체 맵",
-     "metaTitle": "메카 카멜레온 맵: 기본 & 워크숍 (2026)",
-     "metaDescription": "메카 카멜레온의 모든 기본 맵, 맵별 전술 포인트, 인기 Steam 워크숍 맵과 설치 방법.",
+     "metaTitle": "메카 카멜레온 맵: 전체 기본 + 워크숍 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 기본 맵과 전술, Steam 워크숍 맵 설치법과 인기 커뮤니티 맵 추천.",
      "intro": "메카 카멜레온의 모든 라운드는 맵을 무대로 펼쳐집니다. 기본 맵 7종, 맵마다 중요한 전술 포인트, 그리고 워크숍이 게임을 확장하는 방법을 정리했습니다.",
      "sections": [
       {
@@ -5345,8 +5345,8 @@
   {
    "slug": "crossplay",
    "title": "Meccha Chameleon Crossplay & Platforms (PC, Mac, Console)",
-   "metaTitle": "Is Meccha Chameleon Crossplay? PC-Only + GeForce NOW (2026)",
-   "metaDescription": "Meccha Chameleon is PC-only on Steam (no crossplay, no console). Play on Mac via GeForce NOW — how it works, plus the straight answer on PS5, Xbox and Switch.",
+   "metaTitle": "Is Meccha Chameleon Crossplay? No, PC-Only (2026)",
+   "metaDescription": "Meccha Chameleon is PC-only on Steam — no crossplay, no PS5/Xbox/Switch. Play on Mac via GeForce NOW with Steam players, up to 24.",
    "intro": "The straight answer on Meccha Chameleon platforms and crossplay, from the game's official page and Wikipedia.",
    "sections": [
     {
@@ -5394,8 +5394,8 @@
    "i18n": {
     "ja": {
      "title": "メチャカメレオンのクロスプレイと対応プラットフォーム",
-     "metaTitle": "メチャカメレオンはクロスプレイ対応？対応プラットフォーム解説（2026）",
-     "metaDescription": "メチャカメレオンはクロスプレイ対応？Steam の PC 版のみで、GeForce NOW なら Mac でも可。PS5・Xbox・Switch 版はなし。",
+     "metaTitle": "メチャカメレオンはクロスプレイ対応？いいえ——Steam PC のみ（2026）",
+     "metaDescription": "メチャカメレオンは Steam PC 版のみ：クロスプレイなし、PS5/Xbox/Switch 版なし。Mac は GeForce NOW で遊べます。",
      "intro": "メチャカメレオンの対応プラットフォームとクロスプレイについて、公式ページと Wikipedia に基づく率直な回答です。",
      "sections": [
       {
@@ -5443,8 +5443,8 @@
     },
     "zh-CN": {
      "title": "超级变色龙跨平台与平台（PC、Mac、主机）",
-     "metaTitle": "超级变色龙支持跨平台吗？平台详解（2026）",
-     "metaDescription": "超级变色龙支持跨平台吗？游戏仅 Steam PC 版，可通过 GeForce NOW 在 Mac 上玩，没有 PS5、Xbox 或 Switch 版。",
+     "metaTitle": "超级变色龙支持跨平台吗？不——仅 Steam PC 版（2026）",
+     "metaDescription": "超级变色龙仅 Steam PC 版：不支持跨平台，也没有 PS5/Xbox/Switch。Mac 经 GeForce NOW 可玩，最多 24 人。",
      "intro": "关于超级变色龙平台与跨平台的直接答案，依据官方页面与 Wikipedia。",
      "sections": [
       {
@@ -5492,8 +5492,8 @@
     },
     "zh-TW": {
      "title": "超級變色龍跨平臺與平臺（PC、Mac、主機）",
-     "metaTitle": "超級變色龍支持跨平臺嗎？平臺詳解（2026）",
-     "metaDescription": "超級變色龍支持跨平臺嗎？遊戲僅 Steam PC 版，可通過 GeForce NOW 在 Mac 上玩，沒有 PS5、Xbox 或 Switch 版。",
+     "metaTitle": "超級變色龍支援跨平臺嗎？不——僅 Steam PC 版（2026）",
+     "metaDescription": "超級變色龍僅 Steam PC 版：不支援跨平臺，也沒有 PS5/Xbox/Switch。Mac 經 GeForce NOW 可玩，最多 24 人。",
      "intro": "關於超級變色龍平臺與跨平臺的直接答案，依據官方頁面與 Wikipedia。",
      "sections": [
       {
@@ -5541,8 +5541,8 @@
     },
     "ko": {
      "title": "메카 카멜레온 크로스플레이 & 플랫폼 (PC, Mac, 콘솔)",
-     "metaTitle": "메카 카멜레온 크로스플레이인가요? 플랫폼 설명 (2026)",
-     "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? Steam PC 전용이며 GeForce NOW로 Mac 플레이 가능. 콘솔 버전은 없습니다.",
+     "metaTitle": "메카 카멜레온 크로스플레이? 아니요 — Steam PC 전용 (2026)",
+     "metaDescription": "메카 카멜레온은 Steam PC 전용: 크로스플레이 없음, PS5/Xbox/Switch 없음. Mac은 GeForce NOW로 참여 가능.",
      "intro": "게임 공식 페이지와 Wikipedia를 바탕으로 한 메카 카멜레온 플랫폼과 크로스플레이에 대한 정확한 답변입니다.",
      "sections": [
       {
@@ -5590,8 +5590,8 @@
     },
     "es": {
      "title": "Crossplay y plataformas de Meccha Chameleon (PC, Mac, consolas)",
-     "metaTitle": "¿Meccha Chameleon tiene crossplay? Plataformas (2026)",
-     "metaDescription": "¿Es Meccha Chameleon multiplataforma? Es solo para PC en Steam. Juega en Mac vía GeForce NOW. No hay versión de PS5, Xbox ni Switch: explicado.",
+     "metaTitle": "¿Meccha Chameleon tiene crossplay? No — solo PC (2026)",
+     "metaDescription": "Meccha Chameleon es solo para PC en Steam: sin crossplay ni versiones de PS5, Xbox o Switch. En Mac, juega vía GeForce NOW (hasta 24 jugadores).",
      "intro": "La respuesta directa sobre las plataformas y el crossplay de Meccha Chameleon, según la página oficial del juego y Wikipedia.",
      "sections": [
       {
@@ -5666,8 +5666,8 @@
   {
    "slug": "controls",
    "title": "Meccha Chameleon Controls (Full Key List)",
-   "metaTitle": "Meccha Chameleon Controls: All Keys Explained (2026)",
-   "metaDescription": "Every Meccha Chameleon control: movement, sprint, jump/wall climb, paint mode, eyedropper, clones, poses and camera.",
+   "metaTitle": "Meccha Chameleon Controls: All Keys + Rebinding (2026)",
+   "metaDescription": "Every Meccha Chameleon control: movement, sprint, jump & wall climb, paint mode, eyedropper, clones, poses and camera — plus rebinding.",
    "intro": "The complete Meccha Chameleon keyboard controls, based on the wikiHow controls guide and the official Steam page.",
    "sections": [
     {
@@ -5747,8 +5747,8 @@
    "i18n": {
     "ja": {
      "title": "メチャカメレオン操作（全キー一覧）",
-     "metaTitle": "メチャカメレオン操作：全キー解説（2026）",
-     "metaDescription": "メチャカメレオンの全操作：移動、ダッシュ、ジャンプ/壁登り、塗り、スポイト、分身、ポーズ、カメラ。",
+     "metaTitle": "メチャカメレオン操作：全キーとリマップ（2026）",
+     "metaDescription": "メチャカメレオンの全操作：移動、ダッシュ、ジャンプ/壁登り、塗り、スポイト、分身、ポーズ、カメラ——リマップも。",
      "intro": "wikiHow の操作ガイドと Steam 公式ページに基づく、メチャカメレオンの完全キー操作。",
      "sections": [
       {
@@ -5828,8 +5828,8 @@
     },
     "zh-CN": {
      "title": "超级变色龙操作（完整键位表）",
-     "metaTitle": "超级变色龙操作：全部按键详解（2026）",
-     "metaDescription": "超级变色龙全部操作：移动、加速、跳跃/爬墙、涂色、吸管、分身、姿势与镜头。",
+     "metaTitle": "超级变色龙操作：全部键位与改键（2026）",
+     "metaDescription": "超级变色龙全部操作：移动、加速、跳跃/爬墙、涂色、吸管、分身、姿势与镜头——以及改键说明。",
      "intro": "完整的超级变色龙键盘操作，依据 wikiHow 操作指南与 Steam 官方页面。",
      "sections": [
       {
@@ -5909,8 +5909,8 @@
     },
     "zh-TW": {
      "title": "超級變色龍操作（完整鍵位表）",
-     "metaTitle": "超級變色龍操作：全部按鍵詳解（2026）",
-     "metaDescription": "超級變色龍全部操作：移動、加速、跳躍/爬牆、塗色、吸管、分身、姿勢與鏡頭。",
+     "metaTitle": "超級變色龍操作：全部鍵位與改鍵（2026）",
+     "metaDescription": "超級變色龍全部操作：移動、加速、跳躍/爬牆、塗色、吸管、分身、姿勢與鏡頭——以及改鍵說明。",
      "intro": "完整的超級變色龍鍵盤操作，依據 wikiHow 操作指南與 Steam 官方頁面。",
      "sections": [
       {
@@ -5990,8 +5990,8 @@
     },
     "ko": {
      "title": "메카 카멜레온 조작 (전체 키 목록)",
-     "metaTitle": "메카 카멜레온 조작: 전체 키 설명 (2026)",
-     "metaDescription": "메카 카멜레온의 모든 조작: 이동, 달리기, 점프/벽 오르기, 페인트 모드, 스포이드, 클론, 포즈, 카메라.",
+     "metaTitle": "메카 카멜레온 조작: 전체 키 & 리매핑 (2026)",
+     "metaDescription": "메카 카멜레온의 모든 조작: 이동, 달리기, 점프/벽 오르기, 페인트 모드, 스포이드, 클론, 포즈, 카메라 — 리매핑 방법도.",
      "intro": "wikiHow 조작 가이드와 공식 Steam 페이지를 바탕으로 한 메카 카멜레온 전체 키보드 조작입니다.",
      "sections": [
       {
@@ -6069,8 +6069,8 @@
     },
     "es": {
      "title": "Controles de Meccha Chameleon (lista completa de teclas)",
-     "metaTitle": "Controles de Meccha Chameleon: todas las teclas (2026)",
-     "metaDescription": "Todos los controles de Meccha Chameleon: movimiento, sprint, salto/escalada, modo pintura, cuentagotas, clones, poses y cámara.",
+     "metaTitle": "Controles de Meccha Chameleon: teclas y remapeo (2026)",
+     "metaDescription": "Todos los controles de Meccha Chameleon: movimiento, sprint, salto/escalada, pintar, cuentagotas, clones, poses y cámara — y cómo remapear.",
      "intro": "Los controles completos de teclado de Meccha Chameleon, según la guía de controles de wikiHow y la página oficial de Steam.",
      "sections": [
       {
@@ -6505,8 +6505,8 @@
   {
    "slug": "faq",
    "title": "Meccha Chameleon FAQ",
-   "metaTitle": "Meccha Chameleon FAQ (2026)",
-   "metaDescription": "Is Meccha Chameleon cross-platform? How many players? Does it have codes or achievements? Quick answers to the most common questions.",
+   "metaTitle": "Meccha Chameleon FAQ: Crossplay, Players, Platforms (2026)",
+   "metaDescription": "Is Meccha Chameleon cross-platform? How many players? On Mac, PS5, Xbox or Switch? Codes and achievements — quick answers in one FAQ.",
    "intro": "Quick answers to the questions players search for most.",
    "sections": [
     {
@@ -6576,8 +6576,8 @@
    "i18n": {
     "ja": {
      "title": "メチャカメレオンよくある質問",
-     "metaTitle": "メチャカメレオン FAQ：プラットフォーム・人数・価格など（2026）",
-     "metaDescription": "メチャカメレオンはクロスプレイ？最大人数は？コードや実績はある？よくある質問に回答。",
+     "metaTitle": "メチャカメレオン FAQ：クロスプレイ・人数・対応機種（2026）",
+     "metaDescription": "メチャカメレオンはクロスプレイ？最大人数は？Mac・PS5・Xbox・Switch 版は？コードや実績も——よくある質問に回答。",
      "intro": "プレイヤーがよく検索する質問への回答です。",
      "sections": [
       {
@@ -6647,8 +6647,8 @@
     },
     "zh-CN": {
      "title": "超级变色龙常见问题",
-     "metaTitle": "超级变色龙常见问题：平台、人数、价格等（2026）",
-     "metaDescription": "超级变色龙支持跨平台吗？多少人一起玩？有兑换码或成就吗？常见问题快速解答。",
+     "metaTitle": "超级变色龙 FAQ：跨平台、人数、平台（2026）",
+     "metaDescription": "超级变色龙支持跨平台吗？最多几人？有 Mac、PS5、Xbox、Switch 版吗？兑换码与成就——常见问题快速解答。",
      "intro": "玩家搜索最多的问题的快速解答。",
      "sections": [
       {
@@ -6718,8 +6718,8 @@
     },
     "zh-TW": {
      "title": "超級變色龍常見問題",
-     "metaTitle": "超級變色龍常見問題：平臺、人數、價格等（2026）",
-     "metaDescription": "超級變色龍支持跨平臺嗎？多少人一起玩？有兌換碼或成就嗎？常見問題快速解答。",
+     "metaTitle": "超級變色龍 FAQ：跨平臺、人數、平臺（2026）",
+     "metaDescription": "超級變色龍支援跨平臺嗎？最多幾人？有 Mac、PS5、Xbox、Switch 版嗎？兌換碼與成就——常見問題快速解答。",
      "intro": "玩家搜索最多的問題的快速解答。",
      "sections": [
       {
@@ -6789,8 +6789,8 @@
     },
     "ko": {
      "title": "메카 카멜레온 FAQ",
-     "metaTitle": "메카 카멜레온 FAQ (2026)",
-     "metaDescription": "메카 카멜레온은 크로스플랫폼인가요? 몇 명까지? 코드나 업적이 있나요? 가장 흔한 질문에 대한 빠른 답변.",
+     "metaTitle": "메카 카멜레온 FAQ: 크로스플레이·인원·플랫폼 (2026)",
+     "metaDescription": "메카 카멜레온 크로스플레이? 최대 인원? Mac·PS5·Xbox·Switch 버전? 코드와 업적 — 자주 묻는 질문 빠른 답변.",
      "intro": "플레이어들이 가장 많이 검색하는 질문에 대한 빠른 답변입니다.",
      "sections": [
       {
@@ -6860,8 +6860,8 @@
     },
     "es": {
      "title": "Preguntas frecuentes de Meccha Chameleon",
-     "metaTitle": "FAQ de Meccha Chameleon (2026)",
-     "metaDescription": "¿Es Meccha Chameleon multiplataforma? ¿Cuántos jugadores? ¿Tiene códigos o logros? Respuestas rápidas a las preguntas más comunes.",
+     "metaTitle": "FAQ de Meccha Chameleon: crossplay y plataformas (2026)",
+     "metaDescription": "¿Es Meccha Chameleon multiplataforma? ¿Cuántos jugadores? ¿Mac, PS5, Xbox o Switch? Códigos y logros — respuestas rápidas.",
      "intro": "Respuestas rápidas a las preguntas que más buscan los jugadores.",
      "sections": [
       {
