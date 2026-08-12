@@ -239,6 +239,7 @@ function footer(lang){
     </div>
     ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}\n    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
   </div>
+${KIT.decisionEventsScript()}
 <script>
 // Close dropdowns on outside click / Escape
 document.addEventListener('click', function(e){
