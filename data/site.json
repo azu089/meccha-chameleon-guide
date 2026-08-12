@@ -3480,6 +3480,16 @@
      ],
      "rows": [
       [
+       "fix7.3.2",
+       "Aug 11, 2026",
+       "Fixed incorrect character movement speed; fixed players escaping the 'Deep Sea' map; fixed the game ending while a Hunter is still present in some cases"
+      ],
+      [
+       "fix3.7.1",
+       "Aug 10, 2026",
+       "Fixed Basic Mode Hunters not moving on certain Mod maps; adjusted jump height; UI tweaks"
+      ],
+      [
        "3.5.3",
        "Aug 4, 2026",
        "Camera options added; color palette and color-setting bugs fixed"
