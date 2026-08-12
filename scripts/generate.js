@@ -148,6 +148,8 @@ const FLAGS = {
   "ko": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><g transform="translate(30 20)"><g transform="rotate(45)"><rect x="-10" y="-5" width="20" height="10" fill="#CD2E3A"/><rect x="-10" y="0" width="20" height="10" fill="#0047A0"/><circle r="6" fill="#fff"/></g><circle r="5" fill="#CD2E3A"/><path d="M0-5a5 5 0 0 1 0 10 2 2 0 0 1 0-10" fill="#0047A0"/></g><g fill="#000"><path d="M15 2h3v6h-3zM15 32h3v6h-3zM42 2h3v6h-3zM42 32h3v6h-3z"/></g></svg>',
   "es": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/><g transform="translate(30 20)"><path d="M-10 0a10 10 0 0 1 10-10 10 10 0 0 1 0 20 10 10 0 0 1-10-10z" fill="#fff" opacity=".85"/></g></svg>'
 };
+const UPDATED_LABEL = { en:"Updated", "zh-CN":"更新于", "zh-TW":"更新於", ja:"更新日", ko:"업데이트", es:"Actualizado" };
+const updLabel = lang => UPDATED_LABEL[lang] || "Updated";
 const LANG_META = { "en":{name:"English",flag:FLAGS.en}, "zh-CN":{name:"简体中文",flag:FLAGS["zh-CN"]}, "zh-TW":{name:"繁體中文",flag:FLAGS["zh-TW"]}, "ja":{name:"日本語",flag:FLAGS.ja}, "ko":{name:"한국어",flag:FLAGS.ko}, "es":{name:"Español",flag:FLAGS.es} };
 function langSwitcher(lang, slug){
   const items = LANGS.map(l =>
@@ -233,7 +235,7 @@ function footer(lang){
     <div class="footer-meta">
       <p>${esc(s.tagline)}</p>
       <p>${esc(s.footerNote)}</p>
-      <p>${esc(s.footerSource)} · ${new Date().toISOString().slice(0,10)}</p>
+      <p>${esc(s.footerSource)} · ${updLabel(lang)} ${new Date().toISOString().slice(0,10)}</p>
     </div>
     ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}\n    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
   </div>
