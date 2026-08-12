@@ -3480,6 +3480,11 @@
      ],
      "rows": [
       [
+       "fix3.7.3",
+       "Aug 12, 2026",
+       "Fixed a rare issue where the Hunter would not move to the map; fixed numeric quick-button allowing below-minimum values; fixed player name/display glitches; fixed controller painting where X-axis moved faster than Y-axis; added controller painting speed settings."
+      ],
+      [
        "fix7.3.2",
        "Aug 11, 2026",
        "Fixed incorrect character movement speed; fixed players escaping the 'Deep Sea' map; fixed the game ending while a Hunter is still present in some cases"
@@ -3593,6 +3598,21 @@
        ],
        "rows": [
         [
+         "fix3.7.3",
+         "2026-08-12",
+         "ハンターがマップに移動しない稀な問題を修正。数字クイックボタンで最小値以下を設定できてしまう問題を修正。プレイヤー名・表示が乱れる問題を修正。コントローラーで塗装時に X 軸が Y 軸より速く動く問題を修正。コントローラー塗装の移動速度設定を追加。"
+        ],
+        [
+         "fix7.3.2",
+         "2026-08-11",
+         "キャラクターの移動速度が正しくない問題を修正。「深海」マップから抜け出せる問題を修正。ハンターが残っているのにゲームが終了してしまう場合がある問題を修正。"
+        ],
+        [
+         "fix3.7.1",
+         "2026-08-10",
+         "ベーシックモードで特定の Mod マップにハンターが出現しない問題を修正。ジャンプ高さを調整。UI を調整。"
+        ],
+        [
          "3.5.3",
          "2026-08-04",
          "カメラオプション追加。カラーパレットと色設定の不具合を修正"
@@ -3695,6 +3715,21 @@
         "亮点"
        ],
        "rows": [
+        [
+         "fix3.7.3",
+         "2026-08-12",
+         "修复猎人偶尔不移动到地图的罕见问题；修复按数字快捷键可将数值设置到最低限制以下的问题；修复玩家名称/显示异常；修复手柄涂色时 X 轴比 Y 轴移动快的问题；新增手柄涂色移动速度设置。"
+        ],
+        [
+         "fix7.3.2",
+         "2026-08-11",
+         "修复角色移动速度错误；修复玩家逃出「深海」地图的问题；修复部分情况下猎人仍在场时游戏却结束的问题。"
+        ],
+        [
+         "fix3.7.1",
+         "2026-08-10",
+         "修复基础模式下猎人部分 Mod 地图不移动的问题；调整跳跃高度；UI 微调。"
+        ],
         [
          "3.5.3",
          "2026-08-04",
@@ -3799,6 +3834,21 @@
        ],
        "rows": [
         [
+         "fix3.7.3",
+         "2026-08-12",
+         "修復獵人偶爾不移動到地圖的罕見問題；修復按數字快捷鍵可將數值設定到最低限制以下的問題；修復玩家名稱/顯示異常；修復手把塗色時 X 軸比 Y 軸移動快的問題；新增手把塗色移動速度設定。"
+        ],
+        [
+         "fix7.3.2",
+         "2026-08-11",
+         "修復角色移動速度錯誤；修復玩家逃出「深海」地圖的問題；修復部分情況下獵人仍在場時遊戲卻結束的問題。"
+        ],
+        [
+         "fix3.7.1",
+         "2026-08-10",
+         "修復基礎模式下獵人部分 Mod 地圖不移動的問題；調整跳躍高度；UI 微調。"
+        ],
+        [
          "3.5.3",
          "2026-08-04",
          "新增相機選項；修復調色板與顏色設置問題"
@@ -3902,6 +3952,21 @@
        ],
        "rows": [
         [
+         "fix3.7.3",
+         "2026-08-12",
+         "헌터가 맵으로 이동하지 않는 드문 문제 수정. 숫자 단축키로 최소값 이하를 설정할 수 있던 문제 수정. 플레이어 이름/표시 오류 수정. 컨트롤러로 칠할 때 X축이 Y축보다 빠르게 움직이던 문제 수정. 컨트롤러 칠하기 이동 속도 설정 추가."
+        ],
+        [
+         "fix7.3.2",
+         "2026-08-11",
+         "캐릭터 이동 속도 오류 수정. 플레이어가 '딥씨' 맵에서 탈출할 수 있던 문제 수정. 헌터가 아직 있는데도 게임이 끝나던 문제 수정."
+        ],
+        [
+         "fix3.7.1",
+         "2026-08-10",
+         "베이직 모드에서 일부 Mod 맵에 헌터가 나타나지 않던 문제 수정. 점프 높이 조정. UI 조정."
+        ],
+        [
          "3.5.3",
          "2026-08-04",
          "카메라 옵션 추가, 색상 팔레트·색 설정 버그 수정"
@@ -4004,6 +4069,21 @@
         "Aspectos destacados"
        ],
        "rows": [
+        [
+         "fix3.7.3",
+         "2026-08-12",
+         "Corregido un problema poco común por el que el cazador no se movía al mapa; corregido el botón rápido numérico que permitía valores por debajo del mínimo; corregidos fallos en nombres/mostradores de jugadores; corregida la pintura con mando donde el eje X iba más rápido que el Y; añadida la configuración de velocidad de pintura con mando."
+        ],
+        [
+         "fix7.3.2",
+         "2026-08-11",
+         "Corregida la velocidad de movimiento incorrecta del personaje; corregido que los jugadores pudieran escapar del mapa 'Deep Sea'; corregido que el juego terminara con un cazador aún presente en algunos casos."
+        ],
+        [
+         "fix3.7.1",
+         "2026-08-10",
+         "Corregido que los cazadores del modo Básico no se movieran en ciertos mapas Mod; ajustada la altura de salto; ajustes de interfaz."
+        ],
         [
          "3.5.3",
          "4 ago 2026",
