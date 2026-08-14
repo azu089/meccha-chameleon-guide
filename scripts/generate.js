@@ -15,6 +15,24 @@ const AFF = KIT.createAffiliate(DATA.site.affiliates);
 const OUT = path.join(ROOT, "public");
 const esc = KIT.esc;
 const clean = KIT.clean;
+const ADSENSE_FIXTURE_ENABLED = process.env.NODE_ENV === "test" && process.env.MECCHA_ADSENSE_FIXTURE === "enabled";
+const ADSENSE_PUBLISHER_ID = /^pub-\d+$/.test(String(DATA.site.adsenseId || "").trim())
+  ? String(DATA.site.adsenseId).trim()
+  : "";
+const ADSENSE_CLIENT_ID = ADSENSE_PUBLISHER_ID ? `ca-${ADSENSE_PUBLISHER_ID}` : "";
+const ADSENSE_SERVING_ENABLED = Boolean(
+  ADSENSE_CLIENT_ID && (
+    ADSENSE_FIXTURE_ENABLED || (
+      DATA.site.adsenseServing &&
+      DATA.site.adsenseServing.enabled === true &&
+      DATA.site.adsenseServing.providerReady === true &&
+      DATA.site.adsenseServing.certifiedCmpReady === true
+    )
+  )
+);
+const adsenseScript = () => ADSENSE_SERVING_ENABLED
+  ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT_ID)}" crossorigin="anonymous"></script>`
+  : "";
 const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
@@ -99,7 +117,7 @@ function head(title, desc, extraLd, slug, lang){
   // extraLd 是对象数组；与 WebSite 合并后整体 JSON.stringify（合法 JSON-LD）
   const ld = JSON.stringify([siteLd(lang)].concat(extraLd || []));
   const gsc = DATA.site.gscVerification ? `<meta name="google-site-verification" content="${esc(DATA.site.gscVerification)}" />` : "";
-  const adsenseMeta = DATA.site.adsenseId ? `<meta name="google-adsense-account" content="ca-${esc(DATA.site.adsenseId)}" />` : "";
+  const adsenseMeta = ADSENSE_CLIENT_ID ? `<meta name="google-adsense-account" content="${esc(ADSENSE_CLIENT_ID)}" />` : "";
   // Awin 联盟所有权验证：官方要求是「源代码里出现 Awin 字样」，没有规定 meta 名称，这里用描述性名字。
   // 值可以是任意字符串（拿到正式验证码就换成那个）；未配置时不输出。
   const awin = DATA.site.awinVerification ? `<meta name="awin-site-verification" content="${esc(DATA.site.awinVerification)}" />` : "";
@@ -161,34 +179,6 @@ function langSwitcher(lang, slug){
   </details>`;
 }
 
-function renderAmazonAffiliate(lang) {
-  const AMZ = {
-    "en":    { title: "Game Gear", note: "As an Amazon Associate we earn from qualifying purchases. Prices and availability may change.", items: [["Gaming Keyboard","gaming keyboard"],["Gaming Mouse","gaming mouse"],["Headset","gaming headset"],["Controller","game controller"],["Monitor","gaming monitor"]] },
-    "zh-CN": { title: "游戏装备", note: "作为亚马逊联盟伙伴，我们会从符合条件的购买中获得佣金。价格与库存可能随时变化。", items: [["游戏键盘","gaming keyboard"],["游戏鼠标","gaming mouse"],["耳机","gaming headset"],["手柄","game controller"],["显示器","gaming monitor"]] },
-    "zh-TW": { title: "遊戲裝備", note: "作為亞馬遜聯盟夥伴，我們會從符合條件的購買中獲得佣金。價格與庫存可能隨時變化。", items: [["遊戲鍵盤","gaming keyboard"],["遊戲滑鼠","gaming mouse"],["耳機","gaming headset"],["手把","game controller"],["顯示器","gaming monitor"]] },
-    "ja":    { title: "ゲームギア", note: "Amazonアソシエイトとして、適格購入から手数料を得ることがあります。価格と在庫は変動します。", items: [["ゲーミングキーボード","gaming keyboard"],["ゲーミングマウス","gaming mouse"],["ヘッドセット","gaming headset"],["コントローラー","game controller"],["モニター","gaming monitor"]] },
-    "ko":    { title: "게임 장비", note: "Amazon 어소시에이트로서 적격 구매로부터 수수료를 받습니다. 가격과 재고는 변동될 수 있습니다.", items: [["게이밍 키보드","gaming keyboard"],["게이밍 마우스","gaming mouse"],["헤드셋","gaming headset"],["컨트롤러","game controller"],["모니터","gaming monitor"]] },
-    "es":    { title: "Equipo de juego", note: "Como afiliado de Amazon, ganamos con las compras que califican. El precio y la disponibilidad pueden cambiar.", items: [["Teclado gamer","gaming keyboard"],["Ratón gamer","gaming mouse"],["Auriculares","gaming headset"],["Mando","game controller"],["Monitor","gaming monitor"]] },
-    "fr":    { title: "Équipement de jeu", note: "En tant que partenaire Amazon, nous touchons une commission sur les achats éligibles. Prix et disponibilité peuvent changer.", items: [["Clavier gamer","gaming keyboard"],["Souris gamer","gaming mouse"],["Casque","gaming headset"],["Manette","game controller"],["Écran","gaming monitor"]] },
-    "de":    { title: "Gaming-Ausrüstung", note: "Als Amazon-Partner verdienen wir an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.", items: [["Gaming-Tastatur","gaming keyboard"],["Gaming-Maus","gaming mouse"],["Headset","gaming headset"],["Controller","game controller"],["Monitor","gaming monitor"]] },
-    "it":    { title: "Accessori gaming", note: "In qualità di affiliato Amazon, guadagniamo dagli acquisti idonei. Prezzi e disponibilità possono cambiare.", items: [["Tastiera gaming","gaming keyboard"],["Mouse gaming","gaming mouse"],["Cuffie","gaming headset"],["Controller","game controller"],["Monitor","gaming monitor"]] },
-    "pl":    { title: "Sprzęt gamingowy", note: "Jako partner Amazon zarabiamy na kwalifikowanych zakupach. Ceny i dostępność mogą się zmieniać.", items: [["Klawiatura gamingowa","gaming keyboard"],["Mysz gamingowa","gaming mouse"],["Słuchawki","gaming headset"],["Pad","game controller"],["Monitor","gaming monitor"]] },
-    "pt-BR": { title: "Equipamentos de jogo", note: "Como associado da Amazon, ganhamos com compras qualificadas. Preços e disponibilidade podem mudar.", items: [["Teclado gamer","gaming keyboard"],["Mouse gamer","gaming mouse"],["Headset","gaming headset"],["Controle","game controller"],["Monitor","gaming monitor"]] },
-    "ru":    { title: "Игровое оборудование", note: "Как партнёр Amazon мы получаем комиссию с соответствующих покупок. Цены и наличие могут меняться.", items: [["Игровая клавиатура","gaming keyboard"],["Игровая мышь","gaming mouse"],["Гарнитура","gaming headset"],["Геймпад","game controller"],["Монитор","gaming monitor"]] },
-    "uk":    { title: "Ігрове обладнання", note: "Як партнер Amazon ми отримуємо комісію з відповідних покупок. Ціни та наявність можуть змінюватися.", items: [["Ігрова клавіатура","gaming keyboard"],["Ігрова миша","gaming mouse"],["Гарнітура","gaming headset"],["Геймпад","game controller"],["Монітор","gaming monitor"]] },
-    "vi":    { title: "Thiết bị chơi game", note: "Là cộng tác viên Amazon, chúng tôi nhận hoa hồng từ các giao dịch mua đủ điều kiện. Giá và tình trạng hàng có thể thay đổi.", items: [["Bàn phím gaming","gaming keyboard"],["Chuột gaming","gaming mouse"],["Tai nghe","gaming headset"],["Tay cầm","game controller"],["Màn hình","gaming monitor"]] },
-  };
-  const t = AMZ[lang] || AMZ.en;
-  const tag = "cozysimhub20-20";
-  const links = t.items.map(it => `<a href="https://www.amazon.com/s?k=${encodeURIComponent(it[1])}&tag=${tag}" target="_blank" rel="sponsored noopener nofollow">${esc(it[0])}</a>`).join("");
-  return `<div class="amazon-gear">
-    <h3>${esc(t.title)}</h3>
-    <div class="amazon-gear-links">${links}</div>
-    <p class="aff-note">${esc(t.note)}</p>
-  </div>`;
-}
-
-
 function header(lang, active){
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
@@ -237,7 +227,7 @@ function footer(lang){
       <p>${esc(s.footerNote)}</p>
       <p>${esc(s.footerSource)} · ${updLabel(lang)} ${new Date().toISOString().slice(0,10)}</p>
     </div>
-    ${DATA.site.adsenseId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(DATA.site.adsenseId)}" crossorigin="anonymous"></script>` : ""}\n    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
+    ${adsenseScript()}\n    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
   </div>
 ${KIT.decisionEventsScript()}
 <script>
@@ -286,7 +276,6 @@ document.addEventListener('keydown', function(e){
   if (e.key === 'Escape') document.querySelectorAll('details[open]').forEach(function(d){ d.removeAttribute('open'); });
 });
 </script>
-${renderAmazonAffiliate(lang)}
 </footer>
 <a class="back-top" href="#" aria-label="Top">${SVG.up}</a>
 </body></html>`;
@@ -466,7 +455,6 @@ function renderPage(p, lang){
       ${toc ? `<div class="lobby-toc"><b>${lang.startsWith("zh")?"本页目录":lang==="ja"?"目次":"On this page"}</b><div>${toc}</div></div>` : ""}
     </div>
     ${sections}
-    ${renderAmazonAffiliate(lang)}
     <div class="sources"><b>${esc(s.sources)}</b><ul>${sourceHtml}</ul>${affNote}</div>
     <div class="lobby-related">
       <div class="section-head"><div><div class="kicker">${esc(s.moreGuides)}</div><h2>${lang.startsWith("zh")?"继续探索":lang==="ja"?"続けて探索":"Keep exploring"}</h2></div></div>
