@@ -20,7 +20,9 @@ jobs:
         run: node scripts/generate.js
 
       - name: Audit
-        run: node scripts/lib/audit.js .
+        run: |
+          node scripts/lib/audit.js .
+          node scripts/audit-commercial-gates.mjs
 
       - name: Assert no drift
         # 构建应当是幂等的：同一份输入重跑两次，产物必须一致。

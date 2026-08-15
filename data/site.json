@@ -3471,8 +3471,8 @@
    "slug": "update-log",
    "title": "Meccha Chameleon Update Log & Patch Notes",
    "metaTitle": "Meccha Chameleon Update Log: All Patch Notes (2026)",
-   "metaDescription": "The full Meccha Chameleon update history: versions 1.6 to 3.5, including new maps, collab maps, the Cube character and clones.",
-   "intro": "The full Meccha Chameleon update history: versions 1.6 to 3.5, including the Cube character, clones, new maps, collab maps and more.",
+   "metaDescription": "The full Meccha Chameleon update history: versions 1.6 to 3.8, including new maps, collab maps, the Cube character and clones.",
+   "intro": "The full Meccha Chameleon update history through official update 3.8.0 on August 14, 2026, including the Cube character, clones, new maps and collab maps.",
    "sections": [
     {
      "type": "table",
@@ -3484,6 +3484,14 @@
       "Highlights"
      ],
      "rows": [
+      [
+       {
+        "text": "3.8.0",
+        "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877"
+       },
+       "Aug 14, 2026",
+       "Added unanimous-vote skipping for hiding/reveal time and a BAN feature; fixed collision, camera, invisibility, jump-height, third-person Hunter-facing, voice-icon and controller-navigation issues."
+      ],
       [
        "fix3.7.3",
        "Aug 12, 2026",
@@ -3589,8 +3597,8 @@
     "ja": {
      "title": "メチャカメレオンアップデート履歴",
      "metaTitle": "メチャカメレオンアップデート履歴：全パッチノート（2026）",
-     "metaDescription": "メチャカメレオンの完全なアップデート履歴：1.6 から 3.5 まで、新マップ、コラボマップ、キューブ、分身など。",
-     "intro": "メチャカメレオンの完全なアップデート履歴：1.6 から 3.5 まで、キューブ、分身、新マップ、コラボマップなどを網羅。",
+     "metaDescription": "メチャカメレオンの完全なアップデート履歴：1.6 から 3.8 まで、新マップ、コラボマップ、キューブ、分身など。",
+     "intro": "2026年8月14日の公式 update 3.8.0 までの履歴。キューブ、分身、新マップ、コラボマップなどを網羅します。",
      "sections": [
       {
        "type": "table",
@@ -3602,6 +3610,14 @@
         "ハイライト"
        ],
        "rows": [
+        [
+         {
+          "text": "3.8.0",
+          "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877"
+         },
+         "2026-08-14",
+         "隠れ時間・公開時間を全員一致でスキップできる機能と BAN 機能を追加。衝突、カメラ、透明化、ジャンプ高さ、三人称ハンターの向き、ボイスアイコン、コントローラー操作を修正。"
+        ],
         [
          "fix3.7.3",
          "2026-08-12",
@@ -3707,8 +3723,8 @@
     "zh-CN": {
      "title": "超级变色龙更新日志与补丁说明",
      "metaTitle": "超级变色龙更新日志：全部补丁说明（2026）",
-     "metaDescription": "《超级变色龙》完整更新历史：1.6 到 3.5 版本，包含新地图、合作地图、方块人与分身等。",
-     "intro": "《超级变色龙》完整更新历史：从 1.6 到 3.5 版本，包含方块人、分身、新地图、合作地图等内容。",
+     "metaDescription": "《超级变色龙》完整更新历史：1.6 到 3.8 版本，包含新地图、合作地图、方块人与分身等。",
+     "intro": "完整更新历史已更新至 2026 年 8 月 14 日官方 3.8.0，包含方块人、分身、新地图与合作地图。",
      "sections": [
       {
        "type": "table",
@@ -3720,6 +3736,14 @@
         "亮点"
        ],
        "rows": [
+        [
+         {
+          "text": "3.8.0",
+          "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877"
+         },
+         "2026-08-14",
+         "新增全员一致投票跳过隐藏/揭示时间与 BAN 功能；修复碰撞、镜头、隐身、跳跃高度、第三人称猎人朝向、语音图标和手柄导航问题。"
+        ],
         [
          "fix3.7.3",
          "2026-08-12",
@@ -3825,8 +3849,8 @@
     "zh-TW": {
      "title": "超級變色龍更新日誌與補丁說明",
      "metaTitle": "超級變色龍更新日誌：全部補丁說明（2026）",
-     "metaDescription": "《超級變色龍》完整更新歷史：1.6 到 3.5 版本，包含新地圖、合作地圖、方塊人與分身等。",
-     "intro": "《超級變色龍》完整更新歷史：從 1.6 到 3.5 版本，包含方塊人、分身、新地圖、合作地圖等內容。",
+     "metaDescription": "《超級變色龍》完整更新歷史：1.6 到 3.8 版本，包含新地圖、合作地圖、方塊人與分身等。",
+     "intro": "完整更新歷史已更新至 2026 年 8 月 14 日官方 3.8.0，包含方塊人、分身、新地圖與合作地圖。",
      "sections": [
       {
        "type": "table",
@@ -3838,6 +3862,14 @@
         "亮點"
        ],
        "rows": [
+        [
+         {
+          "text": "3.8.0",
+          "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877"
+         },
+         "2026-08-14",
+         "新增全員一致投票跳過隱藏/揭示時間與 BAN 功能；修復碰撞、鏡頭、隱身、跳躍高度、第三人稱獵人朝向、語音圖示和手把導覽問題。"
+        ],
         [
          "fix3.7.3",
          "2026-08-12",
@@ -3943,8 +3975,8 @@
     "ko": {
      "title": "메카 카멜레온 업데이트 로그 & 패치 노트",
      "metaTitle": "메카 카멜레온 업데이트 로그: 전체 패치 노트 (2026)",
-     "metaDescription": "메카 카멜레온 전체 업데이트 내역: 1.6부터 3.5까지, 새 맵, 콜라보 맵, 큐브 캐릭터, 클론 포함.",
-     "intro": "메카 카멜레온 전체 업데이트 내역: 1.6부터 3.5까지, 큐브 캐릭터, 클론, 새 맵, 콜라보 맵 등을 포함합니다.",
+     "metaDescription": "메카 카멜레온 전체 업데이트 내역: 1.6부터 3.8까지, 새 맵, 콜라보 맵, 큐브 캐릭터, 클론 포함.",
+     "intro": "2026년 8월 14일 공식 update 3.8.0까지의 전체 내역으로, 큐브 캐릭터, 클론, 새 맵과 콜라보 맵을 포함합니다.",
      "sections": [
       {
        "type": "table",
@@ -3956,6 +3988,14 @@
         "주요 변경"
        ],
        "rows": [
+        [
+         {
+          "text": "3.8.0",
+          "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877"
+         },
+         "2026-08-14",
+         "숨김/공개 시간을 만장일치 투표로 건너뛰는 기능과 BAN 기능 추가. 충돌, 카메라, 투명화, 점프 높이, 3인칭 헌터 방향, 음성 아이콘, 컨트롤러 탐색 문제 수정."
+        ],
         [
          "fix3.7.3",
          "2026-08-12",
@@ -4061,8 +4101,8 @@
     "es": {
      "title": "Registro de actualizaciones y notas de parche de Meccha Chameleon",
      "metaTitle": "Actualizaciones de Meccha Chameleon: notas (2026)",
-     "metaDescription": "El historial completo de actualizaciones de Meccha Chameleon: versiones 1.6 a 3.5, con nuevos mapas, mapas de colaboración, el personaje Cubo y los clones.",
-     "intro": "El historial completo de actualizaciones de Meccha Chameleon: versiones 1.6 a 3.5, con el personaje Cubo, clones, nuevos mapas, mapas de colaboración y más.",
+     "metaDescription": "El historial completo de actualizaciones de Meccha Chameleon: versiones 1.6 a 3.8, con nuevos mapas, colaboraciones, el personaje Cubo y clones.",
+     "intro": "Historial completo hasta la actualización oficial 3.8.0 del 14 de agosto de 2026, con Cubo, clones, nuevos mapas y colaboraciones.",
      "sections": [
       {
        "type": "table",
@@ -4074,6 +4114,14 @@
         "Aspectos destacados"
        ],
        "rows": [
+        [
+         {
+          "text": "3.8.0",
+          "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877"
+         },
+         "14 ago 2026",
+         "Añadidos el salto por voto unánime del tiempo de ocultación/revelado y la función BAN; corregidos problemas de colisión, cámara, invisibilidad, altura de salto, orientación del cazador en tercera persona, icono de voz y navegación con mando."
+        ],
         [
          "fix3.7.3",
          "2026-08-12",
@@ -6740,7 +6788,7 @@
       ],
       [
        "What is the current version of Meccha Chameleon?",
-       "As of August 4, 2026 the latest version is 3.5.3, which added camera options and fixed color palette bugs. The 3.5.0 update (August 2) added an official Exit 8 collab map. See our update log for the full history."
+       "As of August 14, 2026, the latest official version is 3.8.0. It added unanimous-vote skipping for hiding/reveal time and a BAN feature, with collision, camera, invisibility, jump-height, voice-icon and controller-navigation fixes. See the linked official announcement in our update log."
       ]
      ]
     }
@@ -6811,7 +6859,7 @@
         ],
         [
          "現在のバージョンは？",
-         "2026年8月4日時点で最新は 3.5.3（カメラオプション追加・カラーパレット修正）。8月2日の 3.5.0 で『8番出口』コラボマップが追加されました。詳細は更新履歴ページをご覧ください。"
+         "2026年8月14日時点の最新公式版は 3.8.0 です。隠れ時間・公開時間の全員一致スキップと BAN 機能が追加され、衝突、カメラ、透明化、ジャンプ高さ、ボイスアイコン、コントローラー操作も修正されました。更新履歴の公式リンクをご覧ください。"
         ]
        ]
       }
@@ -6882,7 +6930,7 @@
         ],
         [
          "目前游戏是什么版本？",
-         "截至 2026 年 8 月 4 日，最新版本为 3.5.3（新增相机选项并修复调色板问题）。8 月 2 日的 3.5.0 更新加入了《8番出口》官方合作地图。完整历史见我们的更新日志。"
+         "截至 2026 年 8 月 14 日，最新官方版本为 3.8.0。该版本新增全员一致跳过隐藏/揭示时间与 BAN 功能，并修复碰撞、镜头、隐身、跳跃高度、语音图标和手柄导航问题。官方公告链接见更新日志。"
         ]
        ]
       }
@@ -6953,7 +7001,7 @@
         ],
         [
          "目前遊戲是什麼版本？",
-         "截至 2026 年 8 月 4 日，最新版本為 3.5.3（新增相機選項並修復調色板問題）。8 月 2 日的 3.5.0 更新加入了《8番出口》官方合作地圖。完整歷史見我們的更新日誌。"
+         "截至 2026 年 8 月 14 日，最新官方版本為 3.8.0。該版本新增全員一致跳過隱藏/揭示時間與 BAN 功能，並修復碰撞、鏡頭、隱身、跳躍高度、語音圖示和手把導覽問題。官方公告連結見更新日誌。"
         ]
        ]
       }
@@ -7024,7 +7072,7 @@
         ],
         [
          "메카 카멜레온의 현재 버전은 무엇인가요?",
-         "2026년 8월 4일 기준 최신 버전은 3.5.3으로, 카메라 옵션을 추가하고 색상 팔레트 버그를 수정했습니다. 3.5.0 업데이트(8월 2일)는 공식 Exit 8 콜라보 맵을 추가했습니다. 전체 내역은 업데이트 로그를 참고하세요."
+         "2026년 8월 14일 기준 최신 공식 버전은 3.8.0입니다. 숨김/공개 시간의 만장일치 건너뛰기와 BAN 기능을 추가하고 충돌, 카메라, 투명화, 점프 높이, 음성 아이콘, 컨트롤러 탐색 문제를 수정했습니다. 업데이트 로그의 공식 공지 링크를 참고하세요."
         ]
        ]
       }
@@ -7095,7 +7143,7 @@
         ],
         [
          "¿Cuál es la versión actual de Meccha Chameleon?",
-         "A 4 de agosto de 2026 la última versión es la 3.5.3, que añadió opciones de cámara y corrigió errores de paleta de color. La actualización 3.5.0 (2 de agosto) añadió un mapa oficial de colaboración con Exit 8. Consulta nuestro registro de actualizaciones para el historial completo."
+         "A 14 de agosto de 2026, la última versión oficial es la 3.8.0. Añadió el salto por voto unánime del tiempo de ocultación/revelado y la función BAN, además de correcciones de colisión, cámara, invisibilidad, salto, icono de voz y navegación con mando. El registro de actualizaciones enlaza el anuncio oficial."
         ]
        ]
       }
@@ -7103,6 +7151,17 @@
     }
    },
    "sources": [
+    {
+     "label": "Official Steam announcement — update 3.8.0 (August 14, 2026)",
+     "url": "https://steamcommunity.com/games/4704690/announcements/detail/671751488532383877",
+     "labels": {
+      "zh-CN": "Steam 官方公告 — 3.8.0 更新（2026-08-14）",
+      "zh-TW": "Steam 官方公告 — 3.8.0 更新（2026-08-14）",
+      "ja": "Steam 公式告知 — update 3.8.0（2026-08-14）",
+      "ko": "Steam 공식 공지 — update 3.8.0 (2026-08-14)",
+      "es": "Anuncio oficial de Steam — actualización 3.8.0 (14-08-2026)"
+     }
+    },
     {
      "label": "Meccha Chameleon — Wikipedia",
      "url": "https://en.wikipedia.org/wiki/Meccha_Chameleon",

@@ -45,6 +45,27 @@ a{color:var(--blue);text-decoration:none}
 a:hover{color:var(--green)}
 img{max-width:100%;display:block}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
+/* Native modal keeps focus contained and the document background isolated. */
+.privacy-settings{position:fixed;right:14px;bottom:14px;z-index:130;min-height:44px;padding:9px 14px;border:1px solid var(--green);border-radius:999px;background:var(--surface-2);color:var(--text);box-shadow:var(--shadow);font:600 13px/1.2 var(--font-body);cursor:pointer}
+.consent-dialog{width:min(700px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--border-strong);border-radius:18px;background:var(--surface);color:var(--text);box-shadow:0 24px 80px rgba(0,0,0,.78)}
+.consent-dialog::backdrop{background:rgba(0,0,0,.74);backdrop-filter:blur(4px)}
+.consent-card{position:relative;padding:26px}
+.consent-card h2{margin:0 50px 8px 0;font:700 1.7rem/1.2 var(--font-display)}
+.consent-card>p,.consent-summary span,.consent-manage small{color:var(--muted)}
+.consent-close{position:absolute;right:12px;top:10px;width:44px;height:44px;border:0;border-radius:10px;background:transparent;color:var(--text);font-size:28px;cursor:pointer}
+.consent-summary{display:grid;gap:4px;margin:18px 0}
+.consent-summary span{margin-bottom:10px}
+.consent-manage{display:grid;gap:10px;margin:18px 0}
+.consent-manage[hidden],.consent-actions [hidden]{display:none}
+.consent-manage label{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--border);border-radius:12px}
+.consent-manage input{width:22px;height:22px;flex:0 0 auto;accent-color:var(--green)}
+.consent-manage small{display:block;margin-top:3px}
+.consent-actions{display:flex;flex-wrap:wrap;gap:8px}
+.consent-actions button{min-height:44px;padding:9px 13px;border:1px solid var(--green);border-radius:10px;background:var(--surface-2);color:var(--text);font:700 14px/1.2 var(--font-body);cursor:pointer}
+.consent-actions [data-consent-accept]{background:var(--green);color:var(--bg)}
+.consent-actions [data-consent-reject],.consent-actions [data-consent-withdraw]{background:transparent}
 
 /* ---------- Header / Nav ---------- */
 .site-header{
@@ -67,9 +88,14 @@ img{max-width:100%;display:block}
 .nav a.cta{background:var(--grad);color:#0a0e14;font-weight:700}
 .nav a.cta:hover{filter:brightness(1.08);color:#0a0e14}
 @media (max-width:760px){
-  .header-inner{height:auto;min-height:var(--nav-h);flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
-  .nav{order:3;width:100%;overflow-x:auto;gap:2px;padding-bottom:2px;-webkit-overflow-scrolling:touch}
-  .nav a{white-space:nowrap}
+  .header-inner{height:auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-areas:"logo nav lang" "search search search";gap:6px;padding-top:8px;padding-bottom:8px}
+  .logo{grid-area:logo;min-width:0;min-height:44px;font-size:.92rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .nav{grid-area:nav;width:auto;overflow:visible;gap:2px;margin-left:0}
+  .nav>a:first-child{display:none}
+  .dd summary,.lang-dd summary{min-width:44px;min-height:44px;justify-content:center;padding:8px}
+  .lang-dd{grid-area:lang;margin-left:0}
+  .lang-dd .lang-name{display:none}
+  .site-search{grid-area:search}
 }
 
 /* ---------- Hero ---------- */
@@ -233,6 +259,7 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .dd-menu{position:absolute;top:calc(100% + 10px);left:auto;right:0;width:min(580px,calc(100vw - 32px));min-width:230px;background:linear-gradient(180deg,var(--surface-2),#151e2c);border:1px solid var(--border-strong);border-radius:16px;padding:10px;box-shadow:0 28px 70px -18px rgba(0,0,0,.85),0 0 0 1px rgba(61,220,132,.06);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;z-index:120;max-height:66vh;overflow:auto}
 .dd-menu::before{content:"";position:absolute;top:0;left:16px;right:16px;height:2px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,var(--green),var(--blue) 50%,var(--purple));opacity:.55;pointer-events:none}
 .dd-menu a{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.88rem;font-weight:500;line-height:1.32;padding:9px 11px;border-radius:10px;white-space:normal;position:relative;transition:.16s}
+.dd-menu a{min-height:44px}
 .dd-menu a::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:3px;border-radius:3px;background:var(--grad);opacity:0;transition:.18s}
 .dd-menu a:hover{color:var(--text);background:linear-gradient(120deg,rgba(61,220,132,.13),rgba(76,201,240,.09));transform:translateX(2px)}
 .dd-menu a:hover::before{opacity:1}
@@ -241,16 +268,17 @@ article h1{font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
 .dd-menu .nav-ic{width:28px;height:28px;flex:0 0 auto;border-radius:8px;display:grid;place-items:center;color:#0a0e14;background:var(--grad);box-shadow:0 4px 12px -4px rgba(61,220,132,.5)}
 .dd-menu .nav-ic svg{width:15px;height:15px}
 .dd[open] .dd-menu, .lang-dd[open] .dd-menu{display:grid}
+.dd:not([open])>.dd-menu,.lang-dd:not([open])>.dd-menu{display:none}
 .lang-dd .dd-menu{left:auto;right:0;min-width:150px;width:auto;grid-template-columns:1fr}
 .lang-dd .dd-menu .nav-ic{display:none}
 .flag{font-size:1.05rem;line-height:1}
 .lang-dd .flag{font-size:1rem}
 .nav{display:flex;align-items:center;gap:4px;margin-left:auto}
 @media (max-width:760px){
-  .nav{order:2;width:100%;overflow:visible;flex-wrap:nowrap}
-  .lang-dd{order:1;margin-left:auto}
-  .dd{flex:1 1 auto;min-width:0;position:static}
-  .dd .dd-menu{position:static;width:100%;min-width:0;max-width:none;margin-top:6px}
+  .nav{width:auto;overflow:visible;flex-wrap:nowrap}
+  .lang-dd{margin-left:0}
+  .dd{min-width:0;position:static}
+  .dd .dd-menu{position:fixed;top:116px;left:16px;right:16px;width:auto;min-width:0;max-width:none;max-height:calc(100dvh - 132px);grid-template-columns:1fr;margin-top:0}
 }
 
 /* dropdown open animation */
@@ -337,7 +365,7 @@ details.faq:hover summary .pm{box-shadow:0 0 14px rgba(61,220,132,.55)}
 .site-search input{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:9px;color:#f2f5f8;font-size:.84rem;padding:8px 12px 8px 30px;outline:none;transition:.16s}
 .site-search input:focus{border-color:rgba(76,201,240,.6);background:rgba(76,201,240,.06)}
 .search-ic{position:absolute;left:9px;top:50%;transform:translateY(-50%);font-size:.8rem;opacity:.6;pointer-events:none}
-@media (max-width:760px){.site-search{order:4;flex:1 1 100%;margin-left:0}.header-inner{padding-top:8px;padding-bottom:8px}}
+@media (max-width:760px){.site-search{width:100%;margin-left:0}.site-search input{min-height:44px}.consent-card{padding:22px 18px}.consent-actions button{width:100%}}
 
 /* ============================================================
    Meccha — "Arcade Lobby" layout layer (v2, 2026-08-07)
